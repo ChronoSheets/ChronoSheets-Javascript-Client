@@ -161,7 +161,7 @@ Class | Method | HTTP request | Description
 *ChronoSheetsApi.TasksApi* | [**tasksUpdateTask**](docs/TasksApi.md#tasksUpdateTask) | **POST** /api/Tasks/UpdateTask | Update a task
 *ChronoSheetsApi.TimesheetsApi* | [**timesheetsDeleteTimesheet**](docs/TimesheetsApi.md#timesheetsDeleteTimesheet) | **DELETE** /api/Timesheets/DeleteTimesheet | Delete a timesheet
 *ChronoSheetsApi.TimesheetsApi* | [**timesheetsGetTimesheets**](docs/TimesheetsApi.md#timesheetsGetTimesheets) | **GET** /api/Timesheets/GetTimesheets | Get timesheets between start and end dates
-*ChronoSheetsApi.TimesheetsApi* | [**timesheetsInsertSingleTimesheet**](docs/TimesheetsApi.md#timesheetsInsertSingleTimesheet) | **POST** /api/Timesheets/InsertSingleTimesheet | Inserts a single timesheet record
+*ChronoSheetsApi.TimesheetsApi* | [**timesheetsInsertSingleTimesheet**](docs/TimesheetsApi.md#timesheetsInsertSingleTimesheet) | **PUT** /api/Timesheets/InsertSingleTimesheet | Inserts a single timesheet record
 *ChronoSheetsApi.TimesheetsApi* | [**timesheetsUpdateTimesheets**](docs/TimesheetsApi.md#timesheetsUpdateTimesheets) | **POST** /api/Timesheets/UpdateTimesheets | Batch update timesheets
 *ChronoSheetsApi.TripsApi* | [**tripsCreateTrip**](docs/TripsApi.md#tripsCreateTrip) | **POST** /api/Trips/CreateTrip | Create a new trip.  Important: create a timesheet record before calling this, passing in the new timesheet record id as a reference.
 *ChronoSheetsApi.TripsApi* | [**tripsGetMyTripById**](docs/TripsApi.md#tripsGetMyTripById) | **GET** /api/Trips/GetMyTripById | Get trip by Id

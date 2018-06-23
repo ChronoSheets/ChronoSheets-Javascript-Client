@@ -209,7 +209,7 @@
       var returnType = CsApiApiResponseInt32;
 
       return this.apiClient.callApi(
-        '/api/Timesheets/InsertSingleTimesheet', 'POST',
+        '/api/Timesheets/InsertSingleTimesheet', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
