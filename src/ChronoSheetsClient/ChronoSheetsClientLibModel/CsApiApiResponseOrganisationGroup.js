@@ -82,7 +82,7 @@
    */
   exports.prototype['Data'] = undefined;
   /**
-   * 0 = Succeeded, 1 = FatalException, 2 = GeneralError, 3 = ValidationError, 4 = UnAuthorized, 5 = SessionExpired
+   * 0 = Succeeded, 1 = FatalException, 2 = GeneralError, 3 = ValidationError, 4 = UnAuthorized, 5 = SessionExpired, 128 = TestingABC
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseOrganisationGroup.StatusEnum} Status
    */
   exports.prototype['Status'] = undefined;
@@ -127,7 +127,12 @@
      * value: 5
      * @const
      */
-    "5": 5  };
+    "5": 5,
+    /**
+     * value: 128
+     * @const
+     */
+    "128": 128  };
 
 
   return exports;
