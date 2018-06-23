@@ -131,10 +131,10 @@
         obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'Number');
       }
       if (data.hasOwnProperty('MobilePlatform')) {
-        obj['MobilePlatform'] = ApiClient.convertToType(data['MobilePlatform'], 'String');
+        obj['MobilePlatform'] = ApiClient.convertToType(data['MobilePlatform'], 'Number');
       }
       if (data.hasOwnProperty('AttachmentType')) {
-        obj['AttachmentType'] = ApiClient.convertToType(data['AttachmentType'], 'String');
+        obj['AttachmentType'] = ApiClient.convertToType(data['AttachmentType'], 'Number');
       }
       if (data.hasOwnProperty('Notes')) {
         obj['Notes'] = ApiClient.convertToType(data['Notes'], 'String');
@@ -230,10 +230,12 @@
    */
   exports.prototype['OrgId'] = undefined;
   /**
+   * 0 = Unknown, 1 = iOS, 2 = Android
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiOrgReportTimesheetFileAttachment.MobilePlatformEnum} MobilePlatform
    */
   exports.prototype['MobilePlatform'] = undefined;
   /**
+   * 1 = Image, 30 = WordDoc, 31 = Pdf, 32 = MSSpreadSheet, 33 = MSPowerPoint, 34 = RichTextFormat, 35 = ZipFile, 100 = Other
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiOrgReportTimesheetFileAttachment.AttachmentTypeEnum} AttachmentType
    */
   exports.prototype['AttachmentType'] = undefined;
@@ -285,72 +287,72 @@
 
   /**
    * Allowed values for the <code>MobilePlatform</code> property.
-   * @enum {String}
+   * @enum {Number}
    * @readonly
    */
   exports.MobilePlatformEnum = {
     /**
-     * value: "Unknown"
+     * value: 0
      * @const
      */
-    "Unknown": "Unknown",
+    "0": 0,
     /**
-     * value: "iOS"
+     * value: 1
      * @const
      */
-    "iOS": "iOS",
+    "1": 1,
     /**
-     * value: "Android"
+     * value: 2
      * @const
      */
-    "Android": "Android"  };
+    "2": 2  };
 
   /**
    * Allowed values for the <code>AttachmentType</code> property.
-   * @enum {String}
+   * @enum {Number}
    * @readonly
    */
   exports.AttachmentTypeEnum = {
     /**
-     * value: "Image"
+     * value: 1
      * @const
      */
-    "Image": "Image",
+    "1": 1,
     /**
-     * value: "WordDoc"
+     * value: 30
      * @const
      */
-    "WordDoc": "WordDoc",
+    "30": 30,
     /**
-     * value: "Pdf"
+     * value: 31
      * @const
      */
-    "Pdf": "Pdf",
+    "31": 31,
     /**
-     * value: "MSSpreadSheet"
+     * value: 32
      * @const
      */
-    "MSSpreadSheet": "MSSpreadSheet",
+    "32": 32,
     /**
-     * value: "MSPowerPoint"
+     * value: 33
      * @const
      */
-    "MSPowerPoint": "MSPowerPoint",
+    "33": 33,
     /**
-     * value: "RichTextFormat"
+     * value: 34
      * @const
      */
-    "RichTextFormat": "RichTextFormat",
+    "34": 34,
     /**
-     * value: "ZipFile"
+     * value: 35
      * @const
      */
-    "ZipFile": "ZipFile",
+    "35": 35,
     /**
-     * value: "Other"
+     * value: 100
      * @const
      */
-    "Other": "Other"  };
+    "100": 100  };
 
 
   return exports;

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**dayType** | **String** |  | [optional] 
+**dayType** | **Number** | 0 &#x3D; Monday, 1 &#x3D; Tuesday, 2 &#x3D; Wednesday, 3 &#x3D; Thursday, 4 &#x3D; Friday, 5 &#x3D; Saturday, 6 &#x3D; Sunday | [optional] 
 **timeSlots** | [**[CsApiTimeSlot]**](CsApiTimeSlot.md) |  | [optional] 
 **deleteUsualHours** | **[Number]** |  | [optional] 
 
@@ -12,19 +12,19 @@ Name | Type | Description | Notes
 ## Enum: DayTypeEnum
 
 
-* `Monday` (value: `"Monday"`)
+* `0` (value: `0`)
 
-* `Tuesday` (value: `"Tuesday"`)
+* `1` (value: `1`)
 
-* `Wednesday` (value: `"Wednesday"`)
+* `2` (value: `2`)
 
-* `Thursday` (value: `"Thursday"`)
+* `3` (value: `3`)
 
-* `Friday` (value: `"Friday"`)
+* `4` (value: `4`)
 
-* `Saturday` (value: `"Saturday"`)
+* `5` (value: `5`)
 
-* `Sunday` (value: `"Sunday"`)
+* `6` (value: `6`)
 
 
 

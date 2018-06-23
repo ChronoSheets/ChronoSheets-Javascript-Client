@@ -300,9 +300,9 @@ var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date |
 
 var userIds = "userIds_example"; // String | 
 
-var sort = "sort_example"; // String | 
+var sort = 56; // Number | 0 = Username, 1 = EmailAddress, 2 = JobCode, 3 = TaskName, 4 = ClientName, 5 = ProjectName, 6 = StartDate, 7 = EndDate, 8 = SpanSeconds, 9 = Description, 10 = PayAmount, 11 = PayOvertimeAmount, 12 = TripCost, 13 = TripDistanceMeters
 
-var order = "order_example"; // String | 
+var order = 56; // Number | 0 = Ascending, 1 = Descending
 
 var skip = 56; // Number | 
 
@@ -328,8 +328,8 @@ Name | Type | Description  | Notes
  **startDate** | **Date**|  | 
  **endDate** | **Date**|  | 
  **userIds** | **String**|  | 
- **sort** | **String**|  | 
- **order** | **String**|  | 
+ **sort** | **Number**| 0 &#x3D; Username, 1 &#x3D; EmailAddress, 2 &#x3D; JobCode, 3 &#x3D; TaskName, 4 &#x3D; ClientName, 5 &#x3D; ProjectName, 6 &#x3D; StartDate, 7 &#x3D; EndDate, 8 &#x3D; SpanSeconds, 9 &#x3D; Description, 10 &#x3D; PayAmount, 11 &#x3D; PayOvertimeAmount, 12 &#x3D; TripCost, 13 &#x3D; TripDistanceMeters | 
+ **order** | **Number**| 0 &#x3D; Ascending, 1 &#x3D; Descending | 
  **skip** | **Number**|  | 
  **take** | **Number**|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 

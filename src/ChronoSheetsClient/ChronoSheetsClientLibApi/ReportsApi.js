@@ -408,8 +408,8 @@
      * @param {Date} startDate 
      * @param {Date} endDate 
      * @param {String} userIds 
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/String} sort 
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/String} order 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/Number} sort 0 &#x3D; Username, 1 &#x3D; EmailAddress, 2 &#x3D; JobCode, 3 &#x3D; TaskName, 4 &#x3D; ClientName, 5 &#x3D; ProjectName, 6 &#x3D; StartDate, 7 &#x3D; EndDate, 8 &#x3D; SpanSeconds, 9 &#x3D; Description, 10 &#x3D; PayAmount, 11 &#x3D; PayOvertimeAmount, 12 &#x3D; TripCost, 13 &#x3D; TripDistanceMeters
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/Number} order 0 &#x3D; Ascending, 1 &#x3D; Descending
      * @param {Number} skip 
      * @param {Number} take 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token

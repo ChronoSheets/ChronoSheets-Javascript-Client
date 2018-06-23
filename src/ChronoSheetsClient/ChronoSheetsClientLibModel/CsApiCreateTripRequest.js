@@ -79,7 +79,7 @@
         obj['DistanceMeters'] = ApiClient.convertToType(data['DistanceMeters'], 'Number');
       }
       if (data.hasOwnProperty('MobilePlatform')) {
-        obj['MobilePlatform'] = ApiClient.convertToType(data['MobilePlatform'], 'String');
+        obj['MobilePlatform'] = ApiClient.convertToType(data['MobilePlatform'], 'Number');
       }
     }
     return obj;
@@ -102,6 +102,7 @@
    */
   exports.prototype['DistanceMeters'] = undefined;
   /**
+   * 0 = Unknown, 1 = iOS, 2 = Android
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiCreateTripRequest.MobilePlatformEnum} MobilePlatform
    */
   exports.prototype['MobilePlatform'] = undefined;
@@ -109,25 +110,25 @@
 
   /**
    * Allowed values for the <code>MobilePlatform</code> property.
-   * @enum {String}
+   * @enum {Number}
    * @readonly
    */
   exports.MobilePlatformEnum = {
     /**
-     * value: "Unknown"
+     * value: 0
      * @const
      */
-    "Unknown": "Unknown",
+    "0": 0,
     /**
-     * value: "iOS"
+     * value: 1
      * @const
      */
-    "iOS": "iOS",
+    "1": 1,
     /**
-     * value: "Android"
+     * value: 2
      * @const
      */
-    "Android": "Android"  };
+    "2": 2  };
 
 
   return exports;

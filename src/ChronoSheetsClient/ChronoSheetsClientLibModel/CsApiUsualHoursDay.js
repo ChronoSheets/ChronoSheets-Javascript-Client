@@ -65,7 +65,7 @@
       obj = obj || new exports();
 
       if (data.hasOwnProperty('DayType')) {
-        obj['DayType'] = ApiClient.convertToType(data['DayType'], 'String');
+        obj['DayType'] = ApiClient.convertToType(data['DayType'], 'Number');
       }
       if (data.hasOwnProperty('TimeSlots')) {
         obj['TimeSlots'] = ApiClient.convertToType(data['TimeSlots'], [CsApiTimeSlot]);
@@ -78,6 +78,7 @@
   }
 
   /**
+   * 0 = Monday, 1 = Tuesday, 2 = Wednesday, 3 = Thursday, 4 = Friday, 5 = Saturday, 6 = Sunday
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUsualHoursDay.DayTypeEnum} DayType
    */
   exports.prototype['DayType'] = undefined;
@@ -93,45 +94,45 @@
 
   /**
    * Allowed values for the <code>DayType</code> property.
-   * @enum {String}
+   * @enum {Number}
    * @readonly
    */
   exports.DayTypeEnum = {
     /**
-     * value: "Monday"
+     * value: 0
      * @const
      */
-    "Monday": "Monday",
+    "0": 0,
     /**
-     * value: "Tuesday"
+     * value: 1
      * @const
      */
-    "Tuesday": "Tuesday",
+    "1": 1,
     /**
-     * value: "Wednesday"
+     * value: 2
      * @const
      */
-    "Wednesday": "Wednesday",
+    "2": 2,
     /**
-     * value: "Thursday"
+     * value: 3
      * @const
      */
-    "Thursday": "Thursday",
+    "3": 3,
     /**
-     * value: "Friday"
+     * value: 4
      * @const
      */
-    "Friday": "Friday",
+    "4": 4,
     /**
-     * value: "Saturday"
+     * value: 5
      * @const
      */
-    "Saturday": "Saturday",
+    "5": 5,
     /**
-     * value: "Sunday"
+     * value: 6
      * @const
      */
-    "Sunday": "Sunday"  };
+    "6": 6  };
 
 
   return exports;

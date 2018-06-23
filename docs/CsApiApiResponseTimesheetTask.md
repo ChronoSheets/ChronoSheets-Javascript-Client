@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **data** | [**CsApiTimesheetTask**](CsApiTimesheetTask.md) |  | [optional] 
-**status** | **String** |  | [optional] 
+**status** | **Number** | 0 &#x3D; Succeeded, 1 &#x3D; FatalException, 2 &#x3D; GeneralError, 3 &#x3D; ValidationError, 4 &#x3D; UnAuthorized, 5 &#x3D; SessionExpired | [optional] 
 **message** | **String** |  | [optional] 
 
 
@@ -12,17 +12,17 @@ Name | Type | Description | Notes
 ## Enum: StatusEnum
 
 
-* `Succeeded` (value: `"Succeeded"`)
+* `0` (value: `0`)
 
-* `FatalException` (value: `"FatalException"`)
+* `1` (value: `1`)
 
-* `GeneralError` (value: `"GeneralError"`)
+* `2` (value: `2`)
 
-* `ValidationError` (value: `"ValidationError"`)
+* `3` (value: `3`)
 
-* `UnAuthorized` (value: `"UnAuthorized"`)
+* `4` (value: `4`)
 
-* `SessionExpired` (value: `"SessionExpired"`)
+* `5` (value: `5`)
 
 
 

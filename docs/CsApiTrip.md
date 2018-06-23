@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **vehicleId** | **Number** |  | [optional] 
 **userId** | **Number** |  | [optional] 
 **orgId** | **Number** |  | [optional] 
-**mobilePlatform** | **String** |  | [optional] 
+**mobilePlatform** | **Number** | 0 &#x3D; Unknown, 1 &#x3D; iOS, 2 &#x3D; Android | [optional] 
 **startDate** | **Date** |  | [optional] 
 **endDate** | **Date** |  | [optional] 
 **vehicleName** | **String** |  | [optional] 
@@ -28,11 +28,11 @@ Name | Type | Description | Notes
 ## Enum: MobilePlatformEnum
 
 
-* `Unknown` (value: `"Unknown"`)
+* `0` (value: `0`)
 
-* `iOS` (value: `"iOS"`)
+* `1` (value: `1`)
 
-* `Android` (value: `"Android"`)
+* `2` (value: `2`)
 
 
 

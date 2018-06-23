@@ -17,8 +17,8 @@ Name | Type | Description | Notes
 **fileAttachmentId** | **Number** |  | [optional] 
 **userId** | **Number** |  | [optional] 
 **orgId** | **Number** |  | [optional] 
-**mobilePlatform** | **String** |  | [optional] 
-**attachmentType** | **String** |  | [optional] 
+**mobilePlatform** | **Number** | 0 &#x3D; Unknown, 1 &#x3D; iOS, 2 &#x3D; Android | [optional] 
+**attachmentType** | **Number** | 1 &#x3D; Image, 30 &#x3D; WordDoc, 31 &#x3D; Pdf, 32 &#x3D; MSSpreadSheet, 33 &#x3D; MSPowerPoint, 34 &#x3D; RichTextFormat, 35 &#x3D; ZipFile, 100 &#x3D; Other | [optional] 
 **notes** | **String** |  | [optional] 
 **nonImageFilePath** | **String** |  | [optional] 
 **imageLargeFilePath** | **String** |  | [optional] 
@@ -36,11 +36,11 @@ Name | Type | Description | Notes
 ## Enum: MobilePlatformEnum
 
 
-* `Unknown` (value: `"Unknown"`)
+* `0` (value: `0`)
 
-* `iOS` (value: `"iOS"`)
+* `1` (value: `1`)
 
-* `Android` (value: `"Android"`)
+* `2` (value: `2`)
 
 
 
@@ -49,21 +49,21 @@ Name | Type | Description | Notes
 ## Enum: AttachmentTypeEnum
 
 
-* `Image` (value: `"Image"`)
+* `1` (value: `1`)
 
-* `WordDoc` (value: `"WordDoc"`)
+* `30` (value: `30`)
 
-* `Pdf` (value: `"Pdf"`)
+* `31` (value: `31`)
 
-* `MSSpreadSheet` (value: `"MSSpreadSheet"`)
+* `32` (value: `32`)
 
-* `MSPowerPoint` (value: `"MSPowerPoint"`)
+* `33` (value: `33`)
 
-* `RichTextFormat` (value: `"RichTextFormat"`)
+* `34` (value: `34`)
 
-* `ZipFile` (value: `"ZipFile"`)
+* `35` (value: `35`)
 
-* `Other` (value: `"Other"`)
+* `100` (value: `100`)
 
 
 

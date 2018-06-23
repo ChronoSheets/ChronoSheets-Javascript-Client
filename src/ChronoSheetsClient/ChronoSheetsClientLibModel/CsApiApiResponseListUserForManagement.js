@@ -68,7 +68,7 @@
         obj['Data'] = ApiClient.convertToType(data['Data'], [CsApiUserForManagement]);
       }
       if (data.hasOwnProperty('Status')) {
-        obj['Status'] = ApiClient.convertToType(data['Status'], 'String');
+        obj['Status'] = ApiClient.convertToType(data['Status'], 'Number');
       }
       if (data.hasOwnProperty('Message')) {
         obj['Message'] = ApiClient.convertToType(data['Message'], 'String');
@@ -82,6 +82,7 @@
    */
   exports.prototype['Data'] = undefined;
   /**
+   * 0 = Succeeded, 1 = FatalException, 2 = GeneralError, 3 = ValidationError, 4 = UnAuthorized, 5 = SessionExpired
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserForManagement.StatusEnum} Status
    */
   exports.prototype['Status'] = undefined;
@@ -93,40 +94,40 @@
 
   /**
    * Allowed values for the <code>Status</code> property.
-   * @enum {String}
+   * @enum {Number}
    * @readonly
    */
   exports.StatusEnum = {
     /**
-     * value: "Succeeded"
+     * value: 0
      * @const
      */
-    "Succeeded": "Succeeded",
+    "0": 0,
     /**
-     * value: "FatalException"
+     * value: 1
      * @const
      */
-    "FatalException": "FatalException",
+    "1": 1,
     /**
-     * value: "GeneralError"
+     * value: 2
      * @const
      */
-    "GeneralError": "GeneralError",
+    "2": 2,
     /**
-     * value: "ValidationError"
+     * value: 3
      * @const
      */
-    "ValidationError": "ValidationError",
+    "3": 3,
     /**
-     * value: "UnAuthorized"
+     * value: 4
      * @const
      */
-    "UnAuthorized": "UnAuthorized",
+    "4": 4,
     /**
-     * value: "SessionExpired"
+     * value: 5
      * @const
      */
-    "SessionExpired": "SessionExpired"  };
+    "5": 5  };
 
 
   return exports;
