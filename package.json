@@ -1,8 +1,8 @@
 {
   "name": "chrono_sheets_api",
   "version": "v1",
-  "description": "ERROR_UNKNOWN",
-  "license": "Unlicense",
+  "description": "An_API_for_integrating_into_ChronoSheets_timesheets",
+  "license": "Terms and Conditions",
   "main": "src/ChronoSheetsClient/index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive"
