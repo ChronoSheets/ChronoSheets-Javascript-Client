@@ -1,6 +1,6 @@
 /**
  * ChronoSheets API
- * An API for integrating into ChronoSheets timesheets
+ * ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.
  *
  * OpenAPI spec version: v1
  * Contact: lachlan@chronosheets.com
@@ -26,7 +26,7 @@
   'use strict';
 
   /**
-   * An_API_for_integrating_into_ChronoSheets_timesheets.<br>
+   * ChronoSheets_is_a_flexible_timesheet_solution_for_small_to_medium_businesses_it_is_free_for_small_teams_of_up_to_5_and_there_are_iOS_and_Android_apps_available___Use_the_ChronoSheets_API_to_create_your_own_custom_integrations_.<br>
    * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
