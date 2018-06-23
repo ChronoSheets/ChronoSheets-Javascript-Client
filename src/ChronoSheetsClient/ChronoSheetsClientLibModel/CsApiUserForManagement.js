@@ -73,9 +73,6 @@
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('EmailAddress')) {
-        obj['EmailAddress'] = ApiClient.convertToType(data['EmailAddress'], 'String');
-      }
       if (data.hasOwnProperty('IsSubscribedToNewsletter')) {
         obj['IsSubscribedToNewsletter'] = ApiClient.convertToType(data['IsSubscribedToNewsletter'], 'Boolean');
       }
@@ -97,6 +94,9 @@
       if (data.hasOwnProperty('LastName')) {
         obj['LastName'] = ApiClient.convertToType(data['LastName'], 'String');
       }
+      if (data.hasOwnProperty('EmailAddress')) {
+        obj['EmailAddress'] = ApiClient.convertToType(data['EmailAddress'], 'String');
+      }
       if (data.hasOwnProperty('Roles')) {
         obj['Roles'] = ApiClient.convertToType(data['Roles'], 'Number');
       }
@@ -113,10 +113,6 @@
     return obj;
   }
 
-  /**
-   * @member {String} EmailAddress
-   */
-  exports.prototype['EmailAddress'] = undefined;
   /**
    * @member {Boolean} IsSubscribedToNewsletter
    */
@@ -145,6 +141,10 @@
    * @member {String} LastName
    */
   exports.prototype['LastName'] = undefined;
+  /**
+   * @member {String} EmailAddress
+   */
+  exports.prototype['EmailAddress'] = undefined;
   /**
    * @member {Number} Roles
    */

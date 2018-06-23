@@ -87,6 +87,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property emailAddress (base name: "EmailAddress")', function() {
+      // uncomment below and update the code to test the property emailAddress
+      //var instane = new ChronoSheetsApi.CsApiClientSideUser();
+      //expect(instance).to.be();
+    });
+
     it('should have the property roles (base name: "Roles")', function() {
       // uncomment below and update the code to test the property roles
       //var instane = new ChronoSheetsApi.CsApiClientSideUser();

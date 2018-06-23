@@ -57,12 +57,6 @@
       //expect(instance).to.be.a(ChronoSheetsApi.CsApiUserForManagement);
     });
 
-    it('should have the property emailAddress (base name: "EmailAddress")', function() {
-      // uncomment below and update the code to test the property emailAddress
-      //var instane = new ChronoSheetsApi.CsApiUserForManagement();
-      //expect(instance).to.be();
-    });
-
     it('should have the property isSubscribedToNewsletter (base name: "IsSubscribedToNewsletter")', function() {
       // uncomment below and update the code to test the property isSubscribedToNewsletter
       //var instane = new ChronoSheetsApi.CsApiUserForManagement();
@@ -101,6 +95,12 @@
 
     it('should have the property lastName (base name: "LastName")', function() {
       // uncomment below and update the code to test the property lastName
+      //var instane = new ChronoSheetsApi.CsApiUserForManagement();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property emailAddress (base name: "EmailAddress")', function() {
+      // uncomment below and update the code to test the property emailAddress
       //var instane = new ChronoSheetsApi.CsApiUserForManagement();
       //expect(instance).to.be();
     });
