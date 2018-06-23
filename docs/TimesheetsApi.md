@@ -4,11 +4,58 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**timesheetsCreateSingleTimesheet**](TimesheetsApi.md#timesheetsCreateSingleTimesheet) | **PUT** /api/Timesheets/CreateSingleTimesheet | Inserts a single timesheet record
 [**timesheetsDeleteTimesheet**](TimesheetsApi.md#timesheetsDeleteTimesheet) | **DELETE** /api/Timesheets/DeleteTimesheet | Delete a timesheet
 [**timesheetsGetTimesheets**](TimesheetsApi.md#timesheetsGetTimesheets) | **GET** /api/Timesheets/GetTimesheets | Get timesheets between start and end dates
-[**timesheetsInsertSingleTimesheet**](TimesheetsApi.md#timesheetsInsertSingleTimesheet) | **PUT** /api/Timesheets/InsertSingleTimesheet | Inserts a single timesheet record
 [**timesheetsUpdateTimesheets**](TimesheetsApi.md#timesheetsUpdateTimesheets) | **POST** /api/Timesheets/UpdateTimesheets | Batch update timesheets
 
+
+<a name="timesheetsCreateSingleTimesheet"></a>
+# **timesheetsCreateSingleTimesheet**
+> CsApiApiResponseInt32 timesheetsCreateSingleTimesheet(request, xChronosheetsAuth)
+
+Inserts a single timesheet record
+
+### Example
+```javascript
+var ChronoSheetsApi = require('chrono_sheets_api');
+
+var apiInstance = new ChronoSheetsApi.TimesheetsApi();
+
+var request = new ChronoSheetsApi.CsApiTimesheet(); // CsApiTimesheet | The timesheet request object
+
+var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.timesheetsCreateSingleTimesheet(request, xChronosheetsAuth, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **request** | [**CsApiTimesheet**](CsApiTimesheet.md)| The timesheet request object | 
+ **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+
+### Return type
+
+[**CsApiApiResponseInt32**](CsApiApiResponseInt32.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
 <a name="timesheetsDeleteTimesheet"></a>
 # **timesheetsDeleteTimesheet**
@@ -105,53 +152,6 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
-
-<a name="timesheetsInsertSingleTimesheet"></a>
-# **timesheetsInsertSingleTimesheet**
-> CsApiApiResponseInt32 timesheetsInsertSingleTimesheet(request, xChronosheetsAuth)
-
-Inserts a single timesheet record
-
-### Example
-```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
-
-var apiInstance = new ChronoSheetsApi.TimesheetsApi();
-
-var request = new ChronoSheetsApi.CsApiTimesheet(); // CsApiTimesheet | The timesheet request object
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-apiInstance.timesheetsInsertSingleTimesheet(request, xChronosheetsAuth, callback);
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **request** | [**CsApiTimesheet**](CsApiTimesheet.md)| The timesheet request object | 
- **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
-
-### Return type
-
-[**CsApiApiResponseInt32**](CsApiApiResponseInt32.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
 <a name="timesheetsUpdateTimesheets"></a>

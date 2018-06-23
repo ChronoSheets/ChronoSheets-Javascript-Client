@@ -48,6 +48,59 @@
 
 
     /**
+     * Callback function to receive the result of the timesheetsCreateSingleTimesheet operation.
+     * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetsApi~timesheetsCreateSingleTimesheetCallback
+     * @param {String} error Error message, if any.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Inserts a single timesheet record
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTimesheet} request The timesheet request object
+     * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetsApi~timesheetsCreateSingleTimesheetCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32}
+     */
+    this.timesheetsCreateSingleTimesheet = function(request, xChronosheetsAuth, callback) {
+      var postBody = request;
+
+      // verify the required parameter 'request' is set
+      if (request === undefined || request === null) {
+        throw new Error("Missing the required parameter 'request' when calling timesheetsCreateSingleTimesheet");
+      }
+
+      // verify the required parameter 'xChronosheetsAuth' is set
+      if (xChronosheetsAuth === undefined || xChronosheetsAuth === null) {
+        throw new Error("Missing the required parameter 'xChronosheetsAuth' when calling timesheetsCreateSingleTimesheet");
+      }
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+        'x-chronosheets-auth': xChronosheetsAuth
+      };
+      var formParams = {
+      };
+
+      var authNames = [];
+      var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
+      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
+      var returnType = CsApiApiResponseInt32;
+
+      return this.apiClient.callApi(
+        '/api/Timesheets/CreateSingleTimesheet', 'PUT',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the timesheetsDeleteTimesheet operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetsApi~timesheetsDeleteTimesheetCallback
      * @param {String} error Error message, if any.
@@ -157,59 +210,6 @@
 
       return this.apiClient.callApi(
         '/api/Timesheets/GetTimesheets', 'GET',
-        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    }
-
-    /**
-     * Callback function to receive the result of the timesheetsInsertSingleTimesheet operation.
-     * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetsApi~timesheetsInsertSingleTimesheetCallback
-     * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32} data The data returned by the service call.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * Inserts a single timesheet record
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTimesheet} request The timesheet request object
-     * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetsApi~timesheetsInsertSingleTimesheetCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32}
-     */
-    this.timesheetsInsertSingleTimesheet = function(request, xChronosheetsAuth, callback) {
-      var postBody = request;
-
-      // verify the required parameter 'request' is set
-      if (request === undefined || request === null) {
-        throw new Error("Missing the required parameter 'request' when calling timesheetsInsertSingleTimesheet");
-      }
-
-      // verify the required parameter 'xChronosheetsAuth' is set
-      if (xChronosheetsAuth === undefined || xChronosheetsAuth === null) {
-        throw new Error("Missing the required parameter 'xChronosheetsAuth' when calling timesheetsInsertSingleTimesheet");
-      }
-
-
-      var pathParams = {
-      };
-      var queryParams = {
-      };
-      var collectionQueryParams = {
-      };
-      var headerParams = {
-        'x-chronosheets-auth': xChronosheetsAuth
-      };
-      var formParams = {
-      };
-
-      var authNames = [];
-      var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
-      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseInt32;
-
-      return this.apiClient.callApi(
-        '/api/Timesheets/InsertSingleTimesheet', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

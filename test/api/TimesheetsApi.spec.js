@@ -50,6 +50,16 @@
   }
 
   describe('TimesheetsApi', function() {
+    describe('timesheetsCreateSingleTimesheet', function() {
+      it('should call timesheetsCreateSingleTimesheet successfully', function(done) {
+        //uncomment below and update the code to test timesheetsCreateSingleTimesheet
+        //instance.timesheetsCreateSingleTimesheet(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('timesheetsDeleteTimesheet', function() {
       it('should call timesheetsDeleteTimesheet successfully', function(done) {
         //uncomment below and update the code to test timesheetsDeleteTimesheet
@@ -64,16 +74,6 @@
       it('should call timesheetsGetTimesheets successfully', function(done) {
         //uncomment below and update the code to test timesheetsGetTimesheets
         //instance.timesheetsGetTimesheets(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('timesheetsInsertSingleTimesheet', function() {
-      it('should call timesheetsInsertSingleTimesheet successfully', function(done) {
-        //uncomment below and update the code to test timesheetsInsertSingleTimesheet
-        //instance.timesheetsInsertSingleTimesheet(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
