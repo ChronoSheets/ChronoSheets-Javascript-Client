@@ -73,9 +73,6 @@
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('IsSubscribedToNewsletter')) {
-        obj['IsSubscribedToNewsletter'] = ApiClient.convertToType(data['IsSubscribedToNewsletter'], 'Boolean');
-      }
       if (data.hasOwnProperty('IsAccountActive')) {
         obj['IsAccountActive'] = ApiClient.convertToType(data['IsAccountActive'], 'Boolean');
       }
@@ -106,6 +103,9 @@
       if (data.hasOwnProperty('SetupWizardRequired')) {
         obj['SetupWizardRequired'] = ApiClient.convertToType(data['SetupWizardRequired'], 'Boolean');
       }
+      if (data.hasOwnProperty('IsSubscribedToNewsletter')) {
+        obj['IsSubscribedToNewsletter'] = ApiClient.convertToType(data['IsSubscribedToNewsletter'], 'Boolean');
+      }
       if (data.hasOwnProperty('Organisation')) {
         obj['Organisation'] = CsApiOrganisation.constructFromObject(data['Organisation']);
       }
@@ -113,10 +113,6 @@
     return obj;
   }
 
-  /**
-   * @member {Boolean} IsSubscribedToNewsletter
-   */
-  exports.prototype['IsSubscribedToNewsletter'] = undefined;
   /**
    * @member {Boolean} IsAccountActive
    */
@@ -157,6 +153,10 @@
    * @member {Boolean} SetupWizardRequired
    */
   exports.prototype['SetupWizardRequired'] = undefined;
+  /**
+   * @member {Boolean} IsSubscribedToNewsletter
+   */
+  exports.prototype['IsSubscribedToNewsletter'] = undefined;
   /**
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiOrganisation} Organisation
    */

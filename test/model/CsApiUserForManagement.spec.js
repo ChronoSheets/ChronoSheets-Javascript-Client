@@ -57,12 +57,6 @@
       //expect(instance).to.be.a(ChronoSheetsApi.CsApiUserForManagement);
     });
 
-    it('should have the property isSubscribedToNewsletter (base name: "IsSubscribedToNewsletter")', function() {
-      // uncomment below and update the code to test the property isSubscribedToNewsletter
-      //var instane = new ChronoSheetsApi.CsApiUserForManagement();
-      //expect(instance).to.be();
-    });
-
     it('should have the property isAccountActive (base name: "IsAccountActive")', function() {
       // uncomment below and update the code to test the property isAccountActive
       //var instane = new ChronoSheetsApi.CsApiUserForManagement();
@@ -119,6 +113,12 @@
 
     it('should have the property setupWizardRequired (base name: "SetupWizardRequired")', function() {
       // uncomment below and update the code to test the property setupWizardRequired
+      //var instane = new ChronoSheetsApi.CsApiUserForManagement();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property isSubscribedToNewsletter (base name: "IsSubscribedToNewsletter")', function() {
+      // uncomment below and update the code to test the property isSubscribedToNewsletter
       //var instane = new ChronoSheetsApi.CsApiUserForManagement();
       //expect(instance).to.be();
     });

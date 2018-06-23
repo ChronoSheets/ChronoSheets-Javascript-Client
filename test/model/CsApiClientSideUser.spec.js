@@ -111,6 +111,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property isSubscribedToNewsletter (base name: "IsSubscribedToNewsletter")', function() {
+      // uncomment below and update the code to test the property isSubscribedToNewsletter
+      //var instane = new ChronoSheetsApi.CsApiClientSideUser();
+      //expect(instance).to.be();
+    });
+
     it('should have the property organisation (base name: "Organisation")', function() {
       // uncomment below and update the code to test the property organisation
       //var instane = new ChronoSheetsApi.CsApiClientSideUser();

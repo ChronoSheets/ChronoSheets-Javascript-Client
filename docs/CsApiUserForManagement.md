@@ -3,7 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**isSubscribedToNewsletter** | **Boolean** |  | [optional] 
 **isAccountActive** | **Boolean** |  | [optional] 
 **id** | **Number** |  | [optional] 
 **organisationId** | **Number** |  | [optional] 
@@ -14,6 +13,7 @@ Name | Type | Description | Notes
 **roles** | **Number** |  | [optional] 
 **alertSettings** | **Number** |  | [optional] 
 **setupWizardRequired** | **Boolean** |  | [optional] 
+**isSubscribedToNewsletter** | **Boolean** |  | [optional] 
 **organisation** | [**CsApiOrganisation**](CsApiOrganisation.md) |  | [optional] 
 
 

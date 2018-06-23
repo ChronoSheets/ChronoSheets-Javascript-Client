@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **roles** | **Number** |  | [optional] 
 **alertSettings** | **Number** |  | [optional] 
 **setupWizardRequired** | **Boolean** |  | [optional] 
+**isSubscribedToNewsletter** | **Boolean** |  | [optional] 
 **organisation** | [**CsApiOrganisation**](CsApiOrganisation.md) |  | [optional] 
 
 
