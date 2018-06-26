@@ -96,7 +96,7 @@
         obj['OrgId'] = ApiClient.convertToType(data['OrgId'], 'Number');
       }
       if (data.hasOwnProperty('MobilePlatform')) {
-        obj['MobilePlatform'] = ApiClient.convertToType(data['MobilePlatform'], 'Number');
+        obj['MobilePlatform'] = ApiClient.convertToType(data['MobilePlatform'], 'String');
       }
       if (data.hasOwnProperty('StartDate')) {
         obj['StartDate'] = ApiClient.convertToType(data['StartDate'], 'Date');
@@ -162,7 +162,6 @@
    */
   exports.prototype['OrgId'] = undefined;
   /**
-   * 0 = Unknown, 1 = iOS, 2 = Android
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTrip.MobilePlatformEnum} MobilePlatform
    */
   exports.prototype['MobilePlatform'] = undefined;
@@ -222,25 +221,25 @@
 
   /**
    * Allowed values for the <code>MobilePlatform</code> property.
-   * @enum {Number}
+   * @enum {String}
    * @readonly
    */
   exports.MobilePlatformEnum = {
     /**
-     * value: 0
+     * value: "Unknown"
      * @const
      */
-    "0": 0,
+    "Unknown": "Unknown",
     /**
-     * value: 1
+     * value: "iOS"
      * @const
      */
-    "1": 1,
+    "iOS": "iOS",
     /**
-     * value: 2
+     * value: "Android"
      * @const
      */
-    "2": 2  };
+    "Android": "Android"  };
 
 
   return exports;

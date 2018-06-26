@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **data** | [**CsApiUpdateOrganisationResponse**](CsApiUpdateOrganisationResponse.md) |  | [optional] 
-**status** | **Number** | 0 &#x3D; Succeeded, 1 &#x3D; FatalException, 2 &#x3D; GeneralError, 3 &#x3D; ValidationError, 4 &#x3D; UnAuthorized, 5 &#x3D; SessionExpired | [optional] 
+**status** | **String** |  | [optional] 
 **message** | **String** |  | [optional] 
 
 
@@ -12,17 +12,17 @@ Name | Type | Description | Notes
 ## Enum: StatusEnum
 
 
-* `0` (value: `0`)
+* `Succeeded` (value: `"Succeeded"`)
 
-* `1` (value: `1`)
+* `FatalException` (value: `"FatalException"`)
 
-* `2` (value: `2`)
+* `GeneralError` (value: `"GeneralError"`)
 
-* `3` (value: `3`)
+* `ValidationError` (value: `"ValidationError"`)
 
-* `4` (value: `4`)
+* `UnAuthorized` (value: `"UnAuthorized"`)
 
-* `5` (value: `5`)
+* `SessionExpired` (value: `"SessionExpired"`)
 
 
 

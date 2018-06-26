@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**dayType** | **Number** | 0 &#x3D; Monday, 1 &#x3D; Tuesday, 2 &#x3D; Wednesday, 3 &#x3D; Thursday, 4 &#x3D; Friday, 5 &#x3D; Saturday, 6 &#x3D; Sunday | [optional] 
+**dayType** | **String** |  | [optional] 
 **usualHourId** | **Number** |  | [optional] 
 **startHour** | **Number** |  | [optional] 
 **startMinute** | **Number** |  | [optional] 
@@ -16,19 +16,19 @@ Name | Type | Description | Notes
 ## Enum: DayTypeEnum
 
 
-* `0` (value: `0`)
+* `Monday` (value: `"Monday"`)
 
-* `1` (value: `1`)
+* `Tuesday` (value: `"Tuesday"`)
 
-* `2` (value: `2`)
+* `Wednesday` (value: `"Wednesday"`)
 
-* `3` (value: `3`)
+* `Thursday` (value: `"Thursday"`)
 
-* `4` (value: `4`)
+* `Friday` (value: `"Friday"`)
 
-* `5` (value: `5`)
+* `Saturday` (value: `"Saturday"`)
 
-* `6` (value: `6`)
+* `Sunday` (value: `"Sunday"`)
 
 
 
