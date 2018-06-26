@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="organisationGroupsCreateOrganisationGroup"></a>
 # **organisationGroupsCreateOrganisationGroup**
-> CsApiApiResponseInt32 organisationGroupsCreateOrganisationGroup(request, xChronosheetsAuth)
+> CSApiResponseInt32 organisationGroupsCreateOrganisationGroup(request, xChronosheetsAuth)
 
 Create an organisation group
 
@@ -24,7 +24,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.OrganisationGroupsApi();
 
-var request = new ChronoSheetsApi.CsApiInsertOrganisationGroupRequest(); // CsApiInsertOrganisationGroupRequest | 
+var request = new ChronoSheetsApi.CSInsertOrganisationGroupRequest(); // CSInsertOrganisationGroupRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -43,12 +43,12 @@ apiInstance.organisationGroupsCreateOrganisationGroup(request, xChronosheetsAuth
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiInsertOrganisationGroupRequest**](CsApiInsertOrganisationGroupRequest.md)|  | 
+ **request** | [**CSInsertOrganisationGroupRequest**](CSInsertOrganisationGroupRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseInt32**](CsApiApiResponseInt32.md)
+[**CSApiResponseInt32**](CSApiResponseInt32.md)
 
 ### Authorization
 
@@ -61,7 +61,7 @@ No authorization required
 
 <a name="organisationGroupsGetOrganisationGroup"></a>
 # **organisationGroupsGetOrganisationGroup**
-> CsApiApiResponseOrganisationGroup organisationGroupsGetOrganisationGroup(organisationGroupId, xChronosheetsAuth)
+> CSApiResponseOrganisationGroup organisationGroupsGetOrganisationGroup(organisationGroupId, xChronosheetsAuth)
 
 Get a particular organisation group
 
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseOrganisationGroup**](CsApiApiResponseOrganisationGroup.md)
+[**CSApiResponseOrganisationGroup**](CSApiResponseOrganisationGroup.md)
 
 ### Authorization
 
@@ -108,7 +108,7 @@ No authorization required
 
 <a name="organisationGroupsGetOrganisationGroups"></a>
 # **organisationGroupsGetOrganisationGroups**
-> CsApiApiResponseListOrganisationGroup organisationGroupsGetOrganisationGroups(xChronosheetsAuth)
+> CSApiResponseListOrganisationGroup organisationGroupsGetOrganisationGroups(xChronosheetsAuth)
 
 Get a collection of organisation groups that are under your organisation
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListOrganisationGroup**](CsApiApiResponseListOrganisationGroup.md)
+[**CSApiResponseListOrganisationGroup**](CSApiResponseListOrganisationGroup.md)
 
 ### Authorization
 
@@ -152,7 +152,7 @@ No authorization required
 
 <a name="organisationGroupsGetOrganisationGroupsForJob"></a>
 # **organisationGroupsGetOrganisationGroupsForJob**
-> CsApiApiResponseListOrganisationGroup organisationGroupsGetOrganisationGroupsForJob(jobId, xChronosheetsAuth)
+> CSApiResponseListOrganisationGroup organisationGroupsGetOrganisationGroupsForJob(jobId, xChronosheetsAuth)
 
 Get org groups for a particular job
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListOrganisationGroup**](CsApiApiResponseListOrganisationGroup.md)
+[**CSApiResponseListOrganisationGroup**](CSApiResponseListOrganisationGroup.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ No authorization required
 
 <a name="organisationGroupsGetOrganisationGroupsForVehicle"></a>
 # **organisationGroupsGetOrganisationGroupsForVehicle**
-> CsApiApiResponseListOrganisationGroup organisationGroupsGetOrganisationGroupsForVehicle(vehicleId, xChronosheetsAuth)
+> CSApiResponseListOrganisationGroup organisationGroupsGetOrganisationGroupsForVehicle(vehicleId, xChronosheetsAuth)
 
 Get org groups for a particular vehicle
 
@@ -233,7 +233,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListOrganisationGroup**](CsApiApiResponseListOrganisationGroup.md)
+[**CSApiResponseListOrganisationGroup**](CSApiResponseListOrganisationGroup.md)
 
 ### Authorization
 
@@ -246,7 +246,7 @@ No authorization required
 
 <a name="organisationGroupsUpdateOrganisationGroup"></a>
 # **organisationGroupsUpdateOrganisationGroup**
-> CsApiApiResponseBoolean organisationGroupsUpdateOrganisationGroup(request, xChronosheetsAuth)
+> CSApiResponseBoolean organisationGroupsUpdateOrganisationGroup(request, xChronosheetsAuth)
 
 Update an organisation group
 
@@ -256,7 +256,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.OrganisationGroupsApi();
 
-var request = new ChronoSheetsApi.CsApiSaveOrganisationGroupRequest(); // CsApiSaveOrganisationGroupRequest | 
+var request = new ChronoSheetsApi.CSSaveOrganisationGroupRequest(); // CSSaveOrganisationGroupRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -275,12 +275,12 @@ apiInstance.organisationGroupsUpdateOrganisationGroup(request, xChronosheetsAuth
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiSaveOrganisationGroupRequest**](CsApiSaveOrganisationGroupRequest.md)|  | 
+ **request** | [**CSSaveOrganisationGroupRequest**](CSSaveOrganisationGroupRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 

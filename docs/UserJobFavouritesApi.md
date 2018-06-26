@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="userJobFavouritesCreateJobFavourite"></a>
 # **userJobFavouritesCreateJobFavourite**
-> CsApiApiResponseInt32 userJobFavouritesCreateJobFavourite(request, xChronosheetsAuth)
+> CSApiResponseInt32 userJobFavouritesCreateJobFavourite(request, xChronosheetsAuth)
 
 Create a job favourite
 
@@ -21,7 +21,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UserJobFavouritesApi();
 
-var request = new ChronoSheetsApi.CsApiInsertUserJobFavouriteRequest(); // CsApiInsertUserJobFavouriteRequest | 
+var request = new ChronoSheetsApi.CSInsertUserJobFavouriteRequest(); // CSInsertUserJobFavouriteRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -40,12 +40,12 @@ apiInstance.userJobFavouritesCreateJobFavourite(request, xChronosheetsAuth, call
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiInsertUserJobFavouriteRequest**](CsApiInsertUserJobFavouriteRequest.md)|  | 
+ **request** | [**CSInsertUserJobFavouriteRequest**](CSInsertUserJobFavouriteRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseInt32**](CsApiApiResponseInt32.md)
+[**CSApiResponseInt32**](CSApiResponseInt32.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 
 <a name="userJobFavouritesDeleteJobFavourite"></a>
 # **userJobFavouritesDeleteJobFavourite**
-> CsApiApiResponseBoolean userJobFavouritesDeleteJobFavourite(jobId, xChronosheetsAuth)
+> CSApiResponseBoolean userJobFavouritesDeleteJobFavourite(jobId, xChronosheetsAuth)
 
 Delete a job favourite
 
@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 
@@ -105,7 +105,7 @@ No authorization required
 
 <a name="userJobFavouritesGetJobFavourites"></a>
 # **userJobFavouritesGetJobFavourites**
-> CsApiApiResponseListUserJobFavourite userJobFavouritesGetJobFavourites(xChronosheetsAuth)
+> CSApiResponseListUserJobFavourite userJobFavouritesGetJobFavourites(xChronosheetsAuth)
 
 Get your job favourites
 
@@ -136,7 +136,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListUserJobFavourite**](CsApiApiResponseListUserJobFavourite.md)
+[**CSApiResponseListUserJobFavourite**](CSApiResponseListUserJobFavourite.md)
 
 ### Authorization
 

@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserHourlyRate', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserHourlyRateRequest'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserHourlyRate', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserHourlyRateRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CsApiApiResponseInt32'), require('../ChronoSheetsClientLibModel/CsApiApiResponseListUserHourlyRate'), require('../ChronoSheetsClientLibModel/CsApiInsertUserHourlyRateRequest'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseListUserHourlyRate'), require('../ChronoSheetsClientLibModel/CSInsertUserHourlyRateRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.UserPayRatesApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CsApiApiResponseInt32, root.ChronoSheetsApi.CsApiApiResponseListUserHourlyRate, root.ChronoSheetsApi.CsApiInsertUserHourlyRateRequest);
+    root.ChronoSheetsApi.UserPayRatesApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseListUserHourlyRate, root.ChronoSheetsApi.CSInsertUserHourlyRateRequest);
   }
-}(this, function(ApiClient, CsApiApiResponseInt32, CsApiApiResponseListUserHourlyRate, CsApiInsertUserHourlyRateRequest) {
+}(this, function(ApiClient, CSApiResponseInt32, CSApiResponseListUserHourlyRate, CSInsertUserHourlyRateRequest) {
   'use strict';
 
   /**
@@ -52,16 +52,16 @@
      * Callback function to receive the result of the userPayRatesCreatePayRate operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserPayRatesApi~userPayRatesCreatePayRateCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create a new pay rate for a particular user, archiving the previous pay rate
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserHourlyRateRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserHourlyRateRequest} request 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserPayRatesApi~userPayRatesCreatePayRateCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
      */
     this.userPayRatesCreatePayRate = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -92,7 +92,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseInt32;
+      var returnType = CSApiResponseInt32;
 
       return this.apiClient.callApi(
         '/api/UserPayRates/CreatePayRate', 'PUT',
@@ -105,7 +105,7 @@
      * Callback function to receive the result of the userPayRatesGetPayRates operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserPayRatesApi~userPayRatesGetPayRatesCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserHourlyRate} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserHourlyRate} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -114,7 +114,7 @@
      * @param {Number} userId 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserPayRatesApi~userPayRatesGetPayRatesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserHourlyRate}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserHourlyRate}
      */
     this.userPayRatesGetPayRates = function(userId, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -146,7 +146,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseListUserHourlyRate;
+      var returnType = CSApiResponseListUserHourlyRate;
 
       return this.apiClient.callApi(
         '/api/UserPayRates/GetPayRates', 'GET',

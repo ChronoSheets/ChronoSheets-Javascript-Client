@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 <a name="reportsGetAllChartsDataAdmin"></a>
 # **reportsGetAllChartsDataAdmin**
-> CsApiApiResponseCombinedReportsData reportsGetAllChartsDataAdmin(startDate, endDate, userIds, xChronosheetsAuth)
+> CSApiResponseCombinedReportsData reportsGetAllChartsDataAdmin(startDate, endDate, userIds, xChronosheetsAuth)
 
 Get Consolidated Admin Reports Data (Jobs, Tasks, Clients and Projects)
 
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseCombinedReportsData**](CsApiApiResponseCombinedReportsData.md)
+[**CSApiResponseCombinedReportsData**](CSApiResponseCombinedReportsData.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 
 <a name="reportsGetAllChartsDataUser"></a>
 # **reportsGetAllChartsDataUser**
-> CsApiApiResponseCombinedReportsData reportsGetAllChartsDataUser(startDate, endDate, xChronosheetsAuth)
+> CSApiResponseCombinedReportsData reportsGetAllChartsDataUser(startDate, endDate, xChronosheetsAuth)
 
 Get Consolidated User Reports Data (Jobs and Tasks)
 
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseCombinedReportsData**](CsApiApiResponseCombinedReportsData.md)
+[**CSApiResponseCombinedReportsData**](CSApiResponseCombinedReportsData.md)
 
 ### Authorization
 
@@ -119,7 +119,7 @@ No authorization required
 
 <a name="reportsGetOrgTripById"></a>
 # **reportsGetOrgTripById**
-> CsApiApiResponseTrip reportsGetOrgTripById(tripId, xChronosheetsAuth)
+> CSApiResponseTrip reportsGetOrgTripById(tripId, xChronosheetsAuth)
 
 Get trip by Id, for reporting purposes
 
@@ -153,7 +153,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseTrip**](CsApiApiResponseTrip.md)
+[**CSApiResponseTrip**](CSApiResponseTrip.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ No authorization required
 
 <a name="reportsGetOrganisationTimesheetFileAttachments"></a>
 # **reportsGetOrganisationTimesheetFileAttachments**
-> CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment reportsGetOrganisationTimesheetFileAttachments(startDate, endDate, skip, take, userIds, xChronosheetsAuth)
+> CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment reportsGetOrganisationTimesheetFileAttachments(startDate, endDate, skip, take, userIds, xChronosheetsAuth)
 
 Reports on Organisation timesheet file attachments
 
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment**](CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment.md)
+[**CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment**](CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment.md)
 
 ### Authorization
 
@@ -225,7 +225,7 @@ No authorization required
 
 <a name="reportsGetOrganisationTrips"></a>
 # **reportsGetOrganisationTrips**
-> CsApiApiResponseForPaginatedListOrgReportTrip reportsGetOrganisationTrips(startDate, endDate, skip, take, userIds, xChronosheetsAuth)
+> CSApiResponseForPaginatedListOrgReportTrip reportsGetOrganisationTrips(startDate, endDate, skip, take, userIds, xChronosheetsAuth)
 
 Reports on Organisation trips (GPS tracking from whole organisation)
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseForPaginatedListOrgReportTrip**](CsApiApiResponseForPaginatedListOrgReportTrip.md)
+[**CSApiResponseForPaginatedListOrgReportTrip**](CSApiResponseForPaginatedListOrgReportTrip.md)
 
 ### Authorization
 
@@ -284,7 +284,7 @@ No authorization required
 
 <a name="reportsGetRawDataAdmin"></a>
 # **reportsGetRawDataAdmin**
-> CsApiApiResponseForPaginatedListRawReportItem reportsGetRawDataAdmin(startDate, endDate, userIds, sort, order, skip, take, xChronosheetsAuth)
+> CSApiResponseForPaginatedListRawReportItem reportsGetRawDataAdmin(startDate, endDate, userIds, sort, order, skip, take, xChronosheetsAuth)
 
 Get Timesheets Raw Data
 
@@ -336,7 +336,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseForPaginatedListRawReportItem**](CsApiApiResponseForPaginatedListRawReportItem.md)
+[**CSApiResponseForPaginatedListRawReportItem**](CSApiResponseForPaginatedListRawReportItem.md)
 
 ### Authorization
 
@@ -349,7 +349,7 @@ No authorization required
 
 <a name="reportsProjectCostingsAdmin"></a>
 # **reportsProjectCostingsAdmin**
-> CsApiApiResponseListProjectCostingReportItem reportsProjectCostingsAdmin(startDate, endDate, userIds, xChronosheetsAuth)
+> CSApiResponseListProjectCostingReportItem reportsProjectCostingsAdmin(startDate, endDate, userIds, xChronosheetsAuth)
 
 Gets project cost estimations VS actual cost for date range and users
 
@@ -389,7 +389,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListProjectCostingReportItem**](CsApiApiResponseListProjectCostingReportItem.md)
+[**CSApiResponseListProjectCostingReportItem**](CSApiResponseListProjectCostingReportItem.md)
 
 ### Authorization
 
@@ -402,7 +402,7 @@ No authorization required
 
 <a name="reportsUserJobsOverTime"></a>
 # **reportsUserJobsOverTime**
-> CsApiApiResponseListJobSeriesReportItem reportsUserJobsOverTime(startDate, endDate, xChronosheetsAuth)
+> CSApiResponseListJobSeriesReportItem reportsUserJobsOverTime(startDate, endDate, xChronosheetsAuth)
 
 Timeseries jobs data for the logged in user
 
@@ -439,7 +439,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListJobSeriesReportItem**](CsApiApiResponseListJobSeriesReportItem.md)
+[**CSApiResponseListJobSeriesReportItem**](CSApiResponseListJobSeriesReportItem.md)
 
 ### Authorization
 

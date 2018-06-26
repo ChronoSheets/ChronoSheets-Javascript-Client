@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 <a name="tripsCreateTrip"></a>
 # **tripsCreateTrip**
-> CsApiApiResponseInt32 tripsCreateTrip(request, xChronosheetsAuth)
+> CSApiResponseInt32 tripsCreateTrip(request, xChronosheetsAuth)
 
 Create a new trip.  Important: create a timesheet record before calling this, passing in the new timesheet record id as a reference.
 
@@ -21,7 +21,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.TripsApi();
 
-var request = new ChronoSheetsApi.CsApiCreateTripRequest(); // CsApiCreateTripRequest | The create trip request
+var request = new ChronoSheetsApi.CSCreateTripRequest(); // CSCreateTripRequest | The create trip request
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -40,12 +40,12 @@ apiInstance.tripsCreateTrip(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiCreateTripRequest**](CsApiCreateTripRequest.md)| The create trip request | 
+ **request** | [**CSCreateTripRequest**](CSCreateTripRequest.md)| The create trip request | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseInt32**](CsApiApiResponseInt32.md)
+[**CSApiResponseInt32**](CSApiResponseInt32.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 
 <a name="tripsGetMyTripById"></a>
 # **tripsGetMyTripById**
-> CsApiApiResponseTrip tripsGetMyTripById(tripId, xChronosheetsAuth)
+> CSApiResponseTrip tripsGetMyTripById(tripId, xChronosheetsAuth)
 
 Get trip by Id
 
@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseTrip**](CsApiApiResponseTrip.md)
+[**CSApiResponseTrip**](CSApiResponseTrip.md)
 
 ### Authorization
 
@@ -105,7 +105,7 @@ No authorization required
 
 <a name="tripsGetMyTrips"></a>
 # **tripsGetMyTrips**
-> CsApiApiResponseForPaginatedListTrip tripsGetMyTrips(startDate, endDate, skip, take, vehicleId, xChronosheetsAuth)
+> CSApiResponseForPaginatedListTrip tripsGetMyTrips(startDate, endDate, skip, take, vehicleId, xChronosheetsAuth)
 
 Get my trips
 
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseForPaginatedListTrip**](CsApiApiResponseForPaginatedListTrip.md)
+[**CSApiResponseForPaginatedListTrip**](CSApiResponseForPaginatedListTrip.md)
 
 ### Authorization
 

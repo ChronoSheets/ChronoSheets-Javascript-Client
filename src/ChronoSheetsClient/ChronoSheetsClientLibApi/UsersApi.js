@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInsertUserResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserForManagement', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUpdateUserResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUserForManagement', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateUserRequest'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInsertUserResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserForManagement', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateUserResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUserForManagement', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateUserRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CsApiApiResponseInsertUserResponse'), require('../ChronoSheetsClientLibModel/CsApiApiResponseListUserForManagement'), require('../ChronoSheetsClientLibModel/CsApiApiResponseUpdateUserResponse'), require('../ChronoSheetsClientLibModel/CsApiApiResponseUserForManagement'), require('../ChronoSheetsClientLibModel/CsApiInsertUserRequest'), require('../ChronoSheetsClientLibModel/CsApiUpdateUserRequest'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseInsertUserResponse'), require('../ChronoSheetsClientLibModel/CSApiResponseListUserForManagement'), require('../ChronoSheetsClientLibModel/CSApiResponseUpdateUserResponse'), require('../ChronoSheetsClientLibModel/CSApiResponseUserForManagement'), require('../ChronoSheetsClientLibModel/CSInsertUserRequest'), require('../ChronoSheetsClientLibModel/CSUpdateUserRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.UsersApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CsApiApiResponseInsertUserResponse, root.ChronoSheetsApi.CsApiApiResponseListUserForManagement, root.ChronoSheetsApi.CsApiApiResponseUpdateUserResponse, root.ChronoSheetsApi.CsApiApiResponseUserForManagement, root.ChronoSheetsApi.CsApiInsertUserRequest, root.ChronoSheetsApi.CsApiUpdateUserRequest);
+    root.ChronoSheetsApi.UsersApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseInsertUserResponse, root.ChronoSheetsApi.CSApiResponseListUserForManagement, root.ChronoSheetsApi.CSApiResponseUpdateUserResponse, root.ChronoSheetsApi.CSApiResponseUserForManagement, root.ChronoSheetsApi.CSInsertUserRequest, root.ChronoSheetsApi.CSUpdateUserRequest);
   }
-}(this, function(ApiClient, CsApiApiResponseInsertUserResponse, CsApiApiResponseListUserForManagement, CsApiApiResponseUpdateUserResponse, CsApiApiResponseUserForManagement, CsApiInsertUserRequest, CsApiUpdateUserRequest) {
+}(this, function(ApiClient, CSApiResponseInsertUserResponse, CSApiResponseListUserForManagement, CSApiResponseUpdateUserResponse, CSApiResponseUserForManagement, CSInsertUserRequest, CSUpdateUserRequest) {
   'use strict';
 
   /**
@@ -52,16 +52,16 @@
      * Callback function to receive the result of the usersCreateTimesheetUser operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi~usersCreateTimesheetUserCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInsertUserResponse} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInsertUserResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create a user in your organisation
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserRequest} request 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi~usersCreateTimesheetUserCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInsertUserResponse}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInsertUserResponse}
      */
     this.usersCreateTimesheetUser = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -92,7 +92,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseInsertUserResponse;
+      var returnType = CSApiResponseInsertUserResponse;
 
       return this.apiClient.callApi(
         '/api/Users/CreateTimesheetUser', 'PUT',
@@ -105,7 +105,7 @@
      * Callback function to receive the result of the usersGetTimesheetUser operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi~usersGetTimesheetUserCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUserForManagement} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUserForManagement} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -114,7 +114,7 @@
      * @param {Number} userId 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi~usersGetTimesheetUserCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUserForManagement}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUserForManagement}
      */
     this.usersGetTimesheetUser = function(userId, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -146,7 +146,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseUserForManagement;
+      var returnType = CSApiResponseUserForManagement;
 
       return this.apiClient.callApi(
         '/api/Users/GetTimesheetUser', 'GET',
@@ -159,7 +159,7 @@
      * Callback function to receive the result of the usersGetTimesheetUsers operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi~usersGetTimesheetUsersCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserForManagement} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserForManagement} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -167,7 +167,7 @@
      * Get users for your organisation
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi~usersGetTimesheetUsersCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserForManagement}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserForManagement}
      */
     this.usersGetTimesheetUsers = function(xChronosheetsAuth, callback) {
       var postBody = null;
@@ -193,7 +193,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseListUserForManagement;
+      var returnType = CSApiResponseListUserForManagement;
 
       return this.apiClient.callApi(
         '/api/Users/GetTimesheetUsers', 'GET',
@@ -206,16 +206,16 @@
      * Callback function to receive the result of the usersUpdateTimesheetUser operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi~usersUpdateTimesheetUserCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUpdateUserResponse} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateUserResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Update a user
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateUserRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateUserRequest} request 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi~usersUpdateTimesheetUserCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUpdateUserResponse}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateUserResponse}
      */
     this.usersUpdateTimesheetUser = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -246,7 +246,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseUpdateUserResponse;
+      var returnType = CSApiResponseUpdateUserResponse;
 
       return this.apiClient.callApi(
         '/api/Users/UpdateTimesheetUser', 'POST',

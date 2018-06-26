@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseFleetVehicle', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListFleetVehicle', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertVehicleRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSaveVehicleRequest'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseFleetVehicle', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetVehicle', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertVehicleRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveVehicleRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CsApiApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CsApiApiResponseFleetVehicle'), require('../ChronoSheetsClientLibModel/CsApiApiResponseInt32'), require('../ChronoSheetsClientLibModel/CsApiApiResponseListFleetVehicle'), require('../ChronoSheetsClientLibModel/CsApiInsertVehicleRequest'), require('../ChronoSheetsClientLibModel/CsApiSaveVehicleRequest'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseFleetVehicle'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseListFleetVehicle'), require('../ChronoSheetsClientLibModel/CSInsertVehicleRequest'), require('../ChronoSheetsClientLibModel/CSSaveVehicleRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.FleetApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CsApiApiResponseBoolean, root.ChronoSheetsApi.CsApiApiResponseFleetVehicle, root.ChronoSheetsApi.CsApiApiResponseInt32, root.ChronoSheetsApi.CsApiApiResponseListFleetVehicle, root.ChronoSheetsApi.CsApiInsertVehicleRequest, root.ChronoSheetsApi.CsApiSaveVehicleRequest);
+    root.ChronoSheetsApi.FleetApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseFleetVehicle, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseListFleetVehicle, root.ChronoSheetsApi.CSInsertVehicleRequest, root.ChronoSheetsApi.CSSaveVehicleRequest);
   }
-}(this, function(ApiClient, CsApiApiResponseBoolean, CsApiApiResponseFleetVehicle, CsApiApiResponseInt32, CsApiApiResponseListFleetVehicle, CsApiInsertVehicleRequest, CsApiSaveVehicleRequest) {
+}(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseFleetVehicle, CSApiResponseInt32, CSApiResponseListFleetVehicle, CSInsertVehicleRequest, CSSaveVehicleRequest) {
   'use strict';
 
   /**
@@ -52,16 +52,16 @@
      * Callback function to receive the result of the fleetCreateVehicle operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetCreateVehicleCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create a vehicle
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertVehicleRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertVehicleRequest} request 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetCreateVehicleCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
      */
     this.fleetCreateVehicle = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -92,7 +92,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseInt32;
+      var returnType = CSApiResponseInt32;
 
       return this.apiClient.callApi(
         '/api/Fleet/CreateVehicle', 'PUT',
@@ -105,7 +105,7 @@
      * Callback function to receive the result of the fleetGetVehicleById operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetGetVehicleByIdCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseFleetVehicle} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseFleetVehicle} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -114,7 +114,7 @@
      * @param {Number} vehicleId The ID of the vehicle you want to get
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetGetVehicleByIdCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseFleetVehicle}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseFleetVehicle}
      */
     this.fleetGetVehicleById = function(vehicleId, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -146,7 +146,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseFleetVehicle;
+      var returnType = CSApiResponseFleetVehicle;
 
       return this.apiClient.callApi(
         '/api/Fleet/GetVehicleById', 'GET',
@@ -159,7 +159,7 @@
      * Callback function to receive the result of the fleetGetVehicles operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetGetVehiclesCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListFleetVehicle} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetVehicle} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -168,7 +168,7 @@
      * @param {Boolean} includeDeleted 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetGetVehiclesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListFleetVehicle}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetVehicle}
      */
     this.fleetGetVehicles = function(includeDeleted, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -200,7 +200,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseListFleetVehicle;
+      var returnType = CSApiResponseListFleetVehicle;
 
       return this.apiClient.callApi(
         '/api/Fleet/GetVehicles', 'GET',
@@ -213,16 +213,16 @@
      * Callback function to receive the result of the fleetUpdateVehicle operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetUpdateVehicleCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Update a vehicle
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSaveVehicleRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveVehicleRequest} request 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetUpdateVehicleCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
      */
     this.fleetUpdateVehicle = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -253,7 +253,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseBoolean;
+      var returnType = CSApiResponseBoolean;
 
       return this.apiClient.callApi(
         '/api/Fleet/UpdateVehicle', 'POST',

@@ -17,12 +17,12 @@
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiAggregateJobCode', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiAggregateJobTask', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseCombinedReportsData', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseDoLoginResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseFleetVehicle', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListRawReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInsertUserResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseJobCode', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListAggregateJobCode', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListFleetVehicle', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListJobCode', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListJobSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListOrganisationGroup', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListProject', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListProjectCostingReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListTimesheet', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListTimesheetTask', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserForManagement', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserHourlyRate', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserJobFavourite', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUsualHoursDay', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseOrganisation', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseOrganisationGroup', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseProject', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseSignupResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseTimesheetTask', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUpdateOrganisationResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUpdateUserResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUserForManagement', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUserProfile', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiBatchUpdateTimesheetRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiClientSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiClientSideUser', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiClientTotalsReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiCombinedReportsData', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiCreateTripRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiDoLoginRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiDoLoginResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiFleetVehicle', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertClientRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertJobCodeRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertOrganisationGroupRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertProjectRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertTaskRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserHourlyRateRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserJobFavouriteRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertVehicleRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiJobCode', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiJobSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiJobTotalsReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiOrgReportTimesheetFileAttachment', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiOrgReportTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiOrganisation', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiOrganisationGroup', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiProject', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiProjectCostingReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiProjectSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiProjectTotalsReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiRawReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSaveClientRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSaveOrganisationGroupRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSaveVehicleRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSetOrganisationGroupUsersRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSetUsualHoursRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSignupResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTaskSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTaskTotalsReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTimeSlot', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTimesheet', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTimesheetTask', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTripCoordinate', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateJobCodeRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateMyProfileRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateOrganisationRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateOrganisationResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateProjectRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateTaskRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateUserRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateUserResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUserForManagement', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUserHourlyRate', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUserJobFavourite', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUserProfile', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUsualHoursDay', 'ChronoSheetsClient/ChronoSheetsClientLibApi/AggregateJobTasksApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/ClientsApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/JobCodesApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupUsersApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupsApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/TasksApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetsApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/TripsApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/UserJobFavouritesApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/UserPayRatesApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/UsualHoursApi'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSAggregateJobCode', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSAggregateJobTask', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseDoLoginResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseFleetVehicle', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInsertUserResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseJobCode', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListAggregateJobCode', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetVehicle', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListJobCode', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListOrganisationGroup', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProject', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListTimesheet', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListTimesheetTask', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserForManagement', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserHourlyRate', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserJobFavourite', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUsualHoursDay', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseOrganisation', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseOrganisationGroup', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseProject', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseSignupResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTimesheetTask', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateOrganisationResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateUserResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUserForManagement', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUserProfile', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSBatchUpdateTimesheetRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSClientSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSClientSideUser', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSClientTotalsReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSCombinedReportsData', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSCreateTripRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSDoLoginRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSDoLoginResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSFleetVehicle', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertClientRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertJobCodeRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertOrganisationGroupRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertProjectRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertTaskRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserHourlyRateRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserJobFavouriteRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertVehicleRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSJobCode', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSJobSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSJobTotalsReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrganisation', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrganisationGroup', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSProject', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSProjectCostingReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSProjectSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSProjectTotalsReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSRawReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveClientRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveOrganisationGroupRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveVehicleRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetOrganisationGroupUsersRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetUsualHoursRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSSignupResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSTaskSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSTaskTotalsReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimeSlot', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimesheet', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimesheetTask', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSTripCoordinate', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateJobCodeRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateMyProfileRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateOrganisationRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateOrganisationResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateProjectRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateTaskRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateUserRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateUserResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUserForManagement', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUserHourlyRate', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUserJobFavourite', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUserProfile', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUsualHoursDay', 'ChronoSheetsClient/ChronoSheetsClientLibApi/AggregateJobTasksApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/ClientsApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/JobCodesApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupUsersApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupsApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/TasksApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetsApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/TripsApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/UserJobFavouritesApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/UserPayRatesApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi', 'ChronoSheetsClient/ChronoSheetsClientLibApi/UsualHoursApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./ChronoSheetsClientLibModel/CsApiAggregateJobCode'), require('./ChronoSheetsClientLibModel/CsApiAggregateJobTask'), require('./ChronoSheetsClientLibModel/CsApiApiResponseBoolean'), require('./ChronoSheetsClientLibModel/CsApiApiResponseClient'), require('./ChronoSheetsClientLibModel/CsApiApiResponseCombinedReportsData'), require('./ChronoSheetsClientLibModel/CsApiApiResponseDoLoginResponse'), require('./ChronoSheetsClientLibModel/CsApiApiResponseFleetVehicle'), require('./ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment'), require('./ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTrip'), require('./ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListRawReportItem'), require('./ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListTrip'), require('./ChronoSheetsClientLibModel/CsApiApiResponseInsertUserResponse'), require('./ChronoSheetsClientLibModel/CsApiApiResponseInt32'), require('./ChronoSheetsClientLibModel/CsApiApiResponseJobCode'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListAggregateJobCode'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListClient'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListFleetVehicle'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListInt32'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListJobCode'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListJobSeriesReportItem'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListOrganisationGroup'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListProject'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListProjectCostingReportItem'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListTimesheet'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListTimesheetTask'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListUserForManagement'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListUserHourlyRate'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListUserJobFavourite'), require('./ChronoSheetsClientLibModel/CsApiApiResponseListUsualHoursDay'), require('./ChronoSheetsClientLibModel/CsApiApiResponseOrganisation'), require('./ChronoSheetsClientLibModel/CsApiApiResponseOrganisationGroup'), require('./ChronoSheetsClientLibModel/CsApiApiResponseProject'), require('./ChronoSheetsClientLibModel/CsApiApiResponseSignupResponse'), require('./ChronoSheetsClientLibModel/CsApiApiResponseTimesheetTask'), require('./ChronoSheetsClientLibModel/CsApiApiResponseTrip'), require('./ChronoSheetsClientLibModel/CsApiApiResponseUpdateOrganisationResponse'), require('./ChronoSheetsClientLibModel/CsApiApiResponseUpdateUserResponse'), require('./ChronoSheetsClientLibModel/CsApiApiResponseUserForManagement'), require('./ChronoSheetsClientLibModel/CsApiApiResponseUserProfile'), require('./ChronoSheetsClientLibModel/CsApiBatchUpdateTimesheetRequest'), require('./ChronoSheetsClientLibModel/CsApiClient'), require('./ChronoSheetsClientLibModel/CsApiClientSeriesReportItem'), require('./ChronoSheetsClientLibModel/CsApiClientSideUser'), require('./ChronoSheetsClientLibModel/CsApiClientTotalsReportItem'), require('./ChronoSheetsClientLibModel/CsApiCombinedReportsData'), require('./ChronoSheetsClientLibModel/CsApiCreateTripRequest'), require('./ChronoSheetsClientLibModel/CsApiDoLoginRequest'), require('./ChronoSheetsClientLibModel/CsApiDoLoginResponse'), require('./ChronoSheetsClientLibModel/CsApiFleetVehicle'), require('./ChronoSheetsClientLibModel/CsApiInsertClientRequest'), require('./ChronoSheetsClientLibModel/CsApiInsertJobCodeRequest'), require('./ChronoSheetsClientLibModel/CsApiInsertOrganisationGroupRequest'), require('./ChronoSheetsClientLibModel/CsApiInsertProjectRequest'), require('./ChronoSheetsClientLibModel/CsApiInsertTaskRequest'), require('./ChronoSheetsClientLibModel/CsApiInsertUserHourlyRateRequest'), require('./ChronoSheetsClientLibModel/CsApiInsertUserJobFavouriteRequest'), require('./ChronoSheetsClientLibModel/CsApiInsertUserRequest'), require('./ChronoSheetsClientLibModel/CsApiInsertUserResponse'), require('./ChronoSheetsClientLibModel/CsApiInsertVehicleRequest'), require('./ChronoSheetsClientLibModel/CsApiJobCode'), require('./ChronoSheetsClientLibModel/CsApiJobSeriesReportItem'), require('./ChronoSheetsClientLibModel/CsApiJobTotalsReportItem'), require('./ChronoSheetsClientLibModel/CsApiOrgReportTimesheetFileAttachment'), require('./ChronoSheetsClientLibModel/CsApiOrgReportTrip'), require('./ChronoSheetsClientLibModel/CsApiOrganisation'), require('./ChronoSheetsClientLibModel/CsApiOrganisationGroup'), require('./ChronoSheetsClientLibModel/CsApiProject'), require('./ChronoSheetsClientLibModel/CsApiProjectCostingReportItem'), require('./ChronoSheetsClientLibModel/CsApiProjectSeriesReportItem'), require('./ChronoSheetsClientLibModel/CsApiProjectTotalsReportItem'), require('./ChronoSheetsClientLibModel/CsApiRawReportItem'), require('./ChronoSheetsClientLibModel/CsApiSaveClientRequest'), require('./ChronoSheetsClientLibModel/CsApiSaveOrganisationGroupRequest'), require('./ChronoSheetsClientLibModel/CsApiSaveVehicleRequest'), require('./ChronoSheetsClientLibModel/CsApiSetOrganisationGroupUsersRequest'), require('./ChronoSheetsClientLibModel/CsApiSetUsualHoursRequest'), require('./ChronoSheetsClientLibModel/CsApiSignupResponse'), require('./ChronoSheetsClientLibModel/CsApiTaskSeriesReportItem'), require('./ChronoSheetsClientLibModel/CsApiTaskTotalsReportItem'), require('./ChronoSheetsClientLibModel/CsApiTimeSlot'), require('./ChronoSheetsClientLibModel/CsApiTimesheet'), require('./ChronoSheetsClientLibModel/CsApiTimesheetTask'), require('./ChronoSheetsClientLibModel/CsApiTrip'), require('./ChronoSheetsClientLibModel/CsApiTripCoordinate'), require('./ChronoSheetsClientLibModel/CsApiUpdateJobCodeRequest'), require('./ChronoSheetsClientLibModel/CsApiUpdateMyProfileRequest'), require('./ChronoSheetsClientLibModel/CsApiUpdateOrganisationRequest'), require('./ChronoSheetsClientLibModel/CsApiUpdateOrganisationResponse'), require('./ChronoSheetsClientLibModel/CsApiUpdateProjectRequest'), require('./ChronoSheetsClientLibModel/CsApiUpdateTaskRequest'), require('./ChronoSheetsClientLibModel/CsApiUpdateUserRequest'), require('./ChronoSheetsClientLibModel/CsApiUpdateUserResponse'), require('./ChronoSheetsClientLibModel/CsApiUserForManagement'), require('./ChronoSheetsClientLibModel/CsApiUserHourlyRate'), require('./ChronoSheetsClientLibModel/CsApiUserJobFavourite'), require('./ChronoSheetsClientLibModel/CsApiUserProfile'), require('./ChronoSheetsClientLibModel/CsApiUsualHoursDay'), require('./ChronoSheetsClientLibApi/AggregateJobTasksApi'), require('./ChronoSheetsClientLibApi/ClientsApi'), require('./ChronoSheetsClientLibApi/FleetApi'), require('./ChronoSheetsClientLibApi/JobCodesApi'), require('./ChronoSheetsClientLibApi/OrganisationApi'), require('./ChronoSheetsClientLibApi/OrganisationGroupUsersApi'), require('./ChronoSheetsClientLibApi/OrganisationGroupsApi'), require('./ChronoSheetsClientLibApi/ProjectsApi'), require('./ChronoSheetsClientLibApi/ReportsApi'), require('./ChronoSheetsClientLibApi/TasksApi'), require('./ChronoSheetsClientLibApi/TimesheetsApi'), require('./ChronoSheetsClientLibApi/TripsApi'), require('./ChronoSheetsClientLibApi/UserJobFavouritesApi'), require('./ChronoSheetsClientLibApi/UserPayRatesApi'), require('./ChronoSheetsClientLibApi/UserProfileApi'), require('./ChronoSheetsClientLibApi/UsersApi'), require('./ChronoSheetsClientLibApi/UsualHoursApi'));
+    module.exports = factory(require('./ApiClient'), require('./ChronoSheetsClientLibModel/CSAggregateJobCode'), require('./ChronoSheetsClientLibModel/CSAggregateJobTask'), require('./ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('./ChronoSheetsClientLibModel/CSApiResponseClient'), require('./ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData'), require('./ChronoSheetsClientLibModel/CSApiResponseDoLoginResponse'), require('./ChronoSheetsClientLibModel/CSApiResponseFleetVehicle'), require('./ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment'), require('./ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip'), require('./ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem'), require('./ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTrip'), require('./ChronoSheetsClientLibModel/CSApiResponseInsertUserResponse'), require('./ChronoSheetsClientLibModel/CSApiResponseInt32'), require('./ChronoSheetsClientLibModel/CSApiResponseJobCode'), require('./ChronoSheetsClientLibModel/CSApiResponseListAggregateJobCode'), require('./ChronoSheetsClientLibModel/CSApiResponseListClient'), require('./ChronoSheetsClientLibModel/CSApiResponseListFleetVehicle'), require('./ChronoSheetsClientLibModel/CSApiResponseListInt32'), require('./ChronoSheetsClientLibModel/CSApiResponseListJobCode'), require('./ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem'), require('./ChronoSheetsClientLibModel/CSApiResponseListOrganisationGroup'), require('./ChronoSheetsClientLibModel/CSApiResponseListProject'), require('./ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem'), require('./ChronoSheetsClientLibModel/CSApiResponseListTimesheet'), require('./ChronoSheetsClientLibModel/CSApiResponseListTimesheetTask'), require('./ChronoSheetsClientLibModel/CSApiResponseListUserForManagement'), require('./ChronoSheetsClientLibModel/CSApiResponseListUserHourlyRate'), require('./ChronoSheetsClientLibModel/CSApiResponseListUserJobFavourite'), require('./ChronoSheetsClientLibModel/CSApiResponseListUsualHoursDay'), require('./ChronoSheetsClientLibModel/CSApiResponseOrganisation'), require('./ChronoSheetsClientLibModel/CSApiResponseOrganisationGroup'), require('./ChronoSheetsClientLibModel/CSApiResponseProject'), require('./ChronoSheetsClientLibModel/CSApiResponseSignupResponse'), require('./ChronoSheetsClientLibModel/CSApiResponseTimesheetTask'), require('./ChronoSheetsClientLibModel/CSApiResponseTrip'), require('./ChronoSheetsClientLibModel/CSApiResponseUpdateOrganisationResponse'), require('./ChronoSheetsClientLibModel/CSApiResponseUpdateUserResponse'), require('./ChronoSheetsClientLibModel/CSApiResponseUserForManagement'), require('./ChronoSheetsClientLibModel/CSApiResponseUserProfile'), require('./ChronoSheetsClientLibModel/CSBatchUpdateTimesheetRequest'), require('./ChronoSheetsClientLibModel/CSClient'), require('./ChronoSheetsClientLibModel/CSClientSeriesReportItem'), require('./ChronoSheetsClientLibModel/CSClientSideUser'), require('./ChronoSheetsClientLibModel/CSClientTotalsReportItem'), require('./ChronoSheetsClientLibModel/CSCombinedReportsData'), require('./ChronoSheetsClientLibModel/CSCreateTripRequest'), require('./ChronoSheetsClientLibModel/CSDoLoginRequest'), require('./ChronoSheetsClientLibModel/CSDoLoginResponse'), require('./ChronoSheetsClientLibModel/CSFleetVehicle'), require('./ChronoSheetsClientLibModel/CSInsertClientRequest'), require('./ChronoSheetsClientLibModel/CSInsertJobCodeRequest'), require('./ChronoSheetsClientLibModel/CSInsertOrganisationGroupRequest'), require('./ChronoSheetsClientLibModel/CSInsertProjectRequest'), require('./ChronoSheetsClientLibModel/CSInsertTaskRequest'), require('./ChronoSheetsClientLibModel/CSInsertUserHourlyRateRequest'), require('./ChronoSheetsClientLibModel/CSInsertUserJobFavouriteRequest'), require('./ChronoSheetsClientLibModel/CSInsertUserRequest'), require('./ChronoSheetsClientLibModel/CSInsertUserResponse'), require('./ChronoSheetsClientLibModel/CSInsertVehicleRequest'), require('./ChronoSheetsClientLibModel/CSJobCode'), require('./ChronoSheetsClientLibModel/CSJobSeriesReportItem'), require('./ChronoSheetsClientLibModel/CSJobTotalsReportItem'), require('./ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment'), require('./ChronoSheetsClientLibModel/CSOrgReportTrip'), require('./ChronoSheetsClientLibModel/CSOrganisation'), require('./ChronoSheetsClientLibModel/CSOrganisationGroup'), require('./ChronoSheetsClientLibModel/CSProject'), require('./ChronoSheetsClientLibModel/CSProjectCostingReportItem'), require('./ChronoSheetsClientLibModel/CSProjectSeriesReportItem'), require('./ChronoSheetsClientLibModel/CSProjectTotalsReportItem'), require('./ChronoSheetsClientLibModel/CSRawReportItem'), require('./ChronoSheetsClientLibModel/CSSaveClientRequest'), require('./ChronoSheetsClientLibModel/CSSaveOrganisationGroupRequest'), require('./ChronoSheetsClientLibModel/CSSaveVehicleRequest'), require('./ChronoSheetsClientLibModel/CSSetOrganisationGroupUsersRequest'), require('./ChronoSheetsClientLibModel/CSSetUsualHoursRequest'), require('./ChronoSheetsClientLibModel/CSSignupResponse'), require('./ChronoSheetsClientLibModel/CSTaskSeriesReportItem'), require('./ChronoSheetsClientLibModel/CSTaskTotalsReportItem'), require('./ChronoSheetsClientLibModel/CSTimeSlot'), require('./ChronoSheetsClientLibModel/CSTimesheet'), require('./ChronoSheetsClientLibModel/CSTimesheetTask'), require('./ChronoSheetsClientLibModel/CSTrip'), require('./ChronoSheetsClientLibModel/CSTripCoordinate'), require('./ChronoSheetsClientLibModel/CSUpdateJobCodeRequest'), require('./ChronoSheetsClientLibModel/CSUpdateMyProfileRequest'), require('./ChronoSheetsClientLibModel/CSUpdateOrganisationRequest'), require('./ChronoSheetsClientLibModel/CSUpdateOrganisationResponse'), require('./ChronoSheetsClientLibModel/CSUpdateProjectRequest'), require('./ChronoSheetsClientLibModel/CSUpdateTaskRequest'), require('./ChronoSheetsClientLibModel/CSUpdateUserRequest'), require('./ChronoSheetsClientLibModel/CSUpdateUserResponse'), require('./ChronoSheetsClientLibModel/CSUserForManagement'), require('./ChronoSheetsClientLibModel/CSUserHourlyRate'), require('./ChronoSheetsClientLibModel/CSUserJobFavourite'), require('./ChronoSheetsClientLibModel/CSUserProfile'), require('./ChronoSheetsClientLibModel/CSUsualHoursDay'), require('./ChronoSheetsClientLibApi/AggregateJobTasksApi'), require('./ChronoSheetsClientLibApi/ClientsApi'), require('./ChronoSheetsClientLibApi/FleetApi'), require('./ChronoSheetsClientLibApi/JobCodesApi'), require('./ChronoSheetsClientLibApi/OrganisationApi'), require('./ChronoSheetsClientLibApi/OrganisationGroupUsersApi'), require('./ChronoSheetsClientLibApi/OrganisationGroupsApi'), require('./ChronoSheetsClientLibApi/ProjectsApi'), require('./ChronoSheetsClientLibApi/ReportsApi'), require('./ChronoSheetsClientLibApi/TasksApi'), require('./ChronoSheetsClientLibApi/TimesheetsApi'), require('./ChronoSheetsClientLibApi/TripsApi'), require('./ChronoSheetsClientLibApi/UserJobFavouritesApi'), require('./ChronoSheetsClientLibApi/UserPayRatesApi'), require('./ChronoSheetsClientLibApi/UserProfileApi'), require('./ChronoSheetsClientLibApi/UsersApi'), require('./ChronoSheetsClientLibApi/UsualHoursApi'));
   }
-}(function(ApiClient, CsApiAggregateJobCode, CsApiAggregateJobTask, CsApiApiResponseBoolean, CsApiApiResponseClient, CsApiApiResponseCombinedReportsData, CsApiApiResponseDoLoginResponse, CsApiApiResponseFleetVehicle, CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment, CsApiApiResponseForPaginatedListOrgReportTrip, CsApiApiResponseForPaginatedListRawReportItem, CsApiApiResponseForPaginatedListTrip, CsApiApiResponseInsertUserResponse, CsApiApiResponseInt32, CsApiApiResponseJobCode, CsApiApiResponseListAggregateJobCode, CsApiApiResponseListClient, CsApiApiResponseListFleetVehicle, CsApiApiResponseListInt32, CsApiApiResponseListJobCode, CsApiApiResponseListJobSeriesReportItem, CsApiApiResponseListOrganisationGroup, CsApiApiResponseListProject, CsApiApiResponseListProjectCostingReportItem, CsApiApiResponseListTimesheet, CsApiApiResponseListTimesheetTask, CsApiApiResponseListUserForManagement, CsApiApiResponseListUserHourlyRate, CsApiApiResponseListUserJobFavourite, CsApiApiResponseListUsualHoursDay, CsApiApiResponseOrganisation, CsApiApiResponseOrganisationGroup, CsApiApiResponseProject, CsApiApiResponseSignupResponse, CsApiApiResponseTimesheetTask, CsApiApiResponseTrip, CsApiApiResponseUpdateOrganisationResponse, CsApiApiResponseUpdateUserResponse, CsApiApiResponseUserForManagement, CsApiApiResponseUserProfile, CsApiBatchUpdateTimesheetRequest, CsApiClient, CsApiClientSeriesReportItem, CsApiClientSideUser, CsApiClientTotalsReportItem, CsApiCombinedReportsData, CsApiCreateTripRequest, CsApiDoLoginRequest, CsApiDoLoginResponse, CsApiFleetVehicle, CsApiInsertClientRequest, CsApiInsertJobCodeRequest, CsApiInsertOrganisationGroupRequest, CsApiInsertProjectRequest, CsApiInsertTaskRequest, CsApiInsertUserHourlyRateRequest, CsApiInsertUserJobFavouriteRequest, CsApiInsertUserRequest, CsApiInsertUserResponse, CsApiInsertVehicleRequest, CsApiJobCode, CsApiJobSeriesReportItem, CsApiJobTotalsReportItem, CsApiOrgReportTimesheetFileAttachment, CsApiOrgReportTrip, CsApiOrganisation, CsApiOrganisationGroup, CsApiProject, CsApiProjectCostingReportItem, CsApiProjectSeriesReportItem, CsApiProjectTotalsReportItem, CsApiRawReportItem, CsApiSaveClientRequest, CsApiSaveOrganisationGroupRequest, CsApiSaveVehicleRequest, CsApiSetOrganisationGroupUsersRequest, CsApiSetUsualHoursRequest, CsApiSignupResponse, CsApiTaskSeriesReportItem, CsApiTaskTotalsReportItem, CsApiTimeSlot, CsApiTimesheet, CsApiTimesheetTask, CsApiTrip, CsApiTripCoordinate, CsApiUpdateJobCodeRequest, CsApiUpdateMyProfileRequest, CsApiUpdateOrganisationRequest, CsApiUpdateOrganisationResponse, CsApiUpdateProjectRequest, CsApiUpdateTaskRequest, CsApiUpdateUserRequest, CsApiUpdateUserResponse, CsApiUserForManagement, CsApiUserHourlyRate, CsApiUserJobFavourite, CsApiUserProfile, CsApiUsualHoursDay, AggregateJobTasksApi, ClientsApi, FleetApi, JobCodesApi, OrganisationApi, OrganisationGroupUsersApi, OrganisationGroupsApi, ProjectsApi, ReportsApi, TasksApi, TimesheetsApi, TripsApi, UserJobFavouritesApi, UserPayRatesApi, UserProfileApi, UsersApi, UsualHoursApi) {
+}(function(ApiClient, CSAggregateJobCode, CSAggregateJobTask, CSApiResponseBoolean, CSApiResponseClient, CSApiResponseCombinedReportsData, CSApiResponseDoLoginResponse, CSApiResponseFleetVehicle, CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment, CSApiResponseForPaginatedListOrgReportTrip, CSApiResponseForPaginatedListRawReportItem, CSApiResponseForPaginatedListTrip, CSApiResponseInsertUserResponse, CSApiResponseInt32, CSApiResponseJobCode, CSApiResponseListAggregateJobCode, CSApiResponseListClient, CSApiResponseListFleetVehicle, CSApiResponseListInt32, CSApiResponseListJobCode, CSApiResponseListJobSeriesReportItem, CSApiResponseListOrganisationGroup, CSApiResponseListProject, CSApiResponseListProjectCostingReportItem, CSApiResponseListTimesheet, CSApiResponseListTimesheetTask, CSApiResponseListUserForManagement, CSApiResponseListUserHourlyRate, CSApiResponseListUserJobFavourite, CSApiResponseListUsualHoursDay, CSApiResponseOrganisation, CSApiResponseOrganisationGroup, CSApiResponseProject, CSApiResponseSignupResponse, CSApiResponseTimesheetTask, CSApiResponseTrip, CSApiResponseUpdateOrganisationResponse, CSApiResponseUpdateUserResponse, CSApiResponseUserForManagement, CSApiResponseUserProfile, CSBatchUpdateTimesheetRequest, CSClient, CSClientSeriesReportItem, CSClientSideUser, CSClientTotalsReportItem, CSCombinedReportsData, CSCreateTripRequest, CSDoLoginRequest, CSDoLoginResponse, CSFleetVehicle, CSInsertClientRequest, CSInsertJobCodeRequest, CSInsertOrganisationGroupRequest, CSInsertProjectRequest, CSInsertTaskRequest, CSInsertUserHourlyRateRequest, CSInsertUserJobFavouriteRequest, CSInsertUserRequest, CSInsertUserResponse, CSInsertVehicleRequest, CSJobCode, CSJobSeriesReportItem, CSJobTotalsReportItem, CSOrgReportTimesheetFileAttachment, CSOrgReportTrip, CSOrganisation, CSOrganisationGroup, CSProject, CSProjectCostingReportItem, CSProjectSeriesReportItem, CSProjectTotalsReportItem, CSRawReportItem, CSSaveClientRequest, CSSaveOrganisationGroupRequest, CSSaveVehicleRequest, CSSetOrganisationGroupUsersRequest, CSSetUsualHoursRequest, CSSignupResponse, CSTaskSeriesReportItem, CSTaskTotalsReportItem, CSTimeSlot, CSTimesheet, CSTimesheetTask, CSTrip, CSTripCoordinate, CSUpdateJobCodeRequest, CSUpdateMyProfileRequest, CSUpdateOrganisationRequest, CSUpdateOrganisationResponse, CSUpdateProjectRequest, CSUpdateTaskRequest, CSUpdateUserRequest, CSUpdateUserResponse, CSUserForManagement, CSUserHourlyRate, CSUserJobFavourite, CSUserProfile, CSUsualHoursDay, AggregateJobTasksApi, ClientsApi, FleetApi, JobCodesApi, OrganisationApi, OrganisationGroupUsersApi, OrganisationGroupsApi, ProjectsApi, ReportsApi, TasksApi, TimesheetsApi, TripsApi, UserJobFavouritesApi, UserPayRatesApi, UserProfileApi, UsersApi, UsualHoursApi) {
   'use strict';
 
   /**
@@ -63,490 +63,490 @@
      */
     ApiClient: ApiClient,
     /**
-     * The CsApiAggregateJobCode model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiAggregateJobCode}
+     * The CSAggregateJobCode model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSAggregateJobCode}
      */
-    CsApiAggregateJobCode: CsApiAggregateJobCode,
+    CSAggregateJobCode: CSAggregateJobCode,
     /**
-     * The CsApiAggregateJobTask model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiAggregateJobTask}
+     * The CSAggregateJobTask model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSAggregateJobTask}
      */
-    CsApiAggregateJobTask: CsApiAggregateJobTask,
+    CSAggregateJobTask: CSAggregateJobTask,
     /**
-     * The CsApiApiResponseBoolean model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean}
+     * The CSApiResponseBoolean model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
      */
-    CsApiApiResponseBoolean: CsApiApiResponseBoolean,
+    CSApiResponseBoolean: CSApiResponseBoolean,
     /**
-     * The CsApiApiResponseClient model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseClient}
+     * The CSApiResponseClient model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseClient}
      */
-    CsApiApiResponseClient: CsApiApiResponseClient,
+    CSApiResponseClient: CSApiResponseClient,
     /**
-     * The CsApiApiResponseCombinedReportsData model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseCombinedReportsData}
+     * The CSApiResponseCombinedReportsData model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData}
      */
-    CsApiApiResponseCombinedReportsData: CsApiApiResponseCombinedReportsData,
+    CSApiResponseCombinedReportsData: CSApiResponseCombinedReportsData,
     /**
-     * The CsApiApiResponseDoLoginResponse model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseDoLoginResponse}
+     * The CSApiResponseDoLoginResponse model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseDoLoginResponse}
      */
-    CsApiApiResponseDoLoginResponse: CsApiApiResponseDoLoginResponse,
+    CSApiResponseDoLoginResponse: CSApiResponseDoLoginResponse,
     /**
-     * The CsApiApiResponseFleetVehicle model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseFleetVehicle}
+     * The CSApiResponseFleetVehicle model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseFleetVehicle}
      */
-    CsApiApiResponseFleetVehicle: CsApiApiResponseFleetVehicle,
+    CSApiResponseFleetVehicle: CSApiResponseFleetVehicle,
     /**
-     * The CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment}
+     * The CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment}
      */
-    CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment: CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment,
+    CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment: CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment,
     /**
-     * The CsApiApiResponseForPaginatedListOrgReportTrip model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTrip}
+     * The CSApiResponseForPaginatedListOrgReportTrip model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip}
      */
-    CsApiApiResponseForPaginatedListOrgReportTrip: CsApiApiResponseForPaginatedListOrgReportTrip,
+    CSApiResponseForPaginatedListOrgReportTrip: CSApiResponseForPaginatedListOrgReportTrip,
     /**
-     * The CsApiApiResponseForPaginatedListRawReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListRawReportItem}
+     * The CSApiResponseForPaginatedListRawReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem}
      */
-    CsApiApiResponseForPaginatedListRawReportItem: CsApiApiResponseForPaginatedListRawReportItem,
+    CSApiResponseForPaginatedListRawReportItem: CSApiResponseForPaginatedListRawReportItem,
     /**
-     * The CsApiApiResponseForPaginatedListTrip model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListTrip}
+     * The CSApiResponseForPaginatedListTrip model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTrip}
      */
-    CsApiApiResponseForPaginatedListTrip: CsApiApiResponseForPaginatedListTrip,
+    CSApiResponseForPaginatedListTrip: CSApiResponseForPaginatedListTrip,
     /**
-     * The CsApiApiResponseInsertUserResponse model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInsertUserResponse}
+     * The CSApiResponseInsertUserResponse model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInsertUserResponse}
      */
-    CsApiApiResponseInsertUserResponse: CsApiApiResponseInsertUserResponse,
+    CSApiResponseInsertUserResponse: CSApiResponseInsertUserResponse,
     /**
-     * The CsApiApiResponseInt32 model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32}
+     * The CSApiResponseInt32 model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
      */
-    CsApiApiResponseInt32: CsApiApiResponseInt32,
+    CSApiResponseInt32: CSApiResponseInt32,
     /**
-     * The CsApiApiResponseJobCode model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseJobCode}
+     * The CSApiResponseJobCode model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseJobCode}
      */
-    CsApiApiResponseJobCode: CsApiApiResponseJobCode,
+    CSApiResponseJobCode: CSApiResponseJobCode,
     /**
-     * The CsApiApiResponseListAggregateJobCode model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListAggregateJobCode}
+     * The CSApiResponseListAggregateJobCode model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListAggregateJobCode}
      */
-    CsApiApiResponseListAggregateJobCode: CsApiApiResponseListAggregateJobCode,
+    CSApiResponseListAggregateJobCode: CSApiResponseListAggregateJobCode,
     /**
-     * The CsApiApiResponseListClient model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListClient}
+     * The CSApiResponseListClient model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListClient}
      */
-    CsApiApiResponseListClient: CsApiApiResponseListClient,
+    CSApiResponseListClient: CSApiResponseListClient,
     /**
-     * The CsApiApiResponseListFleetVehicle model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListFleetVehicle}
+     * The CSApiResponseListFleetVehicle model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetVehicle}
      */
-    CsApiApiResponseListFleetVehicle: CsApiApiResponseListFleetVehicle,
+    CSApiResponseListFleetVehicle: CSApiResponseListFleetVehicle,
     /**
-     * The CsApiApiResponseListInt32 model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListInt32}
+     * The CSApiResponseListInt32 model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListInt32}
      */
-    CsApiApiResponseListInt32: CsApiApiResponseListInt32,
+    CSApiResponseListInt32: CSApiResponseListInt32,
     /**
-     * The CsApiApiResponseListJobCode model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListJobCode}
+     * The CSApiResponseListJobCode model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListJobCode}
      */
-    CsApiApiResponseListJobCode: CsApiApiResponseListJobCode,
+    CSApiResponseListJobCode: CSApiResponseListJobCode,
     /**
-     * The CsApiApiResponseListJobSeriesReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListJobSeriesReportItem}
+     * The CSApiResponseListJobSeriesReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem}
      */
-    CsApiApiResponseListJobSeriesReportItem: CsApiApiResponseListJobSeriesReportItem,
+    CSApiResponseListJobSeriesReportItem: CSApiResponseListJobSeriesReportItem,
     /**
-     * The CsApiApiResponseListOrganisationGroup model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListOrganisationGroup}
+     * The CSApiResponseListOrganisationGroup model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListOrganisationGroup}
      */
-    CsApiApiResponseListOrganisationGroup: CsApiApiResponseListOrganisationGroup,
+    CSApiResponseListOrganisationGroup: CSApiResponseListOrganisationGroup,
     /**
-     * The CsApiApiResponseListProject model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListProject}
+     * The CSApiResponseListProject model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProject}
      */
-    CsApiApiResponseListProject: CsApiApiResponseListProject,
+    CSApiResponseListProject: CSApiResponseListProject,
     /**
-     * The CsApiApiResponseListProjectCostingReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListProjectCostingReportItem}
+     * The CSApiResponseListProjectCostingReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem}
      */
-    CsApiApiResponseListProjectCostingReportItem: CsApiApiResponseListProjectCostingReportItem,
+    CSApiResponseListProjectCostingReportItem: CSApiResponseListProjectCostingReportItem,
     /**
-     * The CsApiApiResponseListTimesheet model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListTimesheet}
+     * The CSApiResponseListTimesheet model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListTimesheet}
      */
-    CsApiApiResponseListTimesheet: CsApiApiResponseListTimesheet,
+    CSApiResponseListTimesheet: CSApiResponseListTimesheet,
     /**
-     * The CsApiApiResponseListTimesheetTask model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListTimesheetTask}
+     * The CSApiResponseListTimesheetTask model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListTimesheetTask}
      */
-    CsApiApiResponseListTimesheetTask: CsApiApiResponseListTimesheetTask,
+    CSApiResponseListTimesheetTask: CSApiResponseListTimesheetTask,
     /**
-     * The CsApiApiResponseListUserForManagement model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserForManagement}
+     * The CSApiResponseListUserForManagement model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserForManagement}
      */
-    CsApiApiResponseListUserForManagement: CsApiApiResponseListUserForManagement,
+    CSApiResponseListUserForManagement: CSApiResponseListUserForManagement,
     /**
-     * The CsApiApiResponseListUserHourlyRate model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserHourlyRate}
+     * The CSApiResponseListUserHourlyRate model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserHourlyRate}
      */
-    CsApiApiResponseListUserHourlyRate: CsApiApiResponseListUserHourlyRate,
+    CSApiResponseListUserHourlyRate: CSApiResponseListUserHourlyRate,
     /**
-     * The CsApiApiResponseListUserJobFavourite model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserJobFavourite}
+     * The CSApiResponseListUserJobFavourite model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserJobFavourite}
      */
-    CsApiApiResponseListUserJobFavourite: CsApiApiResponseListUserJobFavourite,
+    CSApiResponseListUserJobFavourite: CSApiResponseListUserJobFavourite,
     /**
-     * The CsApiApiResponseListUsualHoursDay model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUsualHoursDay}
+     * The CSApiResponseListUsualHoursDay model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUsualHoursDay}
      */
-    CsApiApiResponseListUsualHoursDay: CsApiApiResponseListUsualHoursDay,
+    CSApiResponseListUsualHoursDay: CSApiResponseListUsualHoursDay,
     /**
-     * The CsApiApiResponseOrganisation model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseOrganisation}
+     * The CSApiResponseOrganisation model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseOrganisation}
      */
-    CsApiApiResponseOrganisation: CsApiApiResponseOrganisation,
+    CSApiResponseOrganisation: CSApiResponseOrganisation,
     /**
-     * The CsApiApiResponseOrganisationGroup model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseOrganisationGroup}
+     * The CSApiResponseOrganisationGroup model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseOrganisationGroup}
      */
-    CsApiApiResponseOrganisationGroup: CsApiApiResponseOrganisationGroup,
+    CSApiResponseOrganisationGroup: CSApiResponseOrganisationGroup,
     /**
-     * The CsApiApiResponseProject model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseProject}
+     * The CSApiResponseProject model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseProject}
      */
-    CsApiApiResponseProject: CsApiApiResponseProject,
+    CSApiResponseProject: CSApiResponseProject,
     /**
-     * The CsApiApiResponseSignupResponse model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseSignupResponse}
+     * The CSApiResponseSignupResponse model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseSignupResponse}
      */
-    CsApiApiResponseSignupResponse: CsApiApiResponseSignupResponse,
+    CSApiResponseSignupResponse: CSApiResponseSignupResponse,
     /**
-     * The CsApiApiResponseTimesheetTask model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseTimesheetTask}
+     * The CSApiResponseTimesheetTask model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTimesheetTask}
      */
-    CsApiApiResponseTimesheetTask: CsApiApiResponseTimesheetTask,
+    CSApiResponseTimesheetTask: CSApiResponseTimesheetTask,
     /**
-     * The CsApiApiResponseTrip model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseTrip}
+     * The CSApiResponseTrip model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip}
      */
-    CsApiApiResponseTrip: CsApiApiResponseTrip,
+    CSApiResponseTrip: CSApiResponseTrip,
     /**
-     * The CsApiApiResponseUpdateOrganisationResponse model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUpdateOrganisationResponse}
+     * The CSApiResponseUpdateOrganisationResponse model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateOrganisationResponse}
      */
-    CsApiApiResponseUpdateOrganisationResponse: CsApiApiResponseUpdateOrganisationResponse,
+    CSApiResponseUpdateOrganisationResponse: CSApiResponseUpdateOrganisationResponse,
     /**
-     * The CsApiApiResponseUpdateUserResponse model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUpdateUserResponse}
+     * The CSApiResponseUpdateUserResponse model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateUserResponse}
      */
-    CsApiApiResponseUpdateUserResponse: CsApiApiResponseUpdateUserResponse,
+    CSApiResponseUpdateUserResponse: CSApiResponseUpdateUserResponse,
     /**
-     * The CsApiApiResponseUserForManagement model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUserForManagement}
+     * The CSApiResponseUserForManagement model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUserForManagement}
      */
-    CsApiApiResponseUserForManagement: CsApiApiResponseUserForManagement,
+    CSApiResponseUserForManagement: CSApiResponseUserForManagement,
     /**
-     * The CsApiApiResponseUserProfile model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUserProfile}
+     * The CSApiResponseUserProfile model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUserProfile}
      */
-    CsApiApiResponseUserProfile: CsApiApiResponseUserProfile,
+    CSApiResponseUserProfile: CSApiResponseUserProfile,
     /**
-     * The CsApiBatchUpdateTimesheetRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiBatchUpdateTimesheetRequest}
+     * The CSBatchUpdateTimesheetRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSBatchUpdateTimesheetRequest}
      */
-    CsApiBatchUpdateTimesheetRequest: CsApiBatchUpdateTimesheetRequest,
+    CSBatchUpdateTimesheetRequest: CSBatchUpdateTimesheetRequest,
     /**
-     * The CsApiClient model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiClient}
+     * The CSClient model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSClient}
      */
-    CsApiClient: CsApiClient,
+    CSClient: CSClient,
     /**
-     * The CsApiClientSeriesReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiClientSeriesReportItem}
+     * The CSClientSeriesReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSClientSeriesReportItem}
      */
-    CsApiClientSeriesReportItem: CsApiClientSeriesReportItem,
+    CSClientSeriesReportItem: CSClientSeriesReportItem,
     /**
-     * The CsApiClientSideUser model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiClientSideUser}
+     * The CSClientSideUser model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSClientSideUser}
      */
-    CsApiClientSideUser: CsApiClientSideUser,
+    CSClientSideUser: CSClientSideUser,
     /**
-     * The CsApiClientTotalsReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiClientTotalsReportItem}
+     * The CSClientTotalsReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSClientTotalsReportItem}
      */
-    CsApiClientTotalsReportItem: CsApiClientTotalsReportItem,
+    CSClientTotalsReportItem: CSClientTotalsReportItem,
     /**
-     * The CsApiCombinedReportsData model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiCombinedReportsData}
+     * The CSCombinedReportsData model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSCombinedReportsData}
      */
-    CsApiCombinedReportsData: CsApiCombinedReportsData,
+    CSCombinedReportsData: CSCombinedReportsData,
     /**
-     * The CsApiCreateTripRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiCreateTripRequest}
+     * The CSCreateTripRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSCreateTripRequest}
      */
-    CsApiCreateTripRequest: CsApiCreateTripRequest,
+    CSCreateTripRequest: CSCreateTripRequest,
     /**
-     * The CsApiDoLoginRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiDoLoginRequest}
+     * The CSDoLoginRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSDoLoginRequest}
      */
-    CsApiDoLoginRequest: CsApiDoLoginRequest,
+    CSDoLoginRequest: CSDoLoginRequest,
     /**
-     * The CsApiDoLoginResponse model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiDoLoginResponse}
+     * The CSDoLoginResponse model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSDoLoginResponse}
      */
-    CsApiDoLoginResponse: CsApiDoLoginResponse,
+    CSDoLoginResponse: CSDoLoginResponse,
     /**
-     * The CsApiFleetVehicle model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiFleetVehicle}
+     * The CSFleetVehicle model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSFleetVehicle}
      */
-    CsApiFleetVehicle: CsApiFleetVehicle,
+    CSFleetVehicle: CSFleetVehicle,
     /**
-     * The CsApiInsertClientRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertClientRequest}
+     * The CSInsertClientRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertClientRequest}
      */
-    CsApiInsertClientRequest: CsApiInsertClientRequest,
+    CSInsertClientRequest: CSInsertClientRequest,
     /**
-     * The CsApiInsertJobCodeRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertJobCodeRequest}
+     * The CSInsertJobCodeRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertJobCodeRequest}
      */
-    CsApiInsertJobCodeRequest: CsApiInsertJobCodeRequest,
+    CSInsertJobCodeRequest: CSInsertJobCodeRequest,
     /**
-     * The CsApiInsertOrganisationGroupRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertOrganisationGroupRequest}
+     * The CSInsertOrganisationGroupRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertOrganisationGroupRequest}
      */
-    CsApiInsertOrganisationGroupRequest: CsApiInsertOrganisationGroupRequest,
+    CSInsertOrganisationGroupRequest: CSInsertOrganisationGroupRequest,
     /**
-     * The CsApiInsertProjectRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertProjectRequest}
+     * The CSInsertProjectRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertProjectRequest}
      */
-    CsApiInsertProjectRequest: CsApiInsertProjectRequest,
+    CSInsertProjectRequest: CSInsertProjectRequest,
     /**
-     * The CsApiInsertTaskRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertTaskRequest}
+     * The CSInsertTaskRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertTaskRequest}
      */
-    CsApiInsertTaskRequest: CsApiInsertTaskRequest,
+    CSInsertTaskRequest: CSInsertTaskRequest,
     /**
-     * The CsApiInsertUserHourlyRateRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserHourlyRateRequest}
+     * The CSInsertUserHourlyRateRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserHourlyRateRequest}
      */
-    CsApiInsertUserHourlyRateRequest: CsApiInsertUserHourlyRateRequest,
+    CSInsertUserHourlyRateRequest: CSInsertUserHourlyRateRequest,
     /**
-     * The CsApiInsertUserJobFavouriteRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserJobFavouriteRequest}
+     * The CSInsertUserJobFavouriteRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserJobFavouriteRequest}
      */
-    CsApiInsertUserJobFavouriteRequest: CsApiInsertUserJobFavouriteRequest,
+    CSInsertUserJobFavouriteRequest: CSInsertUserJobFavouriteRequest,
     /**
-     * The CsApiInsertUserRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserRequest}
+     * The CSInsertUserRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserRequest}
      */
-    CsApiInsertUserRequest: CsApiInsertUserRequest,
+    CSInsertUserRequest: CSInsertUserRequest,
     /**
-     * The CsApiInsertUserResponse model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserResponse}
+     * The CSInsertUserResponse model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserResponse}
      */
-    CsApiInsertUserResponse: CsApiInsertUserResponse,
+    CSInsertUserResponse: CSInsertUserResponse,
     /**
-     * The CsApiInsertVehicleRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertVehicleRequest}
+     * The CSInsertVehicleRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertVehicleRequest}
      */
-    CsApiInsertVehicleRequest: CsApiInsertVehicleRequest,
+    CSInsertVehicleRequest: CSInsertVehicleRequest,
     /**
-     * The CsApiJobCode model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiJobCode}
+     * The CSJobCode model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSJobCode}
      */
-    CsApiJobCode: CsApiJobCode,
+    CSJobCode: CSJobCode,
     /**
-     * The CsApiJobSeriesReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiJobSeriesReportItem}
+     * The CSJobSeriesReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSJobSeriesReportItem}
      */
-    CsApiJobSeriesReportItem: CsApiJobSeriesReportItem,
+    CSJobSeriesReportItem: CSJobSeriesReportItem,
     /**
-     * The CsApiJobTotalsReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiJobTotalsReportItem}
+     * The CSJobTotalsReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSJobTotalsReportItem}
      */
-    CsApiJobTotalsReportItem: CsApiJobTotalsReportItem,
+    CSJobTotalsReportItem: CSJobTotalsReportItem,
     /**
-     * The CsApiOrgReportTimesheetFileAttachment model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiOrgReportTimesheetFileAttachment}
+     * The CSOrgReportTimesheetFileAttachment model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment}
      */
-    CsApiOrgReportTimesheetFileAttachment: CsApiOrgReportTimesheetFileAttachment,
+    CSOrgReportTimesheetFileAttachment: CSOrgReportTimesheetFileAttachment,
     /**
-     * The CsApiOrgReportTrip model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiOrgReportTrip}
+     * The CSOrgReportTrip model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTrip}
      */
-    CsApiOrgReportTrip: CsApiOrgReportTrip,
+    CSOrgReportTrip: CSOrgReportTrip,
     /**
-     * The CsApiOrganisation model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiOrganisation}
+     * The CSOrganisation model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrganisation}
      */
-    CsApiOrganisation: CsApiOrganisation,
+    CSOrganisation: CSOrganisation,
     /**
-     * The CsApiOrganisationGroup model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiOrganisationGroup}
+     * The CSOrganisationGroup model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrganisationGroup}
      */
-    CsApiOrganisationGroup: CsApiOrganisationGroup,
+    CSOrganisationGroup: CSOrganisationGroup,
     /**
-     * The CsApiProject model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiProject}
+     * The CSProject model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSProject}
      */
-    CsApiProject: CsApiProject,
+    CSProject: CSProject,
     /**
-     * The CsApiProjectCostingReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiProjectCostingReportItem}
+     * The CSProjectCostingReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSProjectCostingReportItem}
      */
-    CsApiProjectCostingReportItem: CsApiProjectCostingReportItem,
+    CSProjectCostingReportItem: CSProjectCostingReportItem,
     /**
-     * The CsApiProjectSeriesReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiProjectSeriesReportItem}
+     * The CSProjectSeriesReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSProjectSeriesReportItem}
      */
-    CsApiProjectSeriesReportItem: CsApiProjectSeriesReportItem,
+    CSProjectSeriesReportItem: CSProjectSeriesReportItem,
     /**
-     * The CsApiProjectTotalsReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiProjectTotalsReportItem}
+     * The CSProjectTotalsReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSProjectTotalsReportItem}
      */
-    CsApiProjectTotalsReportItem: CsApiProjectTotalsReportItem,
+    CSProjectTotalsReportItem: CSProjectTotalsReportItem,
     /**
-     * The CsApiRawReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiRawReportItem}
+     * The CSRawReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSRawReportItem}
      */
-    CsApiRawReportItem: CsApiRawReportItem,
+    CSRawReportItem: CSRawReportItem,
     /**
-     * The CsApiSaveClientRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSaveClientRequest}
+     * The CSSaveClientRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveClientRequest}
      */
-    CsApiSaveClientRequest: CsApiSaveClientRequest,
+    CSSaveClientRequest: CSSaveClientRequest,
     /**
-     * The CsApiSaveOrganisationGroupRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSaveOrganisationGroupRequest}
+     * The CSSaveOrganisationGroupRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveOrganisationGroupRequest}
      */
-    CsApiSaveOrganisationGroupRequest: CsApiSaveOrganisationGroupRequest,
+    CSSaveOrganisationGroupRequest: CSSaveOrganisationGroupRequest,
     /**
-     * The CsApiSaveVehicleRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSaveVehicleRequest}
+     * The CSSaveVehicleRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveVehicleRequest}
      */
-    CsApiSaveVehicleRequest: CsApiSaveVehicleRequest,
+    CSSaveVehicleRequest: CSSaveVehicleRequest,
     /**
-     * The CsApiSetOrganisationGroupUsersRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSetOrganisationGroupUsersRequest}
+     * The CSSetOrganisationGroupUsersRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetOrganisationGroupUsersRequest}
      */
-    CsApiSetOrganisationGroupUsersRequest: CsApiSetOrganisationGroupUsersRequest,
+    CSSetOrganisationGroupUsersRequest: CSSetOrganisationGroupUsersRequest,
     /**
-     * The CsApiSetUsualHoursRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSetUsualHoursRequest}
+     * The CSSetUsualHoursRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetUsualHoursRequest}
      */
-    CsApiSetUsualHoursRequest: CsApiSetUsualHoursRequest,
+    CSSetUsualHoursRequest: CSSetUsualHoursRequest,
     /**
-     * The CsApiSignupResponse model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSignupResponse}
+     * The CSSignupResponse model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSignupResponse}
      */
-    CsApiSignupResponse: CsApiSignupResponse,
+    CSSignupResponse: CSSignupResponse,
     /**
-     * The CsApiTaskSeriesReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTaskSeriesReportItem}
+     * The CSTaskSeriesReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTaskSeriesReportItem}
      */
-    CsApiTaskSeriesReportItem: CsApiTaskSeriesReportItem,
+    CSTaskSeriesReportItem: CSTaskSeriesReportItem,
     /**
-     * The CsApiTaskTotalsReportItem model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTaskTotalsReportItem}
+     * The CSTaskTotalsReportItem model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTaskTotalsReportItem}
      */
-    CsApiTaskTotalsReportItem: CsApiTaskTotalsReportItem,
+    CSTaskTotalsReportItem: CSTaskTotalsReportItem,
     /**
-     * The CsApiTimeSlot model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTimeSlot}
+     * The CSTimeSlot model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimeSlot}
      */
-    CsApiTimeSlot: CsApiTimeSlot,
+    CSTimeSlot: CSTimeSlot,
     /**
-     * The CsApiTimesheet model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTimesheet}
+     * The CSTimesheet model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimesheet}
      */
-    CsApiTimesheet: CsApiTimesheet,
+    CSTimesheet: CSTimesheet,
     /**
-     * The CsApiTimesheetTask model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTimesheetTask}
+     * The CSTimesheetTask model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimesheetTask}
      */
-    CsApiTimesheetTask: CsApiTimesheetTask,
+    CSTimesheetTask: CSTimesheetTask,
     /**
-     * The CsApiTrip model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTrip}
+     * The CSTrip model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTrip}
      */
-    CsApiTrip: CsApiTrip,
+    CSTrip: CSTrip,
     /**
-     * The CsApiTripCoordinate model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiTripCoordinate}
+     * The CSTripCoordinate model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTripCoordinate}
      */
-    CsApiTripCoordinate: CsApiTripCoordinate,
+    CSTripCoordinate: CSTripCoordinate,
     /**
-     * The CsApiUpdateJobCodeRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateJobCodeRequest}
+     * The CSUpdateJobCodeRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateJobCodeRequest}
      */
-    CsApiUpdateJobCodeRequest: CsApiUpdateJobCodeRequest,
+    CSUpdateJobCodeRequest: CSUpdateJobCodeRequest,
     /**
-     * The CsApiUpdateMyProfileRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateMyProfileRequest}
+     * The CSUpdateMyProfileRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateMyProfileRequest}
      */
-    CsApiUpdateMyProfileRequest: CsApiUpdateMyProfileRequest,
+    CSUpdateMyProfileRequest: CSUpdateMyProfileRequest,
     /**
-     * The CsApiUpdateOrganisationRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateOrganisationRequest}
+     * The CSUpdateOrganisationRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateOrganisationRequest}
      */
-    CsApiUpdateOrganisationRequest: CsApiUpdateOrganisationRequest,
+    CSUpdateOrganisationRequest: CSUpdateOrganisationRequest,
     /**
-     * The CsApiUpdateOrganisationResponse model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateOrganisationResponse}
+     * The CSUpdateOrganisationResponse model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateOrganisationResponse}
      */
-    CsApiUpdateOrganisationResponse: CsApiUpdateOrganisationResponse,
+    CSUpdateOrganisationResponse: CSUpdateOrganisationResponse,
     /**
-     * The CsApiUpdateProjectRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateProjectRequest}
+     * The CSUpdateProjectRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateProjectRequest}
      */
-    CsApiUpdateProjectRequest: CsApiUpdateProjectRequest,
+    CSUpdateProjectRequest: CSUpdateProjectRequest,
     /**
-     * The CsApiUpdateTaskRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateTaskRequest}
+     * The CSUpdateTaskRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateTaskRequest}
      */
-    CsApiUpdateTaskRequest: CsApiUpdateTaskRequest,
+    CSUpdateTaskRequest: CSUpdateTaskRequest,
     /**
-     * The CsApiUpdateUserRequest model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateUserRequest}
+     * The CSUpdateUserRequest model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateUserRequest}
      */
-    CsApiUpdateUserRequest: CsApiUpdateUserRequest,
+    CSUpdateUserRequest: CSUpdateUserRequest,
     /**
-     * The CsApiUpdateUserResponse model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateUserResponse}
+     * The CSUpdateUserResponse model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateUserResponse}
      */
-    CsApiUpdateUserResponse: CsApiUpdateUserResponse,
+    CSUpdateUserResponse: CSUpdateUserResponse,
     /**
-     * The CsApiUserForManagement model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUserForManagement}
+     * The CSUserForManagement model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUserForManagement}
      */
-    CsApiUserForManagement: CsApiUserForManagement,
+    CSUserForManagement: CSUserForManagement,
     /**
-     * The CsApiUserHourlyRate model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUserHourlyRate}
+     * The CSUserHourlyRate model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUserHourlyRate}
      */
-    CsApiUserHourlyRate: CsApiUserHourlyRate,
+    CSUserHourlyRate: CSUserHourlyRate,
     /**
-     * The CsApiUserJobFavourite model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUserJobFavourite}
+     * The CSUserJobFavourite model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUserJobFavourite}
      */
-    CsApiUserJobFavourite: CsApiUserJobFavourite,
+    CSUserJobFavourite: CSUserJobFavourite,
     /**
-     * The CsApiUserProfile model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUserProfile}
+     * The CSUserProfile model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUserProfile}
      */
-    CsApiUserProfile: CsApiUserProfile,
+    CSUserProfile: CSUserProfile,
     /**
-     * The CsApiUsualHoursDay model constructor.
-     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUsualHoursDay}
+     * The CSUsualHoursDay model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUsualHoursDay}
      */
-    CsApiUsualHoursDay: CsApiUsualHoursDay,
+    CSUsualHoursDay: CSUsualHoursDay,
     /**
      * The AggregateJobTasksApi service constructor.
      * @property {module:ChronoSheetsClient/ChronoSheetsClientLibApi/AggregateJobTasksApi}

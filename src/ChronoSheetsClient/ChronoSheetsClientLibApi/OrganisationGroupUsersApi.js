@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserForManagement', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSetOrganisationGroupUsersRequest'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserForManagement', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetOrganisationGroupUsersRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CsApiApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CsApiApiResponseListUserForManagement'), require('../ChronoSheetsClientLibModel/CsApiSetOrganisationGroupUsersRequest'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseListUserForManagement'), require('../ChronoSheetsClientLibModel/CSSetOrganisationGroupUsersRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.OrganisationGroupUsersApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CsApiApiResponseBoolean, root.ChronoSheetsApi.CsApiApiResponseListUserForManagement, root.ChronoSheetsApi.CsApiSetOrganisationGroupUsersRequest);
+    root.ChronoSheetsApi.OrganisationGroupUsersApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseListUserForManagement, root.ChronoSheetsApi.CSSetOrganisationGroupUsersRequest);
   }
-}(this, function(ApiClient, CsApiApiResponseBoolean, CsApiApiResponseListUserForManagement, CsApiSetOrganisationGroupUsersRequest) {
+}(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseListUserForManagement, CSSetOrganisationGroupUsersRequest) {
   'use strict';
 
   /**
@@ -52,7 +52,7 @@
      * Callback function to receive the result of the organisationGroupUsersGetOrganisationGroupUsers operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupUsersApi~organisationGroupUsersGetOrganisationGroupUsersCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserForManagement} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserForManagement} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -61,7 +61,7 @@
      * @param {Number} orgGroupId 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupUsersApi~organisationGroupUsersGetOrganisationGroupUsersCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserForManagement}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserForManagement}
      */
     this.organisationGroupUsersGetOrganisationGroupUsers = function(orgGroupId, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -93,7 +93,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseListUserForManagement;
+      var returnType = CSApiResponseListUserForManagement;
 
       return this.apiClient.callApi(
         '/api/OrganisationGroupUsers/GetOrganisationGroupUsers', 'GET',
@@ -106,16 +106,16 @@
      * Callback function to receive the result of the organisationGroupUsersUpdateOrganisationGroupUsers operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupUsersApi~organisationGroupUsersUpdateOrganisationGroupUsersCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Set the users who belong to an organisation group
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSetOrganisationGroupUsersRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetOrganisationGroupUsersRequest} request 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupUsersApi~organisationGroupUsersUpdateOrganisationGroupUsersCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
      */
     this.organisationGroupUsersUpdateOrganisationGroupUsers = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -146,7 +146,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseBoolean;
+      var returnType = CSApiResponseBoolean;
 
       return this.apiClient.callApi(
         '/api/OrganisationGroupUsers/UpdateOrganisationGroupUsers', 'POST',

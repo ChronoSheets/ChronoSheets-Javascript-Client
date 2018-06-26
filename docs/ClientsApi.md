@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="clientsCreateClient"></a>
 # **clientsCreateClient**
-> CsApiApiResponseInt32 clientsCreateClient(request, xChronosheetsAuth)
+> CSApiResponseInt32 clientsCreateClient(request, xChronosheetsAuth)
 
 Create a client
 
@@ -22,7 +22,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.ClientsApi();
 
-var request = new ChronoSheetsApi.CsApiInsertClientRequest(); // CsApiInsertClientRequest | 
+var request = new ChronoSheetsApi.CSInsertClientRequest(); // CSInsertClientRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -41,12 +41,12 @@ apiInstance.clientsCreateClient(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiInsertClientRequest**](CsApiInsertClientRequest.md)|  | 
+ **request** | [**CSInsertClientRequest**](CSInsertClientRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseInt32**](CsApiApiResponseInt32.md)
+[**CSApiResponseInt32**](CSApiResponseInt32.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ No authorization required
 
 <a name="clientsGetClient"></a>
 # **clientsGetClient**
-> CsApiApiResponseClient clientsGetClient(clientId, xChronosheetsAuth)
+> CSApiResponseClient clientsGetClient(clientId, xChronosheetsAuth)
 
 Get a particular client
 
@@ -93,7 +93,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseClient**](CsApiApiResponseClient.md)
+[**CSApiResponseClient**](CSApiResponseClient.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ No authorization required
 
 <a name="clientsGetClients"></a>
 # **clientsGetClients**
-> CsApiApiResponseListClient clientsGetClients(xChronosheetsAuth)
+> CSApiResponseListClient clientsGetClients(xChronosheetsAuth)
 
 Get a collection of clients that are under your organisation
 
@@ -137,7 +137,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListClient**](CsApiApiResponseListClient.md)
+[**CSApiResponseListClient**](CSApiResponseListClient.md)
 
 ### Authorization
 
@@ -150,7 +150,7 @@ No authorization required
 
 <a name="clientsUpdateClient"></a>
 # **clientsUpdateClient**
-> CsApiApiResponseBoolean clientsUpdateClient(request, xChronosheetsAuth)
+> CSApiResponseBoolean clientsUpdateClient(request, xChronosheetsAuth)
 
 Update a client
 
@@ -160,7 +160,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.ClientsApi();
 
-var request = new ChronoSheetsApi.CsApiSaveClientRequest(); // CsApiSaveClientRequest | 
+var request = new ChronoSheetsApi.CSSaveClientRequest(); // CSSaveClientRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -179,12 +179,12 @@ apiInstance.clientsUpdateClient(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiSaveClientRequest**](CsApiSaveClientRequest.md)|  | 
+ **request** | [**CSSaveClientRequest**](CSSaveClientRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 

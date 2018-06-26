@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="projectsCreateProject"></a>
 # **projectsCreateProject**
-> CsApiApiResponseInt32 projectsCreateProject(request, xChronosheetsAuth)
+> CSApiResponseInt32 projectsCreateProject(request, xChronosheetsAuth)
 
 Create a project
 
@@ -22,7 +22,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.ProjectsApi();
 
-var request = new ChronoSheetsApi.CsApiInsertProjectRequest(); // CsApiInsertProjectRequest | 
+var request = new ChronoSheetsApi.CSInsertProjectRequest(); // CSInsertProjectRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -41,12 +41,12 @@ apiInstance.projectsCreateProject(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiInsertProjectRequest**](CsApiInsertProjectRequest.md)|  | 
+ **request** | [**CSInsertProjectRequest**](CSInsertProjectRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseInt32**](CsApiApiResponseInt32.md)
+[**CSApiResponseInt32**](CSApiResponseInt32.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ No authorization required
 
 <a name="projectsGetProjectById"></a>
 # **projectsGetProjectById**
-> CsApiApiResponseProject projectsGetProjectById(projectId, xChronosheetsAuth)
+> CSApiResponseProject projectsGetProjectById(projectId, xChronosheetsAuth)
 
 Get project by Id
 
@@ -93,7 +93,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseProject**](CsApiApiResponseProject.md)
+[**CSApiResponseProject**](CSApiResponseProject.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ No authorization required
 
 <a name="projectsGetProjectsForClient"></a>
 # **projectsGetProjectsForClient**
-> CsApiApiResponseListProject projectsGetProjectsForClient(clientId, xChronosheetsAuth)
+> CSApiResponseListProject projectsGetProjectsForClient(clientId, xChronosheetsAuth)
 
 Get projects for a particular client
 
@@ -140,7 +140,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListProject**](CsApiApiResponseListProject.md)
+[**CSApiResponseListProject**](CSApiResponseListProject.md)
 
 ### Authorization
 
@@ -153,7 +153,7 @@ No authorization required
 
 <a name="projectsUpdateProject"></a>
 # **projectsUpdateProject**
-> CsApiApiResponseBoolean projectsUpdateProject(request, xChronosheetsAuth)
+> CSApiResponseBoolean projectsUpdateProject(request, xChronosheetsAuth)
 
 Update a project
 
@@ -163,7 +163,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.ProjectsApi();
 
-var request = new ChronoSheetsApi.CsApiUpdateProjectRequest(); // CsApiUpdateProjectRequest | 
+var request = new ChronoSheetsApi.CSUpdateProjectRequest(); // CSUpdateProjectRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -182,12 +182,12 @@ apiInstance.projectsUpdateProject(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiUpdateProjectRequest**](CsApiUpdateProjectRequest.md)|  | 
+ **request** | [**CSUpdateProjectRequest**](CSUpdateProjectRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 

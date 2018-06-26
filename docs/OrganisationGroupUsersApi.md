@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="organisationGroupUsersGetOrganisationGroupUsers"></a>
 # **organisationGroupUsersGetOrganisationGroupUsers**
-> CsApiApiResponseListUserForManagement organisationGroupUsersGetOrganisationGroupUsers(orgGroupId, xChronosheetsAuth)
+> CSApiResponseListUserForManagement organisationGroupUsersGetOrganisationGroupUsers(orgGroupId, xChronosheetsAuth)
 
 Get a collection of organisation group users that belong to an organisation group
 
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListUserForManagement**](CsApiApiResponseListUserForManagement.md)
+[**CSApiResponseListUserForManagement**](CSApiResponseListUserForManagement.md)
 
 ### Authorization
 
@@ -57,7 +57,7 @@ No authorization required
 
 <a name="organisationGroupUsersUpdateOrganisationGroupUsers"></a>
 # **organisationGroupUsersUpdateOrganisationGroupUsers**
-> CsApiApiResponseBoolean organisationGroupUsersUpdateOrganisationGroupUsers(request, xChronosheetsAuth)
+> CSApiResponseBoolean organisationGroupUsersUpdateOrganisationGroupUsers(request, xChronosheetsAuth)
 
 Set the users who belong to an organisation group
 
@@ -67,7 +67,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.OrganisationGroupUsersApi();
 
-var request = new ChronoSheetsApi.CsApiSetOrganisationGroupUsersRequest(); // CsApiSetOrganisationGroupUsersRequest | 
+var request = new ChronoSheetsApi.CSSetOrganisationGroupUsersRequest(); // CSSetOrganisationGroupUsersRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -86,12 +86,12 @@ apiInstance.organisationGroupUsersUpdateOrganisationGroupUsers(request, xChronos
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiSetOrganisationGroupUsersRequest**](CsApiSetOrganisationGroupUsersRequest.md)|  | 
+ **request** | [**CSSetOrganisationGroupUsersRequest**](CSSetOrganisationGroupUsersRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 

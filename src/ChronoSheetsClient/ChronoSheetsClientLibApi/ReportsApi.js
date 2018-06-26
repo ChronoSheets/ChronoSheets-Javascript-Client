@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseCombinedReportsData', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListRawReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListJobSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListProjectCostingReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseTrip'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CsApiApiResponseCombinedReportsData'), require('../ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment'), require('../ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTrip'), require('../ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListRawReportItem'), require('../ChronoSheetsClientLibModel/CsApiApiResponseListJobSeriesReportItem'), require('../ChronoSheetsClientLibModel/CsApiApiResponseListProjectCostingReportItem'), require('../ChronoSheetsClientLibModel/CsApiApiResponseTrip'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseTrip'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.ReportsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CsApiApiResponseCombinedReportsData, root.ChronoSheetsApi.CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment, root.ChronoSheetsApi.CsApiApiResponseForPaginatedListOrgReportTrip, root.ChronoSheetsApi.CsApiApiResponseForPaginatedListRawReportItem, root.ChronoSheetsApi.CsApiApiResponseListJobSeriesReportItem, root.ChronoSheetsApi.CsApiApiResponseListProjectCostingReportItem, root.ChronoSheetsApi.CsApiApiResponseTrip);
+    root.ChronoSheetsApi.ReportsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseCombinedReportsData, root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment, root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTrip, root.ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem, root.ChronoSheetsApi.CSApiResponseListJobSeriesReportItem, root.ChronoSheetsApi.CSApiResponseListProjectCostingReportItem, root.ChronoSheetsApi.CSApiResponseTrip);
   }
-}(this, function(ApiClient, CsApiApiResponseCombinedReportsData, CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment, CsApiApiResponseForPaginatedListOrgReportTrip, CsApiApiResponseForPaginatedListRawReportItem, CsApiApiResponseListJobSeriesReportItem, CsApiApiResponseListProjectCostingReportItem, CsApiApiResponseTrip) {
+}(this, function(ApiClient, CSApiResponseCombinedReportsData, CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment, CSApiResponseForPaginatedListOrgReportTrip, CSApiResponseForPaginatedListRawReportItem, CSApiResponseListJobSeriesReportItem, CSApiResponseListProjectCostingReportItem, CSApiResponseTrip) {
   'use strict';
 
   /**
@@ -52,7 +52,7 @@
      * Callback function to receive the result of the reportsGetAllChartsDataAdmin operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetAllChartsDataAdminCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseCombinedReportsData} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -63,7 +63,7 @@
      * @param {String} userIds 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetAllChartsDataAdminCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseCombinedReportsData}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData}
      */
     this.reportsGetAllChartsDataAdmin = function(startDate, endDate, userIds, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -107,7 +107,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseCombinedReportsData;
+      var returnType = CSApiResponseCombinedReportsData;
 
       return this.apiClient.callApi(
         '/api/Reports/GetAllChartsDataAdmin', 'GET',
@@ -120,7 +120,7 @@
      * Callback function to receive the result of the reportsGetAllChartsDataUser operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetAllChartsDataUserCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseCombinedReportsData} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -130,7 +130,7 @@
      * @param {Date} endDate 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetAllChartsDataUserCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseCombinedReportsData}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData}
      */
     this.reportsGetAllChartsDataUser = function(startDate, endDate, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -168,7 +168,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseCombinedReportsData;
+      var returnType = CSApiResponseCombinedReportsData;
 
       return this.apiClient.callApi(
         '/api/Reports/GetAllChartsDataUser', 'GET',
@@ -181,7 +181,7 @@
      * Callback function to receive the result of the reportsGetOrgTripById operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrgTripByIdCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseTrip} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -190,7 +190,7 @@
      * @param {Number} tripId The ID of the trip
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrgTripByIdCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseTrip}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip}
      */
     this.reportsGetOrgTripById = function(tripId, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -222,7 +222,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseTrip;
+      var returnType = CSApiResponseTrip;
 
       return this.apiClient.callApi(
         '/api/Reports/GetOrgTripById', 'GET',
@@ -235,7 +235,7 @@
      * Callback function to receive the result of the reportsGetOrganisationTimesheetFileAttachments operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrganisationTimesheetFileAttachmentsCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -248,7 +248,7 @@
      * @param {String} userIds 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrganisationTimesheetFileAttachmentsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment}
      */
     this.reportsGetOrganisationTimesheetFileAttachments = function(startDate, endDate, skip, take, userIds, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -304,7 +304,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseForPaginatedListOrgReportTimesheetFileAttachment;
+      var returnType = CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment;
 
       return this.apiClient.callApi(
         '/api/Reports/GetOrganisationTimesheetFileAttachments', 'GET',
@@ -317,7 +317,7 @@
      * Callback function to receive the result of the reportsGetOrganisationTrips operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrganisationTripsCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTrip} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -330,7 +330,7 @@
      * @param {String} userIds 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrganisationTripsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListOrgReportTrip}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip}
      */
     this.reportsGetOrganisationTrips = function(startDate, endDate, skip, take, userIds, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -386,7 +386,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseForPaginatedListOrgReportTrip;
+      var returnType = CSApiResponseForPaginatedListOrgReportTrip;
 
       return this.apiClient.callApi(
         '/api/Reports/GetOrganisationTrips', 'GET',
@@ -399,7 +399,7 @@
      * Callback function to receive the result of the reportsGetRawDataAdmin operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetRawDataAdminCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListRawReportItem} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -414,7 +414,7 @@
      * @param {Number} take 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetRawDataAdminCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListRawReportItem}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem}
      */
     this.reportsGetRawDataAdmin = function(startDate, endDate, userIds, sort, order, skip, take, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -482,7 +482,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseForPaginatedListRawReportItem;
+      var returnType = CSApiResponseForPaginatedListRawReportItem;
 
       return this.apiClient.callApi(
         '/api/Reports/GetRawDataAdmin', 'GET',
@@ -495,7 +495,7 @@
      * Callback function to receive the result of the reportsProjectCostingsAdmin operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsProjectCostingsAdminCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListProjectCostingReportItem} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -506,7 +506,7 @@
      * @param {String} userIds 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsProjectCostingsAdminCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListProjectCostingReportItem}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem}
      */
     this.reportsProjectCostingsAdmin = function(startDate, endDate, userIds, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -550,7 +550,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseListProjectCostingReportItem;
+      var returnType = CSApiResponseListProjectCostingReportItem;
 
       return this.apiClient.callApi(
         '/api/Reports/ProjectCostingsAdmin', 'GET',
@@ -563,7 +563,7 @@
      * Callback function to receive the result of the reportsUserJobsOverTime operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsUserJobsOverTimeCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListJobSeriesReportItem} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -573,7 +573,7 @@
      * @param {Date} endDate 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsUserJobsOverTimeCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListJobSeriesReportItem}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem}
      */
     this.reportsUserJobsOverTime = function(startDate, endDate, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -611,7 +611,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseListJobSeriesReportItem;
+      var returnType = CSApiResponseListJobSeriesReportItem;
 
       return this.apiClient.callApi(
         '/api/Reports/UserJobsOverTime', 'GET',

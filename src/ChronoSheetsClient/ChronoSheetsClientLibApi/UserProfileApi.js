@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseDoLoginResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseSignupResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUserProfile', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiDoLoginRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateMyProfileRequest'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseDoLoginResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseSignupResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUserProfile', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSDoLoginRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateMyProfileRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CsApiApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CsApiApiResponseDoLoginResponse'), require('../ChronoSheetsClientLibModel/CsApiApiResponseSignupResponse'), require('../ChronoSheetsClientLibModel/CsApiApiResponseUserProfile'), require('../ChronoSheetsClientLibModel/CsApiDoLoginRequest'), require('../ChronoSheetsClientLibModel/CsApiUpdateMyProfileRequest'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseDoLoginResponse'), require('../ChronoSheetsClientLibModel/CSApiResponseSignupResponse'), require('../ChronoSheetsClientLibModel/CSApiResponseUserProfile'), require('../ChronoSheetsClientLibModel/CSDoLoginRequest'), require('../ChronoSheetsClientLibModel/CSUpdateMyProfileRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.UserProfileApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CsApiApiResponseBoolean, root.ChronoSheetsApi.CsApiApiResponseDoLoginResponse, root.ChronoSheetsApi.CsApiApiResponseSignupResponse, root.ChronoSheetsApi.CsApiApiResponseUserProfile, root.ChronoSheetsApi.CsApiDoLoginRequest, root.ChronoSheetsApi.CsApiUpdateMyProfileRequest);
+    root.ChronoSheetsApi.UserProfileApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseDoLoginResponse, root.ChronoSheetsApi.CSApiResponseSignupResponse, root.ChronoSheetsApi.CSApiResponseUserProfile, root.ChronoSheetsApi.CSDoLoginRequest, root.ChronoSheetsApi.CSUpdateMyProfileRequest);
   }
-}(this, function(ApiClient, CsApiApiResponseBoolean, CsApiApiResponseDoLoginResponse, CsApiApiResponseSignupResponse, CsApiApiResponseUserProfile, CsApiDoLoginRequest, CsApiUpdateMyProfileRequest) {
+}(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseDoLoginResponse, CSApiResponseSignupResponse, CSApiResponseUserProfile, CSDoLoginRequest, CSUpdateMyProfileRequest) {
   'use strict';
 
   /**
@@ -52,14 +52,14 @@
      * Callback function to receive the result of the userProfileDoLogin operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileDoLoginCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseDoLoginResponse} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseDoLoginResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiDoLoginRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSDoLoginRequest} request 
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileDoLoginCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseDoLoginResponse}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseDoLoginResponse}
      */
     this.userProfileDoLogin = function(request, callback) {
       var postBody = request;
@@ -84,7 +84,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseDoLoginResponse;
+      var returnType = CSApiResponseDoLoginResponse;
 
       return this.apiClient.callApi(
         '/api/UserProfile/DoLogin', 'POST',
@@ -97,14 +97,14 @@
      * Callback function to receive the result of the userProfileDoLogout operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileDoLogoutCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileDoLogoutCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
      */
     this.userProfileDoLogout = function(xChronosheetsAuth, callback) {
       var postBody = null;
@@ -130,7 +130,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseBoolean;
+      var returnType = CSApiResponseBoolean;
 
       return this.apiClient.callApi(
         '/api/UserProfile/DoLogout', 'DELETE',
@@ -143,14 +143,14 @@
      * Callback function to receive the result of the userProfileGetMyProfile operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileGetMyProfileCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUserProfile} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUserProfile} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileGetMyProfileCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUserProfile}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUserProfile}
      */
     this.userProfileGetMyProfile = function(xChronosheetsAuth, callback) {
       var postBody = null;
@@ -176,7 +176,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseUserProfile;
+      var returnType = CSApiResponseUserProfile;
 
       return this.apiClient.callApi(
         '/api/UserProfile/GetMyProfile', 'GET',
@@ -189,14 +189,14 @@
      * Callback function to receive the result of the userProfileKeepSessionAlive operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileKeepSessionAliveCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileKeepSessionAliveCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
      */
     this.userProfileKeepSessionAlive = function(xChronosheetsAuth, callback) {
       var postBody = null;
@@ -222,7 +222,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseBoolean;
+      var returnType = CSApiResponseBoolean;
 
       return this.apiClient.callApi(
         '/api/UserProfile/KeepSessionAlive', 'GET',
@@ -235,15 +235,15 @@
      * Callback function to receive the result of the userProfileUpdateMyProfile operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileUpdateMyProfileCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseSignupResponse} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseSignupResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateMyProfileRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateMyProfileRequest} request 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileUpdateMyProfileCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseSignupResponse}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseSignupResponse}
      */
     this.userProfileUpdateMyProfile = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -274,7 +274,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseSignupResponse;
+      var returnType = CSApiResponseSignupResponse;
 
       return this.apiClient.callApi(
         '/api/UserProfile/UpdateMyProfile', 'POST',

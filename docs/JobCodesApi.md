@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="jobCodesCreateJobCode"></a>
 # **jobCodesCreateJobCode**
-> CsApiApiResponseInt32 jobCodesCreateJobCode(request, xChronosheetsAuth)
+> CSApiResponseInt32 jobCodesCreateJobCode(request, xChronosheetsAuth)
 
 Create a job code
 
@@ -23,7 +23,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.JobCodesApi();
 
-var request = new ChronoSheetsApi.CsApiInsertJobCodeRequest(); // CsApiInsertJobCodeRequest | 
+var request = new ChronoSheetsApi.CSInsertJobCodeRequest(); // CSInsertJobCodeRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -42,12 +42,12 @@ apiInstance.jobCodesCreateJobCode(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiInsertJobCodeRequest**](CsApiInsertJobCodeRequest.md)|  | 
+ **request** | [**CSInsertJobCodeRequest**](CSInsertJobCodeRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseInt32**](CsApiApiResponseInt32.md)
+[**CSApiResponseInt32**](CSApiResponseInt32.md)
 
 ### Authorization
 
@@ -60,7 +60,7 @@ No authorization required
 
 <a name="jobCodesDeleteJobCode"></a>
 # **jobCodesDeleteJobCode**
-> CsApiApiResponseBoolean jobCodesDeleteJobCode(jobCodeId, xChronosheetsAuth)
+> CSApiResponseBoolean jobCodesDeleteJobCode(jobCodeId, xChronosheetsAuth)
 
 Delete a job code
 
@@ -94,7 +94,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 
@@ -107,7 +107,7 @@ No authorization required
 
 <a name="jobCodesGetJobCodeById"></a>
 # **jobCodesGetJobCodeById**
-> CsApiApiResponseJobCode jobCodesGetJobCodeById(jobCodeId, xChronosheetsAuth)
+> CSApiResponseJobCode jobCodesGetJobCodeById(jobCodeId, xChronosheetsAuth)
 
 Get a particular job code by job code id
 
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseJobCode**](CsApiApiResponseJobCode.md)
+[**CSApiResponseJobCode**](CSApiResponseJobCode.md)
 
 ### Authorization
 
@@ -154,7 +154,7 @@ No authorization required
 
 <a name="jobCodesGetJobCodes"></a>
 # **jobCodesGetJobCodes**
-> CsApiApiResponseListJobCode jobCodesGetJobCodes(xChronosheetsAuth)
+> CSApiResponseListJobCode jobCodesGetJobCodes(xChronosheetsAuth)
 
 Get job codes for your organisation
 
@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListJobCode**](CsApiApiResponseListJobCode.md)
+[**CSApiResponseListJobCode**](CSApiResponseListJobCode.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ No authorization required
 
 <a name="jobCodesUpdateJobCode"></a>
 # **jobCodesUpdateJobCode**
-> CsApiApiResponseBoolean jobCodesUpdateJobCode(request, xChronosheetsAuth)
+> CSApiResponseBoolean jobCodesUpdateJobCode(request, xChronosheetsAuth)
 
 Update a job code
 
@@ -208,7 +208,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.JobCodesApi();
 
-var request = new ChronoSheetsApi.CsApiUpdateJobCodeRequest(); // CsApiUpdateJobCodeRequest | 
+var request = new ChronoSheetsApi.CSUpdateJobCodeRequest(); // CSUpdateJobCodeRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -227,12 +227,12 @@ apiInstance.jobCodesUpdateJobCode(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiUpdateJobCodeRequest**](CsApiUpdateJobCodeRequest.md)|  | 
+ **request** | [**CSUpdateJobCodeRequest**](CSUpdateJobCodeRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 

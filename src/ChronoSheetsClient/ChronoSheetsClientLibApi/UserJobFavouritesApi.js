@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserJobFavourite', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserJobFavouriteRequest'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserJobFavourite', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserJobFavouriteRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CsApiApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CsApiApiResponseInt32'), require('../ChronoSheetsClientLibModel/CsApiApiResponseListUserJobFavourite'), require('../ChronoSheetsClientLibModel/CsApiInsertUserJobFavouriteRequest'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseListUserJobFavourite'), require('../ChronoSheetsClientLibModel/CSInsertUserJobFavouriteRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.UserJobFavouritesApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CsApiApiResponseBoolean, root.ChronoSheetsApi.CsApiApiResponseInt32, root.ChronoSheetsApi.CsApiApiResponseListUserJobFavourite, root.ChronoSheetsApi.CsApiInsertUserJobFavouriteRequest);
+    root.ChronoSheetsApi.UserJobFavouritesApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseListUserJobFavourite, root.ChronoSheetsApi.CSInsertUserJobFavouriteRequest);
   }
-}(this, function(ApiClient, CsApiApiResponseBoolean, CsApiApiResponseInt32, CsApiApiResponseListUserJobFavourite, CsApiInsertUserJobFavouriteRequest) {
+}(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseInt32, CSApiResponseListUserJobFavourite, CSInsertUserJobFavouriteRequest) {
   'use strict';
 
   /**
@@ -52,16 +52,16 @@
      * Callback function to receive the result of the userJobFavouritesCreateJobFavourite operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserJobFavouritesApi~userJobFavouritesCreateJobFavouriteCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create a job favourite
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertUserJobFavouriteRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserJobFavouriteRequest} request 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserJobFavouritesApi~userJobFavouritesCreateJobFavouriteCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
      */
     this.userJobFavouritesCreateJobFavourite = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -92,7 +92,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseInt32;
+      var returnType = CSApiResponseInt32;
 
       return this.apiClient.callApi(
         '/api/UserJobFavourites/CreateJobFavourite', 'PUT',
@@ -105,7 +105,7 @@
      * Callback function to receive the result of the userJobFavouritesDeleteJobFavourite operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserJobFavouritesApi~userJobFavouritesDeleteJobFavouriteCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -114,7 +114,7 @@
      * @param {Number} jobId The ID of the Job
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserJobFavouritesApi~userJobFavouritesDeleteJobFavouriteCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
      */
     this.userJobFavouritesDeleteJobFavourite = function(jobId, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -146,7 +146,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseBoolean;
+      var returnType = CSApiResponseBoolean;
 
       return this.apiClient.callApi(
         '/api/UserJobFavourites/DeleteJobFavourite', 'DELETE',
@@ -159,7 +159,7 @@
      * Callback function to receive the result of the userJobFavouritesGetJobFavourites operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserJobFavouritesApi~userJobFavouritesGetJobFavouritesCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserJobFavourite} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserJobFavourite} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -167,7 +167,7 @@
      * Get your job favourites
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserJobFavouritesApi~userJobFavouritesGetJobFavouritesCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUserJobFavourite}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserJobFavourite}
      */
     this.userJobFavouritesGetJobFavourites = function(xChronosheetsAuth, callback) {
       var postBody = null;
@@ -193,7 +193,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseListUserJobFavourite;
+      var returnType = CSApiResponseListUserJobFavourite;
 
       return this.apiClient.callApi(
         '/api/UserJobFavourites/GetJobFavourites', 'GET',

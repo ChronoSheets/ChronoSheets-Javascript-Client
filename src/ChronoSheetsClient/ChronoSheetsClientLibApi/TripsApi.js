@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiCreateTripRequest'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSCreateTripRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListTrip'), require('../ChronoSheetsClientLibModel/CsApiApiResponseInt32'), require('../ChronoSheetsClientLibModel/CsApiApiResponseTrip'), require('../ChronoSheetsClientLibModel/CsApiCreateTripRequest'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTrip'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseTrip'), require('../ChronoSheetsClientLibModel/CSCreateTripRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.TripsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CsApiApiResponseForPaginatedListTrip, root.ChronoSheetsApi.CsApiApiResponseInt32, root.ChronoSheetsApi.CsApiApiResponseTrip, root.ChronoSheetsApi.CsApiCreateTripRequest);
+    root.ChronoSheetsApi.TripsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseForPaginatedListTrip, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseTrip, root.ChronoSheetsApi.CSCreateTripRequest);
   }
-}(this, function(ApiClient, CsApiApiResponseForPaginatedListTrip, CsApiApiResponseInt32, CsApiApiResponseTrip, CsApiCreateTripRequest) {
+}(this, function(ApiClient, CSApiResponseForPaginatedListTrip, CSApiResponseInt32, CSApiResponseTrip, CSCreateTripRequest) {
   'use strict';
 
   /**
@@ -52,16 +52,16 @@
      * Callback function to receive the result of the tripsCreateTrip operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/TripsApi~tripsCreateTripCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create a new trip.  Important: create a timesheet record before calling this, passing in the new timesheet record id as a reference.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiCreateTripRequest} request The create trip request
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSCreateTripRequest} request The create trip request
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TripsApi~tripsCreateTripCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
      */
     this.tripsCreateTrip = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -92,7 +92,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseInt32;
+      var returnType = CSApiResponseInt32;
 
       return this.apiClient.callApi(
         '/api/Trips/CreateTrip', 'POST',
@@ -105,7 +105,7 @@
      * Callback function to receive the result of the tripsGetMyTripById operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/TripsApi~tripsGetMyTripByIdCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseTrip} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -114,7 +114,7 @@
      * @param {Number} tripId The ID of the trip
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TripsApi~tripsGetMyTripByIdCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseTrip}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip}
      */
     this.tripsGetMyTripById = function(tripId, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -146,7 +146,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseTrip;
+      var returnType = CSApiResponseTrip;
 
       return this.apiClient.callApi(
         '/api/Trips/GetMyTripById', 'GET',
@@ -159,7 +159,7 @@
      * Callback function to receive the result of the tripsGetMyTrips operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/TripsApi~tripsGetMyTripsCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListTrip} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTrip} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -172,7 +172,7 @@
      * @param {Number} vehicleId 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TripsApi~tripsGetMyTripsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseForPaginatedListTrip}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTrip}
      */
     this.tripsGetMyTrips = function(startDate, endDate, skip, take, vehicleId, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -228,7 +228,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseForPaginatedListTrip;
+      var returnType = CSApiResponseForPaginatedListTrip;
 
       return this.apiClient.callApi(
         '/api/Trips/GetMyTrips', 'GET',

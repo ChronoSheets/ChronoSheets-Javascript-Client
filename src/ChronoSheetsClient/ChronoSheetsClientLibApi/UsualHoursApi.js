@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUsualHoursDay', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSetUsualHoursRequest'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUsualHoursDay', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetUsualHoursRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CsApiApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CsApiApiResponseListUsualHoursDay'), require('../ChronoSheetsClientLibModel/CsApiSetUsualHoursRequest'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseListUsualHoursDay'), require('../ChronoSheetsClientLibModel/CSSetUsualHoursRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.UsualHoursApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CsApiApiResponseBoolean, root.ChronoSheetsApi.CsApiApiResponseListUsualHoursDay, root.ChronoSheetsApi.CsApiSetUsualHoursRequest);
+    root.ChronoSheetsApi.UsualHoursApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseListUsualHoursDay, root.ChronoSheetsApi.CSSetUsualHoursRequest);
   }
-}(this, function(ApiClient, CsApiApiResponseBoolean, CsApiApiResponseListUsualHoursDay, CsApiSetUsualHoursRequest) {
+}(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseListUsualHoursDay, CSSetUsualHoursRequest) {
   'use strict';
 
   /**
@@ -52,7 +52,7 @@
      * Callback function to receive the result of the usualHoursGetUsualHours operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsualHoursApi~usualHoursGetUsualHoursCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUsualHoursDay} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUsualHoursDay} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -61,7 +61,7 @@
      * @param {Number} userId 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsualHoursApi~usualHoursGetUsualHoursCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListUsualHoursDay}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUsualHoursDay}
      */
     this.usualHoursGetUsualHours = function(userId, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -93,7 +93,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseListUsualHoursDay;
+      var returnType = CSApiResponseListUsualHoursDay;
 
       return this.apiClient.callApi(
         '/api/UsualHours/GetUsualHours', 'GET',
@@ -106,16 +106,16 @@
      * Callback function to receive the result of the usualHoursSetUsualHours operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsualHoursApi~usualHoursSetUsualHoursCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Set usual hours (rostered hours) for an employee
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiSetUsualHoursRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetUsualHoursRequest} request 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsualHoursApi~usualHoursSetUsualHoursCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
      */
     this.usualHoursSetUsualHours = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -146,7 +146,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseBoolean;
+      var returnType = CSApiResponseBoolean;
 
       return this.apiClient.callApi(
         '/api/UsualHours/SetUsualHours', 'POST',

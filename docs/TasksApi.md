@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 <a name="tasksCreateTask"></a>
 # **tasksCreateTask**
-> CsApiApiResponseInt32 tasksCreateTask(request, xChronosheetsAuth)
+> CSApiResponseInt32 tasksCreateTask(request, xChronosheetsAuth)
 
 Create a task
 
@@ -24,7 +24,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.TasksApi();
 
-var request = new ChronoSheetsApi.CsApiInsertTaskRequest(); // CsApiInsertTaskRequest | 
+var request = new ChronoSheetsApi.CSInsertTaskRequest(); // CSInsertTaskRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -43,12 +43,12 @@ apiInstance.tasksCreateTask(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiInsertTaskRequest**](CsApiInsertTaskRequest.md)|  | 
+ **request** | [**CSInsertTaskRequest**](CSInsertTaskRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseInt32**](CsApiApiResponseInt32.md)
+[**CSApiResponseInt32**](CSApiResponseInt32.md)
 
 ### Authorization
 
@@ -61,7 +61,7 @@ No authorization required
 
 <a name="tasksDeleteTask"></a>
 # **tasksDeleteTask**
-> CsApiApiResponseBoolean tasksDeleteTask(taskId, xChronosheetsAuth)
+> CSApiResponseBoolean tasksDeleteTask(taskId, xChronosheetsAuth)
 
 Delete a task
 
@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 
@@ -108,7 +108,7 @@ No authorization required
 
 <a name="tasksGetTaskById"></a>
 # **tasksGetTaskById**
-> CsApiApiResponseTimesheetTask tasksGetTaskById(taskId, xChronosheetsAuth)
+> CSApiResponseTimesheetTask tasksGetTaskById(taskId, xChronosheetsAuth)
 
 Get a particular task by id
 
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseTimesheetTask**](CsApiApiResponseTimesheetTask.md)
+[**CSApiResponseTimesheetTask**](CSApiResponseTimesheetTask.md)
 
 ### Authorization
 
@@ -155,7 +155,7 @@ No authorization required
 
 <a name="tasksGetTasks"></a>
 # **tasksGetTasks**
-> CsApiApiResponseListTimesheetTask tasksGetTasks(xChronosheetsAuth)
+> CSApiResponseListTimesheetTask tasksGetTasks(xChronosheetsAuth)
 
 Get tasks in your organisation
 
@@ -186,7 +186,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListTimesheetTask**](CsApiApiResponseListTimesheetTask.md)
+[**CSApiResponseListTimesheetTask**](CSApiResponseListTimesheetTask.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ No authorization required
 
 <a name="tasksGetTasksForJob"></a>
 # **tasksGetTasksForJob**
-> CsApiApiResponseListTimesheetTask tasksGetTasksForJob(jobId, xChronosheetsAuth)
+> CSApiResponseListTimesheetTask tasksGetTasksForJob(jobId, xChronosheetsAuth)
 
 Get tasks for a particular job
 
@@ -233,7 +233,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListTimesheetTask**](CsApiApiResponseListTimesheetTask.md)
+[**CSApiResponseListTimesheetTask**](CSApiResponseListTimesheetTask.md)
 
 ### Authorization
 
@@ -246,7 +246,7 @@ No authorization required
 
 <a name="tasksUpdateTask"></a>
 # **tasksUpdateTask**
-> CsApiApiResponseBoolean tasksUpdateTask(request, xChronosheetsAuth)
+> CSApiResponseBoolean tasksUpdateTask(request, xChronosheetsAuth)
 
 Update a task
 
@@ -256,7 +256,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.TasksApi();
 
-var request = new ChronoSheetsApi.CsApiUpdateTaskRequest(); // CsApiUpdateTaskRequest | 
+var request = new ChronoSheetsApi.CSUpdateTaskRequest(); // CSUpdateTaskRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -275,12 +275,12 @@ apiInstance.tasksUpdateTask(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiUpdateTaskRequest**](CsApiUpdateTaskRequest.md)|  | 
+ **request** | [**CSUpdateTaskRequest**](CSUpdateTaskRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 

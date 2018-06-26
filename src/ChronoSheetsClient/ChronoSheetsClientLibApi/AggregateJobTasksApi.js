@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListAggregateJobCode'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListAggregateJobCode'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CsApiApiResponseListAggregateJobCode'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseListAggregateJobCode'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.AggregateJobTasksApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CsApiApiResponseListAggregateJobCode);
+    root.ChronoSheetsApi.AggregateJobTasksApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseListAggregateJobCode);
   }
-}(this, function(ApiClient, CsApiApiResponseListAggregateJobCode) {
+}(this, function(ApiClient, CSApiResponseListAggregateJobCode) {
   'use strict';
 
   /**
@@ -52,7 +52,7 @@
      * Callback function to receive the result of the aggregateJobTasksGetAggregateJobTasks operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/AggregateJobTasksApi~aggregateJobTasksGetAggregateJobTasksCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListAggregateJobCode} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListAggregateJobCode} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -60,7 +60,7 @@
      * Get jobs and tasks information, aggregated
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/AggregateJobTasksApi~aggregateJobTasksGetAggregateJobTasksCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListAggregateJobCode}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListAggregateJobCode}
      */
     this.aggregateJobTasksGetAggregateJobTasks = function(xChronosheetsAuth, callback) {
       var postBody = null;
@@ -86,7 +86,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseListAggregateJobCode;
+      var returnType = CSApiResponseListAggregateJobCode;
 
       return this.apiClient.callApi(
         '/api/AggregateJobTasks/GetAggregateJobTasks', 'GET',

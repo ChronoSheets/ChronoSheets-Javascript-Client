@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="aggregateJobTasksGetAggregateJobTasks"></a>
 # **aggregateJobTasksGetAggregateJobTasks**
-> CsApiApiResponseListAggregateJobCode aggregateJobTasksGetAggregateJobTasks(xChronosheetsAuth)
+> CSApiResponseListAggregateJobCode aggregateJobTasksGetAggregateJobTasks(xChronosheetsAuth)
 
 Get jobs and tasks information, aggregated
 
@@ -40,7 +40,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListAggregateJobCode**](CsApiApiResponseListAggregateJobCode.md)
+[**CSApiResponseListAggregateJobCode**](CSApiResponseListAggregateJobCode.md)
 
 ### Authorization
 

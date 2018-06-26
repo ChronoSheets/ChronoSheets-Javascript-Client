@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseOrganisation', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUpdateOrganisationResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateOrganisationRequest'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseOrganisation', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateOrganisationResponse', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateOrganisationRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CsApiApiResponseOrganisation'), require('../ChronoSheetsClientLibModel/CsApiApiResponseUpdateOrganisationResponse'), require('../ChronoSheetsClientLibModel/CsApiUpdateOrganisationRequest'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseOrganisation'), require('../ChronoSheetsClientLibModel/CSApiResponseUpdateOrganisationResponse'), require('../ChronoSheetsClientLibModel/CSUpdateOrganisationRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.OrganisationApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CsApiApiResponseOrganisation, root.ChronoSheetsApi.CsApiApiResponseUpdateOrganisationResponse, root.ChronoSheetsApi.CsApiUpdateOrganisationRequest);
+    root.ChronoSheetsApi.OrganisationApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseOrganisation, root.ChronoSheetsApi.CSApiResponseUpdateOrganisationResponse, root.ChronoSheetsApi.CSUpdateOrganisationRequest);
   }
-}(this, function(ApiClient, CsApiApiResponseOrganisation, CsApiApiResponseUpdateOrganisationResponse, CsApiUpdateOrganisationRequest) {
+}(this, function(ApiClient, CSApiResponseOrganisation, CSApiResponseUpdateOrganisationResponse, CSUpdateOrganisationRequest) {
   'use strict';
 
   /**
@@ -52,7 +52,7 @@
      * Callback function to receive the result of the organisationGetOrganisation operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationApi~organisationGetOrganisationCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseOrganisation} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseOrganisation} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -60,7 +60,7 @@
      * Get your organisation.  Requires &#39;OrganisationAdmin&#39; permission.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationApi~organisationGetOrganisationCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseOrganisation}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseOrganisation}
      */
     this.organisationGetOrganisation = function(xChronosheetsAuth, callback) {
       var postBody = null;
@@ -86,7 +86,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseOrganisation;
+      var returnType = CSApiResponseOrganisation;
 
       return this.apiClient.callApi(
         '/api/Organisation/GetOrganisation', 'GET',
@@ -99,16 +99,16 @@
      * Callback function to receive the result of the organisationUpdateOrganisation operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationApi~organisationUpdateOrganisationCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUpdateOrganisationResponse} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateOrganisationResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Update an organisation.  Requires &#39;OrganisationAdmin&#39; permission.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateOrganisationRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateOrganisationRequest} request 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationApi~organisationUpdateOrganisationCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseUpdateOrganisationResponse}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateOrganisationResponse}
      */
     this.organisationUpdateOrganisation = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -139,7 +139,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseUpdateOrganisationResponse;
+      var returnType = CSApiResponseUpdateOrganisationResponse;
 
       return this.apiClient.callApi(
         '/api/Organisation/UpdateOrganisation', 'POST',

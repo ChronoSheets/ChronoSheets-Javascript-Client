@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 <a name="timesheetsCreateSingleTimesheet"></a>
 # **timesheetsCreateSingleTimesheet**
-> CsApiApiResponseInt32 timesheetsCreateSingleTimesheet(request, xChronosheetsAuth)
+> CSApiResponseInt32 timesheetsCreateSingleTimesheet(request, xChronosheetsAuth)
 
 Inserts a single timesheet record
 
@@ -22,7 +22,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.TimesheetsApi();
 
-var request = new ChronoSheetsApi.CsApiTimesheet(); // CsApiTimesheet | The timesheet request object
+var request = new ChronoSheetsApi.CSTimesheet(); // CSTimesheet | The timesheet request object
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -41,12 +41,12 @@ apiInstance.timesheetsCreateSingleTimesheet(request, xChronosheetsAuth, callback
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiTimesheet**](CsApiTimesheet.md)| The timesheet request object | 
+ **request** | [**CSTimesheet**](CSTimesheet.md)| The timesheet request object | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseInt32**](CsApiApiResponseInt32.md)
+[**CSApiResponseInt32**](CSApiResponseInt32.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ No authorization required
 
 <a name="timesheetsDeleteTimesheet"></a>
 # **timesheetsDeleteTimesheet**
-> CsApiApiResponseBoolean timesheetsDeleteTimesheet(timesheetId, xChronosheetsAuth)
+> CSApiResponseBoolean timesheetsDeleteTimesheet(timesheetId, xChronosheetsAuth)
 
 Delete a timesheet
 
@@ -93,7 +93,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ No authorization required
 
 <a name="timesheetsGetTimesheets"></a>
 # **timesheetsGetTimesheets**
-> CsApiApiResponseListTimesheet timesheetsGetTimesheets(startDate, endDate, xChronosheetsAuth)
+> CSApiResponseListTimesheet timesheetsGetTimesheets(startDate, endDate, xChronosheetsAuth)
 
 Get timesheets between start and end dates
 
@@ -143,7 +143,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListTimesheet**](CsApiApiResponseListTimesheet.md)
+[**CSApiResponseListTimesheet**](CSApiResponseListTimesheet.md)
 
 ### Authorization
 
@@ -156,7 +156,7 @@ No authorization required
 
 <a name="timesheetsUpdateTimesheets"></a>
 # **timesheetsUpdateTimesheets**
-> CsApiApiResponseListInt32 timesheetsUpdateTimesheets(request, xChronosheetsAuth)
+> CSApiResponseListInt32 timesheetsUpdateTimesheets(request, xChronosheetsAuth)
 
 Batch update timesheets
 
@@ -166,7 +166,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.TimesheetsApi();
 
-var request = new ChronoSheetsApi.CsApiBatchUpdateTimesheetRequest(); // CsApiBatchUpdateTimesheetRequest | The batch update timesheets request
+var request = new ChronoSheetsApi.CSBatchUpdateTimesheetRequest(); // CSBatchUpdateTimesheetRequest | The batch update timesheets request
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -185,12 +185,12 @@ apiInstance.timesheetsUpdateTimesheets(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiBatchUpdateTimesheetRequest**](CsApiBatchUpdateTimesheetRequest.md)| The batch update timesheets request | 
+ **request** | [**CSBatchUpdateTimesheetRequest**](CSBatchUpdateTimesheetRequest.md)| The batch update timesheets request | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseListInt32**](CsApiApiResponseListInt32.md)
+[**CSApiResponseListInt32**](CSApiResponseListInt32.md)
 
 ### Authorization
 

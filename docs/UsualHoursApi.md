@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="usualHoursGetUsualHours"></a>
 # **usualHoursGetUsualHours**
-> CsApiApiResponseListUsualHoursDay usualHoursGetUsualHours(userId, xChronosheetsAuth)
+> CSApiResponseListUsualHoursDay usualHoursGetUsualHours(userId, xChronosheetsAuth)
 
 Get usual hours (rostered hours) for an employee
 
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListUsualHoursDay**](CsApiApiResponseListUsualHoursDay.md)
+[**CSApiResponseListUsualHoursDay**](CSApiResponseListUsualHoursDay.md)
 
 ### Authorization
 
@@ -57,7 +57,7 @@ No authorization required
 
 <a name="usualHoursSetUsualHours"></a>
 # **usualHoursSetUsualHours**
-> CsApiApiResponseBoolean usualHoursSetUsualHours(request, xChronosheetsAuth)
+> CSApiResponseBoolean usualHoursSetUsualHours(request, xChronosheetsAuth)
 
 Set usual hours (rostered hours) for an employee
 
@@ -67,7 +67,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UsualHoursApi();
 
-var request = new ChronoSheetsApi.CsApiSetUsualHoursRequest(); // CsApiSetUsualHoursRequest | 
+var request = new ChronoSheetsApi.CSSetUsualHoursRequest(); // CSSetUsualHoursRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -86,12 +86,12 @@ apiInstance.usualHoursSetUsualHours(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiSetUsualHoursRequest**](CsApiSetUsualHoursRequest.md)|  | 
+ **request** | [**CSSetUsualHoursRequest**](CSSetUsualHoursRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 

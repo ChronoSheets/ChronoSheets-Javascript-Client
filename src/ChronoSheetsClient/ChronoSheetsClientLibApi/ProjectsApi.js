@@ -17,18 +17,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListProject', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseProject', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertProjectRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateProjectRequest'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProject', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseProject', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertProjectRequest', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateProjectRequest'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CsApiApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CsApiApiResponseInt32'), require('../ChronoSheetsClientLibModel/CsApiApiResponseListProject'), require('../ChronoSheetsClientLibModel/CsApiApiResponseProject'), require('../ChronoSheetsClientLibModel/CsApiInsertProjectRequest'), require('../ChronoSheetsClientLibModel/CsApiUpdateProjectRequest'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseListProject'), require('../ChronoSheetsClientLibModel/CSApiResponseProject'), require('../ChronoSheetsClientLibModel/CSInsertProjectRequest'), require('../ChronoSheetsClientLibModel/CSUpdateProjectRequest'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.ProjectsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CsApiApiResponseBoolean, root.ChronoSheetsApi.CsApiApiResponseInt32, root.ChronoSheetsApi.CsApiApiResponseListProject, root.ChronoSheetsApi.CsApiApiResponseProject, root.ChronoSheetsApi.CsApiInsertProjectRequest, root.ChronoSheetsApi.CsApiUpdateProjectRequest);
+    root.ChronoSheetsApi.ProjectsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseListProject, root.ChronoSheetsApi.CSApiResponseProject, root.ChronoSheetsApi.CSInsertProjectRequest, root.ChronoSheetsApi.CSUpdateProjectRequest);
   }
-}(this, function(ApiClient, CsApiApiResponseBoolean, CsApiApiResponseInt32, CsApiApiResponseListProject, CsApiApiResponseProject, CsApiInsertProjectRequest, CsApiUpdateProjectRequest) {
+}(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseInt32, CSApiResponseListProject, CSApiResponseProject, CSInsertProjectRequest, CSUpdateProjectRequest) {
   'use strict';
 
   /**
@@ -52,16 +52,16 @@
      * Callback function to receive the result of the projectsCreateProject operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsCreateProjectCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Create a project
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiInsertProjectRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertProjectRequest} request 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsCreateProjectCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseInt32}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
      */
     this.projectsCreateProject = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -92,7 +92,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseInt32;
+      var returnType = CSApiResponseInt32;
 
       return this.apiClient.callApi(
         '/api/Projects/CreateProject', 'PUT',
@@ -105,7 +105,7 @@
      * Callback function to receive the result of the projectsGetProjectById operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsGetProjectByIdCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseProject} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseProject} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -114,7 +114,7 @@
      * @param {Number} projectId The ID of the project
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsGetProjectByIdCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseProject}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseProject}
      */
     this.projectsGetProjectById = function(projectId, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -146,7 +146,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseProject;
+      var returnType = CSApiResponseProject;
 
       return this.apiClient.callApi(
         '/api/Projects/GetProjectById', 'GET',
@@ -159,7 +159,7 @@
      * Callback function to receive the result of the projectsGetProjectsForClient operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsGetProjectsForClientCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListProject} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProject} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -168,7 +168,7 @@
      * @param {Number} clientId The ID of the client
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsGetProjectsForClientCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseListProject}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProject}
      */
     this.projectsGetProjectsForClient = function(clientId, xChronosheetsAuth, callback) {
       var postBody = null;
@@ -200,7 +200,7 @@
       var authNames = [];
       var contentTypes = [];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseListProject;
+      var returnType = CSApiResponseListProject;
 
       return this.apiClient.callApi(
         '/api/Projects/GetProjectsForClient', 'GET',
@@ -213,16 +213,16 @@
      * Callback function to receive the result of the projectsUpdateProject operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsUpdateProjectCallback
      * @param {String} error Error message, if any.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean} data The data returned by the service call.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Update a project
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiUpdateProjectRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateProjectRequest} request 
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsUpdateProjectCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CsApiApiResponseBoolean}
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
      */
     this.projectsUpdateProject = function(request, xChronosheetsAuth, callback) {
       var postBody = request;
@@ -253,7 +253,7 @@
       var authNames = [];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded', 'multipart/form-data'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
-      var returnType = CsApiApiResponseBoolean;
+      var returnType = CSApiResponseBoolean;
 
       return this.apiClient.callApi(
         '/api/Projects/UpdateProject', 'POST',

@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="organisationGetOrganisation"></a>
 # **organisationGetOrganisation**
-> CsApiApiResponseOrganisation organisationGetOrganisation(xChronosheetsAuth)
+> CSApiResponseOrganisation organisationGetOrganisation(xChronosheetsAuth)
 
 Get your organisation.  Requires &#39;OrganisationAdmin&#39; permission.
 
@@ -41,7 +41,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseOrganisation**](CsApiApiResponseOrganisation.md)
+[**CSApiResponseOrganisation**](CSApiResponseOrganisation.md)
 
 ### Authorization
 
@@ -54,7 +54,7 @@ No authorization required
 
 <a name="organisationUpdateOrganisation"></a>
 # **organisationUpdateOrganisation**
-> CsApiApiResponseUpdateOrganisationResponse organisationUpdateOrganisation(request, xChronosheetsAuth)
+> CSApiResponseUpdateOrganisationResponse organisationUpdateOrganisation(request, xChronosheetsAuth)
 
 Update an organisation.  Requires &#39;OrganisationAdmin&#39; permission.
 
@@ -64,7 +64,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.OrganisationApi();
 
-var request = new ChronoSheetsApi.CsApiUpdateOrganisationRequest(); // CsApiUpdateOrganisationRequest | 
+var request = new ChronoSheetsApi.CSUpdateOrganisationRequest(); // CSUpdateOrganisationRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -83,12 +83,12 @@ apiInstance.organisationUpdateOrganisation(request, xChronosheetsAuth, callback)
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiUpdateOrganisationRequest**](CsApiUpdateOrganisationRequest.md)|  | 
+ **request** | [**CSUpdateOrganisationRequest**](CSUpdateOrganisationRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseUpdateOrganisationResponse**](CsApiApiResponseUpdateOrganisationResponse.md)
+[**CSApiResponseUpdateOrganisationResponse**](CSApiResponseUpdateOrganisationResponse.md)
 
 ### Authorization
 

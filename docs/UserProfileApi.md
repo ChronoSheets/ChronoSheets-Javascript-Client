@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 <a name="userProfileDoLogin"></a>
 # **userProfileDoLogin**
-> CsApiApiResponseDoLoginResponse userProfileDoLogin(request)
+> CSApiResponseDoLoginResponse userProfileDoLogin(request)
 
 
 
@@ -23,7 +23,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UserProfileApi();
 
-var request = new ChronoSheetsApi.CsApiDoLoginRequest(); // CsApiDoLoginRequest | 
+var request = new ChronoSheetsApi.CSDoLoginRequest(); // CSDoLoginRequest | 
 
 
 var callback = function(error, data, response) {
@@ -40,11 +40,11 @@ apiInstance.userProfileDoLogin(request, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiDoLoginRequest**](CsApiDoLoginRequest.md)|  | 
+ **request** | [**CSDoLoginRequest**](CSDoLoginRequest.md)|  | 
 
 ### Return type
 
-[**CsApiApiResponseDoLoginResponse**](CsApiApiResponseDoLoginResponse.md)
+[**CSApiResponseDoLoginResponse**](CSApiResponseDoLoginResponse.md)
 
 ### Authorization
 
@@ -57,7 +57,7 @@ No authorization required
 
 <a name="userProfileDoLogout"></a>
 # **userProfileDoLogout**
-> CsApiApiResponseBoolean userProfileDoLogout(xChronosheetsAuth)
+> CSApiResponseBoolean userProfileDoLogout(xChronosheetsAuth)
 
 
 
@@ -88,7 +88,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 
@@ -101,7 +101,7 @@ No authorization required
 
 <a name="userProfileGetMyProfile"></a>
 # **userProfileGetMyProfile**
-> CsApiApiResponseUserProfile userProfileGetMyProfile(xChronosheetsAuth)
+> CSApiResponseUserProfile userProfileGetMyProfile(xChronosheetsAuth)
 
 
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseUserProfile**](CsApiApiResponseUserProfile.md)
+[**CSApiResponseUserProfile**](CSApiResponseUserProfile.md)
 
 ### Authorization
 
@@ -145,7 +145,7 @@ No authorization required
 
 <a name="userProfileKeepSessionAlive"></a>
 # **userProfileKeepSessionAlive**
-> CsApiApiResponseBoolean userProfileKeepSessionAlive(xChronosheetsAuth)
+> CSApiResponseBoolean userProfileKeepSessionAlive(xChronosheetsAuth)
 
 
 
@@ -176,7 +176,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseBoolean**](CsApiApiResponseBoolean.md)
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
 
 ### Authorization
 
@@ -189,7 +189,7 @@ No authorization required
 
 <a name="userProfileUpdateMyProfile"></a>
 # **userProfileUpdateMyProfile**
-> CsApiApiResponseSignupResponse userProfileUpdateMyProfile(request, xChronosheetsAuth)
+> CSApiResponseSignupResponse userProfileUpdateMyProfile(request, xChronosheetsAuth)
 
 
 
@@ -199,7 +199,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UserProfileApi();
 
-var request = new ChronoSheetsApi.CsApiUpdateMyProfileRequest(); // CsApiUpdateMyProfileRequest | 
+var request = new ChronoSheetsApi.CSUpdateMyProfileRequest(); // CSUpdateMyProfileRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -218,12 +218,12 @@ apiInstance.userProfileUpdateMyProfile(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiUpdateMyProfileRequest**](CsApiUpdateMyProfileRequest.md)|  | 
+ **request** | [**CSUpdateMyProfileRequest**](CSUpdateMyProfileRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseSignupResponse**](CsApiApiResponseSignupResponse.md)
+[**CSApiResponseSignupResponse**](CSApiResponseSignupResponse.md)
 
 ### Authorization
 

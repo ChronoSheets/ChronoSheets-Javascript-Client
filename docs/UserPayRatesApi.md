@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="userPayRatesCreatePayRate"></a>
 # **userPayRatesCreatePayRate**
-> CsApiApiResponseInt32 userPayRatesCreatePayRate(request, xChronosheetsAuth)
+> CSApiResponseInt32 userPayRatesCreatePayRate(request, xChronosheetsAuth)
 
 Create a new pay rate for a particular user, archiving the previous pay rate
 
@@ -20,7 +20,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UserPayRatesApi();
 
-var request = new ChronoSheetsApi.CsApiInsertUserHourlyRateRequest(); // CsApiInsertUserHourlyRateRequest | 
+var request = new ChronoSheetsApi.CSInsertUserHourlyRateRequest(); // CSInsertUserHourlyRateRequest | 
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -39,12 +39,12 @@ apiInstance.userPayRatesCreatePayRate(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CsApiInsertUserHourlyRateRequest**](CsApiInsertUserHourlyRateRequest.md)|  | 
+ **request** | [**CSInsertUserHourlyRateRequest**](CSInsertUserHourlyRateRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
 
-[**CsApiApiResponseInt32**](CsApiApiResponseInt32.md)
+[**CSApiResponseInt32**](CSApiResponseInt32.md)
 
 ### Authorization
 
@@ -57,7 +57,7 @@ No authorization required
 
 <a name="userPayRatesGetPayRates"></a>
 # **userPayRatesGetPayRates**
-> CsApiApiResponseListUserHourlyRate userPayRatesGetPayRates(userId, xChronosheetsAuth)
+> CSApiResponseListUserHourlyRate userPayRatesGetPayRates(userId, xChronosheetsAuth)
 
 Get a collection of pay rates for a particular user, specified by user id
 
@@ -91,7 +91,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CsApiApiResponseListUserHourlyRate**](CsApiApiResponseListUserHourlyRate.md)
+[**CSApiResponseListUserHourlyRate**](CSApiResponseListUserHourlyRate.md)
 
 ### Authorization
 
