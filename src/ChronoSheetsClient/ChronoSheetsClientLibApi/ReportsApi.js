@@ -60,7 +60,7 @@
      * Get Consolidated Admin Reports Data (Jobs, Tasks, Clients and Projects).  These are the organisation wide reports, with data from potentially all employees.  Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
-     * @param {String} userIds The Ids of the users, if you want to filter the report data to particular users
+     * @param {String} userIds A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetAllChartsDataAdminCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData}
@@ -245,7 +245,7 @@
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
      * @param {Number} skip Skip this many items
      * @param {Number} take Take this many items
-     * @param {String} userIds The Ids of the users, if you want to filter the report data to particular users
+     * @param {String} userIds A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrganisationTimesheetFileAttachmentsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment}
@@ -327,7 +327,7 @@
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
      * @param {Number} skip Skip this many items
      * @param {Number} take Take this many items
-     * @param {String} userIds The Ids of the users, if you want to filter the report data to particular users
+     * @param {String} userIds A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrganisationTripsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip}
@@ -407,7 +407,7 @@
      * Get Timesheets Raw Data.  This data details each timesheet record.  These are the organisation wide timesheet records, with data from potentially all employees.  Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
-     * @param {String} userIds The Ids of the users, if you want to filter the report data to particular users
+     * @param {String} userIds A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/String} sort Decide which column to sort on
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/String} order Decide which direction to sort the column
      * @param {Number} skip Skip this many rows
@@ -503,7 +503,7 @@
      * Gets project cost estimations VS actual cost for date range and users.  Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
-     * @param {String} userIds The Ids of the users, if you want to filter the report data to particular users
+     * @param {String} userIds A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsProjectCostingsAdminCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem}
