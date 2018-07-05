@@ -4,17 +4,17 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**projectsCreateProject**](ProjectsApi.md#projectsCreateProject) | **PUT** /api/Projects/CreateProject | Create a project
-[**projectsGetProjectById**](ProjectsApi.md#projectsGetProjectById) | **GET** /api/Projects/GetProjectById | Get project by Id
-[**projectsGetProjectsForClient**](ProjectsApi.md#projectsGetProjectsForClient) | **GET** /api/Projects/GetProjectsForClient | Get projects for a particular client
-[**projectsUpdateProject**](ProjectsApi.md#projectsUpdateProject) | **POST** /api/Projects/UpdateProject | Update a project
+[**projectsCreateProject**](ProjectsApi.md#projectsCreateProject) | **PUT** /api/Projects/CreateProject | Create a project.  Requires the &#39;ManageClientsAndProjects&#39; permission.
+[**projectsGetProjectById**](ProjectsApi.md#projectsGetProjectById) | **GET** /api/Projects/GetProjectById | Get a project by its Id.  Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
+[**projectsGetProjectsForClient**](ProjectsApi.md#projectsGetProjectsForClient) | **GET** /api/Projects/GetProjectsForClient | Get projects for a particular client.  Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
+[**projectsUpdateProject**](ProjectsApi.md#projectsUpdateProject) | **POST** /api/Projects/UpdateProject | Update a project.  Requires the &#39;ManageClientsAndProjects&#39; permission.
 
 
 <a name="projectsCreateProject"></a>
 # **projectsCreateProject**
 > CSApiResponseInt32 projectsCreateProject(request, xChronosheetsAuth)
 
-Create a project
+Create a project.  Requires the &#39;ManageClientsAndProjects&#39; permission.
 
 ### Example
 ```javascript
@@ -22,7 +22,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.ProjectsApi();
 
-var request = new ChronoSheetsApi.CSInsertProjectRequest(); // CSInsertProjectRequest | 
+var request = new ChronoSheetsApi.CSInsertProjectRequest(); // CSInsertProjectRequest | An Insert Project Request object containing values for the new Project to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -41,7 +41,7 @@ apiInstance.projectsCreateProject(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSInsertProjectRequest**](CSInsertProjectRequest.md)|  | 
+ **request** | [**CSInsertProjectRequest**](CSInsertProjectRequest.md)| An Insert Project Request object containing values for the new Project to create | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -61,7 +61,7 @@ No authorization required
 # **projectsGetProjectById**
 > CSApiResponseProject projectsGetProjectById(projectId, xChronosheetsAuth)
 
-Get project by Id
+Get a project by its Id.  Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
 
 ### Example
 ```javascript
@@ -69,7 +69,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.ProjectsApi();
 
-var projectId = 56; // Number | The ID of the project
+var projectId = 56; // Number | The ID of the Project you want to get
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -88,7 +88,7 @@ apiInstance.projectsGetProjectById(projectId, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **projectId** | **Number**| The ID of the project | 
+ **projectId** | **Number**| The ID of the Project you want to get | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -108,7 +108,7 @@ No authorization required
 # **projectsGetProjectsForClient**
 > CSApiResponseListProject projectsGetProjectsForClient(clientId, xChronosheetsAuth)
 
-Get projects for a particular client
+Get projects for a particular client.  Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
 
 ### Example
 ```javascript
@@ -155,7 +155,7 @@ No authorization required
 # **projectsUpdateProject**
 > CSApiResponseBoolean projectsUpdateProject(request, xChronosheetsAuth)
 
-Update a project
+Update a project.  Requires the &#39;ManageClientsAndProjects&#39; permission.
 
 ### Example
 ```javascript
@@ -163,7 +163,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.ProjectsApi();
 
-var request = new ChronoSheetsApi.CSUpdateProjectRequest(); // CSUpdateProjectRequest | 
+var request = new ChronoSheetsApi.CSUpdateProjectRequest(); // CSUpdateProjectRequest | An Update Project Request object containing updated fields.  Make sure to specify the Project Id in the request object so that ChronoSheets knows which Project to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -182,7 +182,7 @@ apiInstance.projectsUpdateProject(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSUpdateProjectRequest**](CSUpdateProjectRequest.md)|  | 
+ **request** | [**CSUpdateProjectRequest**](CSUpdateProjectRequest.md)| An Update Project Request object containing updated fields.  Make sure to specify the Project Id in the request object so that ChronoSheets knows which Project to update | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
