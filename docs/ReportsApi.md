@@ -30,7 +30,7 @@ var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date 
 
 var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The end date for the date range.  Report data in the response is before this date
 
-var userIds = "userIds_example"; // String | A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+var userIds = "userIds_example"; // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **startDate** | **Date**| The start date for the date range.  Report data in the response is after this date | 
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
- **userIds** | **String**| A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
+ **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -184,7 +184,7 @@ var skip = 56; // Number | Skip this many items
 
 var take = 56; // Number | Take this many items
 
-var userIds = "userIds_example"; // String | A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+var userIds = "userIds_example"; // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -207,7 +207,7 @@ Name | Type | Description  | Notes
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
  **skip** | **Number**| Skip this many items | 
  **take** | **Number**| Take this many items | 
- **userIds** | **String**| A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
+ **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -243,7 +243,7 @@ var skip = 56; // Number | Skip this many items
 
 var take = 56; // Number | Take this many items
 
-var userIds = "userIds_example"; // String | A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+var userIds = "userIds_example"; // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -266,7 +266,7 @@ Name | Type | Description  | Notes
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
  **skip** | **Number**| Skip this many items | 
  **take** | **Number**| Take this many items | 
- **userIds** | **String**| A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
+ **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -298,7 +298,7 @@ var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date 
 
 var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The end date for the date range.  Report data in the response is before this date
 
-var userIds = "userIds_example"; // String | A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+var userIds = "userIds_example"; // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
 
 var sort = "sort_example"; // String | Decide which column to sort on
 
@@ -327,7 +327,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **startDate** | **Date**| The start date for the date range.  Report data in the response is after this date | 
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
- **userIds** | **String**| A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
+ **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
  **sort** | **String**| Decide which column to sort on | 
  **order** | **String**| Decide which direction to sort the column | 
  **skip** | **Number**| Skip this many rows | 
@@ -363,7 +363,7 @@ var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date 
 
 var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The end date for the date range.  Report data in the response is before this date
 
-var userIds = "userIds_example"; // String | A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+var userIds = "userIds_example"; // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -384,7 +384,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **startDate** | **Date**| The start date for the date range.  Report data in the response is after this date | 
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
- **userIds** | **String**| A comma-seperated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
+ **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
