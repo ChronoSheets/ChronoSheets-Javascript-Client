@@ -26,7 +26,7 @@
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.CSSignupResponse = factory(root.ChronoSheetsApi.ApiClient);
+    root.ChronoSheetsApi.CSUpdateProfileResponse = factory(root.ChronoSheetsApi.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -35,14 +35,14 @@
 
 
   /**
-   * The CSSignupResponse model module.
-   * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSSignupResponse
+   * The CSUpdateProfileResponse model module.
+   * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateProfileResponse
    * @version v1
    */
 
   /**
-   * Constructs a new <code>CSSignupResponse</code>.
-   * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSignupResponse
+   * Constructs a new <code>CSUpdateProfileResponse</code>.
+   * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateProfileResponse
    * @class
    */
   var exports = function() {
@@ -54,11 +54,11 @@
   };
 
   /**
-   * Constructs a <code>CSSignupResponse</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CSUpdateProfileResponse</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSignupResponse} obj Optional instance to populate.
-   * @return {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSignupResponse} The populated <code>CSSignupResponse</code> instance.
+   * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateProfileResponse} obj Optional instance to populate.
+   * @return {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateProfileResponse} The populated <code>CSUpdateProfileResponse</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {

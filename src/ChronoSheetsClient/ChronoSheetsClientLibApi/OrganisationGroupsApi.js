@@ -57,8 +57,8 @@
      */
 
     /**
-     * Create an organisation group
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertOrganisationGroupRequest} request 
+     * Create an organisation group.  Requires the &#39;ManageOrganisationGroups&#39; permissions.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertOrganisationGroupRequest} request An Insert OrganisationGroup Request object containing values for the new OrganisationGroup to create
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupsApi~organisationGroupsCreateOrganisationGroupCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
@@ -110,8 +110,8 @@
      */
 
     /**
-     * Get a particular organisation group
-     * @param {Number} organisationGroupId The ID of the organisation group you want to get
+     * Get a particular organisation group.  Requires the &#39;ManageOrganisationGroups&#39;, &#39;ManageJobsAndTask&#39;, &#39;ManageClientsAndProjects&#39; or &#39;ManageOrganisationUsers&#39; permissions.
+     * @param {Number} organisationGroupId The ID of the OrganisationGroup you want to get
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupsApi~organisationGroupsGetOrganisationGroupCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseOrganisationGroup}
@@ -164,7 +164,7 @@
      */
 
     /**
-     * Get a collection of organisation groups that are under your organisation
+     * Get a collection of organisation groups that are under your organisation.  Requires the &#39;ManageOrganisationGroups&#39;, &#39;ManageJobsAndTask&#39;, &#39;ManageClientsAndProjects&#39; or &#39;ManageOrganisationUsers&#39; permissions.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupsApi~organisationGroupsGetOrganisationGroupsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListOrganisationGroup}
@@ -211,7 +211,7 @@
      */
 
     /**
-     * Get org groups for a particular job
+     * Get org groups for a particular job.  Requires the &#39;ManageOrganisationGroups&#39;, &#39;ManageJobsAndTask&#39;, &#39;ManageClientsAndProjects&#39; or &#39;ManageOrganisationUsers&#39; permissions.
      * @param {Number} jobId The ID of the job
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupsApi~organisationGroupsGetOrganisationGroupsForJobCallback} callback The callback function, accepting three arguments: error, data, response
@@ -265,7 +265,7 @@
      */
 
     /**
-     * Get org groups for a particular vehicle
+     * Get org groups for a particular vehicle.  Requires the &#39;ManageOrganisationGroups&#39;, &#39;ManageFleet&#39; or &#39;ManageOrganisationUsers&#39; permissions.
      * @param {Number} vehicleId The ID of the vehicle
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupsApi~organisationGroupsGetOrganisationGroupsForVehicleCallback} callback The callback function, accepting three arguments: error, data, response
@@ -319,8 +319,8 @@
      */
 
     /**
-     * Update an organisation group
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveOrganisationGroupRequest} request 
+     * Update an organisation group.  Requires the &#39;ManageOrganisationGroups&#39; permissions.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveOrganisationGroupRequest} request A Save OrganisationGroup Request object containing updated fields.  Make sure to specify the OrganisationGroup Id in the request object so that ChronoSheets knows which OrganisationGroup to update
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupsApi~organisationGroupsUpdateOrganisationGroupCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}

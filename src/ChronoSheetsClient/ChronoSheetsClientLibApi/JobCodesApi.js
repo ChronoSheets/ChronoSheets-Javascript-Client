@@ -57,8 +57,8 @@
      */
 
     /**
-     * Create a job code
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertJobCodeRequest} request 
+     * Create a job code.  Requires the &#39;ManageJobsAndTask&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertJobCodeRequest} request An Insert JobCode Request object containing values for the new JobCode to create
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/JobCodesApi~jobCodesCreateJobCodeCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
@@ -110,8 +110,8 @@
      */
 
     /**
-     * Delete a job code
-     * @param {Number} jobCodeId The ID of the job code your want to delete
+     * Delete a job code.  Requires the &#39;ManageJobsAndTask&#39; permission.
+     * @param {Number} jobCodeId The ID of the job code you want to delete
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/JobCodesApi~jobCodesDeleteJobCodeCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
@@ -164,8 +164,8 @@
      */
 
     /**
-     * Get a particular job code by job code id
-     * @param {Number} jobCodeId 
+     * Get a particular job code by job code id.  Requires &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTasks&#39; permissions.
+     * @param {Number} jobCodeId The ID of the JobCode you want to get
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/JobCodesApi~jobCodesGetJobCodeByIdCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseJobCode}
@@ -218,7 +218,7 @@
      */
 
     /**
-     * Get job codes for your organisation
+     * Get job codes for your organisation.  Requires &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTasks&#39; permissions.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/JobCodesApi~jobCodesGetJobCodesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListJobCode}
@@ -265,8 +265,8 @@
      */
 
     /**
-     * Update a job code
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateJobCodeRequest} request 
+     * Update a job code.  Requires the &#39;ManageJobsAndTask&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateJobCodeRequest} request A Update JobCode Request object containing updated fields.  Make sure to specify the JobCode Id in the request object so that ChronoSheets knows which JobCode to update
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/JobCodesApi~jobCodesUpdateJobCodeCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}

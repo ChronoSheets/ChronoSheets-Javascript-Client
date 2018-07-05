@@ -57,8 +57,8 @@
      */
 
     /**
-     * Get a collection of organisation group users that belong to an organisation group
-     * @param {Number} orgGroupId 
+     * Get a collection of organisation group users that belong to an organisation group.  Requires the &#39;ManageOrganisationGroups&#39; or &#39;ManageOrganisationUsers&#39; permissions.
+     * @param {Number} orgGroupId An OrganisatioGroup Id
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupUsersApi~organisationGroupUsersGetOrganisationGroupUsersCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserForManagement}
@@ -112,7 +112,7 @@
 
     /**
      * Set the users who belong to an organisation group
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetOrganisationGroupUsersRequest} request 
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetOrganisationGroupUsersRequest} request A request object specifying which users belong to an organisation group.  Make sure to specify the OrganisationGroup Id in the request object so that ChronoSheets knows which OrganisationGroup to update
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationGroupUsersApi~organisationGroupUsersUpdateOrganisationGroupUsersCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}

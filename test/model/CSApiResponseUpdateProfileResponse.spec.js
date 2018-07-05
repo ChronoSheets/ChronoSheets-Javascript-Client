@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSApiResponseSignupResponse();
+    instance = new ChronoSheetsApi.CSApiResponseUpdateProfileResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,28 +50,28 @@
       object[property] = value;
   }
 
-  describe('CSApiResponseSignupResponse', function() {
-    it('should create an instance of CSApiResponseSignupResponse', function() {
-      // uncomment below and update the code to test CSApiResponseSignupResponse
-      //var instane = new ChronoSheetsApi.CSApiResponseSignupResponse();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseSignupResponse);
+  describe('CSApiResponseUpdateProfileResponse', function() {
+    it('should create an instance of CSApiResponseUpdateProfileResponse', function() {
+      // uncomment below and update the code to test CSApiResponseUpdateProfileResponse
+      //var instane = new ChronoSheetsApi.CSApiResponseUpdateProfileResponse();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseUpdateProfileResponse);
     });
 
     it('should have the property data (base name: "Data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new ChronoSheetsApi.CSApiResponseSignupResponse();
+      //var instane = new ChronoSheetsApi.CSApiResponseUpdateProfileResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "Status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new ChronoSheetsApi.CSApiResponseSignupResponse();
+      //var instane = new ChronoSheetsApi.CSApiResponseUpdateProfileResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "Message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new ChronoSheetsApi.CSApiResponseSignupResponse();
+      //var instane = new ChronoSheetsApi.CSApiResponseUpdateProfileResponse();
       //expect(instance).to.be();
     });
 

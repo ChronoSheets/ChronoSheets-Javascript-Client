@@ -118,30 +118,30 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ChronoSheetsApi.AggregateJobTasksApi* | [**aggregateJobTasksGetAggregateJobTasks**](docs/AggregateJobTasksApi.md#aggregateJobTasksGetAggregateJobTasks) | **GET** /api/AggregateJobTasks/GetAggregateJobTasks | Get jobs and tasks information, aggregated
-*ChronoSheetsApi.ClientsApi* | [**clientsCreateClient**](docs/ClientsApi.md#clientsCreateClient) | **PUT** /api/Clients/CreateClient | Create a client
-*ChronoSheetsApi.ClientsApi* | [**clientsGetClient**](docs/ClientsApi.md#clientsGetClient) | **GET** /api/Clients/GetClient | Get a particular client
-*ChronoSheetsApi.ClientsApi* | [**clientsGetClients**](docs/ClientsApi.md#clientsGetClients) | **GET** /api/Clients/GetClients | Get a collection of clients that are under your organisation
-*ChronoSheetsApi.ClientsApi* | [**clientsUpdateClient**](docs/ClientsApi.md#clientsUpdateClient) | **POST** /api/Clients/UpdateClient | Update a client
-*ChronoSheetsApi.FleetApi* | [**fleetCreateVehicle**](docs/FleetApi.md#fleetCreateVehicle) | **PUT** /api/Fleet/CreateVehicle | Create a vehicle
+*ChronoSheetsApi.AggregateJobTasksApi* | [**aggregateJobTasksGetAggregateJobTasks**](docs/AggregateJobTasksApi.md#aggregateJobTasksGetAggregateJobTasks) | **GET** /api/AggregateJobTasks/GetAggregateJobTasks | Get jobs and tasks information, aggregated.  Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
+*ChronoSheetsApi.ClientsApi* | [**clientsCreateClient**](docs/ClientsApi.md#clientsCreateClient) | **PUT** /api/Clients/CreateClient | Create a client.  Requires the &#39;ManageClientsAndProjects&#39; permission.
+*ChronoSheetsApi.ClientsApi* | [**clientsGetClient**](docs/ClientsApi.md#clientsGetClient) | **GET** /api/Clients/GetClient | Get a particular client.  Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
+*ChronoSheetsApi.ClientsApi* | [**clientsGetClients**](docs/ClientsApi.md#clientsGetClients) | **GET** /api/Clients/GetClients | Get a collection of clients that are under your organisation.  Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
+*ChronoSheetsApi.ClientsApi* | [**clientsUpdateClient**](docs/ClientsApi.md#clientsUpdateClient) | **POST** /api/Clients/UpdateClient | Update a client.  Requires the &#39;ManageClientsAndProjects&#39; permission.
+*ChronoSheetsApi.FleetApi* | [**fleetCreateVehicle**](docs/FleetApi.md#fleetCreateVehicle) | **PUT** /api/Fleet/CreateVehicle | Create a vehicle.  Requires the &#39;ManageFleet&#39; permission.
 *ChronoSheetsApi.FleetApi* | [**fleetGetVehicleById**](docs/FleetApi.md#fleetGetVehicleById) | **GET** /api/Fleet/GetVehicleById | Get a particular vehicle
 *ChronoSheetsApi.FleetApi* | [**fleetGetVehicles**](docs/FleetApi.md#fleetGetVehicles) | **GET** /api/Fleet/GetVehicles | Get a collection of vehicles that are under your organisation
-*ChronoSheetsApi.FleetApi* | [**fleetUpdateVehicle**](docs/FleetApi.md#fleetUpdateVehicle) | **POST** /api/Fleet/UpdateVehicle | Update a vehicle
-*ChronoSheetsApi.JobCodesApi* | [**jobCodesCreateJobCode**](docs/JobCodesApi.md#jobCodesCreateJobCode) | **PUT** /api/JobCodes/CreateJobCode | Create a job code
-*ChronoSheetsApi.JobCodesApi* | [**jobCodesDeleteJobCode**](docs/JobCodesApi.md#jobCodesDeleteJobCode) | **DELETE** /api/JobCodes/DeleteJobCode | Delete a job code
-*ChronoSheetsApi.JobCodesApi* | [**jobCodesGetJobCodeById**](docs/JobCodesApi.md#jobCodesGetJobCodeById) | **GET** /api/JobCodes/GetJobCodeById | Get a particular job code by job code id
-*ChronoSheetsApi.JobCodesApi* | [**jobCodesGetJobCodes**](docs/JobCodesApi.md#jobCodesGetJobCodes) | **GET** /api/JobCodes/GetJobCodes | Get job codes for your organisation
-*ChronoSheetsApi.JobCodesApi* | [**jobCodesUpdateJobCode**](docs/JobCodesApi.md#jobCodesUpdateJobCode) | **POST** /api/JobCodes/UpdateJobCode | Update a job code
+*ChronoSheetsApi.FleetApi* | [**fleetUpdateVehicle**](docs/FleetApi.md#fleetUpdateVehicle) | **POST** /api/Fleet/UpdateVehicle | Update a vehicle.  Requires the &#39;ManageFleet&#39; permission.
+*ChronoSheetsApi.JobCodesApi* | [**jobCodesCreateJobCode**](docs/JobCodesApi.md#jobCodesCreateJobCode) | **PUT** /api/JobCodes/CreateJobCode | Create a job code.  Requires the &#39;ManageJobsAndTask&#39; permission.
+*ChronoSheetsApi.JobCodesApi* | [**jobCodesDeleteJobCode**](docs/JobCodesApi.md#jobCodesDeleteJobCode) | **DELETE** /api/JobCodes/DeleteJobCode | Delete a job code.  Requires the &#39;ManageJobsAndTask&#39; permission.
+*ChronoSheetsApi.JobCodesApi* | [**jobCodesGetJobCodeById**](docs/JobCodesApi.md#jobCodesGetJobCodeById) | **GET** /api/JobCodes/GetJobCodeById | Get a particular job code by job code id.  Requires &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTasks&#39; permissions.
+*ChronoSheetsApi.JobCodesApi* | [**jobCodesGetJobCodes**](docs/JobCodesApi.md#jobCodesGetJobCodes) | **GET** /api/JobCodes/GetJobCodes | Get job codes for your organisation.  Requires &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTasks&#39; permissions.
+*ChronoSheetsApi.JobCodesApi* | [**jobCodesUpdateJobCode**](docs/JobCodesApi.md#jobCodesUpdateJobCode) | **POST** /api/JobCodes/UpdateJobCode | Update a job code.  Requires the &#39;ManageJobsAndTask&#39; permission.
 *ChronoSheetsApi.OrganisationApi* | [**organisationGetOrganisation**](docs/OrganisationApi.md#organisationGetOrganisation) | **GET** /api/Organisation/GetOrganisation | Get your organisation.  Requires &#39;OrganisationAdmin&#39; permission.
 *ChronoSheetsApi.OrganisationApi* | [**organisationUpdateOrganisation**](docs/OrganisationApi.md#organisationUpdateOrganisation) | **POST** /api/Organisation/UpdateOrganisation | Update an organisation.  Requires &#39;OrganisationAdmin&#39; permission.
-*ChronoSheetsApi.OrganisationGroupUsersApi* | [**organisationGroupUsersGetOrganisationGroupUsers**](docs/OrganisationGroupUsersApi.md#organisationGroupUsersGetOrganisationGroupUsers) | **GET** /api/OrganisationGroupUsers/GetOrganisationGroupUsers | Get a collection of organisation group users that belong to an organisation group
+*ChronoSheetsApi.OrganisationGroupUsersApi* | [**organisationGroupUsersGetOrganisationGroupUsers**](docs/OrganisationGroupUsersApi.md#organisationGroupUsersGetOrganisationGroupUsers) | **GET** /api/OrganisationGroupUsers/GetOrganisationGroupUsers | Get a collection of organisation group users that belong to an organisation group.  Requires the &#39;ManageOrganisationGroups&#39; or &#39;ManageOrganisationUsers&#39; permissions.
 *ChronoSheetsApi.OrganisationGroupUsersApi* | [**organisationGroupUsersUpdateOrganisationGroupUsers**](docs/OrganisationGroupUsersApi.md#organisationGroupUsersUpdateOrganisationGroupUsers) | **POST** /api/OrganisationGroupUsers/UpdateOrganisationGroupUsers | Set the users who belong to an organisation group
-*ChronoSheetsApi.OrganisationGroupsApi* | [**organisationGroupsCreateOrganisationGroup**](docs/OrganisationGroupsApi.md#organisationGroupsCreateOrganisationGroup) | **PUT** /api/OrganisationGroups/CreateOrganisationGroup | Create an organisation group
-*ChronoSheetsApi.OrganisationGroupsApi* | [**organisationGroupsGetOrganisationGroup**](docs/OrganisationGroupsApi.md#organisationGroupsGetOrganisationGroup) | **GET** /api/OrganisationGroups/GetOrganisationGroup | Get a particular organisation group
-*ChronoSheetsApi.OrganisationGroupsApi* | [**organisationGroupsGetOrganisationGroups**](docs/OrganisationGroupsApi.md#organisationGroupsGetOrganisationGroups) | **GET** /api/OrganisationGroups/GetOrganisationGroups | Get a collection of organisation groups that are under your organisation
-*ChronoSheetsApi.OrganisationGroupsApi* | [**organisationGroupsGetOrganisationGroupsForJob**](docs/OrganisationGroupsApi.md#organisationGroupsGetOrganisationGroupsForJob) | **GET** /api/OrganisationGroups/GetOrganisationGroupsForJob | Get org groups for a particular job
-*ChronoSheetsApi.OrganisationGroupsApi* | [**organisationGroupsGetOrganisationGroupsForVehicle**](docs/OrganisationGroupsApi.md#organisationGroupsGetOrganisationGroupsForVehicle) | **GET** /api/OrganisationGroups/GetOrganisationGroupsForVehicle | Get org groups for a particular vehicle
-*ChronoSheetsApi.OrganisationGroupsApi* | [**organisationGroupsUpdateOrganisationGroup**](docs/OrganisationGroupsApi.md#organisationGroupsUpdateOrganisationGroup) | **POST** /api/OrganisationGroups/UpdateOrganisationGroup | Update an organisation group
+*ChronoSheetsApi.OrganisationGroupsApi* | [**organisationGroupsCreateOrganisationGroup**](docs/OrganisationGroupsApi.md#organisationGroupsCreateOrganisationGroup) | **PUT** /api/OrganisationGroups/CreateOrganisationGroup | Create an organisation group.  Requires the &#39;ManageOrganisationGroups&#39; permissions.
+*ChronoSheetsApi.OrganisationGroupsApi* | [**organisationGroupsGetOrganisationGroup**](docs/OrganisationGroupsApi.md#organisationGroupsGetOrganisationGroup) | **GET** /api/OrganisationGroups/GetOrganisationGroup | Get a particular organisation group.  Requires the &#39;ManageOrganisationGroups&#39;, &#39;ManageJobsAndTask&#39;, &#39;ManageClientsAndProjects&#39; or &#39;ManageOrganisationUsers&#39; permissions.
+*ChronoSheetsApi.OrganisationGroupsApi* | [**organisationGroupsGetOrganisationGroups**](docs/OrganisationGroupsApi.md#organisationGroupsGetOrganisationGroups) | **GET** /api/OrganisationGroups/GetOrganisationGroups | Get a collection of organisation groups that are under your organisation.  Requires the &#39;ManageOrganisationGroups&#39;, &#39;ManageJobsAndTask&#39;, &#39;ManageClientsAndProjects&#39; or &#39;ManageOrganisationUsers&#39; permissions.
+*ChronoSheetsApi.OrganisationGroupsApi* | [**organisationGroupsGetOrganisationGroupsForJob**](docs/OrganisationGroupsApi.md#organisationGroupsGetOrganisationGroupsForJob) | **GET** /api/OrganisationGroups/GetOrganisationGroupsForJob | Get org groups for a particular job.  Requires the &#39;ManageOrganisationGroups&#39;, &#39;ManageJobsAndTask&#39;, &#39;ManageClientsAndProjects&#39; or &#39;ManageOrganisationUsers&#39; permissions.
+*ChronoSheetsApi.OrganisationGroupsApi* | [**organisationGroupsGetOrganisationGroupsForVehicle**](docs/OrganisationGroupsApi.md#organisationGroupsGetOrganisationGroupsForVehicle) | **GET** /api/OrganisationGroups/GetOrganisationGroupsForVehicle | Get org groups for a particular vehicle.  Requires the &#39;ManageOrganisationGroups&#39;, &#39;ManageFleet&#39; or &#39;ManageOrganisationUsers&#39; permissions.
+*ChronoSheetsApi.OrganisationGroupsApi* | [**organisationGroupsUpdateOrganisationGroup**](docs/OrganisationGroupsApi.md#organisationGroupsUpdateOrganisationGroup) | **POST** /api/OrganisationGroups/UpdateOrganisationGroup | Update an organisation group.  Requires the &#39;ManageOrganisationGroups&#39; permissions.
 *ChronoSheetsApi.ProjectsApi* | [**projectsCreateProject**](docs/ProjectsApi.md#projectsCreateProject) | **PUT** /api/Projects/CreateProject | Create a project
 *ChronoSheetsApi.ProjectsApi* | [**projectsGetProjectById**](docs/ProjectsApi.md#projectsGetProjectById) | **GET** /api/Projects/GetProjectById | Get project by Id
 *ChronoSheetsApi.ProjectsApi* | [**projectsGetProjectsForClient**](docs/ProjectsApi.md#projectsGetProjectsForClient) | **GET** /api/Projects/GetProjectsForClient | Get projects for a particular client
@@ -219,10 +219,10 @@ Class | Method | HTTP request | Description
  - [ChronoSheetsApi.CSApiResponseOrganisation](docs/CSApiResponseOrganisation.md)
  - [ChronoSheetsApi.CSApiResponseOrganisationGroup](docs/CSApiResponseOrganisationGroup.md)
  - [ChronoSheetsApi.CSApiResponseProject](docs/CSApiResponseProject.md)
- - [ChronoSheetsApi.CSApiResponseSignupResponse](docs/CSApiResponseSignupResponse.md)
  - [ChronoSheetsApi.CSApiResponseTimesheetTask](docs/CSApiResponseTimesheetTask.md)
  - [ChronoSheetsApi.CSApiResponseTrip](docs/CSApiResponseTrip.md)
  - [ChronoSheetsApi.CSApiResponseUpdateOrganisationResponse](docs/CSApiResponseUpdateOrganisationResponse.md)
+ - [ChronoSheetsApi.CSApiResponseUpdateProfileResponse](docs/CSApiResponseUpdateProfileResponse.md)
  - [ChronoSheetsApi.CSApiResponseUpdateUserResponse](docs/CSApiResponseUpdateUserResponse.md)
  - [ChronoSheetsApi.CSApiResponseUserForManagement](docs/CSApiResponseUserForManagement.md)
  - [ChronoSheetsApi.CSApiResponseUserProfile](docs/CSApiResponseUserProfile.md)
@@ -263,7 +263,6 @@ Class | Method | HTTP request | Description
  - [ChronoSheetsApi.CSSaveVehicleRequest](docs/CSSaveVehicleRequest.md)
  - [ChronoSheetsApi.CSSetOrganisationGroupUsersRequest](docs/CSSetOrganisationGroupUsersRequest.md)
  - [ChronoSheetsApi.CSSetUsualHoursRequest](docs/CSSetUsualHoursRequest.md)
- - [ChronoSheetsApi.CSSignupResponse](docs/CSSignupResponse.md)
  - [ChronoSheetsApi.CSTaskSeriesReportItem](docs/CSTaskSeriesReportItem.md)
  - [ChronoSheetsApi.CSTaskTotalsReportItem](docs/CSTaskTotalsReportItem.md)
  - [ChronoSheetsApi.CSTimeSlot](docs/CSTimeSlot.md)
@@ -275,6 +274,7 @@ Class | Method | HTTP request | Description
  - [ChronoSheetsApi.CSUpdateMyProfileRequest](docs/CSUpdateMyProfileRequest.md)
  - [ChronoSheetsApi.CSUpdateOrganisationRequest](docs/CSUpdateOrganisationRequest.md)
  - [ChronoSheetsApi.CSUpdateOrganisationResponse](docs/CSUpdateOrganisationResponse.md)
+ - [ChronoSheetsApi.CSUpdateProfileResponse](docs/CSUpdateProfileResponse.md)
  - [ChronoSheetsApi.CSUpdateProjectRequest](docs/CSUpdateProjectRequest.md)
  - [ChronoSheetsApi.CSUpdateTaskRequest](docs/CSUpdateTaskRequest.md)
  - [ChronoSheetsApi.CSUpdateUserRequest](docs/CSUpdateUserRequest.md)

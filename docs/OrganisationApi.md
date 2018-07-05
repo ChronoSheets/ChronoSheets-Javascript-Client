@@ -64,7 +64,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.OrganisationApi();
 
-var request = new ChronoSheetsApi.CSUpdateOrganisationRequest(); // CSUpdateOrganisationRequest | 
+var request = new ChronoSheetsApi.CSUpdateOrganisationRequest(); // CSUpdateOrganisationRequest | An Update Organsation Request object containing updated fields.  Make sure to specify the Organsation Id in the request object so that ChronoSheets knows which Organsation to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -83,7 +83,7 @@ apiInstance.organisationUpdateOrganisation(request, xChronosheetsAuth, callback)
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSUpdateOrganisationRequest**](CSUpdateOrganisationRequest.md)|  | 
+ **request** | [**CSUpdateOrganisationRequest**](CSUpdateOrganisationRequest.md)| An Update Organsation Request object containing updated fields.  Make sure to specify the Organsation Id in the request object so that ChronoSheets knows which Organsation to update | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type

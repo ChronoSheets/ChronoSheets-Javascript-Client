@@ -189,7 +189,7 @@ No authorization required
 
 <a name="userProfileUpdateMyProfile"></a>
 # **userProfileUpdateMyProfile**
-> CSApiResponseSignupResponse userProfileUpdateMyProfile(request, xChronosheetsAuth)
+> CSApiResponseUpdateProfileResponse userProfileUpdateMyProfile(request, xChronosheetsAuth)
 
 
 
@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseSignupResponse**](CSApiResponseSignupResponse.md)
+[**CSApiResponseUpdateProfileResponse**](CSApiResponseUpdateProfileResponse.md)
 
 ### Authorization
 

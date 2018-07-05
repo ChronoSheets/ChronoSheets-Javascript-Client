@@ -57,8 +57,8 @@
      */
 
     /**
-     * Create a vehicle
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertVehicleRequest} request 
+     * Create a vehicle.  Requires the &#39;ManageFleet&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertVehicleRequest} request An Insert Vehicle Request object containing values for the new Vehicle to create
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetCreateVehicleCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
@@ -111,7 +111,7 @@
 
     /**
      * Get a particular vehicle
-     * @param {Number} vehicleId The ID of the vehicle you want to get
+     * @param {Number} vehicleId The ID of the Vehicle you want to get
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetGetVehicleByIdCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseFleetVehicle}
@@ -165,7 +165,7 @@
 
     /**
      * Get a collection of vehicles that are under your organisation
-     * @param {Boolean} includeDeleted 
+     * @param {Boolean} includeDeleted Whether or not to include deleted vehicles
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetGetVehiclesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetVehicle}
@@ -218,8 +218,8 @@
      */
 
     /**
-     * Update a vehicle
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveVehicleRequest} request 
+     * Update a vehicle.  Requires the &#39;ManageFleet&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveVehicleRequest} request A Save Vehicle Request object containing updated fields.  Make sure to specify the Vehicle Id in the request object so that ChronoSheets knows which Vehicle to update
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetUpdateVehicleCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}

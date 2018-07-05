@@ -57,8 +57,8 @@
      */
 
     /**
-     * Create a client
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertClientRequest} request 
+     * Create a client.  Requires the &#39;ManageClientsAndProjects&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertClientRequest} request An Insert Client Request object containing values for the new Client to create
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ClientsApi~clientsCreateClientCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
@@ -110,8 +110,8 @@
      */
 
     /**
-     * Get a particular client
-     * @param {Number} clientId The ID of the client you want to get
+     * Get a particular client.  Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
+     * @param {Number} clientId The ID of the Client you want to get
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ClientsApi~clientsGetClientCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseClient}
@@ -164,7 +164,7 @@
      */
 
     /**
-     * Get a collection of clients that are under your organisation
+     * Get a collection of clients that are under your organisation.  Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ClientsApi~clientsGetClientsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListClient}
@@ -211,8 +211,8 @@
      */
 
     /**
-     * Update a client
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveClientRequest} request 
+     * Update a client.  Requires the &#39;ManageClientsAndProjects&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSaveClientRequest} request A Save Client Request object containing updated fields.  Make sure to specify the Client Id in the request object so that ChronoSheets knows which Client to update
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ClientsApi~clientsUpdateClientCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}

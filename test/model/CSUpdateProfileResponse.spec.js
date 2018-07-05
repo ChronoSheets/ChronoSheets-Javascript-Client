@@ -31,7 +31,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSSignupResponse();
+    instance = new ChronoSheetsApi.CSUpdateProfileResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,28 +50,28 @@
       object[property] = value;
   }
 
-  describe('CSSignupResponse', function() {
-    it('should create an instance of CSSignupResponse', function() {
-      // uncomment below and update the code to test CSSignupResponse
-      //var instane = new ChronoSheetsApi.CSSignupResponse();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSSignupResponse);
+  describe('CSUpdateProfileResponse', function() {
+    it('should create an instance of CSUpdateProfileResponse', function() {
+      // uncomment below and update the code to test CSUpdateProfileResponse
+      //var instane = new ChronoSheetsApi.CSUpdateProfileResponse();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSUpdateProfileResponse);
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new ChronoSheetsApi.CSSignupResponse();
+      //var instane = new ChronoSheetsApi.CSUpdateProfileResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new ChronoSheetsApi.CSSignupResponse();
+      //var instane = new ChronoSheetsApi.CSUpdateProfileResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property validationErrors (base name: "ValidationErrors")', function() {
       // uncomment below and update the code to test the property validationErrors
-      //var instane = new ChronoSheetsApi.CSSignupResponse();
+      //var instane = new ChronoSheetsApi.CSUpdateProfileResponse();
       //expect(instance).to.be();
     });
 

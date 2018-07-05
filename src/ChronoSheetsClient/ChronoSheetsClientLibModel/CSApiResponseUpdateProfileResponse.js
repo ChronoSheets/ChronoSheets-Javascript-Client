@@ -17,32 +17,32 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSSignupResponse'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateProfileResponse'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./CSSignupResponse'));
+    module.exports = factory(require('../ApiClient'), require('./CSUpdateProfileResponse'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.CSApiResponseSignupResponse = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSSignupResponse);
+    root.ChronoSheetsApi.CSApiResponseUpdateProfileResponse = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSUpdateProfileResponse);
   }
-}(this, function(ApiClient, CSSignupResponse) {
+}(this, function(ApiClient, CSUpdateProfileResponse) {
   'use strict';
 
 
 
 
   /**
-   * The CSApiResponseSignupResponse model module.
-   * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseSignupResponse
+   * The CSApiResponseUpdateProfileResponse model module.
+   * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateProfileResponse
    * @version v1
    */
 
   /**
-   * Constructs a new <code>CSApiResponseSignupResponse</code>.
-   * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseSignupResponse
+   * Constructs a new <code>CSApiResponseUpdateProfileResponse</code>.
+   * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateProfileResponse
    * @class
    */
   var exports = function() {
@@ -54,18 +54,18 @@
   };
 
   /**
-   * Constructs a <code>CSApiResponseSignupResponse</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CSApiResponseUpdateProfileResponse</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseSignupResponse} obj Optional instance to populate.
-   * @return {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseSignupResponse} The populated <code>CSApiResponseSignupResponse</code> instance.
+   * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateProfileResponse} obj Optional instance to populate.
+   * @return {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateProfileResponse} The populated <code>CSApiResponseUpdateProfileResponse</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
       if (data.hasOwnProperty('Data')) {
-        obj['Data'] = CSSignupResponse.constructFromObject(data['Data']);
+        obj['Data'] = CSUpdateProfileResponse.constructFromObject(data['Data']);
       }
       if (data.hasOwnProperty('Status')) {
         obj['Status'] = ApiClient.convertToType(data['Status'], 'String');
@@ -78,11 +78,11 @@
   }
 
   /**
-   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSignupResponse} Data
+   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateProfileResponse} Data
    */
   exports.prototype['Data'] = undefined;
   /**
-   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseSignupResponse.StatusEnum} Status
+   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateProfileResponse.StatusEnum} Status
    */
   exports.prototype['Status'] = undefined;
   /**

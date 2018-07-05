@@ -57,7 +57,7 @@
      */
 
     /**
-     * Get jobs and tasks information, aggregated
+     * Get jobs and tasks information, aggregated.  Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/AggregateJobTasksApi~aggregateJobTasksGetAggregateJobTasksCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListAggregateJobCode}

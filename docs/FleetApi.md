@@ -4,17 +4,17 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fleetCreateVehicle**](FleetApi.md#fleetCreateVehicle) | **PUT** /api/Fleet/CreateVehicle | Create a vehicle
+[**fleetCreateVehicle**](FleetApi.md#fleetCreateVehicle) | **PUT** /api/Fleet/CreateVehicle | Create a vehicle.  Requires the &#39;ManageFleet&#39; permission.
 [**fleetGetVehicleById**](FleetApi.md#fleetGetVehicleById) | **GET** /api/Fleet/GetVehicleById | Get a particular vehicle
 [**fleetGetVehicles**](FleetApi.md#fleetGetVehicles) | **GET** /api/Fleet/GetVehicles | Get a collection of vehicles that are under your organisation
-[**fleetUpdateVehicle**](FleetApi.md#fleetUpdateVehicle) | **POST** /api/Fleet/UpdateVehicle | Update a vehicle
+[**fleetUpdateVehicle**](FleetApi.md#fleetUpdateVehicle) | **POST** /api/Fleet/UpdateVehicle | Update a vehicle.  Requires the &#39;ManageFleet&#39; permission.
 
 
 <a name="fleetCreateVehicle"></a>
 # **fleetCreateVehicle**
 > CSApiResponseInt32 fleetCreateVehicle(request, xChronosheetsAuth)
 
-Create a vehicle
+Create a vehicle.  Requires the &#39;ManageFleet&#39; permission.
 
 ### Example
 ```javascript
@@ -22,7 +22,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.FleetApi();
 
-var request = new ChronoSheetsApi.CSInsertVehicleRequest(); // CSInsertVehicleRequest | 
+var request = new ChronoSheetsApi.CSInsertVehicleRequest(); // CSInsertVehicleRequest | An Insert Vehicle Request object containing values for the new Vehicle to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -41,7 +41,7 @@ apiInstance.fleetCreateVehicle(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSInsertVehicleRequest**](CSInsertVehicleRequest.md)|  | 
+ **request** | [**CSInsertVehicleRequest**](CSInsertVehicleRequest.md)| An Insert Vehicle Request object containing values for the new Vehicle to create | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -69,7 +69,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.FleetApi();
 
-var vehicleId = 56; // Number | The ID of the vehicle you want to get
+var vehicleId = 56; // Number | The ID of the Vehicle you want to get
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -88,7 +88,7 @@ apiInstance.fleetGetVehicleById(vehicleId, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **vehicleId** | **Number**| The ID of the vehicle you want to get | 
+ **vehicleId** | **Number**| The ID of the Vehicle you want to get | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -116,7 +116,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.FleetApi();
 
-var includeDeleted = true; // Boolean | 
+var includeDeleted = true; // Boolean | Whether or not to include deleted vehicles
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -135,7 +135,7 @@ apiInstance.fleetGetVehicles(includeDeleted, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **includeDeleted** | **Boolean**|  | 
+ **includeDeleted** | **Boolean**| Whether or not to include deleted vehicles | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -155,7 +155,7 @@ No authorization required
 # **fleetUpdateVehicle**
 > CSApiResponseBoolean fleetUpdateVehicle(request, xChronosheetsAuth)
 
-Update a vehicle
+Update a vehicle.  Requires the &#39;ManageFleet&#39; permission.
 
 ### Example
 ```javascript
@@ -163,7 +163,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.FleetApi();
 
-var request = new ChronoSheetsApi.CSSaveVehicleRequest(); // CSSaveVehicleRequest | 
+var request = new ChronoSheetsApi.CSSaveVehicleRequest(); // CSSaveVehicleRequest | A Save Vehicle Request object containing updated fields.  Make sure to specify the Vehicle Id in the request object so that ChronoSheets knows which Vehicle to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -182,7 +182,7 @@ apiInstance.fleetUpdateVehicle(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSSaveVehicleRequest**](CSSaveVehicleRequest.md)|  | 
+ **request** | [**CSSaveVehicleRequest**](CSSaveVehicleRequest.md)| A Save Vehicle Request object containing updated fields.  Make sure to specify the Vehicle Id in the request object so that ChronoSheets knows which Vehicle to update | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
