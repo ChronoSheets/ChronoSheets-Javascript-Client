@@ -1,15 +1,15 @@
-# ChronoSheetsApi.CSUpdateUserRequest
+# TheChronoSheetsApi.CSUpdateUserRequest
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**userId** | **Number** |  | [optional] 
-**emailAddress** | **String** |  | [optional] 
-**firstName** | **String** |  | [optional] 
-**lastName** | **String** |  | [optional] 
-**isSubscribedToNewsletter** | **Boolean** |  | [optional] 
-**isAccountActive** | **Boolean** |  | [optional] 
-**roles** | **Number** |  | [optional] 
-**alertSettings** | **Number** |  | [optional] 
+**userId** | **Number** | The Id of the User that is to be updated | [optional] 
+**emailAddress** | **String** | The Email Address of the employee | [optional] 
+**firstName** | **String** | The First Name of the employee | [optional] 
+**lastName** | **String** | The Last Name of the employee | [optional] 
+**isSubscribedToNewsletter** | **Boolean** | Whether or not the employee is subscribed to ChronoSheets newsletters | [optional] 
+**isAccountActive** | **Boolean** | Whether or not the employee account is active | [optional] 
+**roles** | **Number** | A BIT field designating which Roles/Permissions the employee will have when they sign in.  See the {timesheets.types.Enums.UserRoles} Enum for more details | [optional] 
+**alertSettings** | **Number** | A BIT field designating which Alerts the employee will receive.  See the {timesheets.types.Enums.AlertSettings} Enum for more details | [optional] 
 
 

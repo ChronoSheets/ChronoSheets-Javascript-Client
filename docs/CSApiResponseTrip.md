@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseTrip
+# TheChronoSheetsApi.CSApiResponseTrip
 
 ## Properties
 Name | Type | Description | Notes

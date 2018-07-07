@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseUserForManagement
+# TheChronoSheetsApi.CSApiResponseUserForManagement
 
 ## Properties
 Name | Type | Description | Notes

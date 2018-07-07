@@ -1,4 +1,4 @@
-# ChronoSheetsApi.OrganisationGroupsApi
+# TheChronoSheetsApi.OrganisationGroupsApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -20,11 +20,11 @@ Create an organisation group.    Requires the &#39;ManageOrganisationGroups&#39;
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.OrganisationGroupsApi();
+var apiInstance = new TheChronoSheetsApi.OrganisationGroupsApi();
 
-var request = new ChronoSheetsApi.CSInsertOrganisationGroupRequest(); // CSInsertOrganisationGroupRequest | An Insert OrganisationGroup Request object containing values for the new OrganisationGroup to create
+var request = new TheChronoSheetsApi.CSInsertOrganisationGroupRequest(); // CSInsertOrganisationGroupRequest | An Insert OrganisationGroup Request object containing values for the new OrganisationGroup to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -67,9 +67,9 @@ Get a particular organisation group.    Requires the &#39;ManageOrganisationGrou
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.OrganisationGroupsApi();
+var apiInstance = new TheChronoSheetsApi.OrganisationGroupsApi();
 
 var organisationGroupId = 56; // Number | The ID of the OrganisationGroup you want to get
 
@@ -114,9 +114,9 @@ Get a collection of organisation groups that are under your organisation.    Req
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.OrganisationGroupsApi();
+var apiInstance = new TheChronoSheetsApi.OrganisationGroupsApi();
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -158,9 +158,9 @@ Get org groups for a particular job.    Requires the &#39;ManageOrganisationGrou
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.OrganisationGroupsApi();
+var apiInstance = new TheChronoSheetsApi.OrganisationGroupsApi();
 
 var jobId = 56; // Number | The ID of the job
 
@@ -205,9 +205,9 @@ Get org groups for a particular vehicle.    Requires the &#39;ManageOrganisation
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.OrganisationGroupsApi();
+var apiInstance = new TheChronoSheetsApi.OrganisationGroupsApi();
 
 var vehicleId = 56; // Number | The ID of the vehicle
 
@@ -252,11 +252,11 @@ Update an organisation group.    Requires the &#39;ManageOrganisationGroups&#39;
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.OrganisationGroupsApi();
+var apiInstance = new TheChronoSheetsApi.OrganisationGroupsApi();
 
-var request = new ChronoSheetsApi.CSSaveOrganisationGroupRequest(); // CSSaveOrganisationGroupRequest | A Save OrganisationGroup Request object containing updated fields.  Make sure to specify the OrganisationGroup Id in the request object so that ChronoSheets knows which OrganisationGroup to update
+var request = new TheChronoSheetsApi.CSSaveOrganisationGroupRequest(); // CSSaveOrganisationGroupRequest | A Save OrganisationGroup Request object containing updated fields.  Make sure to specify the OrganisationGroup Id in the request object so that ChronoSheets knows which OrganisationGroup to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

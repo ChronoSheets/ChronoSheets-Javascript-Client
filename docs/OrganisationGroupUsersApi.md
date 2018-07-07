@@ -1,4 +1,4 @@
-# ChronoSheetsApi.OrganisationGroupUsersApi
+# TheChronoSheetsApi.OrganisationGroupUsersApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -16,9 +16,9 @@ Get a collection of organisation group users that belong to an organisation grou
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.OrganisationGroupUsersApi();
+var apiInstance = new TheChronoSheetsApi.OrganisationGroupUsersApi();
 
 var orgGroupId = 56; // Number | An OrganisatioGroup Id
 
@@ -63,11 +63,11 @@ Set the users who belong to an organisation group.    Requires the &#39;ManageOr
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.OrganisationGroupUsersApi();
+var apiInstance = new TheChronoSheetsApi.OrganisationGroupUsersApi();
 
-var request = new ChronoSheetsApi.CSSetOrganisationGroupUsersRequest(); // CSSetOrganisationGroupUsersRequest | A request object specifying which users belong to an organisation group.  Make sure to specify the OrganisationGroup Id in the request object so that ChronoSheets knows which OrganisationGroup to update
+var request = new TheChronoSheetsApi.CSSetOrganisationGroupUsersRequest(); // CSSetOrganisationGroupUsersRequest | A request object specifying which users belong to an organisation group.  Make sure to specify the OrganisationGroup Id in the request object so that ChronoSheets knows which OrganisationGroup to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

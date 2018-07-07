@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseListUserHourlyRate
+# TheChronoSheetsApi.CSApiResponseListUserHourlyRate
 
 ## Properties
 Name | Type | Description | Notes

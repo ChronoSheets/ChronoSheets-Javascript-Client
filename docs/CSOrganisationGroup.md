@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSOrganisationGroup
+# TheChronoSheetsApi.CSOrganisationGroup
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSClient
+# TheChronoSheetsApi.CSClient
 
 ## Properties
 Name | Type | Description | Notes

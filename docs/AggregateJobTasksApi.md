@@ -1,4 +1,4 @@
-# ChronoSheetsApi.AggregateJobTasksApi
+# TheChronoSheetsApi.AggregateJobTasksApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -15,9 +15,9 @@ Get jobs and tasks information, aggregated.    Requires the &#39;SubmitTimesheet
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.AggregateJobTasksApi();
+var apiInstance = new TheChronoSheetsApi.AggregateJobTasksApi();
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

@@ -1,4 +1,4 @@
-# ChronoSheetsApi.UsersApi
+# TheChronoSheetsApi.UsersApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -18,11 +18,11 @@ Create a user account in your organisation.  Requires the &#39;ManageOrganisatio
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.UsersApi();
+var apiInstance = new TheChronoSheetsApi.UsersApi();
 
-var request = new ChronoSheetsApi.CSInsertUserRequest(); // CSInsertUserRequest | An Insert User Request object containing values for the new User to create
+var request = new TheChronoSheetsApi.CSInsertUserRequest(); // CSInsertUserRequest | An Insert User Request object containing values for the new User to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -65,9 +65,9 @@ Get a particular user in your organisation.  Requires the &#39;ManageOrganisatio
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.UsersApi();
+var apiInstance = new TheChronoSheetsApi.UsersApi();
 
 var userId = 56; // Number | The User ID of the UserForManagement you want to get
 
@@ -112,9 +112,9 @@ Get users accounts in your organisation.  Requires the &#39;ManageOrganisationUs
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.UsersApi();
+var apiInstance = new TheChronoSheetsApi.UsersApi();
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -156,11 +156,11 @@ Update a user account.  Requires the &#39;ManageOrganisationUsers&#39; permissio
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.UsersApi();
+var apiInstance = new TheChronoSheetsApi.UsersApi();
 
-var request = new ChronoSheetsApi.CSUpdateUserRequest(); // CSUpdateUserRequest | A Update User Request object containing updated fields.  Make sure to specify the User Id in the request object so that ChronoSheets knows which User to update
+var request = new TheChronoSheetsApi.CSUpdateUserRequest(); // CSUpdateUserRequest | A Update User Request object containing updated fields.  Make sure to specify the User Id in the request object so that ChronoSheets knows which User to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

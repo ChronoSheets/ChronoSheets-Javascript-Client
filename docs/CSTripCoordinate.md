@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSTripCoordinate
+# TheChronoSheetsApi.CSTripCoordinate
 
 ## Properties
 Name | Type | Description | Notes

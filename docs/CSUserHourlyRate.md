@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSUserHourlyRate
+# TheChronoSheetsApi.CSUserHourlyRate
 
 ## Properties
 Name | Type | Description | Notes

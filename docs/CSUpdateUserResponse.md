@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSUpdateUserResponse
+# TheChronoSheetsApi.CSUpdateUserResponse
 
 ## Properties
 Name | Type | Description | Notes

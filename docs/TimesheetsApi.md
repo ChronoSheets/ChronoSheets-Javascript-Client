@@ -1,4 +1,4 @@
-# ChronoSheetsApi.TimesheetsApi
+# TheChronoSheetsApi.TimesheetsApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -18,11 +18,11 @@ Inserts a single timesheet record.    Requires the &#39;SubmitTimesheets&#39; pe
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.TimesheetsApi();
+var apiInstance = new TheChronoSheetsApi.TimesheetsApi();
 
-var request = new ChronoSheetsApi.CSTimesheet(); // CSTimesheet | A Timesheet Request object containing values for the new Timesheet to create
+var request = new TheChronoSheetsApi.CSTimesheet(); // CSTimesheet | A Timesheet Request object containing values for the new Timesheet to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -65,9 +65,9 @@ Delete a timesheet.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.TimesheetsApi();
+var apiInstance = new TheChronoSheetsApi.TimesheetsApi();
 
 var timesheetId = 56; // Number | The ID of the Timesheet you want to delete
 
@@ -112,9 +112,9 @@ Get timesheets between start and end dates.  Note: the date range cannot exceed 
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.TimesheetsApi();
+var apiInstance = new TheChronoSheetsApi.TimesheetsApi();
 
 var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date of the date range
 
@@ -162,11 +162,11 @@ Batch update timesheets.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var TheChronoSheetsApi = require('the_chrono_sheets_api');
 
-var apiInstance = new ChronoSheetsApi.TimesheetsApi();
+var apiInstance = new TheChronoSheetsApi.TimesheetsApi();
 
-var request = new ChronoSheetsApi.CSBatchUpdateTimesheetRequest(); // CSBatchUpdateTimesheetRequest | A BatchUpdateTimesheet Request object containing values for the new Timesheets to create
+var request = new TheChronoSheetsApi.CSBatchUpdateTimesheetRequest(); // CSBatchUpdateTimesheetRequest | A BatchUpdateTimesheet Request object containing values for the new Timesheets to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

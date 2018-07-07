@@ -1,9 +1,9 @@
-# ChronoSheetsApi.CSDoLoginRequest
+# TheChronoSheetsApi.CSDoLoginRequest
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**usernameOrEmail** | **String** |  | [optional] 
-**password** | **String** |  | [optional] 
+**usernameOrEmail** | **String** | Your ChronoSheets username or registered email address | [optional] 
+**password** | **String** | Your ChronoSheets password | [optional] 
 
 

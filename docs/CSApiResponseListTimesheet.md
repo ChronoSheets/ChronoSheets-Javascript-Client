@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseListTimesheet
+# TheChronoSheetsApi.CSApiResponseListTimesheet
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseForPaginatedListTrip
+# TheChronoSheetsApi.CSApiResponseForPaginatedListTrip
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseListOrganisationGroup
+# TheChronoSheetsApi.CSApiResponseListOrganisationGroup
 
 ## Properties
 Name | Type | Description | Notes

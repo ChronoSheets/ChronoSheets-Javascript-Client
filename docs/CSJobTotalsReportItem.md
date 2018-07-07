@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSJobTotalsReportItem
+# TheChronoSheetsApi.CSJobTotalsReportItem
 
 ## Properties
 Name | Type | Description | Notes

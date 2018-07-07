@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSCombinedReportsData
+# TheChronoSheetsApi.CSCombinedReportsData
 
 ## Properties
 Name | Type | Description | Notes

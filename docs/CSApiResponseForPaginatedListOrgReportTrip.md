@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTrip
+# TheChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTrip
 
 ## Properties
 Name | Type | Description | Notes
