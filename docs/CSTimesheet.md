@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSTimesheet
+# ChronoSheetsApi.CSTimesheet
 
 ## Properties
 Name | Type | Description | Notes

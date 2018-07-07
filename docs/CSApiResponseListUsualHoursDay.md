@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSApiResponseListUsualHoursDay
+# ChronoSheetsApi.CSApiResponseListUsualHoursDay
 
 ## Properties
 Name | Type | Description | Notes

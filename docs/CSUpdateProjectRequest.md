@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSUpdateProjectRequest
+# ChronoSheetsApi.CSUpdateProjectRequest
 
 ## Properties
 Name | Type | Description | Notes

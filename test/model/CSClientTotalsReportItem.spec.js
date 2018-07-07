@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSClientTotalsReportItem();
+    instance = new ChronoSheetsApi.CSClientTotalsReportItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,37 +52,37 @@
   describe('CSClientTotalsReportItem', function() {
     it('should create an instance of CSClientTotalsReportItem', function() {
       // uncomment below and update the code to test CSClientTotalsReportItem
-      //var instane = new TheChronoSheetsApi.CSClientTotalsReportItem();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSClientTotalsReportItem);
+      //var instane = new ChronoSheetsApi.CSClientTotalsReportItem();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSClientTotalsReportItem);
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new TheChronoSheetsApi.CSClientTotalsReportItem();
+      //var instane = new ChronoSheetsApi.CSClientTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new TheChronoSheetsApi.CSClientTotalsReportItem();
+      //var instane = new ChronoSheetsApi.CSClientTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property clientId (base name: "ClientId")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instane = new TheChronoSheetsApi.CSClientTotalsReportItem();
+      //var instane = new ChronoSheetsApi.CSClientTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property clientName (base name: "ClientName")', function() {
       // uncomment below and update the code to test the property clientName
-      //var instane = new TheChronoSheetsApi.CSClientTotalsReportItem();
+      //var instane = new ChronoSheetsApi.CSClientTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property spanSeconds (base name: "SpanSeconds")', function() {
       // uncomment below and update the code to test the property spanSeconds
-      //var instane = new TheChronoSheetsApi.CSClientTotalsReportItem();
+      //var instane = new ChronoSheetsApi.CSClientTotalsReportItem();
       //expect(instance).to.be();
     });
 

@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSProjectCostingReportItem();
+    instance = new ChronoSheetsApi.CSProjectCostingReportItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,49 +52,49 @@
   describe('CSProjectCostingReportItem', function() {
     it('should create an instance of CSProjectCostingReportItem', function() {
       // uncomment below and update the code to test CSProjectCostingReportItem
-      //var instane = new TheChronoSheetsApi.CSProjectCostingReportItem();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSProjectCostingReportItem);
+      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSProjectCostingReportItem);
     });
 
     it('should have the property projectId (base name: "ProjectId")', function() {
       // uncomment below and update the code to test the property projectId
-      //var instane = new TheChronoSheetsApi.CSProjectCostingReportItem();
+      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property projectName (base name: "ProjectName")', function() {
       // uncomment below and update the code to test the property projectName
-      //var instane = new TheChronoSheetsApi.CSProjectCostingReportItem();
+      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property clientId (base name: "ClientId")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instane = new TheChronoSheetsApi.CSProjectCostingReportItem();
+      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new TheChronoSheetsApi.CSProjectCostingReportItem();
+      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property clientName (base name: "ClientName")', function() {
       // uncomment below and update the code to test the property clientName
-      //var instane = new TheChronoSheetsApi.CSProjectCostingReportItem();
+      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property estimatedCost (base name: "EstimatedCost")', function() {
       // uncomment below and update the code to test the property estimatedCost
-      //var instane = new TheChronoSheetsApi.CSProjectCostingReportItem();
+      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property actualCost (base name: "ActualCost")', function() {
       // uncomment below and update the code to test the property actualCost
-      //var instane = new TheChronoSheetsApi.CSProjectCostingReportItem();
+      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
       //expect(instance).to.be();
     });
 

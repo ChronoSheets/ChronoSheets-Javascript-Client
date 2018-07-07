@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSTrip
+# ChronoSheetsApi.CSTrip
 
 ## Properties
 Name | Type | Description | Notes

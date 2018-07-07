@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSProject
+# ChronoSheetsApi.CSProject
 
 ## Properties
 Name | Type | Description | Notes

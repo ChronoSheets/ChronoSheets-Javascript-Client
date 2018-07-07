@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSOrganisation();
+    instance = new ChronoSheetsApi.CSOrganisation();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,97 +52,97 @@
   describe('CSOrganisation', function() {
     it('should create an instance of CSOrganisation', function() {
       // uncomment below and update the code to test CSOrganisation
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSOrganisation);
+      //var instane = new ChronoSheetsApi.CSOrganisation();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSOrganisation);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "Name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property addressLine01 (base name: "AddressLine01")', function() {
       // uncomment below and update the code to test the property addressLine01
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property addressLine02 (base name: "AddressLine02")', function() {
       // uncomment below and update the code to test the property addressLine02
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property suburb (base name: "Suburb")', function() {
       // uncomment below and update the code to test the property suburb
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property state (base name: "State")', function() {
       // uncomment below and update the code to test the property state
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property postcode (base name: "Postcode")', function() {
       // uncomment below and update the code to test the property postcode
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property country (base name: "Country")', function() {
       // uncomment below and update the code to test the property country
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property phone (base name: "Phone")', function() {
       // uncomment below and update the code to test the property phone
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property emailAddress (base name: "EmailAddress")', function() {
       // uncomment below and update the code to test the property emailAddress
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property timezone (base name: "Timezone")', function() {
       // uncomment below and update the code to test the property timezone
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property subscriptionCustomerId (base name: "SubscriptionCustomerId")', function() {
       // uncomment below and update the code to test the property subscriptionCustomerId
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property subscriptionPlanId (base name: "SubscriptionPlanId")', function() {
       // uncomment below and update the code to test the property subscriptionPlanId
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property signupToken (base name: "SignupToken")', function() {
       // uncomment below and update the code to test the property signupToken
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
     it('should have the property numberSeatsAvailable (base name: "NumberSeatsAvailable")', function() {
       // uncomment below and update the code to test the property numberSeatsAvailable
-      //var instane = new TheChronoSheetsApi.CSOrganisation();
+      //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 

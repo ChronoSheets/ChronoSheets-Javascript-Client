@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSTimeSlot
+# ChronoSheetsApi.CSTimeSlot
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseDoLoginResponse'), require('../ChronoSheetsClientLibModel/CSApiResponseUpdateProfileResponse'), require('../ChronoSheetsClientLibModel/CSApiResponseUserProfile'), require('../ChronoSheetsClientLibModel/CSDoLoginRequest'), require('../ChronoSheetsClientLibModel/CSUpdateMyProfileRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.TheChronoSheetsApi) {
-      root.TheChronoSheetsApi = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.TheChronoSheetsApi.UserProfileApi = factory(root.TheChronoSheetsApi.ApiClient, root.TheChronoSheetsApi.CSApiResponseBoolean, root.TheChronoSheetsApi.CSApiResponseDoLoginResponse, root.TheChronoSheetsApi.CSApiResponseUpdateProfileResponse, root.TheChronoSheetsApi.CSApiResponseUserProfile, root.TheChronoSheetsApi.CSDoLoginRequest, root.TheChronoSheetsApi.CSUpdateMyProfileRequest);
+    root.ChronoSheetsApi.UserProfileApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseDoLoginResponse, root.ChronoSheetsApi.CSApiResponseUpdateProfileResponse, root.ChronoSheetsApi.CSApiResponseUserProfile, root.ChronoSheetsApi.CSDoLoginRequest, root.ChronoSheetsApi.CSUpdateMyProfileRequest);
   }
 }(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseDoLoginResponse, CSApiResponseUpdateProfileResponse, CSApiResponseUserProfile, CSDoLoginRequest, CSUpdateMyProfileRequest) {
   'use strict';

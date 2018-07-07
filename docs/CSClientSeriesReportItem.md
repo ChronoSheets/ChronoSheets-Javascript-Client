@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSClientSeriesReportItem
+# ChronoSheetsApi.CSClientSeriesReportItem
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseInsertUserResponse'), require('../ChronoSheetsClientLibModel/CSApiResponseListUserForManagement'), require('../ChronoSheetsClientLibModel/CSApiResponseUpdateUserResponse'), require('../ChronoSheetsClientLibModel/CSApiResponseUserForManagement'), require('../ChronoSheetsClientLibModel/CSInsertUserRequest'), require('../ChronoSheetsClientLibModel/CSUpdateUserRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.TheChronoSheetsApi) {
-      root.TheChronoSheetsApi = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.TheChronoSheetsApi.UsersApi = factory(root.TheChronoSheetsApi.ApiClient, root.TheChronoSheetsApi.CSApiResponseInsertUserResponse, root.TheChronoSheetsApi.CSApiResponseListUserForManagement, root.TheChronoSheetsApi.CSApiResponseUpdateUserResponse, root.TheChronoSheetsApi.CSApiResponseUserForManagement, root.TheChronoSheetsApi.CSInsertUserRequest, root.TheChronoSheetsApi.CSUpdateUserRequest);
+    root.ChronoSheetsApi.UsersApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseInsertUserResponse, root.ChronoSheetsApi.CSApiResponseListUserForManagement, root.ChronoSheetsApi.CSApiResponseUpdateUserResponse, root.ChronoSheetsApi.CSApiResponseUserForManagement, root.ChronoSheetsApi.CSInsertUserRequest, root.ChronoSheetsApi.CSUpdateUserRequest);
   }
 }(this, function(ApiClient, CSApiResponseInsertUserResponse, CSApiResponseListUserForManagement, CSApiResponseUpdateUserResponse, CSApiResponseUserForManagement, CSInsertUserRequest, CSUpdateUserRequest) {
   'use strict';

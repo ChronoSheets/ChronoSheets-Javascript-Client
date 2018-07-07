@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSTimeSlot();
+    instance = new ChronoSheetsApi.CSTimeSlot();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,49 +52,49 @@
   describe('CSTimeSlot', function() {
     it('should create an instance of CSTimeSlot', function() {
       // uncomment below and update the code to test CSTimeSlot
-      //var instane = new TheChronoSheetsApi.CSTimeSlot();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSTimeSlot);
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSTimeSlot);
     });
 
     it('should have the property dayType (base name: "DayType")', function() {
       // uncomment below and update the code to test the property dayType
-      //var instane = new TheChronoSheetsApi.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 
     it('should have the property usualHourId (base name: "UsualHourId")', function() {
       // uncomment below and update the code to test the property usualHourId
-      //var instane = new TheChronoSheetsApi.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 
     it('should have the property startHour (base name: "StartHour")', function() {
       // uncomment below and update the code to test the property startHour
-      //var instane = new TheChronoSheetsApi.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 
     it('should have the property startMinute (base name: "StartMinute")', function() {
       // uncomment below and update the code to test the property startMinute
-      //var instane = new TheChronoSheetsApi.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 
     it('should have the property endHour (base name: "EndHour")', function() {
       // uncomment below and update the code to test the property endHour
-      //var instane = new TheChronoSheetsApi.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 
     it('should have the property endMinute (base name: "EndMinute")', function() {
       // uncomment below and update the code to test the property endMinute
-      //var instane = new TheChronoSheetsApi.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 
     it('should have the property isValid (base name: "IsValid")', function() {
       // uncomment below and update the code to test the property isValid
-      //var instane = new TheChronoSheetsApi.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 

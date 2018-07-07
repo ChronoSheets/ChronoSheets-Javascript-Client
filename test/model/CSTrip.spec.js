@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSTrip();
+    instance = new ChronoSheetsApi.CSTrip();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,121 +52,121 @@
   describe('CSTrip', function() {
     it('should create an instance of CSTrip', function() {
       // uncomment below and update the code to test CSTrip
-      //var instane = new TheChronoSheetsApi.CSTrip();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSTrip);
+      //var instane = new ChronoSheetsApi.CSTrip();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSTrip);
     });
 
     it('should have the property tripId (base name: "TripId")', function() {
       // uncomment below and update the code to test the property tripId
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property timesheetId (base name: "TimesheetId")', function() {
       // uncomment below and update the code to test the property timesheetId
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property vehicleId (base name: "VehicleId")', function() {
       // uncomment below and update the code to test the property vehicleId
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property orgId (base name: "OrgId")', function() {
       // uncomment below and update the code to test the property orgId
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property mobilePlatform (base name: "MobilePlatform")', function() {
       // uncomment below and update the code to test the property mobilePlatform
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property startDate (base name: "StartDate")', function() {
       // uncomment below and update the code to test the property startDate
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property endDate (base name: "EndDate")', function() {
       // uncomment below and update the code to test the property endDate
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property vehicleName (base name: "VehicleName")', function() {
       // uncomment below and update the code to test the property vehicleName
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property vehicleMake (base name: "VehicleMake")', function() {
       // uncomment below and update the code to test the property vehicleMake
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property vehicleModel (base name: "VehicleModel")', function() {
       // uncomment below and update the code to test the property vehicleModel
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property vehicleYear (base name: "VehicleYear")', function() {
       // uncomment below and update the code to test the property vehicleYear
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property costPerKilometer (base name: "CostPerKilometer")', function() {
       // uncomment below and update the code to test the property costPerKilometer
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property tripTotalCost (base name: "TripTotalCost")', function() {
       // uncomment below and update the code to test the property tripTotalCost
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property totalTripDistanceMeters (base name: "TotalTripDistanceMeters")', function() {
       // uncomment below and update the code to test the property totalTripDistanceMeters
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property startAddress (base name: "StartAddress")', function() {
       // uncomment below and update the code to test the property startAddress
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property endAddress (base name: "EndAddress")', function() {
       // uncomment below and update the code to test the property endAddress
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property pathCoordinates (base name: "PathCoordinates")', function() {
       // uncomment below and update the code to test the property pathCoordinates
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property cacheExpiryDate (base name: "CacheExpiryDate")', function() {
       // uncomment below and update the code to test the property cacheExpiryDate
-      //var instane = new TheChronoSheetsApi.CSTrip();
+      //var instane = new ChronoSheetsApi.CSTrip();
       //expect(instance).to.be();
     });
 

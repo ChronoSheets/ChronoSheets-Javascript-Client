@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSClientSeriesReportItem'), require('./CSClientTotalsReportItem'), require('./CSJobSeriesReportItem'), require('./CSJobTotalsReportItem'), require('./CSProjectSeriesReportItem'), require('./CSProjectTotalsReportItem'), require('./CSTaskSeriesReportItem'), require('./CSTaskTotalsReportItem'));
   } else {
     // Browser globals (root is window)
-    if (!root.TheChronoSheetsApi) {
-      root.TheChronoSheetsApi = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.TheChronoSheetsApi.CSCombinedReportsData = factory(root.TheChronoSheetsApi.ApiClient, root.TheChronoSheetsApi.CSClientSeriesReportItem, root.TheChronoSheetsApi.CSClientTotalsReportItem, root.TheChronoSheetsApi.CSJobSeriesReportItem, root.TheChronoSheetsApi.CSJobTotalsReportItem, root.TheChronoSheetsApi.CSProjectSeriesReportItem, root.TheChronoSheetsApi.CSProjectTotalsReportItem, root.TheChronoSheetsApi.CSTaskSeriesReportItem, root.TheChronoSheetsApi.CSTaskTotalsReportItem);
+    root.ChronoSheetsApi.CSCombinedReportsData = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSClientSeriesReportItem, root.ChronoSheetsApi.CSClientTotalsReportItem, root.ChronoSheetsApi.CSJobSeriesReportItem, root.ChronoSheetsApi.CSJobTotalsReportItem, root.ChronoSheetsApi.CSProjectSeriesReportItem, root.ChronoSheetsApi.CSProjectTotalsReportItem, root.ChronoSheetsApi.CSTaskSeriesReportItem, root.ChronoSheetsApi.CSTaskTotalsReportItem);
   }
 }(this, function(ApiClient, CSClientSeriesReportItem, CSClientTotalsReportItem, CSJobSeriesReportItem, CSJobTotalsReportItem, CSProjectSeriesReportItem, CSProjectTotalsReportItem, CSTaskSeriesReportItem, CSTaskTotalsReportItem) {
   'use strict';

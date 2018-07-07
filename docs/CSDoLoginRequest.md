@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSDoLoginRequest
+# ChronoSheetsApi.CSDoLoginRequest
 
 ## Properties
 Name | Type | Description | Notes

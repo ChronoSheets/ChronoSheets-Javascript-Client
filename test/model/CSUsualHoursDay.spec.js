@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSUsualHoursDay();
+    instance = new ChronoSheetsApi.CSUsualHoursDay();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('CSUsualHoursDay', function() {
     it('should create an instance of CSUsualHoursDay', function() {
       // uncomment below and update the code to test CSUsualHoursDay
-      //var instane = new TheChronoSheetsApi.CSUsualHoursDay();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSUsualHoursDay);
+      //var instane = new ChronoSheetsApi.CSUsualHoursDay();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSUsualHoursDay);
     });
 
     it('should have the property dayType (base name: "DayType")', function() {
       // uncomment below and update the code to test the property dayType
-      //var instane = new TheChronoSheetsApi.CSUsualHoursDay();
+      //var instane = new ChronoSheetsApi.CSUsualHoursDay();
       //expect(instance).to.be();
     });
 
     it('should have the property timeSlots (base name: "TimeSlots")', function() {
       // uncomment below and update the code to test the property timeSlots
-      //var instane = new TheChronoSheetsApi.CSUsualHoursDay();
+      //var instane = new ChronoSheetsApi.CSUsualHoursDay();
       //expect(instance).to.be();
     });
 
     it('should have the property deleteUsualHours (base name: "DeleteUsualHours")', function() {
       // uncomment below and update the code to test the property deleteUsualHours
-      //var instane = new TheChronoSheetsApi.CSUsualHoursDay();
+      //var instane = new ChronoSheetsApi.CSUsualHoursDay();
       //expect(instance).to.be();
     });
 

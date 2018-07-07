@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSInsertClientRequest
+# ChronoSheetsApi.CSInsertClientRequest
 
 ## Properties
 Name | Type | Description | Notes

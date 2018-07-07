@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSUserProfile();
+    instance = new ChronoSheetsApi.CSUserProfile();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,79 +52,79 @@
   describe('CSUserProfile', function() {
     it('should create an instance of CSUserProfile', function() {
       // uncomment below and update the code to test CSUserProfile
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSUserProfile);
+      //var instane = new ChronoSheetsApi.CSUserProfile();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSUserProfile);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
+      //var instane = new ChronoSheetsApi.CSUserProfile();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
+      //var instane = new ChronoSheetsApi.CSUserProfile();
       //expect(instance).to.be();
     });
 
     it('should have the property userName (base name: "UserName")', function() {
       // uncomment below and update the code to test the property userName
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
+      //var instane = new ChronoSheetsApi.CSUserProfile();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "FirstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
+      //var instane = new ChronoSheetsApi.CSUserProfile();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "LastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
+      //var instane = new ChronoSheetsApi.CSUserProfile();
       //expect(instance).to.be();
     });
 
     it('should have the property emailAddress (base name: "EmailAddress")', function() {
       // uncomment below and update the code to test the property emailAddress
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
+      //var instane = new ChronoSheetsApi.CSUserProfile();
       //expect(instance).to.be();
     });
 
     it('should have the property isSubscribedToNewsletter (base name: "IsSubscribedToNewsletter")', function() {
       // uncomment below and update the code to test the property isSubscribedToNewsletter
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
+      //var instane = new ChronoSheetsApi.CSUserProfile();
       //expect(instance).to.be();
     });
 
     it('should have the property roles (base name: "Roles")', function() {
       // uncomment below and update the code to test the property roles
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
+      //var instane = new ChronoSheetsApi.CSUserProfile();
       //expect(instance).to.be();
     });
 
     it('should have the property alertSettings (base name: "AlertSettings")', function() {
       // uncomment below and update the code to test the property alertSettings
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
+      //var instane = new ChronoSheetsApi.CSUserProfile();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationName (base name: "OrganisationName")', function() {
       // uncomment below and update the code to test the property organisationName
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
+      //var instane = new ChronoSheetsApi.CSUserProfile();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationSuburb (base name: "OrganisationSuburb")', function() {
       // uncomment below and update the code to test the property organisationSuburb
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
+      //var instane = new ChronoSheetsApi.CSUserProfile();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationCountry (base name: "OrganisationCountry")', function() {
       // uncomment below and update the code to test the property organisationCountry
-      //var instane = new TheChronoSheetsApi.CSUserProfile();
+      //var instane = new ChronoSheetsApi.CSUserProfile();
       //expect(instance).to.be();
     });
 

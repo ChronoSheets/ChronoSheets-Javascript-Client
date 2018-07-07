@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSDoLoginResponse();
+    instance = new ChronoSheetsApi.CSDoLoginResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,19 +52,19 @@
   describe('CSDoLoginResponse', function() {
     it('should create an instance of CSDoLoginResponse', function() {
       // uncomment below and update the code to test CSDoLoginResponse
-      //var instane = new TheChronoSheetsApi.CSDoLoginResponse();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSDoLoginResponse);
+      //var instane = new ChronoSheetsApi.CSDoLoginResponse();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSDoLoginResponse);
     });
 
     it('should have the property cSAuthToken (base name: "CSAuthToken")', function() {
       // uncomment below and update the code to test the property cSAuthToken
-      //var instane = new TheChronoSheetsApi.CSDoLoginResponse();
+      //var instane = new ChronoSheetsApi.CSDoLoginResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property loggedInUser (base name: "LoggedInUser")', function() {
       // uncomment below and update the code to test the property loggedInUser
-      //var instane = new TheChronoSheetsApi.CSDoLoginResponse();
+      //var instane = new ChronoSheetsApi.CSDoLoginResponse();
       //expect(instance).to.be();
     });
 

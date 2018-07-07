@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSInsertJobCodeRequest
+# ChronoSheetsApi.CSInsertJobCodeRequest
 
 ## Properties
 Name | Type | Description | Notes

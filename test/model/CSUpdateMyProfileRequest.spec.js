@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSUpdateMyProfileRequest();
+    instance = new ChronoSheetsApi.CSUpdateMyProfileRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,55 +52,55 @@
   describe('CSUpdateMyProfileRequest', function() {
     it('should create an instance of CSUpdateMyProfileRequest', function() {
       // uncomment below and update the code to test CSUpdateMyProfileRequest
-      //var instane = new TheChronoSheetsApi.CSUpdateMyProfileRequest();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSUpdateMyProfileRequest);
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSUpdateMyProfileRequest);
     });
 
     it('should have the property emailAddress (base name: "EmailAddress")', function() {
       // uncomment below and update the code to test the property emailAddress
-      //var instane = new TheChronoSheetsApi.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "FirstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instane = new TheChronoSheetsApi.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "LastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instane = new TheChronoSheetsApi.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property oldPassword (base name: "OldPassword")', function() {
       // uncomment below and update the code to test the property oldPassword
-      //var instane = new TheChronoSheetsApi.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property newPassword (base name: "NewPassword")', function() {
       // uncomment below and update the code to test the property newPassword
-      //var instane = new TheChronoSheetsApi.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property confirmNewPassword (base name: "ConfirmNewPassword")', function() {
       // uncomment below and update the code to test the property confirmNewPassword
-      //var instane = new TheChronoSheetsApi.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property isSubscribedToNewsletter (base name: "IsSubscribedToNewsletter")', function() {
       // uncomment below and update the code to test the property isSubscribedToNewsletter
-      //var instane = new TheChronoSheetsApi.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property wantsToChangePassword (base name: "WantsToChangePassword")', function() {
       // uncomment below and update the code to test the property wantsToChangePassword
-      //var instane = new TheChronoSheetsApi.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSUserJobFavourite
+# ChronoSheetsApi.CSUserJobFavourite
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSUpdateOrganisationRequest
+# ChronoSheetsApi.CSUpdateOrganisationRequest
 
 ## Properties
 Name | Type | Description | Notes

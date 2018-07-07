@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSTimesheetTask();
+    instance = new ChronoSheetsApi.CSTimesheetTask();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,37 +52,37 @@
   describe('CSTimesheetTask', function() {
     it('should create an instance of CSTimesheetTask', function() {
       // uncomment below and update the code to test CSTimesheetTask
-      //var instane = new TheChronoSheetsApi.CSTimesheetTask();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSTimesheetTask);
+      //var instane = new ChronoSheetsApi.CSTimesheetTask();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSTimesheetTask);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new TheChronoSheetsApi.CSTimesheetTask();
+      //var instane = new ChronoSheetsApi.CSTimesheetTask();
       //expect(instance).to.be();
     });
 
     it('should have the property taskName (base name: "TaskName")', function() {
       // uncomment below and update the code to test the property taskName
-      //var instane = new TheChronoSheetsApi.CSTimesheetTask();
+      //var instane = new ChronoSheetsApi.CSTimesheetTask();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new TheChronoSheetsApi.CSTimesheetTask();
+      //var instane = new ChronoSheetsApi.CSTimesheetTask();
       //expect(instance).to.be();
     });
 
     it('should have the property isDeleted (base name: "IsDeleted")', function() {
       // uncomment below and update the code to test the property isDeleted
-      //var instane = new TheChronoSheetsApi.CSTimesheetTask();
+      //var instane = new ChronoSheetsApi.CSTimesheetTask();
       //expect(instance).to.be();
     });
 
     it('should have the property tripEnabled (base name: "TripEnabled")', function() {
       // uncomment below and update the code to test the property tripEnabled
-      //var instane = new TheChronoSheetsApi.CSTimesheetTask();
+      //var instane = new ChronoSheetsApi.CSTimesheetTask();
       //expect(instance).to.be();
     });
 

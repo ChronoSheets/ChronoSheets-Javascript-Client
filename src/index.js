@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -30,9 +30,9 @@
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var TheChronoSheetsApi = require('ChronoSheetsClient/index'); // See note below*.
-   * var xxxSvc = new TheChronoSheetsApi.XxxApi(); // Allocate the API class we're going to use.
-   * var yyyModel = new TheChronoSheetsApi.Yyy(); // Construct a model instance.
+   * var ChronoSheetsApi = require('ChronoSheetsClient/index'); // See note below*.
+   * var xxxSvc = new ChronoSheetsApi.XxxApi(); // Allocate the API class we're going to use.
+   * var yyyModel = new ChronoSheetsApi.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -44,8 +44,8 @@
    * <p>
    * A non-AMD browser application (discouraged) might do something like this:
    * <pre>
-   * var xxxSvc = new TheChronoSheetsApi.XxxApi(); // Allocate the API class we're going to use.
-   * var yyy = new TheChronoSheetsApi.Yyy(); // Construct a model instance.
+   * var xxxSvc = new ChronoSheetsApi.XxxApi(); // Allocate the API class we're going to use.
+   * var yyy = new ChronoSheetsApi.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.

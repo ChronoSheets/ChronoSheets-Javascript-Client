@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.UserPayRatesApi
+# ChronoSheetsApi.UserPayRatesApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -16,11 +16,11 @@ Create a new pay rate for a particular user, archiving the previous pay rate.   
 
 ### Example
 ```javascript
-var TheChronoSheetsApi = require('the_chrono_sheets_api');
+var ChronoSheetsApi = require('chrono_sheets_api');
 
-var apiInstance = new TheChronoSheetsApi.UserPayRatesApi();
+var apiInstance = new ChronoSheetsApi.UserPayRatesApi();
 
-var request = new TheChronoSheetsApi.CSInsertUserHourlyRateRequest(); // CSInsertUserHourlyRateRequest | An Insert UserHourlyRate Request object containing values for the new UserHourlyRate to create
+var request = new ChronoSheetsApi.CSInsertUserHourlyRateRequest(); // CSInsertUserHourlyRateRequest | An Insert UserHourlyRate Request object containing values for the new UserHourlyRate to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -63,9 +63,9 @@ Get a collection of pay rates for a particular user, specified by user id.    Re
 
 ### Example
 ```javascript
-var TheChronoSheetsApi = require('the_chrono_sheets_api');
+var ChronoSheetsApi = require('chrono_sheets_api');
 
-var apiInstance = new TheChronoSheetsApi.UserPayRatesApi();
+var apiInstance = new ChronoSheetsApi.UserPayRatesApi();
 
 var userId = 56; // Number | The ID of the User for which you want to get UserHourlyRate objects
 

@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSSaveVehicleRequest();
+    instance = new ChronoSheetsApi.CSSaveVehicleRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,61 +52,61 @@
   describe('CSSaveVehicleRequest', function() {
     it('should create an instance of CSSaveVehicleRequest', function() {
       // uncomment below and update the code to test CSSaveVehicleRequest
-      //var instane = new TheChronoSheetsApi.CSSaveVehicleRequest();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSSaveVehicleRequest);
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSSaveVehicleRequest);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new TheChronoSheetsApi.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "Name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new TheChronoSheetsApi.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property costPerKilometer (base name: "CostPerKilometer")', function() {
       // uncomment below and update the code to test the property costPerKilometer
-      //var instane = new TheChronoSheetsApi.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property make (base name: "Make")', function() {
       // uncomment below and update the code to test the property make
-      //var instane = new TheChronoSheetsApi.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property model (base name: "Model")', function() {
       // uncomment below and update the code to test the property model
-      //var instane = new TheChronoSheetsApi.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property year (base name: "Year")', function() {
       // uncomment below and update the code to test the property year
-      //var instane = new TheChronoSheetsApi.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property licencePlateNumber (base name: "LicencePlateNumber")', function() {
       // uncomment below and update the code to test the property licencePlateNumber
-      //var instane = new TheChronoSheetsApi.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property linkedOrgGroupIds (base name: "LinkedOrgGroupIds")', function() {
       // uncomment below and update the code to test the property linkedOrgGroupIds
-      //var instane = new TheChronoSheetsApi.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property isDeleted (base name: "IsDeleted")', function() {
       // uncomment below and update the code to test the property isDeleted
-      //var instane = new TheChronoSheetsApi.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 

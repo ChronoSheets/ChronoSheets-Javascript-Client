@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseListUserJobFavourite'), require('../ChronoSheetsClientLibModel/CSInsertUserJobFavouriteRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.TheChronoSheetsApi) {
-      root.TheChronoSheetsApi = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.TheChronoSheetsApi.UserJobFavouritesApi = factory(root.TheChronoSheetsApi.ApiClient, root.TheChronoSheetsApi.CSApiResponseBoolean, root.TheChronoSheetsApi.CSApiResponseInt32, root.TheChronoSheetsApi.CSApiResponseListUserJobFavourite, root.TheChronoSheetsApi.CSInsertUserJobFavouriteRequest);
+    root.ChronoSheetsApi.UserJobFavouritesApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseListUserJobFavourite, root.ChronoSheetsApi.CSInsertUserJobFavouriteRequest);
   }
 }(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseInt32, CSApiResponseListUserJobFavourite, CSInsertUserJobFavouriteRequest) {
   'use strict';

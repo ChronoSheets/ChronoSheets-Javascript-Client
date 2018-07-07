@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSUserHourlyRate();
+    instance = new ChronoSheetsApi.CSUserHourlyRate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,55 +52,55 @@
   describe('CSUserHourlyRate', function() {
     it('should create an instance of CSUserHourlyRate', function() {
       // uncomment below and update the code to test CSUserHourlyRate
-      //var instane = new TheChronoSheetsApi.CSUserHourlyRate();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSUserHourlyRate);
+      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSUserHourlyRate);
     });
 
     it('should have the property rateId (base name: "RateId")', function() {
       // uncomment below and update the code to test the property rateId
-      //var instane = new TheChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new TheChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new TheChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property isCurrent (base name: "IsCurrent")', function() {
       // uncomment below and update the code to test the property isCurrent
-      //var instane = new TheChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property hourlyRate (base name: "HourlyRate")', function() {
       // uncomment below and update the code to test the property hourlyRate
-      //var instane = new TheChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property hourlyOvertimeRate (base name: "HourlyOvertimeRate")', function() {
       // uncomment below and update the code to test the property hourlyOvertimeRate
-      //var instane = new TheChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property startDateTime (base name: "StartDateTime")', function() {
       // uncomment below and update the code to test the property startDateTime
-      //var instane = new TheChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property endDateTime (base name: "EndDateTime")', function() {
       // uncomment below and update the code to test the property endDateTime
-      //var instane = new TheChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 

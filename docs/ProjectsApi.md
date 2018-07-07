@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.ProjectsApi
+# ChronoSheetsApi.ProjectsApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -18,11 +18,11 @@ Create a project.    Requires the &#39;ManageClientsAndProjects&#39; permission.
 
 ### Example
 ```javascript
-var TheChronoSheetsApi = require('the_chrono_sheets_api');
+var ChronoSheetsApi = require('chrono_sheets_api');
 
-var apiInstance = new TheChronoSheetsApi.ProjectsApi();
+var apiInstance = new ChronoSheetsApi.ProjectsApi();
 
-var request = new TheChronoSheetsApi.CSInsertProjectRequest(); // CSInsertProjectRequest | An Insert Project Request object containing values for the new Project to create
+var request = new ChronoSheetsApi.CSInsertProjectRequest(); // CSInsertProjectRequest | An Insert Project Request object containing values for the new Project to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -65,9 +65,9 @@ Get a project by its Id.    Requires the &#39;ManageClientsAndProjects&#39; or &
 
 ### Example
 ```javascript
-var TheChronoSheetsApi = require('the_chrono_sheets_api');
+var ChronoSheetsApi = require('chrono_sheets_api');
 
-var apiInstance = new TheChronoSheetsApi.ProjectsApi();
+var apiInstance = new ChronoSheetsApi.ProjectsApi();
 
 var projectId = 56; // Number | The ID of the Project you want to get
 
@@ -112,9 +112,9 @@ Get projects for a particular client.    Requires the &#39;ManageClientsAndProje
 
 ### Example
 ```javascript
-var TheChronoSheetsApi = require('the_chrono_sheets_api');
+var ChronoSheetsApi = require('chrono_sheets_api');
 
-var apiInstance = new TheChronoSheetsApi.ProjectsApi();
+var apiInstance = new ChronoSheetsApi.ProjectsApi();
 
 var clientId = 56; // Number | The ID of the client
 
@@ -159,11 +159,11 @@ Update a project.    Requires the &#39;ManageClientsAndProjects&#39; permission.
 
 ### Example
 ```javascript
-var TheChronoSheetsApi = require('the_chrono_sheets_api');
+var ChronoSheetsApi = require('chrono_sheets_api');
 
-var apiInstance = new TheChronoSheetsApi.ProjectsApi();
+var apiInstance = new ChronoSheetsApi.ProjectsApi();
 
-var request = new TheChronoSheetsApi.CSUpdateProjectRequest(); // CSUpdateProjectRequest | An Update Project Request object containing updated fields.  Make sure to specify the Project Id in the request object so that ChronoSheets knows which Project to update
+var request = new ChronoSheetsApi.CSUpdateProjectRequest(); // CSUpdateProjectRequest | An Update Project Request object containing updated fields.  Make sure to specify the Project Id in the request object so that ChronoSheets knows which Project to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

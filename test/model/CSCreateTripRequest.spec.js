@@ -1,5 +1,5 @@
 /**
- * The ChronoSheets API
+ * ChronoSheets API
  * <div style='font-size: 14px!important;font-family: Open Sans,sans-serif!important;color: #3b4151!important;'><p>      ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available.  Use the ChronoSheets API to create your own custom integrations.  Before starting, sign up for a ChronoSheets account at <a target='_BLANK' href='http://tsheets.xyz/signup'>http://tsheets.xyz/signup</a>.  </p></div><div id='cs-extra-info'></div>
  *
  * OpenAPI spec version: v1
@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.TheChronoSheetsApi);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, TheChronoSheetsApi) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new TheChronoSheetsApi.CSCreateTripRequest();
+    instance = new ChronoSheetsApi.CSCreateTripRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,37 +52,37 @@
   describe('CSCreateTripRequest', function() {
     it('should create an instance of CSCreateTripRequest', function() {
       // uncomment below and update the code to test CSCreateTripRequest
-      //var instane = new TheChronoSheetsApi.CSCreateTripRequest();
-      //expect(instance).to.be.a(TheChronoSheetsApi.CSCreateTripRequest);
+      //var instane = new ChronoSheetsApi.CSCreateTripRequest();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSCreateTripRequest);
     });
 
     it('should have the property timesheetId (base name: "TimesheetId")', function() {
       // uncomment below and update the code to test the property timesheetId
-      //var instane = new TheChronoSheetsApi.CSCreateTripRequest();
+      //var instane = new ChronoSheetsApi.CSCreateTripRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property vehicleId (base name: "VehicleId")', function() {
       // uncomment below and update the code to test the property vehicleId
-      //var instane = new TheChronoSheetsApi.CSCreateTripRequest();
+      //var instane = new ChronoSheetsApi.CSCreateTripRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property pathCoordsStringCsv (base name: "PathCoordsStringCsv")', function() {
       // uncomment below and update the code to test the property pathCoordsStringCsv
-      //var instane = new TheChronoSheetsApi.CSCreateTripRequest();
+      //var instane = new ChronoSheetsApi.CSCreateTripRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property distanceMeters (base name: "DistanceMeters")', function() {
       // uncomment below and update the code to test the property distanceMeters
-      //var instane = new TheChronoSheetsApi.CSCreateTripRequest();
+      //var instane = new ChronoSheetsApi.CSCreateTripRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property mobilePlatform (base name: "MobilePlatform")', function() {
       // uncomment below and update the code to test the property mobilePlatform
-      //var instane = new TheChronoSheetsApi.CSCreateTripRequest();
+      //var instane = new ChronoSheetsApi.CSCreateTripRequest();
       //expect(instance).to.be();
     });
 

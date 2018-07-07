@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSApiResponseInsertUserResponse
+# ChronoSheetsApi.CSApiResponseInsertUserResponse
 
 ## Properties
 Name | Type | Description | Notes

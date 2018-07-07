@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment
+# ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment
 
 ## Properties
 Name | Type | Description | Notes

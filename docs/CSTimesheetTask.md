@@ -1,4 +1,4 @@
-# TheChronoSheetsApi.CSTimesheetTask
+# ChronoSheetsApi.CSTimesheetTask
 
 ## Properties
 Name | Type | Description | Notes
