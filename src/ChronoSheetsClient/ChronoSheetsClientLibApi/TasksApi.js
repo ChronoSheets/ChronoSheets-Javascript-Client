@@ -57,8 +57,8 @@
      */
 
     /**
-     * Create a task
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertTaskRequest} request 
+     * Create a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertTaskRequest} request An Insert Task Request object containing values for the new Task to create
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TasksApi~tasksCreateTaskCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
@@ -110,8 +110,8 @@
      */
 
     /**
-     * Delete a task
-     * @param {Number} taskId 
+     * Delete a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
+     * @param {Number} taskId The ID of the Task you want to delete
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TasksApi~tasksDeleteTaskCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
@@ -164,8 +164,8 @@
      */
 
     /**
-     * Get a particular task by id
-     * @param {Number} taskId 
+     * Get a particular task by Id.   Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
+     * @param {Number} taskId The ID of the TimesheetTask you want to get
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TasksApi~tasksGetTaskByIdCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTimesheetTask}
@@ -218,7 +218,7 @@
      */
 
     /**
-     * Get tasks in your organisation
+     * Get tasks in your organisation.   Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TasksApi~tasksGetTasksCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListTimesheetTask}
@@ -265,7 +265,7 @@
      */
 
     /**
-     * Get tasks for a particular job
+     * Get a collection of tasks for a particular Job, specified by JobId.    Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
      * @param {Number} jobId The ID of the job
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TasksApi~tasksGetTasksForJobCallback} callback The callback function, accepting three arguments: error, data, response
@@ -319,8 +319,8 @@
      */
 
     /**
-     * Update a task
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateTaskRequest} request 
+     * Update a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateTaskRequest} request An Update Task Request object containing updated fields.  Make sure to specify the Task Id in the request object so that ChronoSheets knows which Task to update
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TasksApi~tasksUpdateTaskCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}

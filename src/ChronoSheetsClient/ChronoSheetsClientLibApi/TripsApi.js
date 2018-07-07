@@ -57,8 +57,8 @@
      */
 
     /**
-     * Create a new trip.  Important: create a timesheet record before calling this, passing in the new timesheet record id as a reference.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSCreateTripRequest} request The create trip request
+     * Create a new trip.  Important: create a timesheet record before calling this, passing in the new timesheet record id as a reference.    Requires the &#39;SubmitTimesheets&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSCreateTripRequest} request A Create Trip Request object containing values for the new Trip to create
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TripsApi~tripsCreateTripCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
@@ -110,8 +110,8 @@
      */
 
     /**
-     * Get trip by Id
-     * @param {Number} tripId The ID of the trip
+     * Get trip by Id.    Requires the &#39;ViewMyTrips&#39; permission.
+     * @param {Number} tripId The ID of the Trip you want to get
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TripsApi~tripsGetMyTripByIdCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip}
@@ -164,12 +164,12 @@
      */
 
     /**
-     * Get my trips
-     * @param {Date} startDate 
-     * @param {Date} endDate 
-     * @param {Number} skip 
-     * @param {Number} take 
-     * @param {Number} vehicleId 
+     * Get my trips.  Get the GPS trips you&#39;ve recorded and submitted.    Requires the &#39;ViewMyTrips&#39; permission.
+     * @param {Date} startDate The Start date of the date range.  Trips after this date will be obtained.
+     * @param {Date} endDate The End date of the date range.  Trips before this date will be obtained.
+     * @param {Number} skip Skip this many Trips
+     * @param {Number} take Take this many Trips
+     * @param {Number} vehicleId Filter by a particular Vehicle (get trips made with a particular vehicle), specified by VehicleId
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TripsApi~tripsGetMyTripsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTrip}

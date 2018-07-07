@@ -57,7 +57,7 @@
      */
 
     /**
-     * Get Consolidated Admin Reports Data (Jobs, Tasks, Clients and Projects).  These are the organisation wide reports, with data from potentially all employees.  Requires the &#39;ReportAdmin&#39; permission.
+     * Get Consolidated Admin Reports Data (Jobs, Tasks, Clients and Projects).  These are the organisation wide reports, with data from potentially all employees.    Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
      * @param {String} userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
@@ -125,7 +125,7 @@
      */
 
     /**
-     * Get Consolidated User Reports Data (Jobs, Tasks, Clients and Projects).  These are the user&#39;s own reports.  Requires the &#39;ViewOwnReports&#39; permission.
+     * Get Consolidated User Reports Data (Jobs, Tasks, Clients and Projects).  These are the user&#39;s own reports.    Requires the &#39;ViewOwnReports&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
@@ -186,7 +186,7 @@
      */
 
     /**
-     * Get trip by Id, for reporting purposes.  Requires the &#39;ReportAdmin&#39; permission.
+     * Get trip by Id, for reporting purposes.    Requires the &#39;ReportAdmin&#39; permission.
      * @param {Number} tripId The ID of the Trip you want to get
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrgTripByIdCallback} callback The callback function, accepting three arguments: error, data, response
@@ -240,7 +240,7 @@
      */
 
     /**
-     * Reports on Organisation timesheet file attachments (files uploaded and attached to timesheet records.  Requires the &#39;ReportAdmin&#39; permission.
+     * Reports on Organisation timesheet file attachments (files uploaded and attached to timesheet records.    Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
      * @param {Number} skip Skip this many items
@@ -322,7 +322,7 @@
      */
 
     /**
-     * Reports on Organisation trips (GPS tracking from whole organisation).  Requires the &#39;ReportAdmin&#39; permission.
+     * Reports on Organisation trips (GPS tracking from whole organisation).    Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
      * @param {Number} skip Skip this many items
@@ -404,7 +404,7 @@
      */
 
     /**
-     * Get Timesheets Raw Data.  This data details each timesheet record.  These are the organisation wide timesheet records, with data from potentially all employees.  Requires the &#39;ReportAdmin&#39; permission.
+     * Get Timesheets Raw Data.  This data details each timesheet record.  These are the organisation wide timesheet records, with data from potentially all employees.    Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
      * @param {String} userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
@@ -500,7 +500,7 @@
      */
 
     /**
-     * Gets project cost estimations VS actual cost for date range and users.  Requires the &#39;ReportAdmin&#39; permission.
+     * Gets project cost estimations VS actual cost for date range and users.    Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
      * @param {String} userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
@@ -568,7 +568,7 @@
      */
 
     /**
-     * Timeseries jobs data for the logged in user.  Requires the &#39;ViewOwnReports&#39; or &#39;SubmitTimesheets&#39;.
+     * Timeseries jobs data for the logged in user.    Requires the &#39;ViewOwnReports&#39; or &#39;SubmitTimesheets&#39;.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token

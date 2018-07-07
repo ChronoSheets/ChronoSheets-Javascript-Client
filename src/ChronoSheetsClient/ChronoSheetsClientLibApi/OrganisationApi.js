@@ -57,7 +57,7 @@
      */
 
     /**
-     * Get your organisation.  Requires &#39;OrganisationAdmin&#39; permission.
+     * Get your organisation.    Requires &#39;OrganisationAdmin&#39; permission.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationApi~organisationGetOrganisationCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseOrganisation}
@@ -104,7 +104,7 @@
      */
 
     /**
-     * Update an organisation.  Requires &#39;OrganisationAdmin&#39; permission.
+     * Update an organisation.    Requires &#39;OrganisationAdmin&#39; permission.
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateOrganisationRequest} request An Update Organsation Request object containing updated fields.  Make sure to specify the Organsation Id in the request object so that ChronoSheets knows which Organsation to update
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationApi~organisationUpdateOrganisationCallback} callback The callback function, accepting three arguments: error, data, response

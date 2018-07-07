@@ -57,7 +57,8 @@
      */
 
     /**
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSDoLoginRequest} request 
+     * Login to your ChronoSheets account and obtain an Auth Token which you can use for other ChronoSheets API methods.    Does not require any special permissions.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSDoLoginRequest} request A request object containing your username/email and password.
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileDoLoginCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseDoLoginResponse}
      */
@@ -102,6 +103,7 @@
      */
 
     /**
+     * Logout of your ChronoSheets account.  This method ends and deletes your active session.    Does not require any special permissions.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileDoLogoutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
@@ -148,6 +150,7 @@
      */
 
     /**
+     * Get your own profile.  Use this method to obtain detailed information about your ChronoSheets user profile.    Does not require any special permissions.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileGetMyProfileCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUserProfile}
@@ -194,6 +197,7 @@
      */
 
     /**
+     * Keep a session alive.  Use this method to keep a session active.  You could use this to &#39;ping&#39; ChronoSheets every &#39;x&#39; minutes to make sure your Auth Token will keep working.    Does not require any special permissions.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileKeepSessionAliveCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
@@ -240,7 +244,8 @@
      */
 
     /**
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateMyProfileRequest} request 
+     * Update your own profile.  Use this method to update your profile information or update/change your password.    Does not require any special permissions.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateMyProfileRequest} request An Update MyProfile Request object containing updated fields.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserProfileApi~userProfileUpdateMyProfileCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateProfileResponse}

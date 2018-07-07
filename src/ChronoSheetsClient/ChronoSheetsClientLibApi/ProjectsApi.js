@@ -57,7 +57,7 @@
      */
 
     /**
-     * Create a project.  Requires the &#39;ManageClientsAndProjects&#39; permission.
+     * Create a project.    Requires the &#39;ManageClientsAndProjects&#39; permission.
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertProjectRequest} request An Insert Project Request object containing values for the new Project to create
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsCreateProjectCallback} callback The callback function, accepting three arguments: error, data, response
@@ -110,7 +110,7 @@
      */
 
     /**
-     * Get a project by its Id.  Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
+     * Get a project by its Id.    Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
      * @param {Number} projectId The ID of the Project you want to get
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsGetProjectByIdCallback} callback The callback function, accepting three arguments: error, data, response
@@ -164,7 +164,7 @@
      */
 
     /**
-     * Get projects for a particular client.  Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
+     * Get projects for a particular client.    Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
      * @param {Number} clientId The ID of the client
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsGetProjectsForClientCallback} callback The callback function, accepting three arguments: error, data, response
@@ -218,7 +218,7 @@
      */
 
     /**
-     * Update a project.  Requires the &#39;ManageClientsAndProjects&#39; permission.
+     * Update a project.    Requires the &#39;ManageClientsAndProjects&#39; permission.
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateProjectRequest} request An Update Project Request object containing updated fields.  Make sure to specify the Project Id in the request object so that ChronoSheets knows which Project to update
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsUpdateProjectCallback} callback The callback function, accepting three arguments: error, data, response

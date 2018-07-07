@@ -4,15 +4,15 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**userPayRatesCreatePayRate**](UserPayRatesApi.md#userPayRatesCreatePayRate) | **PUT** /api/UserPayRates/CreatePayRate | Create a new pay rate for a particular user, archiving the previous pay rate
-[**userPayRatesGetPayRates**](UserPayRatesApi.md#userPayRatesGetPayRates) | **GET** /api/UserPayRates/GetPayRates | Get a collection of pay rates for a particular user, specified by user id
+[**userPayRatesCreatePayRate**](UserPayRatesApi.md#userPayRatesCreatePayRate) | **PUT** /api/UserPayRates/CreatePayRate | Create a new pay rate for a particular user, archiving the previous pay rate.    Requires the &#39;ManageOrganisationUsers&#39; permission.
+[**userPayRatesGetPayRates**](UserPayRatesApi.md#userPayRatesGetPayRates) | **GET** /api/UserPayRates/GetPayRates | Get a collection of pay rates for a particular user, specified by user id.    Requires the &#39;ManageOrganisationUsers&#39; permission.
 
 
 <a name="userPayRatesCreatePayRate"></a>
 # **userPayRatesCreatePayRate**
 > CSApiResponseInt32 userPayRatesCreatePayRate(request, xChronosheetsAuth)
 
-Create a new pay rate for a particular user, archiving the previous pay rate
+Create a new pay rate for a particular user, archiving the previous pay rate.    Requires the &#39;ManageOrganisationUsers&#39; permission.
 
 ### Example
 ```javascript
@@ -20,7 +20,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UserPayRatesApi();
 
-var request = new ChronoSheetsApi.CSInsertUserHourlyRateRequest(); // CSInsertUserHourlyRateRequest | 
+var request = new ChronoSheetsApi.CSInsertUserHourlyRateRequest(); // CSInsertUserHourlyRateRequest | An Insert UserHourlyRate Request object containing values for the new UserHourlyRate to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -39,7 +39,7 @@ apiInstance.userPayRatesCreatePayRate(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSInsertUserHourlyRateRequest**](CSInsertUserHourlyRateRequest.md)|  | 
+ **request** | [**CSInsertUserHourlyRateRequest**](CSInsertUserHourlyRateRequest.md)| An Insert UserHourlyRate Request object containing values for the new UserHourlyRate to create | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -59,7 +59,7 @@ No authorization required
 # **userPayRatesGetPayRates**
 > CSApiResponseListUserHourlyRate userPayRatesGetPayRates(userId, xChronosheetsAuth)
 
-Get a collection of pay rates for a particular user, specified by user id
+Get a collection of pay rates for a particular user, specified by user id.    Requires the &#39;ManageOrganisationUsers&#39; permission.
 
 ### Example
 ```javascript
@@ -67,7 +67,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UserPayRatesApi();
 
-var userId = 56; // Number | 
+var userId = 56; // Number | The ID of the User for which you want to get UserHourlyRate objects
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -86,7 +86,7 @@ apiInstance.userPayRatesGetPayRates(userId, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **Number**|  | 
+ **userId** | **Number**| The ID of the User for which you want to get UserHourlyRate objects | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type

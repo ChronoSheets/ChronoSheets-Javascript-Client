@@ -57,8 +57,8 @@
      */
 
     /**
-     * Create a user in your organisation
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserRequest} request 
+     * Create a user account in your organisation.  Requires the &#39;ManageOrganisationUsers&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserRequest} request An Insert User Request object containing values for the new User to create
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi~usersCreateTimesheetUserCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInsertUserResponse}
@@ -110,8 +110,8 @@
      */
 
     /**
-     * Get a particular user in your organisation
-     * @param {Number} userId 
+     * Get a particular user in your organisation.  Requires the &#39;ManageOrganisationUsers&#39; or &#39;ManageOrganisationGroups&#39; permissions.
+     * @param {Number} userId The User ID of the UserForManagement you want to get
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi~usersGetTimesheetUserCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUserForManagement}
@@ -164,7 +164,7 @@
      */
 
     /**
-     * Get users for your organisation
+     * Get users accounts in your organisation.  Requires the &#39;ManageOrganisationUsers&#39; or &#39;ManageOrganisationGroups&#39; permissions.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi~usersGetTimesheetUsersCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserForManagement}
@@ -211,8 +211,8 @@
      */
 
     /**
-     * Update a user
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateUserRequest} request 
+     * Update a user account.  Requires the &#39;ManageOrganisationUsers&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSUpdateUserRequest} request A Update User Request object containing updated fields.  Make sure to specify the User Id in the request object so that ChronoSheets knows which User to update
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi~usersUpdateTimesheetUserCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateUserResponse}

@@ -57,8 +57,8 @@
      */
 
     /**
-     * Get usual hours (rostered hours) for an employee
-     * @param {Number} userId 
+     * Get usual hours (rostered hours) for an employee.  Requires the &#39;ManageOrganisationUsers&#39; or &#39;ManageOrganisationUsers&#39; permissions.
+     * @param {Number} userId The ID of the User for which you want to get UsualHours for
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsualHoursApi~usualHoursGetUsualHoursCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUsualHoursDay}
@@ -111,8 +111,8 @@
      */
 
     /**
-     * Set usual hours (rostered hours) for an employee
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetUsualHoursRequest} request 
+     * Set usual hours (rostered hours) for an employee.  Requires the &#39;ManageOrganisationUsers&#39; or &#39;ManageOrganisationUsers&#39; permissions.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetUsualHoursRequest} request A Set UsualHours Request object containing updated data.  Make sure to specify the Day types in the request object so that ChronoSheets knows which Days to update
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UsualHoursApi~usualHoursSetUsualHoursCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}

@@ -4,17 +4,17 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**timesheetsCreateSingleTimesheet**](TimesheetsApi.md#timesheetsCreateSingleTimesheet) | **PUT** /api/Timesheets/CreateSingleTimesheet | Inserts a single timesheet record
-[**timesheetsDeleteTimesheet**](TimesheetsApi.md#timesheetsDeleteTimesheet) | **DELETE** /api/Timesheets/DeleteTimesheet | Delete a timesheet
-[**timesheetsGetTimesheets**](TimesheetsApi.md#timesheetsGetTimesheets) | **GET** /api/Timesheets/GetTimesheets | Get timesheets between start and end dates
-[**timesheetsUpdateTimesheets**](TimesheetsApi.md#timesheetsUpdateTimesheets) | **POST** /api/Timesheets/UpdateTimesheets | Batch update timesheets
+[**timesheetsCreateSingleTimesheet**](TimesheetsApi.md#timesheetsCreateSingleTimesheet) | **PUT** /api/Timesheets/CreateSingleTimesheet | Inserts a single timesheet record.    Requires the &#39;SubmitTimesheets&#39; permission.
+[**timesheetsDeleteTimesheet**](TimesheetsApi.md#timesheetsDeleteTimesheet) | **DELETE** /api/Timesheets/DeleteTimesheet | Delete a timesheet.    Requires the &#39;SubmitTimesheets&#39; permission.
+[**timesheetsGetTimesheets**](TimesheetsApi.md#timesheetsGetTimesheets) | **GET** /api/Timesheets/GetTimesheets | Get timesheets between start and end dates.  Note: the date range cannot exceed 24 hours.  This method is generally used to get timesheets for a particular day.    Requires the &#39;SubmitTimesheets&#39; permission.
+[**timesheetsUpdateTimesheets**](TimesheetsApi.md#timesheetsUpdateTimesheets) | **POST** /api/Timesheets/UpdateTimesheets | Batch update timesheets.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 
 <a name="timesheetsCreateSingleTimesheet"></a>
 # **timesheetsCreateSingleTimesheet**
 > CSApiResponseInt32 timesheetsCreateSingleTimesheet(request, xChronosheetsAuth)
 
-Inserts a single timesheet record
+Inserts a single timesheet record.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
 ```javascript
@@ -22,7 +22,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.TimesheetsApi();
 
-var request = new ChronoSheetsApi.CSTimesheet(); // CSTimesheet | The timesheet request object
+var request = new ChronoSheetsApi.CSTimesheet(); // CSTimesheet | A Timesheet Request object containing values for the new Timesheet to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -41,7 +41,7 @@ apiInstance.timesheetsCreateSingleTimesheet(request, xChronosheetsAuth, callback
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSTimesheet**](CSTimesheet.md)| The timesheet request object | 
+ **request** | [**CSTimesheet**](CSTimesheet.md)| A Timesheet Request object containing values for the new Timesheet to create | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -61,7 +61,7 @@ No authorization required
 # **timesheetsDeleteTimesheet**
 > CSApiResponseBoolean timesheetsDeleteTimesheet(timesheetId, xChronosheetsAuth)
 
-Delete a timesheet
+Delete a timesheet.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
 ```javascript
@@ -69,7 +69,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.TimesheetsApi();
 
-var timesheetId = 56; // Number | The ID of the timesheet to delete
+var timesheetId = 56; // Number | The ID of the Timesheet you want to delete
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -88,7 +88,7 @@ apiInstance.timesheetsDeleteTimesheet(timesheetId, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **timesheetId** | **Number**| The ID of the timesheet to delete | 
+ **timesheetId** | **Number**| The ID of the Timesheet you want to delete | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -108,7 +108,7 @@ No authorization required
 # **timesheetsGetTimesheets**
 > CSApiResponseListTimesheet timesheetsGetTimesheets(startDate, endDate, xChronosheetsAuth)
 
-Get timesheets between start and end dates
+Get timesheets between start and end dates.  Note: the date range cannot exceed 24 hours.  This method is generally used to get timesheets for a particular day.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
 ```javascript
@@ -158,7 +158,7 @@ No authorization required
 # **timesheetsUpdateTimesheets**
 > CSApiResponseListInt32 timesheetsUpdateTimesheets(request, xChronosheetsAuth)
 
-Batch update timesheets
+Batch update timesheets.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
 ```javascript
@@ -166,7 +166,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.TimesheetsApi();
 
-var request = new ChronoSheetsApi.CSBatchUpdateTimesheetRequest(); // CSBatchUpdateTimesheetRequest | The batch update timesheets request
+var request = new ChronoSheetsApi.CSBatchUpdateTimesheetRequest(); // CSBatchUpdateTimesheetRequest | A BatchUpdateTimesheet Request object containing values for the new Timesheets to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -185,7 +185,7 @@ apiInstance.timesheetsUpdateTimesheets(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSBatchUpdateTimesheetRequest**](CSBatchUpdateTimesheetRequest.md)| The batch update timesheets request | 
+ **request** | [**CSBatchUpdateTimesheetRequest**](CSBatchUpdateTimesheetRequest.md)| A BatchUpdateTimesheet Request object containing values for the new Timesheets to create | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type

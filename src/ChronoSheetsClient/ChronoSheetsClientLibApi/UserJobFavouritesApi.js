@@ -57,8 +57,8 @@
      */
 
     /**
-     * Create a job favourite
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserJobFavouriteRequest} request 
+     * Create a job favourite.    Requires the &#39;SubmitTimesheets&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserJobFavouriteRequest} request An Insert UserJobFavourite Request object containing values for the new UserJobFavourite to create
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserJobFavouritesApi~userJobFavouritesCreateJobFavouriteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
@@ -110,8 +110,8 @@
      */
 
     /**
-     * Delete a job favourite
-     * @param {Number} jobId The ID of the Job
+     * Delete a job favourite.    Requires the &#39;SubmitTimesheets&#39; permission.
+     * @param {Number} jobId The ID of the Job for the Job Favourite you want to delete.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserJobFavouritesApi~userJobFavouritesDeleteJobFavouriteCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
@@ -164,7 +164,7 @@
      */
 
     /**
-     * Get your job favourites
+     * Get your job favourites.    Requires the &#39;SubmitTimesheets&#39; permission.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserJobFavouritesApi~userJobFavouritesGetJobFavouritesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserJobFavourite}

@@ -4,16 +4,16 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**userJobFavouritesCreateJobFavourite**](UserJobFavouritesApi.md#userJobFavouritesCreateJobFavourite) | **PUT** /api/UserJobFavourites/CreateJobFavourite | Create a job favourite
-[**userJobFavouritesDeleteJobFavourite**](UserJobFavouritesApi.md#userJobFavouritesDeleteJobFavourite) | **DELETE** /api/UserJobFavourites/DeleteJobFavourite | Delete a job favourite
-[**userJobFavouritesGetJobFavourites**](UserJobFavouritesApi.md#userJobFavouritesGetJobFavourites) | **GET** /api/UserJobFavourites/GetJobFavourites | Get your job favourites
+[**userJobFavouritesCreateJobFavourite**](UserJobFavouritesApi.md#userJobFavouritesCreateJobFavourite) | **PUT** /api/UserJobFavourites/CreateJobFavourite | Create a job favourite.    Requires the &#39;SubmitTimesheets&#39; permission.
+[**userJobFavouritesDeleteJobFavourite**](UserJobFavouritesApi.md#userJobFavouritesDeleteJobFavourite) | **DELETE** /api/UserJobFavourites/DeleteJobFavourite | Delete a job favourite.    Requires the &#39;SubmitTimesheets&#39; permission.
+[**userJobFavouritesGetJobFavourites**](UserJobFavouritesApi.md#userJobFavouritesGetJobFavourites) | **GET** /api/UserJobFavourites/GetJobFavourites | Get your job favourites.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 
 <a name="userJobFavouritesCreateJobFavourite"></a>
 # **userJobFavouritesCreateJobFavourite**
 > CSApiResponseInt32 userJobFavouritesCreateJobFavourite(request, xChronosheetsAuth)
 
-Create a job favourite
+Create a job favourite.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
 ```javascript
@@ -21,7 +21,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UserJobFavouritesApi();
 
-var request = new ChronoSheetsApi.CSInsertUserJobFavouriteRequest(); // CSInsertUserJobFavouriteRequest | 
+var request = new ChronoSheetsApi.CSInsertUserJobFavouriteRequest(); // CSInsertUserJobFavouriteRequest | An Insert UserJobFavourite Request object containing values for the new UserJobFavourite to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -40,7 +40,7 @@ apiInstance.userJobFavouritesCreateJobFavourite(request, xChronosheetsAuth, call
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSInsertUserJobFavouriteRequest**](CSInsertUserJobFavouriteRequest.md)|  | 
+ **request** | [**CSInsertUserJobFavouriteRequest**](CSInsertUserJobFavouriteRequest.md)| An Insert UserJobFavourite Request object containing values for the new UserJobFavourite to create | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -60,7 +60,7 @@ No authorization required
 # **userJobFavouritesDeleteJobFavourite**
 > CSApiResponseBoolean userJobFavouritesDeleteJobFavourite(jobId, xChronosheetsAuth)
 
-Delete a job favourite
+Delete a job favourite.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
 ```javascript
@@ -68,7 +68,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UserJobFavouritesApi();
 
-var jobId = 56; // Number | The ID of the Job
+var jobId = 56; // Number | The ID of the Job for the Job Favourite you want to delete.
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -87,7 +87,7 @@ apiInstance.userJobFavouritesDeleteJobFavourite(jobId, xChronosheetsAuth, callba
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jobId** | **Number**| The ID of the Job | 
+ **jobId** | **Number**| The ID of the Job for the Job Favourite you want to delete. | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -107,7 +107,7 @@ No authorization required
 # **userJobFavouritesGetJobFavourites**
 > CSApiResponseListUserJobFavourite userJobFavouritesGetJobFavourites(xChronosheetsAuth)
 
-Get your job favourites
+Get your job favourites.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
 ```javascript

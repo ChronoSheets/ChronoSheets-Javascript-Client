@@ -57,8 +57,8 @@
      */
 
     /**
-     * Inserts a single timesheet record
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimesheet} request The timesheet request object
+     * Inserts a single timesheet record.    Requires the &#39;SubmitTimesheets&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimesheet} request A Timesheet Request object containing values for the new Timesheet to create
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetsApi~timesheetsCreateSingleTimesheetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
@@ -110,8 +110,8 @@
      */
 
     /**
-     * Delete a timesheet
-     * @param {Number} timesheetId The ID of the timesheet to delete
+     * Delete a timesheet.    Requires the &#39;SubmitTimesheets&#39; permission.
+     * @param {Number} timesheetId The ID of the Timesheet you want to delete
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetsApi~timesheetsDeleteTimesheetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
@@ -164,7 +164,7 @@
      */
 
     /**
-     * Get timesheets between start and end dates
+     * Get timesheets between start and end dates.  Note: the date range cannot exceed 24 hours.  This method is generally used to get timesheets for a particular day.    Requires the &#39;SubmitTimesheets&#39; permission.
      * @param {Date} startDate The start date of the date range
      * @param {Date} endDate The end date of the date range
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
@@ -225,8 +225,8 @@
      */
 
     /**
-     * Batch update timesheets
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSBatchUpdateTimesheetRequest} request The batch update timesheets request
+     * Batch update timesheets.    Requires the &#39;SubmitTimesheets&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSBatchUpdateTimesheetRequest} request A BatchUpdateTimesheet Request object containing values for the new Timesheets to create
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetsApi~timesheetsUpdateTimesheetsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListInt32}

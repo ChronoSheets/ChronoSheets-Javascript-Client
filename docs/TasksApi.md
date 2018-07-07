@@ -4,19 +4,19 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**tasksCreateTask**](TasksApi.md#tasksCreateTask) | **PUT** /api/Tasks/CreateTask | Create a task
-[**tasksDeleteTask**](TasksApi.md#tasksDeleteTask) | **DELETE** /api/Tasks/DeleteTask | Delete a task
-[**tasksGetTaskById**](TasksApi.md#tasksGetTaskById) | **GET** /api/Tasks/GetTaskById | Get a particular task by id
-[**tasksGetTasks**](TasksApi.md#tasksGetTasks) | **GET** /api/Tasks/GetTasks | Get tasks in your organisation
-[**tasksGetTasksForJob**](TasksApi.md#tasksGetTasksForJob) | **GET** /api/Tasks/GetTasksForJob | Get tasks for a particular job
-[**tasksUpdateTask**](TasksApi.md#tasksUpdateTask) | **POST** /api/Tasks/UpdateTask | Update a task
+[**tasksCreateTask**](TasksApi.md#tasksCreateTask) | **PUT** /api/Tasks/CreateTask | Create a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
+[**tasksDeleteTask**](TasksApi.md#tasksDeleteTask) | **DELETE** /api/Tasks/DeleteTask | Delete a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
+[**tasksGetTaskById**](TasksApi.md#tasksGetTaskById) | **GET** /api/Tasks/GetTaskById | Get a particular task by Id.   Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
+[**tasksGetTasks**](TasksApi.md#tasksGetTasks) | **GET** /api/Tasks/GetTasks | Get tasks in your organisation.   Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
+[**tasksGetTasksForJob**](TasksApi.md#tasksGetTasksForJob) | **GET** /api/Tasks/GetTasksForJob | Get a collection of tasks for a particular Job, specified by JobId.    Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
+[**tasksUpdateTask**](TasksApi.md#tasksUpdateTask) | **POST** /api/Tasks/UpdateTask | Update a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
 
 
 <a name="tasksCreateTask"></a>
 # **tasksCreateTask**
 > CSApiResponseInt32 tasksCreateTask(request, xChronosheetsAuth)
 
-Create a task
+Create a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
 
 ### Example
 ```javascript
@@ -24,7 +24,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.TasksApi();
 
-var request = new ChronoSheetsApi.CSInsertTaskRequest(); // CSInsertTaskRequest | 
+var request = new ChronoSheetsApi.CSInsertTaskRequest(); // CSInsertTaskRequest | An Insert Task Request object containing values for the new Task to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -43,7 +43,7 @@ apiInstance.tasksCreateTask(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSInsertTaskRequest**](CSInsertTaskRequest.md)|  | 
+ **request** | [**CSInsertTaskRequest**](CSInsertTaskRequest.md)| An Insert Task Request object containing values for the new Task to create | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -63,7 +63,7 @@ No authorization required
 # **tasksDeleteTask**
 > CSApiResponseBoolean tasksDeleteTask(taskId, xChronosheetsAuth)
 
-Delete a task
+Delete a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
 
 ### Example
 ```javascript
@@ -71,7 +71,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.TasksApi();
 
-var taskId = 56; // Number | 
+var taskId = 56; // Number | The ID of the Task you want to delete
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -90,7 +90,7 @@ apiInstance.tasksDeleteTask(taskId, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **taskId** | **Number**|  | 
+ **taskId** | **Number**| The ID of the Task you want to delete | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -110,7 +110,7 @@ No authorization required
 # **tasksGetTaskById**
 > CSApiResponseTimesheetTask tasksGetTaskById(taskId, xChronosheetsAuth)
 
-Get a particular task by id
+Get a particular task by Id.   Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
 
 ### Example
 ```javascript
@@ -118,7 +118,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.TasksApi();
 
-var taskId = 56; // Number | 
+var taskId = 56; // Number | The ID of the TimesheetTask you want to get
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -137,7 +137,7 @@ apiInstance.tasksGetTaskById(taskId, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **taskId** | **Number**|  | 
+ **taskId** | **Number**| The ID of the TimesheetTask you want to get | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -157,7 +157,7 @@ No authorization required
 # **tasksGetTasks**
 > CSApiResponseListTimesheetTask tasksGetTasks(xChronosheetsAuth)
 
-Get tasks in your organisation
+Get tasks in your organisation.   Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
 
 ### Example
 ```javascript
@@ -201,7 +201,7 @@ No authorization required
 # **tasksGetTasksForJob**
 > CSApiResponseListTimesheetTask tasksGetTasksForJob(jobId, xChronosheetsAuth)
 
-Get tasks for a particular job
+Get a collection of tasks for a particular Job, specified by JobId.    Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
 
 ### Example
 ```javascript
@@ -248,7 +248,7 @@ No authorization required
 # **tasksUpdateTask**
 > CSApiResponseBoolean tasksUpdateTask(request, xChronosheetsAuth)
 
-Update a task
+Update a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
 
 ### Example
 ```javascript
@@ -256,7 +256,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.TasksApi();
 
-var request = new ChronoSheetsApi.CSUpdateTaskRequest(); // CSUpdateTaskRequest | 
+var request = new ChronoSheetsApi.CSUpdateTaskRequest(); // CSUpdateTaskRequest | An Update Task Request object containing updated fields.  Make sure to specify the Task Id in the request object so that ChronoSheets knows which Task to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -275,7 +275,7 @@ apiInstance.tasksUpdateTask(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSUpdateTaskRequest**](CSUpdateTaskRequest.md)|  | 
+ **request** | [**CSUpdateTaskRequest**](CSUpdateTaskRequest.md)| An Update Task Request object containing updated fields.  Make sure to specify the Task Id in the request object so that ChronoSheets knows which Task to update | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type

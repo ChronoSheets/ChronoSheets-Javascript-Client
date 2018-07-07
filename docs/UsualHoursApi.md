@@ -4,15 +4,15 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**usualHoursGetUsualHours**](UsualHoursApi.md#usualHoursGetUsualHours) | **GET** /api/UsualHours/GetUsualHours | Get usual hours (rostered hours) for an employee
-[**usualHoursSetUsualHours**](UsualHoursApi.md#usualHoursSetUsualHours) | **POST** /api/UsualHours/SetUsualHours | Set usual hours (rostered hours) for an employee
+[**usualHoursGetUsualHours**](UsualHoursApi.md#usualHoursGetUsualHours) | **GET** /api/UsualHours/GetUsualHours | Get usual hours (rostered hours) for an employee.  Requires the &#39;ManageOrganisationUsers&#39; or &#39;ManageOrganisationUsers&#39; permissions.
+[**usualHoursSetUsualHours**](UsualHoursApi.md#usualHoursSetUsualHours) | **POST** /api/UsualHours/SetUsualHours | Set usual hours (rostered hours) for an employee.  Requires the &#39;ManageOrganisationUsers&#39; or &#39;ManageOrganisationUsers&#39; permissions.
 
 
 <a name="usualHoursGetUsualHours"></a>
 # **usualHoursGetUsualHours**
 > CSApiResponseListUsualHoursDay usualHoursGetUsualHours(userId, xChronosheetsAuth)
 
-Get usual hours (rostered hours) for an employee
+Get usual hours (rostered hours) for an employee.  Requires the &#39;ManageOrganisationUsers&#39; or &#39;ManageOrganisationUsers&#39; permissions.
 
 ### Example
 ```javascript
@@ -20,7 +20,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UsualHoursApi();
 
-var userId = 56; // Number | 
+var userId = 56; // Number | The ID of the User for which you want to get UsualHours for
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -39,7 +39,7 @@ apiInstance.usualHoursGetUsualHours(userId, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **Number**|  | 
+ **userId** | **Number**| The ID of the User for which you want to get UsualHours for | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -59,7 +59,7 @@ No authorization required
 # **usualHoursSetUsualHours**
 > CSApiResponseBoolean usualHoursSetUsualHours(request, xChronosheetsAuth)
 
-Set usual hours (rostered hours) for an employee
+Set usual hours (rostered hours) for an employee.  Requires the &#39;ManageOrganisationUsers&#39; or &#39;ManageOrganisationUsers&#39; permissions.
 
 ### Example
 ```javascript
@@ -67,7 +67,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UsualHoursApi();
 
-var request = new ChronoSheetsApi.CSSetUsualHoursRequest(); // CSSetUsualHoursRequest | 
+var request = new ChronoSheetsApi.CSSetUsualHoursRequest(); // CSSetUsualHoursRequest | A Set UsualHours Request object containing updated data.  Make sure to specify the Day types in the request object so that ChronoSheets knows which Days to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -86,7 +86,7 @@ apiInstance.usualHoursSetUsualHours(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSSetUsualHoursRequest**](CSSetUsualHoursRequest.md)|  | 
+ **request** | [**CSSetUsualHoursRequest**](CSSetUsualHoursRequest.md)| A Set UsualHours Request object containing updated data.  Make sure to specify the Day types in the request object so that ChronoSheets knows which Days to update | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type

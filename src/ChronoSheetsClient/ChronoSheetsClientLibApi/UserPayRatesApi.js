@@ -57,8 +57,8 @@
      */
 
     /**
-     * Create a new pay rate for a particular user, archiving the previous pay rate
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserHourlyRateRequest} request 
+     * Create a new pay rate for a particular user, archiving the previous pay rate.    Requires the &#39;ManageOrganisationUsers&#39; permission.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserHourlyRateRequest} request An Insert UserHourlyRate Request object containing values for the new UserHourlyRate to create
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserPayRatesApi~userPayRatesCreatePayRateCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}
@@ -110,8 +110,8 @@
      */
 
     /**
-     * Get a collection of pay rates for a particular user, specified by user id
-     * @param {Number} userId 
+     * Get a collection of pay rates for a particular user, specified by user id.    Requires the &#39;ManageOrganisationUsers&#39; permission.
+     * @param {Number} userId The ID of the User for which you want to get UserHourlyRate objects
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/UserPayRatesApi~userPayRatesGetPayRatesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserHourlyRate}

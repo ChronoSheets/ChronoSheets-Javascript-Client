@@ -4,17 +4,17 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**usersCreateTimesheetUser**](UsersApi.md#usersCreateTimesheetUser) | **PUT** /api/Users/CreateTimesheetUser | Create a user in your organisation
-[**usersGetTimesheetUser**](UsersApi.md#usersGetTimesheetUser) | **GET** /api/Users/GetTimesheetUser | Get a particular user in your organisation
-[**usersGetTimesheetUsers**](UsersApi.md#usersGetTimesheetUsers) | **GET** /api/Users/GetTimesheetUsers | Get users for your organisation
-[**usersUpdateTimesheetUser**](UsersApi.md#usersUpdateTimesheetUser) | **POST** /api/Users/UpdateTimesheetUser | Update a user
+[**usersCreateTimesheetUser**](UsersApi.md#usersCreateTimesheetUser) | **PUT** /api/Users/CreateTimesheetUser | Create a user account in your organisation.  Requires the &#39;ManageOrganisationUsers&#39; permission.
+[**usersGetTimesheetUser**](UsersApi.md#usersGetTimesheetUser) | **GET** /api/Users/GetTimesheetUser | Get a particular user in your organisation.  Requires the &#39;ManageOrganisationUsers&#39; or &#39;ManageOrganisationGroups&#39; permissions.
+[**usersGetTimesheetUsers**](UsersApi.md#usersGetTimesheetUsers) | **GET** /api/Users/GetTimesheetUsers | Get users accounts in your organisation.  Requires the &#39;ManageOrganisationUsers&#39; or &#39;ManageOrganisationGroups&#39; permissions.
+[**usersUpdateTimesheetUser**](UsersApi.md#usersUpdateTimesheetUser) | **POST** /api/Users/UpdateTimesheetUser | Update a user account.  Requires the &#39;ManageOrganisationUsers&#39; permission.
 
 
 <a name="usersCreateTimesheetUser"></a>
 # **usersCreateTimesheetUser**
 > CSApiResponseInsertUserResponse usersCreateTimesheetUser(request, xChronosheetsAuth)
 
-Create a user in your organisation
+Create a user account in your organisation.  Requires the &#39;ManageOrganisationUsers&#39; permission.
 
 ### Example
 ```javascript
@@ -22,7 +22,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UsersApi();
 
-var request = new ChronoSheetsApi.CSInsertUserRequest(); // CSInsertUserRequest | 
+var request = new ChronoSheetsApi.CSInsertUserRequest(); // CSInsertUserRequest | An Insert User Request object containing values for the new User to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -41,7 +41,7 @@ apiInstance.usersCreateTimesheetUser(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSInsertUserRequest**](CSInsertUserRequest.md)|  | 
+ **request** | [**CSInsertUserRequest**](CSInsertUserRequest.md)| An Insert User Request object containing values for the new User to create | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -61,7 +61,7 @@ No authorization required
 # **usersGetTimesheetUser**
 > CSApiResponseUserForManagement usersGetTimesheetUser(userId, xChronosheetsAuth)
 
-Get a particular user in your organisation
+Get a particular user in your organisation.  Requires the &#39;ManageOrganisationUsers&#39; or &#39;ManageOrganisationGroups&#39; permissions.
 
 ### Example
 ```javascript
@@ -69,7 +69,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UsersApi();
 
-var userId = 56; // Number | 
+var userId = 56; // Number | The User ID of the UserForManagement you want to get
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -88,7 +88,7 @@ apiInstance.usersGetTimesheetUser(userId, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **userId** | **Number**|  | 
+ **userId** | **Number**| The User ID of the UserForManagement you want to get | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -108,7 +108,7 @@ No authorization required
 # **usersGetTimesheetUsers**
 > CSApiResponseListUserForManagement usersGetTimesheetUsers(xChronosheetsAuth)
 
-Get users for your organisation
+Get users accounts in your organisation.  Requires the &#39;ManageOrganisationUsers&#39; or &#39;ManageOrganisationGroups&#39; permissions.
 
 ### Example
 ```javascript
@@ -152,7 +152,7 @@ No authorization required
 # **usersUpdateTimesheetUser**
 > CSApiResponseUpdateUserResponse usersUpdateTimesheetUser(request, xChronosheetsAuth)
 
-Update a user
+Update a user account.  Requires the &#39;ManageOrganisationUsers&#39; permission.
 
 ### Example
 ```javascript
@@ -160,7 +160,7 @@ var ChronoSheetsApi = require('chrono_sheets_api');
 
 var apiInstance = new ChronoSheetsApi.UsersApi();
 
-var request = new ChronoSheetsApi.CSUpdateUserRequest(); // CSUpdateUserRequest | 
+var request = new ChronoSheetsApi.CSUpdateUserRequest(); // CSUpdateUserRequest | A Update User Request object containing updated fields.  Make sure to specify the User Id in the request object so that ChronoSheets knows which User to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -179,7 +179,7 @@ apiInstance.usersUpdateTimesheetUser(request, xChronosheetsAuth, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSUpdateUserRequest**](CSUpdateUserRequest.md)|  | 
+ **request** | [**CSUpdateUserRequest**](CSUpdateUserRequest.md)| A Update User Request object containing updated fields.  Make sure to specify the User Id in the request object so that ChronoSheets knows which User to update | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
