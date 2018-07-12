@@ -87,7 +87,7 @@
       var returnType = CSApiResponseDoLoginResponse;
 
       return this.apiClient.callApi(
-        '/api/UserProfile/DoLogin', 'POST',
+        '/api/UserProfile/DoLogin', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -281,7 +281,7 @@
       var returnType = CSApiResponseUpdateProfileResponse;
 
       return this.apiClient.callApi(
-        '/api/UserProfile/UpdateMyProfile', 'POST',
+        '/api/UserProfile/UpdateMyProfile', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

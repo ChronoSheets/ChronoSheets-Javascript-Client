@@ -94,7 +94,7 @@
       var returnType = CSApiResponseInt32;
 
       return this.apiClient.callApi(
-        '/api/Timesheets/CreateSingleTimesheet', 'PUT',
+        '/api/Timesheets/CreateSingleTimesheet', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -262,7 +262,7 @@
       var returnType = CSApiResponseListInt32;
 
       return this.apiClient.callApi(
-        '/api/Timesheets/UpdateTimesheets', 'POST',
+        '/api/Timesheets/UpdateTimesheets', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

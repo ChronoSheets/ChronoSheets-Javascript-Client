@@ -141,7 +141,7 @@
       var returnType = CSApiResponseUpdateOrganisationResponse;
 
       return this.apiClient.callApi(
-        '/api/Organisation/UpdateOrganisation', 'POST',
+        '/api/Organisation/UpdateOrganisation', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

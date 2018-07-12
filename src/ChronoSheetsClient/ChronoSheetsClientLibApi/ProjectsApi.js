@@ -94,7 +94,7 @@
       var returnType = CSApiResponseInt32;
 
       return this.apiClient.callApi(
-        '/api/Projects/CreateProject', 'PUT',
+        '/api/Projects/CreateProject', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -255,7 +255,7 @@
       var returnType = CSApiResponseBoolean;
 
       return this.apiClient.callApi(
-        '/api/Projects/UpdateProject', 'POST',
+        '/api/Projects/UpdateProject', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

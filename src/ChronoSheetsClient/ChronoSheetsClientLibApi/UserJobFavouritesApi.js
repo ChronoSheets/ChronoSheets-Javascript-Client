@@ -94,7 +94,7 @@
       var returnType = CSApiResponseInt32;
 
       return this.apiClient.callApi(
-        '/api/UserJobFavourites/CreateJobFavourite', 'PUT',
+        '/api/UserJobFavourites/CreateJobFavourite', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

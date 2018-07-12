@@ -94,7 +94,7 @@
       var returnType = CSApiResponseInt32;
 
       return this.apiClient.callApi(
-        '/api/JobCodes/CreateJobCode', 'PUT',
+        '/api/JobCodes/CreateJobCode', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -302,7 +302,7 @@
       var returnType = CSApiResponseBoolean;
 
       return this.apiClient.callApi(
-        '/api/JobCodes/UpdateJobCode', 'POST',
+        '/api/JobCodes/UpdateJobCode', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

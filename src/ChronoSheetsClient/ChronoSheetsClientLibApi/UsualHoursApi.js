@@ -148,7 +148,7 @@
       var returnType = CSApiResponseBoolean;
 
       return this.apiClient.callApi(
-        '/api/UsualHours/SetUsualHours', 'POST',
+        '/api/UsualHours/SetUsualHours', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

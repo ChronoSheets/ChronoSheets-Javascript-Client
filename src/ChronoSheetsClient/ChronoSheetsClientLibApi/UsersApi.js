@@ -94,7 +94,7 @@
       var returnType = CSApiResponseInsertUserResponse;
 
       return this.apiClient.callApi(
-        '/api/Users/CreateTimesheetUser', 'PUT',
+        '/api/Users/CreateTimesheetUser', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -248,7 +248,7 @@
       var returnType = CSApiResponseUpdateUserResponse;
 
       return this.apiClient.callApi(
-        '/api/Users/UpdateTimesheetUser', 'POST',
+        '/api/Users/UpdateTimesheetUser', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

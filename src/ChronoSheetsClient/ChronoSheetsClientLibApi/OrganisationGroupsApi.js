@@ -94,7 +94,7 @@
       var returnType = CSApiResponseInt32;
 
       return this.apiClient.callApi(
-        '/api/OrganisationGroups/CreateOrganisationGroup', 'PUT',
+        '/api/OrganisationGroups/CreateOrganisationGroup', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
@@ -356,7 +356,7 @@
       var returnType = CSApiResponseBoolean;
 
       return this.apiClient.callApi(
-        '/api/OrganisationGroups/UpdateOrganisationGroup', 'POST',
+        '/api/OrganisationGroups/UpdateOrganisationGroup', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

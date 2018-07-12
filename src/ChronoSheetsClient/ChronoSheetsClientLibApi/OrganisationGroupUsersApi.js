@@ -148,7 +148,7 @@
       var returnType = CSApiResponseBoolean;
 
       return this.apiClient.callApi(
-        '/api/OrganisationGroupUsers/UpdateOrganisationGroupUsers', 'POST',
+        '/api/OrganisationGroupUsers/UpdateOrganisationGroupUsers', 'PUT',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );
