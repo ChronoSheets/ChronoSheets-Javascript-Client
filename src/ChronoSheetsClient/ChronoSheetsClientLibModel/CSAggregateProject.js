@@ -25,7 +25,7 @@
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.CSProjectCostingReportItem = factory(root.ChronoSheetsApi.ApiClient);
+    root.ChronoSheetsApi.CSAggregateProject = factory(root.ChronoSheetsApi.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,14 +34,14 @@
 
 
   /**
-   * The CSProjectCostingReportItem model module.
-   * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSProjectCostingReportItem
+   * The CSAggregateProject model module.
+   * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSAggregateProject
    * @version v1
    */
 
   /**
-   * Constructs a new <code>CSProjectCostingReportItem</code>.
-   * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSProjectCostingReportItem
+   * Constructs a new <code>CSAggregateProject</code>.
+   * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSAggregateProject
    * @class
    */
   var exports = function() {
@@ -54,25 +54,21 @@
 
 
 
-
   };
 
   /**
-   * Constructs a <code>CSProjectCostingReportItem</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CSAggregateProject</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSProjectCostingReportItem} obj Optional instance to populate.
-   * @return {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSProjectCostingReportItem} The populated <code>CSProjectCostingReportItem</code> instance.
+   * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSAggregateProject} obj Optional instance to populate.
+   * @return {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSAggregateProject} The populated <code>CSAggregateProject</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('ProjectId')) {
-        obj['ProjectId'] = ApiClient.convertToType(data['ProjectId'], 'Number');
-      }
-      if (data.hasOwnProperty('ProjectName')) {
-        obj['ProjectName'] = ApiClient.convertToType(data['ProjectName'], 'String');
+      if (data.hasOwnProperty('Id')) {
+        obj['Id'] = ApiClient.convertToType(data['Id'], 'Number');
       }
       if (data.hasOwnProperty('ClientId')) {
         obj['ClientId'] = ApiClient.convertToType(data['ClientId'], 'Number');
@@ -80,30 +76,26 @@
       if (data.hasOwnProperty('OrganisationId')) {
         obj['OrganisationId'] = ApiClient.convertToType(data['OrganisationId'], 'Number');
       }
-      if (data.hasOwnProperty('ClientName')) {
-        obj['ClientName'] = ApiClient.convertToType(data['ClientName'], 'String');
+      if (data.hasOwnProperty('ProjectName')) {
+        obj['ProjectName'] = ApiClient.convertToType(data['ProjectName'], 'String');
       }
-      if (data.hasOwnProperty('EstimatedCost')) {
-        obj['EstimatedCost'] = ApiClient.convertToType(data['EstimatedCost'], 'Number');
+      if (data.hasOwnProperty('CostEstimation')) {
+        obj['CostEstimation'] = ApiClient.convertToType(data['CostEstimation'], 'Number');
       }
-      if (data.hasOwnProperty('ActualCostFiltered')) {
-        obj['ActualCostFiltered'] = ApiClient.convertToType(data['ActualCostFiltered'], 'Number');
+      if (data.hasOwnProperty('StartDate')) {
+        obj['StartDate'] = ApiClient.convertToType(data['StartDate'], 'Date');
       }
-      if (data.hasOwnProperty('ActualCost')) {
-        obj['ActualCost'] = ApiClient.convertToType(data['ActualCost'], 'Number');
+      if (data.hasOwnProperty('EndDate')) {
+        obj['EndDate'] = ApiClient.convertToType(data['EndDate'], 'Date');
       }
     }
     return obj;
   }
 
   /**
-   * @member {Number} ProjectId
+   * @member {Number} Id
    */
-  exports.prototype['ProjectId'] = undefined;
-  /**
-   * @member {String} ProjectName
-   */
-  exports.prototype['ProjectName'] = undefined;
+  exports.prototype['Id'] = undefined;
   /**
    * @member {Number} ClientId
    */
@@ -113,21 +105,21 @@
    */
   exports.prototype['OrganisationId'] = undefined;
   /**
-   * @member {String} ClientName
+   * @member {String} ProjectName
    */
-  exports.prototype['ClientName'] = undefined;
+  exports.prototype['ProjectName'] = undefined;
   /**
-   * @member {Number} EstimatedCost
+   * @member {Number} CostEstimation
    */
-  exports.prototype['EstimatedCost'] = undefined;
+  exports.prototype['CostEstimation'] = undefined;
   /**
-   * @member {Number} ActualCostFiltered
+   * @member {Date} StartDate
    */
-  exports.prototype['ActualCostFiltered'] = undefined;
+  exports.prototype['StartDate'] = undefined;
   /**
-   * @member {Number} ActualCost
+   * @member {Date} EndDate
    */
-  exports.prototype['ActualCost'] = undefined;
+  exports.prototype['EndDate'] = undefined;
 
 
 

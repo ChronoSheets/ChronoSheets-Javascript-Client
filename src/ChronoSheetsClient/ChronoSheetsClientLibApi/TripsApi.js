@@ -94,7 +94,7 @@
       var returnType = CSApiResponseInt32;
 
       return this.apiClient.callApi(
-        '/api/Trips/CreateTrip', 'PUT',
+        '/api/Trips/CreateTrip', 'POST',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

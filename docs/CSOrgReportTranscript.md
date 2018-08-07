@@ -1,8 +1,17 @@
-# ChronoSheetsApi.CSOrgReportTimesheetFileAttachment
+# ChronoSheetsApi.CSOrgReportTranscript
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**finishedJob** | **Boolean** |  | [optional] 
+**completedProcessing** | **Date** |  | [optional] 
+**created** | **Date** |  | [optional] 
+**startedProcessing** | **Date** |  | [optional] 
+**transcriptionId** | **Number** |  | [optional] 
+**jobName** | **String** |  | [optional] 
+**contents** | **String** |  | [optional] 
+**mediaType** | **String** |  | [optional] 
+**transcriptionStatus** | **String** |  | [optional] 
 **username** | **String** |  | [optional] 
 **emailAddress** | **String** |  | [optional] 
 **firstName** | **String** |  | [optional] 
@@ -30,6 +39,38 @@ Name | Type | Description | Notes
 **dateUploaded** | **Date** |  | [optional] 
 **dateImageCaptured** | **Date** |  | [optional] 
 **storageAllocationBytes** | **Number** |  | [optional] 
+
+
+<a name="MediaTypeEnum"></a>
+## Enum: MediaTypeEnum
+
+
+* `Other` (value: `"Other"`)
+
+* `Mp3` (value: `"Mp3"`)
+
+* `Mp4` (value: `"Mp4"`)
+
+* `Wav` (value: `"Wav"`)
+
+* `Flac` (value: `"Flac"`)
+
+
+
+
+<a name="TranscriptionStatusEnum"></a>
+## Enum: TranscriptionStatusEnum
+
+
+* `Saved` (value: `"Saved"`)
+
+* `Processing` (value: `"Processing"`)
+
+* `Completed` (value: `"Completed"`)
+
+* `FailedWithError` (value: `"FailedWithError"`)
+
+
 
 
 <a name="MobilePlatformEnum"></a>

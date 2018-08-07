@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **organisationId** | **Number** |  | [optional] 
 **clientName** | **String** |  | [optional] 
 **estimatedCost** | **Number** |  | [optional] 
+**actualCostFiltered** | **Number** |  | [optional] 
 **actualCost** | **Number** |  | [optional] 
 
 

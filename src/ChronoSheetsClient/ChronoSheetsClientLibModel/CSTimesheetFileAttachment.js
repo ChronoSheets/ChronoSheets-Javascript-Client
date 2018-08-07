@@ -25,7 +25,7 @@
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.CSOrgReportTimesheetFileAttachment = factory(root.ChronoSheetsApi.ApiClient);
+    root.ChronoSheetsApi.CSTimesheetFileAttachment = factory(root.ChronoSheetsApi.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,14 +34,14 @@
 
 
   /**
-   * The CSOrgReportTimesheetFileAttachment model module.
-   * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment
+   * The CSTimesheetFileAttachment model module.
+   * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimesheetFileAttachment
    * @version v1
    */
 
   /**
-   * Constructs a new <code>CSOrgReportTimesheetFileAttachment</code>.
-   * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment
+   * Constructs a new <code>CSTimesheetFileAttachment</code>.
+   * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimesheetFileAttachment
    * @class
    */
   var exports = function() {
@@ -70,35 +70,19 @@
 
 
 
-
-
-
-
   };
 
   /**
-   * Constructs a <code>CSOrgReportTimesheetFileAttachment</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CSTimesheetFileAttachment</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment} obj Optional instance to populate.
-   * @return {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment} The populated <code>CSOrgReportTimesheetFileAttachment</code> instance.
+   * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimesheetFileAttachment} obj Optional instance to populate.
+   * @return {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimesheetFileAttachment} The populated <code>CSTimesheetFileAttachment</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('Username')) {
-        obj['Username'] = ApiClient.convertToType(data['Username'], 'String');
-      }
-      if (data.hasOwnProperty('EmailAddress')) {
-        obj['EmailAddress'] = ApiClient.convertToType(data['EmailAddress'], 'String');
-      }
-      if (data.hasOwnProperty('FirstName')) {
-        obj['FirstName'] = ApiClient.convertToType(data['FirstName'], 'String');
-      }
-      if (data.hasOwnProperty('LastName')) {
-        obj['LastName'] = ApiClient.convertToType(data['LastName'], 'String');
-      }
       if (data.hasOwnProperty('TimesheetId')) {
         obj['TimesheetId'] = ApiClient.convertToType(data['TimesheetId'], 'Number');
       }
@@ -173,22 +157,6 @@
   }
 
   /**
-   * @member {String} Username
-   */
-  exports.prototype['Username'] = undefined;
-  /**
-   * @member {String} EmailAddress
-   */
-  exports.prototype['EmailAddress'] = undefined;
-  /**
-   * @member {String} FirstName
-   */
-  exports.prototype['FirstName'] = undefined;
-  /**
-   * @member {String} LastName
-   */
-  exports.prototype['LastName'] = undefined;
-  /**
    * @member {Number} TimesheetId
    */
   exports.prototype['TimesheetId'] = undefined;
@@ -229,11 +197,11 @@
    */
   exports.prototype['OrgId'] = undefined;
   /**
-   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment.MobilePlatformEnum} MobilePlatform
+   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimesheetFileAttachment.MobilePlatformEnum} MobilePlatform
    */
   exports.prototype['MobilePlatform'] = undefined;
   /**
-   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment.AttachmentTypeEnum} AttachmentType
+   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTimesheetFileAttachment.AttachmentTypeEnum} AttachmentType
    */
   exports.prototype['AttachmentType'] = undefined;
   /**

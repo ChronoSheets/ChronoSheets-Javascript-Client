@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTranscript', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetSummaryReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseTrip'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTranscript'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseListFleetSummaryReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseTrip'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.ReportsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseCombinedReportsData, root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment, root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTrip, root.ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem, root.ChronoSheetsApi.CSApiResponseListJobSeriesReportItem, root.ChronoSheetsApi.CSApiResponseListProjectCostingReportItem, root.ChronoSheetsApi.CSApiResponseTrip);
+    root.ChronoSheetsApi.ReportsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseCombinedReportsData, root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment, root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTranscript, root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTrip, root.ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem, root.ChronoSheetsApi.CSApiResponseListFleetSummaryReportItem, root.ChronoSheetsApi.CSApiResponseListJobSeriesReportItem, root.ChronoSheetsApi.CSApiResponseListProjectCostingReportItem, root.ChronoSheetsApi.CSApiResponseTrip);
   }
-}(this, function(ApiClient, CSApiResponseCombinedReportsData, CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment, CSApiResponseForPaginatedListOrgReportTrip, CSApiResponseForPaginatedListRawReportItem, CSApiResponseListJobSeriesReportItem, CSApiResponseListProjectCostingReportItem, CSApiResponseTrip) {
+}(this, function(ApiClient, CSApiResponseCombinedReportsData, CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment, CSApiResponseForPaginatedListOrgReportTranscript, CSApiResponseForPaginatedListOrgReportTrip, CSApiResponseForPaginatedListRawReportItem, CSApiResponseListFleetSummaryReportItem, CSApiResponseListJobSeriesReportItem, CSApiResponseListProjectCostingReportItem, CSApiResponseTrip) {
   'use strict';
 
   /**
@@ -177,6 +177,74 @@
     }
 
     /**
+     * Callback function to receive the result of the reportsGetFleetSummaryAdmin operation.
+     * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetFleetSummaryAdminCallback
+     * @param {String} error Error message, if any.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetSummaryReportItem} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Gets a summary report, which includes total distance travelled and total running costs, for vehicles within your organisation  Requires the &#39;ReportAdmin&#39; permission.
+     * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
+     * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
+     * @param {String} userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+     * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetFleetSummaryAdminCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetSummaryReportItem}
+     */
+    this.reportsGetFleetSummaryAdmin = function(startDate, endDate, userIds, xChronosheetsAuth, callback) {
+      var postBody = null;
+
+      // verify the required parameter 'startDate' is set
+      if (startDate === undefined || startDate === null) {
+        throw new Error("Missing the required parameter 'startDate' when calling reportsGetFleetSummaryAdmin");
+      }
+
+      // verify the required parameter 'endDate' is set
+      if (endDate === undefined || endDate === null) {
+        throw new Error("Missing the required parameter 'endDate' when calling reportsGetFleetSummaryAdmin");
+      }
+
+      // verify the required parameter 'userIds' is set
+      if (userIds === undefined || userIds === null) {
+        throw new Error("Missing the required parameter 'userIds' when calling reportsGetFleetSummaryAdmin");
+      }
+
+      // verify the required parameter 'xChronosheetsAuth' is set
+      if (xChronosheetsAuth === undefined || xChronosheetsAuth === null) {
+        throw new Error("Missing the required parameter 'xChronosheetsAuth' when calling reportsGetFleetSummaryAdmin");
+      }
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+        'StartDate': startDate,
+        'EndDate': endDate,
+        'UserIds': userIds,
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+        'x-chronosheets-auth': xChronosheetsAuth
+      };
+      var formParams = {
+      };
+
+      var authNames = [];
+      var contentTypes = [];
+      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
+      var returnType = CSApiResponseListFleetSummaryReportItem;
+
+      return this.apiClient.callApi(
+        '/api/Reports/GetFleetSummaryAdmin', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
      * Callback function to receive the result of the reportsGetOrgTripById operation.
      * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrgTripByIdCallback
      * @param {String} error Error message, if any.
@@ -239,7 +307,7 @@
      */
 
     /**
-     * Reports on Organisation timesheet file attachments (files uploaded and attached to timesheet records.    Requires the &#39;ReportAdmin&#39; permission.
+     * Reports on Organisation timesheet file attachments (files uploaded and attached to timesheet records)  Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
      * @param {Number} skip Skip this many items
@@ -307,6 +375,95 @@
 
       return this.apiClient.callApi(
         '/api/Reports/GetOrganisationTimesheetFileAttachments', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the reportsGetOrganisationTranscripts operation.
+     * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrganisationTranscriptsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTranscript} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Reports on Organisation transcripts (When an audio file is attached, it will be automatically transcribed, these are the transcriptions)    Requires the &#39;ReportAdmin&#39; permission.
+     * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
+     * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
+     * @param {Number} skip Skip this many items
+     * @param {Number} take Take this many items
+     * @param {String} userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+     * @param {String} keywords Search the transcripts by keyword(s)
+     * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrganisationTranscriptsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTranscript}
+     */
+    this.reportsGetOrganisationTranscripts = function(startDate, endDate, skip, take, userIds, keywords, xChronosheetsAuth, callback) {
+      var postBody = null;
+
+      // verify the required parameter 'startDate' is set
+      if (startDate === undefined || startDate === null) {
+        throw new Error("Missing the required parameter 'startDate' when calling reportsGetOrganisationTranscripts");
+      }
+
+      // verify the required parameter 'endDate' is set
+      if (endDate === undefined || endDate === null) {
+        throw new Error("Missing the required parameter 'endDate' when calling reportsGetOrganisationTranscripts");
+      }
+
+      // verify the required parameter 'skip' is set
+      if (skip === undefined || skip === null) {
+        throw new Error("Missing the required parameter 'skip' when calling reportsGetOrganisationTranscripts");
+      }
+
+      // verify the required parameter 'take' is set
+      if (take === undefined || take === null) {
+        throw new Error("Missing the required parameter 'take' when calling reportsGetOrganisationTranscripts");
+      }
+
+      // verify the required parameter 'userIds' is set
+      if (userIds === undefined || userIds === null) {
+        throw new Error("Missing the required parameter 'userIds' when calling reportsGetOrganisationTranscripts");
+      }
+
+      // verify the required parameter 'keywords' is set
+      if (keywords === undefined || keywords === null) {
+        throw new Error("Missing the required parameter 'keywords' when calling reportsGetOrganisationTranscripts");
+      }
+
+      // verify the required parameter 'xChronosheetsAuth' is set
+      if (xChronosheetsAuth === undefined || xChronosheetsAuth === null) {
+        throw new Error("Missing the required parameter 'xChronosheetsAuth' when calling reportsGetOrganisationTranscripts");
+      }
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+        'StartDate': startDate,
+        'EndDate': endDate,
+        'Skip': skip,
+        'Take': take,
+        'UserIds': userIds,
+        'Keywords': keywords,
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+        'x-chronosheets-auth': xChronosheetsAuth
+      };
+      var formParams = {
+      };
+
+      var authNames = [];
+      var contentTypes = [];
+      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
+      var returnType = CSApiResponseForPaginatedListOrgReportTranscript;
+
+      return this.apiClient.callApi(
+        '/api/Reports/GetOrganisationTranscripts', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

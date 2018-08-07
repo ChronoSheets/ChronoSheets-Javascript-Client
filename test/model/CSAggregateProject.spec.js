@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSProjectCostingReportItem();
+    instance = new ChronoSheetsApi.CSAggregateProject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,58 +49,52 @@
       object[property] = value;
   }
 
-  describe('CSProjectCostingReportItem', function() {
-    it('should create an instance of CSProjectCostingReportItem', function() {
-      // uncomment below and update the code to test CSProjectCostingReportItem
-      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSProjectCostingReportItem);
+  describe('CSAggregateProject', function() {
+    it('should create an instance of CSAggregateProject', function() {
+      // uncomment below and update the code to test CSAggregateProject
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSAggregateProject);
     });
 
-    it('should have the property projectId (base name: "ProjectId")', function() {
-      // uncomment below and update the code to test the property projectId
-      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property projectName (base name: "ProjectName")', function() {
-      // uncomment below and update the code to test the property projectName
-      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
+    it('should have the property id (base name: "Id")', function() {
+      // uncomment below and update the code to test the property id
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 
     it('should have the property clientId (base name: "ClientId")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 
-    it('should have the property clientName (base name: "ClientName")', function() {
-      // uncomment below and update the code to test the property clientName
-      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
+    it('should have the property projectName (base name: "ProjectName")', function() {
+      // uncomment below and update the code to test the property projectName
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 
-    it('should have the property estimatedCost (base name: "EstimatedCost")', function() {
-      // uncomment below and update the code to test the property estimatedCost
-      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
+    it('should have the property costEstimation (base name: "CostEstimation")', function() {
+      // uncomment below and update the code to test the property costEstimation
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 
-    it('should have the property actualCostFiltered (base name: "ActualCostFiltered")', function() {
-      // uncomment below and update the code to test the property actualCostFiltered
-      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
+    it('should have the property startDate (base name: "StartDate")', function() {
+      // uncomment below and update the code to test the property startDate
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 
-    it('should have the property actualCost (base name: "ActualCost")', function() {
-      // uncomment below and update the code to test the property actualCost
-      //var instane = new ChronoSheetsApi.CSProjectCostingReportItem();
+    it('should have the property endDate (base name: "EndDate")', function() {
+      // uncomment below and update the code to test the property endDate
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 

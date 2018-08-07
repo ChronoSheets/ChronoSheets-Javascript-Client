@@ -25,7 +25,7 @@
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.CSOrgReportTimesheetFileAttachment = factory(root.ChronoSheetsApi.ApiClient);
+    root.ChronoSheetsApi.CSOrgReportTranscript = factory(root.ChronoSheetsApi.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,14 +34,14 @@
 
 
   /**
-   * The CSOrgReportTimesheetFileAttachment model module.
-   * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment
+   * The CSOrgReportTranscript model module.
+   * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTranscript
    * @version v1
    */
 
   /**
-   * Constructs a new <code>CSOrgReportTimesheetFileAttachment</code>.
-   * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment
+   * Constructs a new <code>CSOrgReportTranscript</code>.
+   * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTranscript
    * @class
    */
   var exports = function() {
@@ -74,19 +74,55 @@
 
 
 
+
+
+
+
+
+
+
+
+
   };
 
   /**
-   * Constructs a <code>CSOrgReportTimesheetFileAttachment</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CSOrgReportTranscript</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment} obj Optional instance to populate.
-   * @return {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment} The populated <code>CSOrgReportTimesheetFileAttachment</code> instance.
+   * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTranscript} obj Optional instance to populate.
+   * @return {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTranscript} The populated <code>CSOrgReportTranscript</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
+      if (data.hasOwnProperty('FinishedJob')) {
+        obj['FinishedJob'] = ApiClient.convertToType(data['FinishedJob'], 'Boolean');
+      }
+      if (data.hasOwnProperty('CompletedProcessing')) {
+        obj['CompletedProcessing'] = ApiClient.convertToType(data['CompletedProcessing'], 'Date');
+      }
+      if (data.hasOwnProperty('Created')) {
+        obj['Created'] = ApiClient.convertToType(data['Created'], 'Date');
+      }
+      if (data.hasOwnProperty('StartedProcessing')) {
+        obj['StartedProcessing'] = ApiClient.convertToType(data['StartedProcessing'], 'Date');
+      }
+      if (data.hasOwnProperty('TranscriptionId')) {
+        obj['TranscriptionId'] = ApiClient.convertToType(data['TranscriptionId'], 'Number');
+      }
+      if (data.hasOwnProperty('JobName')) {
+        obj['JobName'] = ApiClient.convertToType(data['JobName'], 'String');
+      }
+      if (data.hasOwnProperty('Contents')) {
+        obj['Contents'] = ApiClient.convertToType(data['Contents'], 'String');
+      }
+      if (data.hasOwnProperty('MediaType')) {
+        obj['MediaType'] = ApiClient.convertToType(data['MediaType'], 'String');
+      }
+      if (data.hasOwnProperty('TranscriptionStatus')) {
+        obj['TranscriptionStatus'] = ApiClient.convertToType(data['TranscriptionStatus'], 'String');
+      }
       if (data.hasOwnProperty('Username')) {
         obj['Username'] = ApiClient.convertToType(data['Username'], 'String');
       }
@@ -173,6 +209,42 @@
   }
 
   /**
+   * @member {Boolean} FinishedJob
+   */
+  exports.prototype['FinishedJob'] = undefined;
+  /**
+   * @member {Date} CompletedProcessing
+   */
+  exports.prototype['CompletedProcessing'] = undefined;
+  /**
+   * @member {Date} Created
+   */
+  exports.prototype['Created'] = undefined;
+  /**
+   * @member {Date} StartedProcessing
+   */
+  exports.prototype['StartedProcessing'] = undefined;
+  /**
+   * @member {Number} TranscriptionId
+   */
+  exports.prototype['TranscriptionId'] = undefined;
+  /**
+   * @member {String} JobName
+   */
+  exports.prototype['JobName'] = undefined;
+  /**
+   * @member {String} Contents
+   */
+  exports.prototype['Contents'] = undefined;
+  /**
+   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTranscript.MediaTypeEnum} MediaType
+   */
+  exports.prototype['MediaType'] = undefined;
+  /**
+   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTranscript.TranscriptionStatusEnum} TranscriptionStatus
+   */
+  exports.prototype['TranscriptionStatus'] = undefined;
+  /**
    * @member {String} Username
    */
   exports.prototype['Username'] = undefined;
@@ -229,11 +301,11 @@
    */
   exports.prototype['OrgId'] = undefined;
   /**
-   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment.MobilePlatformEnum} MobilePlatform
+   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTranscript.MobilePlatformEnum} MobilePlatform
    */
   exports.prototype['MobilePlatform'] = undefined;
   /**
-   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTimesheetFileAttachment.AttachmentTypeEnum} AttachmentType
+   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTranscript.AttachmentTypeEnum} AttachmentType
    */
   exports.prototype['AttachmentType'] = undefined;
   /**
@@ -281,6 +353,65 @@
    */
   exports.prototype['StorageAllocationBytes'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>MediaType</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.MediaTypeEnum = {
+    /**
+     * value: "Other"
+     * @const
+     */
+    "Other": "Other",
+    /**
+     * value: "Mp3"
+     * @const
+     */
+    "Mp3": "Mp3",
+    /**
+     * value: "Mp4"
+     * @const
+     */
+    "Mp4": "Mp4",
+    /**
+     * value: "Wav"
+     * @const
+     */
+    "Wav": "Wav",
+    /**
+     * value: "Flac"
+     * @const
+     */
+    "Flac": "Flac"  };
+
+  /**
+   * Allowed values for the <code>TranscriptionStatus</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.TranscriptionStatusEnum = {
+    /**
+     * value: "Saved"
+     * @const
+     */
+    "Saved": "Saved",
+    /**
+     * value: "Processing"
+     * @const
+     */
+    "Processing": "Processing",
+    /**
+     * value: "Completed"
+     * @const
+     */
+    "Completed": "Completed",
+    /**
+     * value: "FailedWithError"
+     * @const
+     */
+    "FailedWithError": "FailedWithError"  };
 
   /**
    * Allowed values for the <code>MobilePlatform</code> property.

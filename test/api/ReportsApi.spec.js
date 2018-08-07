@@ -70,6 +70,16 @@
         done();
       });
     });
+    describe('reportsGetFleetSummaryAdmin', function() {
+      it('should call reportsGetFleetSummaryAdmin successfully', function(done) {
+        //uncomment below and update the code to test reportsGetFleetSummaryAdmin
+        //instance.reportsGetFleetSummaryAdmin(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
     describe('reportsGetOrgTripById', function() {
       it('should call reportsGetOrgTripById successfully', function(done) {
         //uncomment below and update the code to test reportsGetOrgTripById
@@ -84,6 +94,16 @@
       it('should call reportsGetOrganisationTimesheetFileAttachments successfully', function(done) {
         //uncomment below and update the code to test reportsGetOrganisationTimesheetFileAttachments
         //instance.reportsGetOrganisationTimesheetFileAttachments(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
+    });
+    describe('reportsGetOrganisationTranscripts', function() {
+      it('should call reportsGetOrganisationTranscripts successfully', function(done) {
+        //uncomment below and update the code to test reportsGetOrganisationTranscripts
+        //instance.reportsGetOrganisationTranscripts(function(error) {
         //  if (error) throw error;
         //expect().to.be();
         //});
