@@ -1,7 +1,7 @@
 {
   "name": "Javascript API Client for ChronoSheets",
   "version": "1.0.0",
-  "description": "Javascript API Client for ChronoSheets",
+  "description": "ChronoSheets is a flexible timesheet solution for small to medium businesses, it is free for small teams of up to 5 and there are iOS and Android apps available. Use the ChronoSheets API to create your own custom integrations. Before starting, sign up for a ChronoSheets account at http://tsheets.xyz/signup.",
   "license": "Unlicense",
   "main": "src/ChronoSheetsClient/index.js",
   "scripts": {
