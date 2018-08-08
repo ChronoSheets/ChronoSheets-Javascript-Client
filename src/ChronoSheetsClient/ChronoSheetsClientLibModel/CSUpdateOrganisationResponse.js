@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.CSUpdateOrganisationResponse = factory(root.JavascriptApiClientForChronoSheets.ApiClient);
+    root.ChronoSheetsApi.CSUpdateOrganisationResponse = factory(root.ChronoSheetsApi.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';

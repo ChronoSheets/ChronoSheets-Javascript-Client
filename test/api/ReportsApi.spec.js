@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.ReportsApi();
+    instance = new ChronoSheetsApi.ReportsApi();
   });
 
   var getProperty = function(object, getter, property) {

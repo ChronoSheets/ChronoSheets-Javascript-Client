@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.UserProfileApi
+# ChronoSheetsApi.UserProfileApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -19,11 +19,11 @@ Login to your ChronoSheets account and obtain an Auth Token which you can use fo
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.UserProfileApi();
+var apiInstance = new ChronoSheetsApi.UserProfileApi();
 
-var request = new JavascriptApiClientForChronoSheets.CSDoLoginRequest(); // CSDoLoginRequest | A request object containing your username/email and password.
+var request = new ChronoSheetsApi.CSDoLoginRequest(); // CSDoLoginRequest | A request object containing your username/email and password.
 
 
 var callback = function(error, data, response) {
@@ -63,9 +63,9 @@ Logout of your ChronoSheets account.  This method ends and deletes your active s
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.UserProfileApi();
+var apiInstance = new ChronoSheetsApi.UserProfileApi();
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -107,9 +107,9 @@ Get your own profile.  Use this method to obtain detailed information about your
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.UserProfileApi();
+var apiInstance = new ChronoSheetsApi.UserProfileApi();
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -151,9 +151,9 @@ Keep a session alive.  Use this method to keep a session active.  You could use 
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.UserProfileApi();
+var apiInstance = new ChronoSheetsApi.UserProfileApi();
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -195,11 +195,11 @@ Update your own profile.  Use this method to update your profile information or 
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.UserProfileApi();
+var apiInstance = new ChronoSheetsApi.UserProfileApi();
 
-var request = new JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest(); // CSUpdateMyProfileRequest | An Update MyProfile Request object containing updated fields.
+var request = new ChronoSheetsApi.CSUpdateMyProfileRequest(); // CSUpdateMyProfileRequest | An Update MyProfile Request object containing updated fields.
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

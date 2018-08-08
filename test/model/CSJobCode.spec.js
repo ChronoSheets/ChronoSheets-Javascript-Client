@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSJobCode();
+    instance = new ChronoSheetsApi.CSJobCode();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,55 +52,55 @@
   describe('CSJobCode', function() {
     it('should create an instance of CSJobCode', function() {
       // uncomment below and update the code to test CSJobCode
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobCode();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSJobCode);
+      //var instane = new ChronoSheetsApi.CSJobCode();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSJobCode);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobCode();
+      //var instane = new ChronoSheetsApi.CSJobCode();
       //expect(instance).to.be();
     });
 
     it('should have the property code (base name: "Code")', function() {
       // uncomment below and update the code to test the property code
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobCode();
+      //var instane = new ChronoSheetsApi.CSJobCode();
       //expect(instance).to.be();
     });
 
     it('should have the property client (base name: "Client")', function() {
       // uncomment below and update the code to test the property client
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobCode();
+      //var instane = new ChronoSheetsApi.CSJobCode();
       //expect(instance).to.be();
     });
 
     it('should have the property clientId (base name: "ClientId")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobCode();
+      //var instane = new ChronoSheetsApi.CSJobCode();
       //expect(instance).to.be();
     });
 
     it('should have the property project (base name: "Project")', function() {
       // uncomment below and update the code to test the property project
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobCode();
+      //var instane = new ChronoSheetsApi.CSJobCode();
       //expect(instance).to.be();
     });
 
     it('should have the property projectId (base name: "ProjectId")', function() {
       // uncomment below and update the code to test the property projectId
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobCode();
+      //var instane = new ChronoSheetsApi.CSJobCode();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobCode();
+      //var instane = new ChronoSheetsApi.CSJobCode();
       //expect(instance).to.be();
     });
 
     it('should have the property isDeleted (base name: "IsDeleted")', function() {
       // uncomment below and update the code to test the property isDeleted
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobCode();
+      //var instane = new ChronoSheetsApi.CSJobCode();
       //expect(instance).to.be();
     });
 

@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSUsualHoursDay();
+    instance = new ChronoSheetsApi.CSUsualHoursDay();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('CSUsualHoursDay', function() {
     it('should create an instance of CSUsualHoursDay', function() {
       // uncomment below and update the code to test CSUsualHoursDay
-      //var instane = new JavascriptApiClientForChronoSheets.CSUsualHoursDay();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSUsualHoursDay);
+      //var instane = new ChronoSheetsApi.CSUsualHoursDay();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSUsualHoursDay);
     });
 
     it('should have the property dayType (base name: "DayType")', function() {
       // uncomment below and update the code to test the property dayType
-      //var instane = new JavascriptApiClientForChronoSheets.CSUsualHoursDay();
+      //var instane = new ChronoSheetsApi.CSUsualHoursDay();
       //expect(instance).to.be();
     });
 
     it('should have the property timeSlots (base name: "TimeSlots")', function() {
       // uncomment below and update the code to test the property timeSlots
-      //var instane = new JavascriptApiClientForChronoSheets.CSUsualHoursDay();
+      //var instane = new ChronoSheetsApi.CSUsualHoursDay();
       //expect(instance).to.be();
     });
 
     it('should have the property deleteUsualHours (base name: "DeleteUsualHours")', function() {
       // uncomment below and update the code to test the property deleteUsualHours
-      //var instane = new JavascriptApiClientForChronoSheets.CSUsualHoursDay();
+      //var instane = new ChronoSheetsApi.CSUsualHoursDay();
       //expect(instance).to.be();
     });
 

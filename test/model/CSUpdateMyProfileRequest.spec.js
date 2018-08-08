@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest();
+    instance = new ChronoSheetsApi.CSUpdateMyProfileRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,55 +52,55 @@
   describe('CSUpdateMyProfileRequest', function() {
     it('should create an instance of CSUpdateMyProfileRequest', function() {
       // uncomment below and update the code to test CSUpdateMyProfileRequest
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest);
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSUpdateMyProfileRequest);
     });
 
     it('should have the property emailAddress (base name: "EmailAddress")', function() {
       // uncomment below and update the code to test the property emailAddress
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "FirstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "LastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property oldPassword (base name: "OldPassword")', function() {
       // uncomment below and update the code to test the property oldPassword
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property newPassword (base name: "NewPassword")', function() {
       // uncomment below and update the code to test the property newPassword
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property confirmNewPassword (base name: "ConfirmNewPassword")', function() {
       // uncomment below and update the code to test the property confirmNewPassword
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property isSubscribedToNewsletter (base name: "IsSubscribedToNewsletter")', function() {
       // uncomment below and update the code to test the property isSubscribedToNewsletter
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property wantsToChangePassword (base name: "WantsToChangePassword")', function() {
       // uncomment below and update the code to test the property wantsToChangePassword
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateMyProfileRequest();
       //expect(instance).to.be();
     });
 

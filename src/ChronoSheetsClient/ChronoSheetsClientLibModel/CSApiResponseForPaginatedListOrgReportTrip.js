@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSOrgReportTrip'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListOrgReportTrip = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSOrgReportTrip);
+    root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTrip = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSOrgReportTrip);
   }
 }(this, function(ApiClient, CSOrgReportTrip) {
   'use strict';

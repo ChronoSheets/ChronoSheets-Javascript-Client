@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSInsertOrganisationGroupRequest
+# ChronoSheetsApi.CSInsertOrganisationGroupRequest
 
 ## Properties
 Name | Type | Description | Notes

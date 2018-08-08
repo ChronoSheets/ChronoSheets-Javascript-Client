@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSFleetSummaryReportItem'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.CSApiResponseListFleetSummaryReportItem = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem);
+    root.ChronoSheetsApi.CSApiResponseListFleetSummaryReportItem = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSFleetSummaryReportItem);
   }
 }(this, function(ApiClient, CSFleetSummaryReportItem) {
   'use strict';

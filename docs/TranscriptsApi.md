@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.TranscriptsApi
+# ChronoSheetsApi.TranscriptsApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -15,9 +15,9 @@ Get my file transcripts.  Get audio to text transcripts that you&#39;ve created.
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.TranscriptsApi();
+var apiInstance = new ChronoSheetsApi.TranscriptsApi();
 
 var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The Start date of the date range.  Transcripts after this date will be obtained.
 

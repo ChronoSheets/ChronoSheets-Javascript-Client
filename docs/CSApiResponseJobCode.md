@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSApiResponseJobCode
+# ChronoSheetsApi.CSApiResponseJobCode
 
 ## Properties
 Name | Type | Description | Notes

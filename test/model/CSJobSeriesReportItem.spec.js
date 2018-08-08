@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSJobSeriesReportItem();
+    instance = new ChronoSheetsApi.CSJobSeriesReportItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,61 +52,61 @@
   describe('CSJobSeriesReportItem', function() {
     it('should create an instance of CSJobSeriesReportItem', function() {
       // uncomment below and update the code to test CSJobSeriesReportItem
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobSeriesReportItem();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSJobSeriesReportItem);
+      //var instane = new ChronoSheetsApi.CSJobSeriesReportItem();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSJobSeriesReportItem);
     });
 
     it('should have the property startDate (base name: "StartDate")', function() {
       // uncomment below and update the code to test the property startDate
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobSeriesReportItem();
+      //var instane = new ChronoSheetsApi.CSJobSeriesReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property endDate (base name: "EndDate")', function() {
       // uncomment below and update the code to test the property endDate
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobSeriesReportItem();
+      //var instane = new ChronoSheetsApi.CSJobSeriesReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property jobId (base name: "JobId")', function() {
       // uncomment below and update the code to test the property jobId
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobSeriesReportItem();
+      //var instane = new ChronoSheetsApi.CSJobSeriesReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property clientId (base name: "ClientId")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobSeriesReportItem();
+      //var instane = new ChronoSheetsApi.CSJobSeriesReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property clientName (base name: "ClientName")', function() {
       // uncomment below and update the code to test the property clientName
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobSeriesReportItem();
+      //var instane = new ChronoSheetsApi.CSJobSeriesReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property projectId (base name: "ProjectId")', function() {
       // uncomment below and update the code to test the property projectId
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobSeriesReportItem();
+      //var instane = new ChronoSheetsApi.CSJobSeriesReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property projectName (base name: "ProjectName")', function() {
       // uncomment below and update the code to test the property projectName
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobSeriesReportItem();
+      //var instane = new ChronoSheetsApi.CSJobSeriesReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property spanSeconds (base name: "SpanSeconds")', function() {
       // uncomment below and update the code to test the property spanSeconds
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobSeriesReportItem();
+      //var instane = new ChronoSheetsApi.CSJobSeriesReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property jobCode (base name: "JobCode")', function() {
       // uncomment below and update the code to test the property jobCode
-      //var instane = new JavascriptApiClientForChronoSheets.CSJobSeriesReportItem();
+      //var instane = new ChronoSheetsApi.CSJobSeriesReportItem();
       //expect(instance).to.be();
     });
 

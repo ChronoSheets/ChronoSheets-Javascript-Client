@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+    instance = new ChronoSheetsApi.CSUserForManagement();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,79 +52,79 @@
   describe('CSUserForManagement', function() {
     it('should create an instance of CSUserForManagement', function() {
       // uncomment below and update the code to test CSUserForManagement
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSUserForManagement);
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSUserForManagement);
     });
 
     it('should have the property isAccountActive (base name: "IsAccountActive")', function() {
       // uncomment below and update the code to test the property isAccountActive
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
       //expect(instance).to.be();
     });
 
     it('should have the property userName (base name: "UserName")', function() {
       // uncomment below and update the code to test the property userName
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "FirstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "LastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
       //expect(instance).to.be();
     });
 
     it('should have the property emailAddress (base name: "EmailAddress")', function() {
       // uncomment below and update the code to test the property emailAddress
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
       //expect(instance).to.be();
     });
 
     it('should have the property roles (base name: "Roles")', function() {
       // uncomment below and update the code to test the property roles
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
       //expect(instance).to.be();
     });
 
     it('should have the property alertSettings (base name: "AlertSettings")', function() {
       // uncomment below and update the code to test the property alertSettings
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
       //expect(instance).to.be();
     });
 
     it('should have the property setupWizardRequired (base name: "SetupWizardRequired")', function() {
       // uncomment below and update the code to test the property setupWizardRequired
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
       //expect(instance).to.be();
     });
 
     it('should have the property isSubscribedToNewsletter (base name: "IsSubscribedToNewsletter")', function() {
       // uncomment below and update the code to test the property isSubscribedToNewsletter
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
       //expect(instance).to.be();
     });
 
     it('should have the property organisation (base name: "Organisation")', function() {
       // uncomment below and update the code to test the property organisation
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserForManagement();
+      //var instane = new ChronoSheetsApi.CSUserForManagement();
       //expect(instance).to.be();
     });
 

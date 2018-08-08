@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSAggregateProject();
+    instance = new ChronoSheetsApi.CSAggregateProject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,49 +52,49 @@
   describe('CSAggregateProject', function() {
     it('should create an instance of CSAggregateProject', function() {
       // uncomment below and update the code to test CSAggregateProject
-      //var instane = new JavascriptApiClientForChronoSheets.CSAggregateProject();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSAggregateProject);
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSAggregateProject);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new JavascriptApiClientForChronoSheets.CSAggregateProject();
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 
     it('should have the property clientId (base name: "ClientId")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instane = new JavascriptApiClientForChronoSheets.CSAggregateProject();
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new JavascriptApiClientForChronoSheets.CSAggregateProject();
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 
     it('should have the property projectName (base name: "ProjectName")', function() {
       // uncomment below and update the code to test the property projectName
-      //var instane = new JavascriptApiClientForChronoSheets.CSAggregateProject();
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 
     it('should have the property costEstimation (base name: "CostEstimation")', function() {
       // uncomment below and update the code to test the property costEstimation
-      //var instane = new JavascriptApiClientForChronoSheets.CSAggregateProject();
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 
     it('should have the property startDate (base name: "StartDate")', function() {
       // uncomment below and update the code to test the property startDate
-      //var instane = new JavascriptApiClientForChronoSheets.CSAggregateProject();
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 
     it('should have the property endDate (base name: "EndDate")', function() {
       // uncomment below and update the code to test the property endDate
-      //var instane = new JavascriptApiClientForChronoSheets.CSAggregateProject();
+      //var instane = new ChronoSheetsApi.CSAggregateProject();
       //expect(instance).to.be();
     });
 

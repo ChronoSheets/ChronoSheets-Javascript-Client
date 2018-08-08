@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSTimesheet'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.CSBatchUpdateTimesheetRequest = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSTimesheet);
+    root.ChronoSheetsApi.CSBatchUpdateTimesheetRequest = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSTimesheet);
   }
 }(this, function(ApiClient, CSTimesheet) {
   'use strict';

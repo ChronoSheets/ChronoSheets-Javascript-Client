@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSUpdateTaskRequest();
+    instance = new ChronoSheetsApi.CSUpdateTaskRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,31 +52,31 @@
   describe('CSUpdateTaskRequest', function() {
     it('should create an instance of CSUpdateTaskRequest', function() {
       // uncomment below and update the code to test CSUpdateTaskRequest
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateTaskRequest();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSUpdateTaskRequest);
+      //var instane = new ChronoSheetsApi.CSUpdateTaskRequest();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSUpdateTaskRequest);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateTaskRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateTaskRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property taskName (base name: "TaskName")', function() {
       // uncomment below and update the code to test the property taskName
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateTaskRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateTaskRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property isDeleted (base name: "IsDeleted")', function() {
       // uncomment below and update the code to test the property isDeleted
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateTaskRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateTaskRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property tripEnabled (base name: "TripEnabled")', function() {
       // uncomment below and update the code to test the property tripEnabled
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateTaskRequest();
+      //var instane = new ChronoSheetsApi.CSUpdateTaskRequest();
       //expect(instance).to.be();
     });
 

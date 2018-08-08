@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.TripsApi
+# ChronoSheetsApi.TripsApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -17,11 +17,11 @@ Create a new trip.  Important: create a timesheet record before calling this, pa
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.TripsApi();
+var apiInstance = new ChronoSheetsApi.TripsApi();
 
-var request = new JavascriptApiClientForChronoSheets.CSCreateTripRequest(); // CSCreateTripRequest | A Create Trip Request object containing values for the new Trip to create
+var request = new ChronoSheetsApi.CSCreateTripRequest(); // CSCreateTripRequest | A Create Trip Request object containing values for the new Trip to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -64,9 +64,9 @@ Get trip by Id.    Requires the &#39;ViewMyTrips&#39; permission.
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.TripsApi();
+var apiInstance = new ChronoSheetsApi.TripsApi();
 
 var tripId = 56; // Number | The ID of the Trip you want to get
 
@@ -111,9 +111,9 @@ Get my trips.  Get the GPS trips you&#39;ve recorded and submitted.    Requires 
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.TripsApi();
+var apiInstance = new ChronoSheetsApi.TripsApi();
 
 var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The Start date of the date range.  Trips after this date will be obtained.
 

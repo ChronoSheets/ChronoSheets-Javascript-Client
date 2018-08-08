@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSTripCoordinate();
+    instance = new ChronoSheetsApi.CSTripCoordinate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,19 +52,19 @@
   describe('CSTripCoordinate', function() {
     it('should create an instance of CSTripCoordinate', function() {
       // uncomment below and update the code to test CSTripCoordinate
-      //var instane = new JavascriptApiClientForChronoSheets.CSTripCoordinate();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSTripCoordinate);
+      //var instane = new ChronoSheetsApi.CSTripCoordinate();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSTripCoordinate);
     });
 
     it('should have the property latitude (base name: "Latitude")', function() {
       // uncomment below and update the code to test the property latitude
-      //var instane = new JavascriptApiClientForChronoSheets.CSTripCoordinate();
+      //var instane = new ChronoSheetsApi.CSTripCoordinate();
       //expect(instance).to.be();
     });
 
     it('should have the property longitude (base name: "Longitude")', function() {
       // uncomment below and update the code to test the property longitude
-      //var instane = new JavascriptApiClientForChronoSheets.CSTripCoordinate();
+      //var instane = new ChronoSheetsApi.CSTripCoordinate();
       //expect(instance).to.be();
     });
 

@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSApiResponseListProjectCostingReportItem();
+    instance = new ChronoSheetsApi.CSApiResponseListProjectCostingReportItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('CSApiResponseListProjectCostingReportItem', function() {
     it('should create an instance of CSApiResponseListProjectCostingReportItem', function() {
       // uncomment below and update the code to test CSApiResponseListProjectCostingReportItem
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseListProjectCostingReportItem();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSApiResponseListProjectCostingReportItem);
+      //var instane = new ChronoSheetsApi.CSApiResponseListProjectCostingReportItem();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseListProjectCostingReportItem);
     });
 
     it('should have the property data (base name: "Data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseListProjectCostingReportItem();
+      //var instane = new ChronoSheetsApi.CSApiResponseListProjectCostingReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "Status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseListProjectCostingReportItem();
+      //var instane = new ChronoSheetsApi.CSApiResponseListProjectCostingReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "Message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseListProjectCostingReportItem();
+      //var instane = new ChronoSheetsApi.CSApiResponseListProjectCostingReportItem();
       //expect(instance).to.be();
     });
 

@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSBatchUpdateTimesheetRequest();
+    instance = new ChronoSheetsApi.CSBatchUpdateTimesheetRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,13 +52,13 @@
   describe('CSBatchUpdateTimesheetRequest', function() {
     it('should create an instance of CSBatchUpdateTimesheetRequest', function() {
       // uncomment below and update the code to test CSBatchUpdateTimesheetRequest
-      //var instane = new JavascriptApiClientForChronoSheets.CSBatchUpdateTimesheetRequest();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSBatchUpdateTimesheetRequest);
+      //var instane = new ChronoSheetsApi.CSBatchUpdateTimesheetRequest();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSBatchUpdateTimesheetRequest);
     });
 
     it('should have the property timesheets (base name: "Timesheets")', function() {
       // uncomment below and update the code to test the property timesheets
-      //var instane = new JavascriptApiClientForChronoSheets.CSBatchUpdateTimesheetRequest();
+      //var instane = new ChronoSheetsApi.CSBatchUpdateTimesheetRequest();
       //expect(instance).to.be();
     });
 

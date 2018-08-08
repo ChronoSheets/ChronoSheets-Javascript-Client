@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSUpdateUserResponse
+# ChronoSheetsApi.CSUpdateUserResponse
 
 ## Properties
 Name | Type | Description | Notes

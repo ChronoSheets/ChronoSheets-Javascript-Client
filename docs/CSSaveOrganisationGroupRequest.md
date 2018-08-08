@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSSaveOrganisationGroupRequest
+# ChronoSheetsApi.CSSaveOrganisationGroupRequest
 
 ## Properties
 Name | Type | Description | Notes

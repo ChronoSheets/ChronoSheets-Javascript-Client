@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSSetOrganisationGroupUsersRequest();
+    instance = new ChronoSheetsApi.CSSetOrganisationGroupUsersRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,19 +52,19 @@
   describe('CSSetOrganisationGroupUsersRequest', function() {
     it('should create an instance of CSSetOrganisationGroupUsersRequest', function() {
       // uncomment below and update the code to test CSSetOrganisationGroupUsersRequest
-      //var instane = new JavascriptApiClientForChronoSheets.CSSetOrganisationGroupUsersRequest();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSSetOrganisationGroupUsersRequest);
+      //var instane = new ChronoSheetsApi.CSSetOrganisationGroupUsersRequest();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSSetOrganisationGroupUsersRequest);
     });
 
     it('should have the property organisationGroupId (base name: "OrganisationGroupId")', function() {
       // uncomment below and update the code to test the property organisationGroupId
-      //var instane = new JavascriptApiClientForChronoSheets.CSSetOrganisationGroupUsersRequest();
+      //var instane = new ChronoSheetsApi.CSSetOrganisationGroupUsersRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property csvUserIds (base name: "CsvUserIds")', function() {
       // uncomment below and update the code to test the property csvUserIds
-      //var instane = new JavascriptApiClientForChronoSheets.CSSetOrganisationGroupUsersRequest();
+      //var instane = new ChronoSheetsApi.CSSetOrganisationGroupUsersRequest();
       //expect(instance).to.be();
     });
 

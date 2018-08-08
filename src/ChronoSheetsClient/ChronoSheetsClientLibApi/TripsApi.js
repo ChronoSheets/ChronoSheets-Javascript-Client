@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTrip'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseTrip'), require('../ChronoSheetsClientLibModel/CSCreateTripRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.TripsApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListTrip, root.JavascriptApiClientForChronoSheets.CSApiResponseInt32, root.JavascriptApiClientForChronoSheets.CSApiResponseTrip, root.JavascriptApiClientForChronoSheets.CSCreateTripRequest);
+    root.ChronoSheetsApi.TripsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseForPaginatedListTrip, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseTrip, root.ChronoSheetsApi.CSCreateTripRequest);
   }
 }(this, function(ApiClient, CSApiResponseForPaginatedListTrip, CSApiResponseInt32, CSApiResponseTrip, CSCreateTripRequest) {
   'use strict';

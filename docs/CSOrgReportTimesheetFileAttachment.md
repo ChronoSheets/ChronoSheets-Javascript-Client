@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSOrgReportTimesheetFileAttachment
+# ChronoSheetsApi.CSOrgReportTimesheetFileAttachment
 
 ## Properties
 Name | Type | Description | Notes

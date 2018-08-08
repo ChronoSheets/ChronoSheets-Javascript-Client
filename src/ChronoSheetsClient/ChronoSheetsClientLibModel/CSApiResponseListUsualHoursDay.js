@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSUsualHoursDay'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.CSApiResponseListUsualHoursDay = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSUsualHoursDay);
+    root.ChronoSheetsApi.CSApiResponseListUsualHoursDay = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSUsualHoursDay);
   }
 }(this, function(ApiClient, CSUsualHoursDay) {
   'use strict';

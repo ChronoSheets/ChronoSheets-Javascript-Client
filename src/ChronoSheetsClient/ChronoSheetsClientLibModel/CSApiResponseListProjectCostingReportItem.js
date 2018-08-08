@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSProjectCostingReportItem'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.CSApiResponseListProjectCostingReportItem = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSProjectCostingReportItem);
+    root.ChronoSheetsApi.CSApiResponseListProjectCostingReportItem = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSProjectCostingReportItem);
   }
 }(this, function(ApiClient, CSProjectCostingReportItem) {
   'use strict';

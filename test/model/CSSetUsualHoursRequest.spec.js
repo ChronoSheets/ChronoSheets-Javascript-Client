@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSSetUsualHoursRequest();
+    instance = new ChronoSheetsApi.CSSetUsualHoursRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,19 +52,19 @@
   describe('CSSetUsualHoursRequest', function() {
     it('should create an instance of CSSetUsualHoursRequest', function() {
       // uncomment below and update the code to test CSSetUsualHoursRequest
-      //var instane = new JavascriptApiClientForChronoSheets.CSSetUsualHoursRequest();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSSetUsualHoursRequest);
+      //var instane = new ChronoSheetsApi.CSSetUsualHoursRequest();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSSetUsualHoursRequest);
     });
 
     it('should have the property usualHoursData (base name: "UsualHoursData")', function() {
       // uncomment below and update the code to test the property usualHoursData
-      //var instane = new JavascriptApiClientForChronoSheets.CSSetUsualHoursRequest();
+      //var instane = new ChronoSheetsApi.CSSetUsualHoursRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new JavascriptApiClientForChronoSheets.CSSetUsualHoursRequest();
+      //var instane = new ChronoSheetsApi.CSSetUsualHoursRequest();
       //expect(instance).to.be();
     });
 

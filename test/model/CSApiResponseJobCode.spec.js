@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSApiResponseJobCode();
+    instance = new ChronoSheetsApi.CSApiResponseJobCode();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('CSApiResponseJobCode', function() {
     it('should create an instance of CSApiResponseJobCode', function() {
       // uncomment below and update the code to test CSApiResponseJobCode
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseJobCode();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSApiResponseJobCode);
+      //var instane = new ChronoSheetsApi.CSApiResponseJobCode();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseJobCode);
     });
 
     it('should have the property data (base name: "Data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseJobCode();
+      //var instane = new ChronoSheetsApi.CSApiResponseJobCode();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "Status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseJobCode();
+      //var instane = new ChronoSheetsApi.CSApiResponseJobCode();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "Message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseJobCode();
+      //var instane = new ChronoSheetsApi.CSApiResponseJobCode();
       //expect(instance).to.be();
     });
 

@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSInsertUserResponse();
+    instance = new ChronoSheetsApi.CSInsertUserResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('CSInsertUserResponse', function() {
     it('should create an instance of CSInsertUserResponse', function() {
       // uncomment below and update the code to test CSInsertUserResponse
-      //var instane = new JavascriptApiClientForChronoSheets.CSInsertUserResponse();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSInsertUserResponse);
+      //var instane = new ChronoSheetsApi.CSInsertUserResponse();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSInsertUserResponse);
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new JavascriptApiClientForChronoSheets.CSInsertUserResponse();
+      //var instane = new ChronoSheetsApi.CSInsertUserResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new JavascriptApiClientForChronoSheets.CSInsertUserResponse();
+      //var instane = new ChronoSheetsApi.CSInsertUserResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property validationErrors (base name: "ValidationErrors")', function() {
       // uncomment below and update the code to test the property validationErrors
-      //var instane = new JavascriptApiClientForChronoSheets.CSInsertUserResponse();
+      //var instane = new ChronoSheetsApi.CSInsertUserResponse();
       //expect(instance).to.be();
     });
 

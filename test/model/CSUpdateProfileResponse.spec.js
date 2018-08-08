@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSUpdateProfileResponse();
+    instance = new ChronoSheetsApi.CSUpdateProfileResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('CSUpdateProfileResponse', function() {
     it('should create an instance of CSUpdateProfileResponse', function() {
       // uncomment below and update the code to test CSUpdateProfileResponse
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateProfileResponse();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSUpdateProfileResponse);
+      //var instane = new ChronoSheetsApi.CSUpdateProfileResponse();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSUpdateProfileResponse);
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateProfileResponse();
+      //var instane = new ChronoSheetsApi.CSUpdateProfileResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateProfileResponse();
+      //var instane = new ChronoSheetsApi.CSUpdateProfileResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property validationErrors (base name: "ValidationErrors")', function() {
       // uncomment below and update the code to test the property validationErrors
-      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateProfileResponse();
+      //var instane = new ChronoSheetsApi.CSUpdateProfileResponse();
       //expect(instance).to.be();
     });
 

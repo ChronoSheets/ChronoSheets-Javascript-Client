@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSApiResponseUpdateOrganisationResponse();
+    instance = new ChronoSheetsApi.CSApiResponseUpdateOrganisationResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('CSApiResponseUpdateOrganisationResponse', function() {
     it('should create an instance of CSApiResponseUpdateOrganisationResponse', function() {
       // uncomment below and update the code to test CSApiResponseUpdateOrganisationResponse
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseUpdateOrganisationResponse();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSApiResponseUpdateOrganisationResponse);
+      //var instane = new ChronoSheetsApi.CSApiResponseUpdateOrganisationResponse();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseUpdateOrganisationResponse);
     });
 
     it('should have the property data (base name: "Data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseUpdateOrganisationResponse();
+      //var instane = new ChronoSheetsApi.CSApiResponseUpdateOrganisationResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "Status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseUpdateOrganisationResponse();
+      //var instane = new ChronoSheetsApi.CSApiResponseUpdateOrganisationResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "Message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseUpdateOrganisationResponse();
+      //var instane = new ChronoSheetsApi.CSApiResponseUpdateOrganisationResponse();
       //expect(instance).to.be();
     });
 

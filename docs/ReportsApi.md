@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.ReportsApi
+# ChronoSheetsApi.ReportsApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -24,9 +24,9 @@ Get Consolidated Admin Reports Data (Jobs, Tasks, Clients and Projects).  These 
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ReportsApi();
+var apiInstance = new ChronoSheetsApi.ReportsApi();
 
 var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date for the date range.  Report data in the response is after this date
 
@@ -77,9 +77,9 @@ Get Consolidated User Reports Data (Jobs, Tasks, Clients and Projects).  These a
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ReportsApi();
+var apiInstance = new ChronoSheetsApi.ReportsApi();
 
 var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date for the date range.  Report data in the response is after this date
 
@@ -127,9 +127,9 @@ Gets a summary report, which includes total distance travelled and total running
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ReportsApi();
+var apiInstance = new ChronoSheetsApi.ReportsApi();
 
 var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date for the date range.  Report data in the response is after this date
 
@@ -180,9 +180,9 @@ Get trip by Id, for reporting purposes.    Requires the &#39;ReportAdmin&#39; pe
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ReportsApi();
+var apiInstance = new ChronoSheetsApi.ReportsApi();
 
 var tripId = 56; // Number | The ID of the Trip you want to get
 
@@ -227,9 +227,9 @@ Reports on Organisation timesheet file attachments (files uploaded and attached 
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ReportsApi();
+var apiInstance = new ChronoSheetsApi.ReportsApi();
 
 var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date for the date range.  Report data in the response is after this date
 
@@ -286,9 +286,9 @@ Reports on Organisation transcripts (When an audio file is attached, it will be 
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ReportsApi();
+var apiInstance = new ChronoSheetsApi.ReportsApi();
 
 var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date for the date range.  Report data in the response is after this date
 
@@ -348,9 +348,9 @@ Reports on Organisation trips (GPS tracking from whole organisation).    Require
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ReportsApi();
+var apiInstance = new ChronoSheetsApi.ReportsApi();
 
 var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date for the date range.  Report data in the response is after this date
 
@@ -407,9 +407,9 @@ Get Timesheets Raw Data.  This data details each timesheet record.  These are th
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ReportsApi();
+var apiInstance = new ChronoSheetsApi.ReportsApi();
 
 var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date for the date range.  Report data in the response is after this date
 
@@ -472,9 +472,9 @@ Gets project cost estimations VS actual cost for date range and users.    Requir
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ReportsApi();
+var apiInstance = new ChronoSheetsApi.ReportsApi();
 
 var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date for the date range.  Report data in the response is after this date
 
@@ -525,9 +525,9 @@ Timeseries jobs data for the logged in user.    Requires the &#39;ViewOwnReports
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ReportsApi();
+var apiInstance = new ChronoSheetsApi.ReportsApi();
 
 var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date for the date range.  Report data in the response is after this date
 

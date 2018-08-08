@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSSaveVehicleRequest();
+    instance = new ChronoSheetsApi.CSSaveVehicleRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,61 +52,61 @@
   describe('CSSaveVehicleRequest', function() {
     it('should create an instance of CSSaveVehicleRequest', function() {
       // uncomment below and update the code to test CSSaveVehicleRequest
-      //var instane = new JavascriptApiClientForChronoSheets.CSSaveVehicleRequest();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSSaveVehicleRequest);
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSSaveVehicleRequest);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new JavascriptApiClientForChronoSheets.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "Name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new JavascriptApiClientForChronoSheets.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property costPerKilometer (base name: "CostPerKilometer")', function() {
       // uncomment below and update the code to test the property costPerKilometer
-      //var instane = new JavascriptApiClientForChronoSheets.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property make (base name: "Make")', function() {
       // uncomment below and update the code to test the property make
-      //var instane = new JavascriptApiClientForChronoSheets.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property model (base name: "Model")', function() {
       // uncomment below and update the code to test the property model
-      //var instane = new JavascriptApiClientForChronoSheets.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property year (base name: "Year")', function() {
       // uncomment below and update the code to test the property year
-      //var instane = new JavascriptApiClientForChronoSheets.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property licencePlateNumber (base name: "LicencePlateNumber")', function() {
       // uncomment below and update the code to test the property licencePlateNumber
-      //var instane = new JavascriptApiClientForChronoSheets.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property linkedOrgGroupIds (base name: "LinkedOrgGroupIds")', function() {
       // uncomment below and update the code to test the property linkedOrgGroupIds
-      //var instane = new JavascriptApiClientForChronoSheets.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property isDeleted (base name: "IsDeleted")', function() {
       // uncomment below and update the code to test the property isDeleted
-      //var instane = new JavascriptApiClientForChronoSheets.CSSaveVehicleRequest();
+      //var instane = new ChronoSheetsApi.CSSaveVehicleRequest();
       //expect(instance).to.be();
     });
 

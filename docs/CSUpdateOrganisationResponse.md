@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSUpdateOrganisationResponse
+# ChronoSheetsApi.CSUpdateOrganisationResponse
 
 ## Properties
 Name | Type | Description | Notes

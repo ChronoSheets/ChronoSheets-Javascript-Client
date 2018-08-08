@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSFleetVehicle();
+    instance = new ChronoSheetsApi.CSFleetVehicle();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,67 +52,67 @@
   describe('CSFleetVehicle', function() {
     it('should create an instance of CSFleetVehicle', function() {
       // uncomment below and update the code to test CSFleetVehicle
-      //var instane = new JavascriptApiClientForChronoSheets.CSFleetVehicle();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSFleetVehicle);
+      //var instane = new ChronoSheetsApi.CSFleetVehicle();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSFleetVehicle);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new JavascriptApiClientForChronoSheets.CSFleetVehicle();
+      //var instane = new ChronoSheetsApi.CSFleetVehicle();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new JavascriptApiClientForChronoSheets.CSFleetVehicle();
+      //var instane = new ChronoSheetsApi.CSFleetVehicle();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "Name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new JavascriptApiClientForChronoSheets.CSFleetVehicle();
+      //var instane = new ChronoSheetsApi.CSFleetVehicle();
       //expect(instance).to.be();
     });
 
     it('should have the property costPerKilometer (base name: "CostPerKilometer")', function() {
       // uncomment below and update the code to test the property costPerKilometer
-      //var instane = new JavascriptApiClientForChronoSheets.CSFleetVehicle();
+      //var instane = new ChronoSheetsApi.CSFleetVehicle();
       //expect(instance).to.be();
     });
 
     it('should have the property make (base name: "Make")', function() {
       // uncomment below and update the code to test the property make
-      //var instane = new JavascriptApiClientForChronoSheets.CSFleetVehicle();
+      //var instane = new ChronoSheetsApi.CSFleetVehicle();
       //expect(instance).to.be();
     });
 
     it('should have the property model (base name: "Model")', function() {
       // uncomment below and update the code to test the property model
-      //var instane = new JavascriptApiClientForChronoSheets.CSFleetVehicle();
+      //var instane = new ChronoSheetsApi.CSFleetVehicle();
       //expect(instance).to.be();
     });
 
     it('should have the property year (base name: "Year")', function() {
       // uncomment below and update the code to test the property year
-      //var instane = new JavascriptApiClientForChronoSheets.CSFleetVehicle();
+      //var instane = new ChronoSheetsApi.CSFleetVehicle();
       //expect(instance).to.be();
     });
 
     it('should have the property licencePlateNumber (base name: "LicencePlateNumber")', function() {
       // uncomment below and update the code to test the property licencePlateNumber
-      //var instane = new JavascriptApiClientForChronoSheets.CSFleetVehicle();
+      //var instane = new ChronoSheetsApi.CSFleetVehicle();
       //expect(instance).to.be();
     });
 
     it('should have the property isDeleted (base name: "IsDeleted")', function() {
       // uncomment below and update the code to test the property isDeleted
-      //var instane = new JavascriptApiClientForChronoSheets.CSFleetVehicle();
+      //var instane = new ChronoSheetsApi.CSFleetVehicle();
       //expect(instance).to.be();
     });
 
     it('should have the property permittedEmployees (base name: "PermittedEmployees")', function() {
       // uncomment below and update the code to test the property permittedEmployees
-      //var instane = new JavascriptApiClientForChronoSheets.CSFleetVehicle();
+      //var instane = new ChronoSheetsApi.CSFleetVehicle();
       //expect(instance).to.be();
     });
 

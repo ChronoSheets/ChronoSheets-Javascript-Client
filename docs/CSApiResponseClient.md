@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSApiResponseClient
+# ChronoSheetsApi.CSApiResponseClient
 
 ## Properties
 Name | Type | Description | Notes

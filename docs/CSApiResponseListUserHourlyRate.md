@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSApiResponseListUserHourlyRate
+# ChronoSheetsApi.CSApiResponseListUserHourlyRate
 
 ## Properties
 Name | Type | Description | Notes

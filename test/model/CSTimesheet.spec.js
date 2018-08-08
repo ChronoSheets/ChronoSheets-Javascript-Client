@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSTimesheet();
+    instance = new ChronoSheetsApi.CSTimesheet();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,79 +52,79 @@
   describe('CSTimesheet', function() {
     it('should create an instance of CSTimesheet', function() {
       // uncomment below and update the code to test CSTimesheet
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSTimesheet);
+      //var instane = new ChronoSheetsApi.CSTimesheet();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSTimesheet);
     });
 
     it('should have the property timesheetId (base name: "TimesheetId")', function() {
       // uncomment below and update the code to test the property timesheetId
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
+      //var instane = new ChronoSheetsApi.CSTimesheet();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
+      //var instane = new ChronoSheetsApi.CSTimesheet();
       //expect(instance).to.be();
     });
 
     it('should have the property jobId (base name: "JobId")', function() {
       // uncomment below and update the code to test the property jobId
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
+      //var instane = new ChronoSheetsApi.CSTimesheet();
       //expect(instance).to.be();
     });
 
     it('should have the property taskId (base name: "TaskId")', function() {
       // uncomment below and update the code to test the property taskId
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
+      //var instane = new ChronoSheetsApi.CSTimesheet();
       //expect(instance).to.be();
     });
 
     it('should have the property startDateTime (base name: "StartDateTime")', function() {
       // uncomment below and update the code to test the property startDateTime
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
+      //var instane = new ChronoSheetsApi.CSTimesheet();
       //expect(instance).to.be();
     });
 
     it('should have the property endDateTime (base name: "EndDateTime")', function() {
       // uncomment below and update the code to test the property endDateTime
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
+      //var instane = new ChronoSheetsApi.CSTimesheet();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "Description")', function() {
       // uncomment below and update the code to test the property description
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
+      //var instane = new ChronoSheetsApi.CSTimesheet();
       //expect(instance).to.be();
     });
 
     it('should have the property tripId (base name: "TripId")', function() {
       // uncomment below and update the code to test the property tripId
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
+      //var instane = new ChronoSheetsApi.CSTimesheet();
       //expect(instance).to.be();
     });
 
     it('should have the property fileAttachmentCount (base name: "FileAttachmentCount")', function() {
       // uncomment below and update the code to test the property fileAttachmentCount
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
+      //var instane = new ChronoSheetsApi.CSTimesheet();
       //expect(instance).to.be();
     });
 
     it('should have the property payAmount (base name: "PayAmount")', function() {
       // uncomment below and update the code to test the property payAmount
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
+      //var instane = new ChronoSheetsApi.CSTimesheet();
       //expect(instance).to.be();
     });
 
     it('should have the property overtimePayAmount (base name: "OvertimePayAmount")', function() {
       // uncomment below and update the code to test the property overtimePayAmount
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
+      //var instane = new ChronoSheetsApi.CSTimesheet();
       //expect(instance).to.be();
     });
 
     it('should have the property includesOvertime (base name: "IncludesOvertime")', function() {
       // uncomment below and update the code to test the property includesOvertime
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheet();
+      //var instane = new ChronoSheetsApi.CSTimesheet();
       //expect(instance).to.be();
     });
 

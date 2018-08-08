@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSUserJobFavourite();
+    instance = new ChronoSheetsApi.CSUserJobFavourite();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,19 +52,19 @@
   describe('CSUserJobFavourite', function() {
     it('should create an instance of CSUserJobFavourite', function() {
       // uncomment below and update the code to test CSUserJobFavourite
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserJobFavourite();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSUserJobFavourite);
+      //var instane = new ChronoSheetsApi.CSUserJobFavourite();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSUserJobFavourite);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserJobFavourite();
+      //var instane = new ChronoSheetsApi.CSUserJobFavourite();
       //expect(instance).to.be();
     });
 
     it('should have the property jobId (base name: "JobId")', function() {
       // uncomment below and update the code to test the property jobId
-      //var instane = new JavascriptApiClientForChronoSheets.CSUserJobFavourite();
+      //var instane = new ChronoSheetsApi.CSUserJobFavourite();
       //expect(instance).to.be();
     });
 

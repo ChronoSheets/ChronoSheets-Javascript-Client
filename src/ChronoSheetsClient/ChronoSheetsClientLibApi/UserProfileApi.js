@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseDoLoginResponse'), require('../ChronoSheetsClientLibModel/CSApiResponseUpdateProfileResponse'), require('../ChronoSheetsClientLibModel/CSApiResponseUserProfile'), require('../ChronoSheetsClientLibModel/CSDoLoginRequest'), require('../ChronoSheetsClientLibModel/CSUpdateMyProfileRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.UserProfileApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseBoolean, root.JavascriptApiClientForChronoSheets.CSApiResponseDoLoginResponse, root.JavascriptApiClientForChronoSheets.CSApiResponseUpdateProfileResponse, root.JavascriptApiClientForChronoSheets.CSApiResponseUserProfile, root.JavascriptApiClientForChronoSheets.CSDoLoginRequest, root.JavascriptApiClientForChronoSheets.CSUpdateMyProfileRequest);
+    root.ChronoSheetsApi.UserProfileApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseDoLoginResponse, root.ChronoSheetsApi.CSApiResponseUpdateProfileResponse, root.ChronoSheetsApi.CSApiResponseUserProfile, root.ChronoSheetsApi.CSDoLoginRequest, root.ChronoSheetsApi.CSUpdateMyProfileRequest);
   }
 }(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseDoLoginResponse, CSApiResponseUpdateProfileResponse, CSApiResponseUserProfile, CSDoLoginRequest, CSUpdateMyProfileRequest) {
   'use strict';

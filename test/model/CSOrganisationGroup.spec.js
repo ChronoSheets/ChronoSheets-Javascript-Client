@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSOrganisationGroup();
+    instance = new ChronoSheetsApi.CSOrganisationGroup();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,31 +52,31 @@
   describe('CSOrganisationGroup', function() {
     it('should create an instance of CSOrganisationGroup', function() {
       // uncomment below and update the code to test CSOrganisationGroup
-      //var instane = new JavascriptApiClientForChronoSheets.CSOrganisationGroup();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSOrganisationGroup);
+      //var instane = new ChronoSheetsApi.CSOrganisationGroup();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSOrganisationGroup);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new JavascriptApiClientForChronoSheets.CSOrganisationGroup();
+      //var instane = new ChronoSheetsApi.CSOrganisationGroup();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new JavascriptApiClientForChronoSheets.CSOrganisationGroup();
+      //var instane = new ChronoSheetsApi.CSOrganisationGroup();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationGroupName (base name: "OrganisationGroupName")', function() {
       // uncomment below and update the code to test the property organisationGroupName
-      //var instane = new JavascriptApiClientForChronoSheets.CSOrganisationGroup();
+      //var instane = new ChronoSheetsApi.CSOrganisationGroup();
       //expect(instance).to.be();
     });
 
     it('should have the property isDeleted (base name: "IsDeleted")', function() {
       // uncomment below and update the code to test the property isDeleted
-      //var instane = new JavascriptApiClientForChronoSheets.CSOrganisationGroup();
+      //var instane = new ChronoSheetsApi.CSOrganisationGroup();
       //expect(instance).to.be();
     });
 

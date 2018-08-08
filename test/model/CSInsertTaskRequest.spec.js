@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSInsertTaskRequest();
+    instance = new ChronoSheetsApi.CSInsertTaskRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,19 +52,19 @@
   describe('CSInsertTaskRequest', function() {
     it('should create an instance of CSInsertTaskRequest', function() {
       // uncomment below and update the code to test CSInsertTaskRequest
-      //var instane = new JavascriptApiClientForChronoSheets.CSInsertTaskRequest();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSInsertTaskRequest);
+      //var instane = new ChronoSheetsApi.CSInsertTaskRequest();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSInsertTaskRequest);
     });
 
     it('should have the property taskName (base name: "TaskName")', function() {
       // uncomment below and update the code to test the property taskName
-      //var instane = new JavascriptApiClientForChronoSheets.CSInsertTaskRequest();
+      //var instane = new ChronoSheetsApi.CSInsertTaskRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property tripEnabled (base name: "TripEnabled")', function() {
       // uncomment below and update the code to test the property tripEnabled
-      //var instane = new JavascriptApiClientForChronoSheets.CSInsertTaskRequest();
+      //var instane = new ChronoSheetsApi.CSInsertTaskRequest();
       //expect(instance).to.be();
     });
 

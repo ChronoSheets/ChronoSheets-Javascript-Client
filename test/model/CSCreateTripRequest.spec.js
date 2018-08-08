@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSCreateTripRequest();
+    instance = new ChronoSheetsApi.CSCreateTripRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,37 +52,37 @@
   describe('CSCreateTripRequest', function() {
     it('should create an instance of CSCreateTripRequest', function() {
       // uncomment below and update the code to test CSCreateTripRequest
-      //var instane = new JavascriptApiClientForChronoSheets.CSCreateTripRequest();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSCreateTripRequest);
+      //var instane = new ChronoSheetsApi.CSCreateTripRequest();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSCreateTripRequest);
     });
 
     it('should have the property timesheetId (base name: "TimesheetId")', function() {
       // uncomment below and update the code to test the property timesheetId
-      //var instane = new JavascriptApiClientForChronoSheets.CSCreateTripRequest();
+      //var instane = new ChronoSheetsApi.CSCreateTripRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property vehicleId (base name: "VehicleId")', function() {
       // uncomment below and update the code to test the property vehicleId
-      //var instane = new JavascriptApiClientForChronoSheets.CSCreateTripRequest();
+      //var instane = new ChronoSheetsApi.CSCreateTripRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property pathCoordsStringCsv (base name: "PathCoordsStringCsv")', function() {
       // uncomment below and update the code to test the property pathCoordsStringCsv
-      //var instane = new JavascriptApiClientForChronoSheets.CSCreateTripRequest();
+      //var instane = new ChronoSheetsApi.CSCreateTripRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property distanceMeters (base name: "DistanceMeters")', function() {
       // uncomment below and update the code to test the property distanceMeters
-      //var instane = new JavascriptApiClientForChronoSheets.CSCreateTripRequest();
+      //var instane = new ChronoSheetsApi.CSCreateTripRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property mobilePlatform (base name: "MobilePlatform")', function() {
       // uncomment below and update the code to test the property mobilePlatform
-      //var instane = new JavascriptApiClientForChronoSheets.CSCreateTripRequest();
+      //var instane = new ChronoSheetsApi.CSCreateTripRequest();
       //expect(instance).to.be();
     });
 

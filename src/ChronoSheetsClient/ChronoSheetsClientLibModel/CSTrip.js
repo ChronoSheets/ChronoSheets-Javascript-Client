@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSTripCoordinate'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.CSTrip = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSTripCoordinate);
+    root.ChronoSheetsApi.CSTrip = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSTripCoordinate);
   }
 }(this, function(ApiClient, CSTripCoordinate) {
   'use strict';

@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSUsualHoursDay
+# ChronoSheetsApi.CSUsualHoursDay
 
 ## Properties
 Name | Type | Description | Notes

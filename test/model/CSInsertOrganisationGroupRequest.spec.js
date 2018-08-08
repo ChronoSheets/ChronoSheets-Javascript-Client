@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSInsertOrganisationGroupRequest();
+    instance = new ChronoSheetsApi.CSInsertOrganisationGroupRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,19 +52,19 @@
   describe('CSInsertOrganisationGroupRequest', function() {
     it('should create an instance of CSInsertOrganisationGroupRequest', function() {
       // uncomment below and update the code to test CSInsertOrganisationGroupRequest
-      //var instane = new JavascriptApiClientForChronoSheets.CSInsertOrganisationGroupRequest();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSInsertOrganisationGroupRequest);
+      //var instane = new ChronoSheetsApi.CSInsertOrganisationGroupRequest();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSInsertOrganisationGroupRequest);
     });
 
     it('should have the property organisationGroupName (base name: "OrganisationGroupName")', function() {
       // uncomment below and update the code to test the property organisationGroupName
-      //var instane = new JavascriptApiClientForChronoSheets.CSInsertOrganisationGroupRequest();
+      //var instane = new ChronoSheetsApi.CSInsertOrganisationGroupRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationGroupUserIds (base name: "OrganisationGroupUserIds")', function() {
       // uncomment below and update the code to test the property organisationGroupUserIds
-      //var instane = new JavascriptApiClientForChronoSheets.CSInsertOrganisationGroupRequest();
+      //var instane = new ChronoSheetsApi.CSInsertOrganisationGroupRequest();
       //expect(instance).to.be();
     });
 

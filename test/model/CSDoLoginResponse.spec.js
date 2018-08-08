@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSDoLoginResponse();
+    instance = new ChronoSheetsApi.CSDoLoginResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,19 +52,19 @@
   describe('CSDoLoginResponse', function() {
     it('should create an instance of CSDoLoginResponse', function() {
       // uncomment below and update the code to test CSDoLoginResponse
-      //var instane = new JavascriptApiClientForChronoSheets.CSDoLoginResponse();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSDoLoginResponse);
+      //var instane = new ChronoSheetsApi.CSDoLoginResponse();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSDoLoginResponse);
     });
 
     it('should have the property cSAuthToken (base name: "CSAuthToken")', function() {
       // uncomment below and update the code to test the property cSAuthToken
-      //var instane = new JavascriptApiClientForChronoSheets.CSDoLoginResponse();
+      //var instane = new ChronoSheetsApi.CSDoLoginResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property loggedInUser (base name: "LoggedInUser")', function() {
       // uncomment below and update the code to test the property loggedInUser
-      //var instane = new JavascriptApiClientForChronoSheets.CSDoLoginResponse();
+      //var instane = new ChronoSheetsApi.CSDoLoginResponse();
       //expect(instance).to.be();
     });
 

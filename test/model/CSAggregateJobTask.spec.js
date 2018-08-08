@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSAggregateJobTask();
+    instance = new ChronoSheetsApi.CSAggregateJobTask();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('CSAggregateJobTask', function() {
     it('should create an instance of CSAggregateJobTask', function() {
       // uncomment below and update the code to test CSAggregateJobTask
-      //var instane = new JavascriptApiClientForChronoSheets.CSAggregateJobTask();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSAggregateJobTask);
+      //var instane = new ChronoSheetsApi.CSAggregateJobTask();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSAggregateJobTask);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new JavascriptApiClientForChronoSheets.CSAggregateJobTask();
+      //var instane = new ChronoSheetsApi.CSAggregateJobTask();
       //expect(instance).to.be();
     });
 
     it('should have the property label (base name: "Label")', function() {
       // uncomment below and update the code to test the property label
-      //var instane = new JavascriptApiClientForChronoSheets.CSAggregateJobTask();
+      //var instane = new ChronoSheetsApi.CSAggregateJobTask();
       //expect(instance).to.be();
     });
 
     it('should have the property isDeleted (base name: "IsDeleted")', function() {
       // uncomment below and update the code to test the property isDeleted
-      //var instane = new JavascriptApiClientForChronoSheets.CSAggregateJobTask();
+      //var instane = new ChronoSheetsApi.CSAggregateJobTask();
       //expect(instance).to.be();
     });
 

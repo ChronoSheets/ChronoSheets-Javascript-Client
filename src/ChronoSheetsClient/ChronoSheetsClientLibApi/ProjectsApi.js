@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseListProject'), require('../ChronoSheetsClientLibModel/CSApiResponseProject'), require('../ChronoSheetsClientLibModel/CSInsertProjectRequest'), require('../ChronoSheetsClientLibModel/CSUpdateProjectRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.ProjectsApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseBoolean, root.JavascriptApiClientForChronoSheets.CSApiResponseInt32, root.JavascriptApiClientForChronoSheets.CSApiResponseListProject, root.JavascriptApiClientForChronoSheets.CSApiResponseProject, root.JavascriptApiClientForChronoSheets.CSInsertProjectRequest, root.JavascriptApiClientForChronoSheets.CSUpdateProjectRequest);
+    root.ChronoSheetsApi.ProjectsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseListProject, root.ChronoSheetsApi.CSApiResponseProject, root.ChronoSheetsApi.CSInsertProjectRequest, root.ChronoSheetsApi.CSUpdateProjectRequest);
   }
 }(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseInt32, CSApiResponseListProject, CSApiResponseProject, CSInsertProjectRequest, CSUpdateProjectRequest) {
   'use strict';

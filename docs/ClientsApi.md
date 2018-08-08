@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.ClientsApi
+# ChronoSheetsApi.ClientsApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -18,11 +18,11 @@ Create a client.    Requires the &#39;ManageClientsAndProjects&#39; permission.
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ClientsApi();
+var apiInstance = new ChronoSheetsApi.ClientsApi();
 
-var request = new JavascriptApiClientForChronoSheets.CSInsertClientRequest(); // CSInsertClientRequest | An Insert Client Request object containing values for the new Client to create
+var request = new ChronoSheetsApi.CSInsertClientRequest(); // CSInsertClientRequest | An Insert Client Request object containing values for the new Client to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -65,9 +65,9 @@ Get a particular client.    Requires the &#39;ManageClientsAndProjects&#39; or &
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ClientsApi();
+var apiInstance = new ChronoSheetsApi.ClientsApi();
 
 var clientId = 56; // Number | The ID of the Client you want to get
 
@@ -112,9 +112,9 @@ Get a collection of clients that are under your organisation.    Requires the &#
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ClientsApi();
+var apiInstance = new ChronoSheetsApi.ClientsApi();
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -156,11 +156,11 @@ Update a client.    Requires the &#39;ManageClientsAndProjects&#39; permission.
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.ClientsApi();
+var apiInstance = new ChronoSheetsApi.ClientsApi();
 
-var request = new JavascriptApiClientForChronoSheets.CSSaveClientRequest(); // CSSaveClientRequest | A Save Client Request object containing updated fields.  Make sure to specify the Client Id in the request object so that ChronoSheets knows which Client to update
+var request = new ChronoSheetsApi.CSSaveClientRequest(); // CSSaveClientRequest | A Save Client Request object containing updated fields.  Make sure to specify the Client Id in the request object so that ChronoSheets knows which Client to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

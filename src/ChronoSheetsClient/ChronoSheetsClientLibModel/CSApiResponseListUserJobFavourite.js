@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSUserJobFavourite'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.CSApiResponseListUserJobFavourite = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSUserJobFavourite);
+    root.ChronoSheetsApi.CSApiResponseListUserJobFavourite = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSUserJobFavourite);
   }
 }(this, function(ApiClient, CSUserJobFavourite) {
   'use strict';

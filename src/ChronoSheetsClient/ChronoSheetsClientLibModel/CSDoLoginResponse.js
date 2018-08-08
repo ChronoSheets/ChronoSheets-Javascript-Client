@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSClientSideUser'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.CSDoLoginResponse = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSClientSideUser);
+    root.ChronoSheetsApi.CSDoLoginResponse = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSClientSideUser);
   }
 }(this, function(ApiClient, CSClientSideUser) {
   'use strict';

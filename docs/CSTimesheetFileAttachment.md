@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSTimesheetFileAttachment
+# ChronoSheetsApi.CSTimesheetFileAttachment
 
 ## Properties
 Name | Type | Description | Notes

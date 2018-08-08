@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseListUserJobFavourite'), require('../ChronoSheetsClientLibModel/CSInsertUserJobFavouriteRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.UserJobFavouritesApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseBoolean, root.JavascriptApiClientForChronoSheets.CSApiResponseInt32, root.JavascriptApiClientForChronoSheets.CSApiResponseListUserJobFavourite, root.JavascriptApiClientForChronoSheets.CSInsertUserJobFavouriteRequest);
+    root.ChronoSheetsApi.UserJobFavouritesApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseListUserJobFavourite, root.ChronoSheetsApi.CSInsertUserJobFavouriteRequest);
   }
 }(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseInt32, CSApiResponseListUserJobFavourite, CSInsertUserJobFavouriteRequest) {
   'use strict';

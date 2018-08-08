@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.AggregateClientProjectsApi
+# ChronoSheetsApi.AggregateClientProjectsApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -15,9 +15,9 @@ Get client and project information, aggregated.    Requires the &#39;SubmitTimes
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.AggregateClientProjectsApi();
+var apiInstance = new ChronoSheetsApi.AggregateClientProjectsApi();
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

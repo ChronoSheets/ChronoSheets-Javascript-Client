@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListTimesheetFileAttachment();
+    instance = new ChronoSheetsApi.CSApiResponseForPaginatedListTimesheetFileAttachment();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,31 +52,31 @@
   describe('CSApiResponseForPaginatedListTimesheetFileAttachment', function() {
     it('should create an instance of CSApiResponseForPaginatedListTimesheetFileAttachment', function() {
       // uncomment below and update the code to test CSApiResponseForPaginatedListTimesheetFileAttachment
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListTimesheetFileAttachment();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListTimesheetFileAttachment);
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedListTimesheetFileAttachment();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseForPaginatedListTimesheetFileAttachment);
     });
 
     it('should have the property totalSetCount (base name: "TotalSetCount")', function() {
       // uncomment below and update the code to test the property totalSetCount
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListTimesheetFileAttachment();
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedListTimesheetFileAttachment();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "Data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListTimesheetFileAttachment();
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedListTimesheetFileAttachment();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "Status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListTimesheetFileAttachment();
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedListTimesheetFileAttachment();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "Message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListTimesheetFileAttachment();
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedListTimesheetFileAttachment();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSAggregateClient
+# ChronoSheetsApi.CSAggregateClient
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSUserForManagement
+# ChronoSheetsApi.CSUserForManagement
 
 ## Properties
 Name | Type | Description | Notes

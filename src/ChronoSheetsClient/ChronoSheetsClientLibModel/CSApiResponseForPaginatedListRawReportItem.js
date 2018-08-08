@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSRawReportItem'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListRawReportItem = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSRawReportItem);
+    root.ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSRawReportItem);
   }
 }(this, function(ApiClient, CSRawReportItem) {
   'use strict';

@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSTimeSlot();
+    instance = new ChronoSheetsApi.CSTimeSlot();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,49 +52,49 @@
   describe('CSTimeSlot', function() {
     it('should create an instance of CSTimeSlot', function() {
       // uncomment below and update the code to test CSTimeSlot
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimeSlot();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSTimeSlot);
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSTimeSlot);
     });
 
     it('should have the property dayType (base name: "DayType")', function() {
       // uncomment below and update the code to test the property dayType
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 
     it('should have the property usualHourId (base name: "UsualHourId")', function() {
       // uncomment below and update the code to test the property usualHourId
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 
     it('should have the property startHour (base name: "StartHour")', function() {
       // uncomment below and update the code to test the property startHour
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 
     it('should have the property startMinute (base name: "StartMinute")', function() {
       // uncomment below and update the code to test the property startMinute
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 
     it('should have the property endHour (base name: "EndHour")', function() {
       // uncomment below and update the code to test the property endHour
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 
     it('should have the property endMinute (base name: "EndMinute")', function() {
       // uncomment below and update the code to test the property endMinute
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 
     it('should have the property isValid (base name: "IsValid")', function() {
       // uncomment below and update the code to test the property isValid
-      //var instane = new JavascriptApiClientForChronoSheets.CSTimeSlot();
+      //var instane = new ChronoSheetsApi.CSTimeSlot();
       //expect(instance).to.be();
     });
 

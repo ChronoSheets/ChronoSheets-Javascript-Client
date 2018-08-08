@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSTimeSlot'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.CSUsualHoursDay = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSTimeSlot);
+    root.ChronoSheetsApi.CSUsualHoursDay = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSTimeSlot);
   }
 }(this, function(ApiClient, CSTimeSlot) {
   'use strict';

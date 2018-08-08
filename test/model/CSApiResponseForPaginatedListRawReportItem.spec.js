@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.JavascriptApiClientForChronoSheets);
+    factory(root.expect, root.ChronoSheetsApi);
   }
-}(this, function(expect, JavascriptApiClientForChronoSheets) {
+}(this, function(expect, ChronoSheetsApi) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListRawReportItem();
+    instance = new ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,31 +52,31 @@
   describe('CSApiResponseForPaginatedListRawReportItem', function() {
     it('should create an instance of CSApiResponseForPaginatedListRawReportItem', function() {
       // uncomment below and update the code to test CSApiResponseForPaginatedListRawReportItem
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListRawReportItem();
-      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListRawReportItem);
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem);
     });
 
     it('should have the property totalSetCount (base name: "TotalSetCount")', function() {
       // uncomment below and update the code to test the property totalSetCount
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListRawReportItem();
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property data (base name: "Data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListRawReportItem();
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "Status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListRawReportItem();
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "Message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListRawReportItem();
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem();
       //expect(instance).to.be();
     });
 

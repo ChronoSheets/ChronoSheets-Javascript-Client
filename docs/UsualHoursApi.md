@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.UsualHoursApi
+# ChronoSheetsApi.UsualHoursApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -16,9 +16,9 @@ Get usual hours (rostered hours) for an employee.  Requires the &#39;ManageOrgan
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.UsualHoursApi();
+var apiInstance = new ChronoSheetsApi.UsualHoursApi();
 
 var userId = 56; // Number | The ID of the User for which you want to get UsualHours for
 
@@ -63,11 +63,11 @@ Set usual hours (rostered hours) for an employee.  Requires the &#39;ManageOrgan
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.UsualHoursApi();
+var apiInstance = new ChronoSheetsApi.UsualHoursApi();
 
-var request = new JavascriptApiClientForChronoSheets.CSSetUsualHoursRequest(); // CSSetUsualHoursRequest | A Set UsualHours Request object containing updated data.  Make sure to specify the Day types in the request object so that ChronoSheets knows which Days to update
+var request = new ChronoSheetsApi.CSSetUsualHoursRequest(); // CSSetUsualHoursRequest | A Set UsualHours Request object containing updated data.  Make sure to specify the Day types in the request object so that ChronoSheets knows which Days to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

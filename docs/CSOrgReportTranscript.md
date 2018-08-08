@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSOrgReportTranscript
+# ChronoSheetsApi.CSOrgReportTranscript
 
 ## Properties
 Name | Type | Description | Notes

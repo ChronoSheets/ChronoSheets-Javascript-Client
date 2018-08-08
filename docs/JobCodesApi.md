@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.JobCodesApi
+# ChronoSheetsApi.JobCodesApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -19,11 +19,11 @@ Create a job code.    Requires the &#39;ManageJobsAndTask&#39; permission.
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.JobCodesApi();
+var apiInstance = new ChronoSheetsApi.JobCodesApi();
 
-var request = new JavascriptApiClientForChronoSheets.CSInsertJobCodeRequest(); // CSInsertJobCodeRequest | An Insert JobCode Request object containing values for the new JobCode to create
+var request = new ChronoSheetsApi.CSInsertJobCodeRequest(); // CSInsertJobCodeRequest | An Insert JobCode Request object containing values for the new JobCode to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -66,9 +66,9 @@ Delete a job code.    Requires the &#39;ManageJobsAndTask&#39; permission.
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.JobCodesApi();
+var apiInstance = new ChronoSheetsApi.JobCodesApi();
 
 var jobCodeId = 56; // Number | The ID of the job code you want to delete
 
@@ -113,9 +113,9 @@ Get a particular job code by job code id.    Requires &#39;SubmitTimesheets&#39;
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.JobCodesApi();
+var apiInstance = new ChronoSheetsApi.JobCodesApi();
 
 var jobCodeId = 56; // Number | The ID of the JobCode you want to get
 
@@ -160,9 +160,9 @@ Get job codes for your organisation.    Requires &#39;SubmitTimesheets&#39; or &
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.JobCodesApi();
+var apiInstance = new ChronoSheetsApi.JobCodesApi();
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -204,11 +204,11 @@ Update a job code.    Requires the &#39;ManageJobsAndTask&#39; permission.
 
 ### Example
 ```javascript
-var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
+var ChronoSheetsApi = require('ChronoSheetsAPI');
 
-var apiInstance = new JavascriptApiClientForChronoSheets.JobCodesApi();
+var apiInstance = new ChronoSheetsApi.JobCodesApi();
 
-var request = new JavascriptApiClientForChronoSheets.CSUpdateJobCodeRequest(); // CSUpdateJobCodeRequest | A Update JobCode Request object containing updated fields.  Make sure to specify the JobCode Id in the request object so that ChronoSheets knows which JobCode to update
+var request = new ChronoSheetsApi.CSUpdateJobCodeRequest(); // CSUpdateJobCodeRequest | A Update JobCode Request object containing updated fields.  Make sure to specify the JobCode Id in the request object so that ChronoSheets knows which JobCode to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

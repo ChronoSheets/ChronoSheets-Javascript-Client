@@ -1,4 +1,4 @@
-# JavascriptApiClientForChronoSheets.CSInsertUserHourlyRateRequest
+# ChronoSheetsApi.CSInsertUserHourlyRateRequest
 
 ## Properties
 Name | Type | Description | Notes

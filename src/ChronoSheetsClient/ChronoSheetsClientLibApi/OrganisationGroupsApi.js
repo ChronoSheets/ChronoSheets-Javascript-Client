@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseListOrganisationGroup'), require('../ChronoSheetsClientLibModel/CSApiResponseOrganisationGroup'), require('../ChronoSheetsClientLibModel/CSInsertOrganisationGroupRequest'), require('../ChronoSheetsClientLibModel/CSSaveOrganisationGroupRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.JavascriptApiClientForChronoSheets) {
-      root.JavascriptApiClientForChronoSheets = {};
+    if (!root.ChronoSheetsApi) {
+      root.ChronoSheetsApi = {};
     }
-    root.JavascriptApiClientForChronoSheets.OrganisationGroupsApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseBoolean, root.JavascriptApiClientForChronoSheets.CSApiResponseInt32, root.JavascriptApiClientForChronoSheets.CSApiResponseListOrganisationGroup, root.JavascriptApiClientForChronoSheets.CSApiResponseOrganisationGroup, root.JavascriptApiClientForChronoSheets.CSInsertOrganisationGroupRequest, root.JavascriptApiClientForChronoSheets.CSSaveOrganisationGroupRequest);
+    root.ChronoSheetsApi.OrganisationGroupsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseListOrganisationGroup, root.ChronoSheetsApi.CSApiResponseOrganisationGroup, root.ChronoSheetsApi.CSInsertOrganisationGroupRequest, root.ChronoSheetsApi.CSSaveOrganisationGroupRequest);
   }
 }(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseInt32, CSApiResponseListOrganisationGroup, CSApiResponseOrganisationGroup, CSInsertOrganisationGroupRequest, CSSaveOrganisationGroupRequest) {
   'use strict';
