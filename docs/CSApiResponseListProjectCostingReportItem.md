@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseListProjectCostingReportItem
+# JavascriptApiClientForChronoSheets.CSApiResponseListProjectCostingReportItem
 
 ## Properties
 Name | Type | Description | Notes

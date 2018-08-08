@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSTaskTotalsReportItem();
+    instance = new JavascriptApiClientForChronoSheets.CSTaskTotalsReportItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,37 +52,37 @@
   describe('CSTaskTotalsReportItem', function() {
     it('should create an instance of CSTaskTotalsReportItem', function() {
       // uncomment below and update the code to test CSTaskTotalsReportItem
-      //var instane = new ChronoSheetsApi.CSTaskTotalsReportItem();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSTaskTotalsReportItem);
+      //var instane = new JavascriptApiClientForChronoSheets.CSTaskTotalsReportItem();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSTaskTotalsReportItem);
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new ChronoSheetsApi.CSTaskTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSTaskTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new ChronoSheetsApi.CSTaskTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSTaskTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property taskId (base name: "TaskId")', function() {
       // uncomment below and update the code to test the property taskId
-      //var instane = new ChronoSheetsApi.CSTaskTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSTaskTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property taskName (base name: "TaskName")', function() {
       // uncomment below and update the code to test the property taskName
-      //var instane = new ChronoSheetsApi.CSTaskTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSTaskTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property spanSeconds (base name: "SpanSeconds")', function() {
       // uncomment below and update the code to test the property spanSeconds
-      //var instane = new ChronoSheetsApi.CSTaskTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSTaskTotalsReportItem();
       //expect(instance).to.be();
     });
 

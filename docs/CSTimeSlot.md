@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSTimeSlot
+# JavascriptApiClientForChronoSheets.CSTimeSlot
 
 ## Properties
 Name | Type | Description | Notes

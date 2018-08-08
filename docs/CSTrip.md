@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSTrip
+# JavascriptApiClientForChronoSheets.CSTrip
 
 ## Properties
 Name | Type | Description | Notes

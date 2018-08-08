@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSProject'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseListProject = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSProject);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseListProject = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSProject);
   }
 }(this, function(ApiClient, CSProject) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseListProject model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProject
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

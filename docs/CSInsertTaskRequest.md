@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSInsertTaskRequest
+# JavascriptApiClientForChronoSheets.CSInsertTaskRequest
 
 ## Properties
 Name | Type | Description | Notes

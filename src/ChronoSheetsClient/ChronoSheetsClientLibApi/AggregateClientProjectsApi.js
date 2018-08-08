@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseListAggregateClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.AggregateClientProjectsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseListAggregateClient);
+    root.JavascriptApiClientForChronoSheets.AggregateClientProjectsApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseListAggregateClient);
   }
 }(this, function(ApiClient, CSApiResponseListAggregateClient) {
   'use strict';
@@ -33,7 +33,7 @@
   /**
    * AggregateClientProjects service.
    * @module ChronoSheetsClient/ChronoSheetsClientLibApi/AggregateClientProjectsApi
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSJobTotalsReportItem();
+    instance = new JavascriptApiClientForChronoSheets.CSJobTotalsReportItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,55 +52,55 @@
   describe('CSJobTotalsReportItem', function() {
     it('should create an instance of CSJobTotalsReportItem', function() {
       // uncomment below and update the code to test CSJobTotalsReportItem
-      //var instane = new ChronoSheetsApi.CSJobTotalsReportItem();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSJobTotalsReportItem);
+      //var instane = new JavascriptApiClientForChronoSheets.CSJobTotalsReportItem();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSJobTotalsReportItem);
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new ChronoSheetsApi.CSJobTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSJobTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property jobId (base name: "JobId")', function() {
       // uncomment below and update the code to test the property jobId
-      //var instane = new ChronoSheetsApi.CSJobTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSJobTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property jobCode (base name: "JobCode")', function() {
       // uncomment below and update the code to test the property jobCode
-      //var instane = new ChronoSheetsApi.CSJobTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSJobTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property clientId (base name: "ClientId")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instane = new ChronoSheetsApi.CSJobTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSJobTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property clientName (base name: "ClientName")', function() {
       // uncomment below and update the code to test the property clientName
-      //var instane = new ChronoSheetsApi.CSJobTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSJobTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property projectId (base name: "ProjectId")', function() {
       // uncomment below and update the code to test the property projectId
-      //var instane = new ChronoSheetsApi.CSJobTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSJobTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property projectName (base name: "ProjectName")', function() {
       // uncomment below and update the code to test the property projectName
-      //var instane = new ChronoSheetsApi.CSJobTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSJobTotalsReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property spanSeconds (base name: "SpanSeconds")', function() {
       // uncomment below and update the code to test the property spanSeconds
-      //var instane = new ChronoSheetsApi.CSJobTotalsReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSJobTotalsReportItem();
       //expect(instance).to.be();
     });
 

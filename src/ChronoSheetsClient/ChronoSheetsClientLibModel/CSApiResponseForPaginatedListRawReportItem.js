@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSRawReportItem'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSRawReportItem);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListRawReportItem = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSRawReportItem);
   }
 }(this, function(ApiClient, CSRawReportItem) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseForPaginatedListRawReportItem model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

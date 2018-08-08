@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSRawReportItem();
+    instance = new JavascriptApiClientForChronoSheets.CSRawReportItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,103 +52,103 @@
   describe('CSRawReportItem', function() {
     it('should create an instance of CSRawReportItem', function() {
       // uncomment below and update the code to test CSRawReportItem
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSRawReportItem);
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSRawReportItem);
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property username (base name: "Username")', function() {
       // uncomment below and update the code to test the property username
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property emailAddress (base name: "EmailAddress")', function() {
       // uncomment below and update the code to test the property emailAddress
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property jobCode (base name: "JobCode")', function() {
       // uncomment below and update the code to test the property jobCode
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property taskName (base name: "TaskName")', function() {
       // uncomment below and update the code to test the property taskName
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property clientName (base name: "ClientName")', function() {
       // uncomment below and update the code to test the property clientName
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property projectName (base name: "ProjectName")', function() {
       // uncomment below and update the code to test the property projectName
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property startDate (base name: "StartDate")', function() {
       // uncomment below and update the code to test the property startDate
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property endDate (base name: "EndDate")', function() {
       // uncomment below and update the code to test the property endDate
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property spanSeconds (base name: "SpanSeconds")', function() {
       // uncomment below and update the code to test the property spanSeconds
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "Description")', function() {
       // uncomment below and update the code to test the property description
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property payAmount (base name: "PayAmount")', function() {
       // uncomment below and update the code to test the property payAmount
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property payOvertimeAmount (base name: "PayOvertimeAmount")', function() {
       // uncomment below and update the code to test the property payOvertimeAmount
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property tripCost (base name: "TripCost")', function() {
       // uncomment below and update the code to test the property tripCost
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property tripDistanceMeters (base name: "TripDistanceMeters")', function() {
       // uncomment below and update the code to test the property tripDistanceMeters
-      //var instane = new ChronoSheetsApi.CSRawReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSRawReportItem();
       //expect(instance).to.be();
     });
 

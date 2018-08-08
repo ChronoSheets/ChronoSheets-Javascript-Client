@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem
+# JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListRawReportItem
 
 ## Properties
 Name | Type | Description | Notes

@@ -22,17 +22,17 @@
     module.exports = factory(require('superagent'), require('querystring'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.ApiClient = factory(root.superagent, root.querystring);
+    root.JavascriptApiClientForChronoSheets.ApiClient = factory(root.superagent, root.querystring);
   }
 }(this, function(superagent, querystring) {
   'use strict';
 
   /**
    * @module ChronoSheetsClient/ApiClient
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

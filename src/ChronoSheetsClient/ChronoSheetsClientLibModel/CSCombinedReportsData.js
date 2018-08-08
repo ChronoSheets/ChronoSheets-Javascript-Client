@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSClientSeriesReportItem'), require('./CSClientTotalsReportItem'), require('./CSJobSeriesReportItem'), require('./CSJobTotalsReportItem'), require('./CSProjectSeriesReportItem'), require('./CSProjectTotalsReportItem'), require('./CSTaskSeriesReportItem'), require('./CSTaskTotalsReportItem'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSCombinedReportsData = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSClientSeriesReportItem, root.ChronoSheetsApi.CSClientTotalsReportItem, root.ChronoSheetsApi.CSJobSeriesReportItem, root.ChronoSheetsApi.CSJobTotalsReportItem, root.ChronoSheetsApi.CSProjectSeriesReportItem, root.ChronoSheetsApi.CSProjectTotalsReportItem, root.ChronoSheetsApi.CSTaskSeriesReportItem, root.ChronoSheetsApi.CSTaskTotalsReportItem);
+    root.JavascriptApiClientForChronoSheets.CSCombinedReportsData = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSClientSeriesReportItem, root.JavascriptApiClientForChronoSheets.CSClientTotalsReportItem, root.JavascriptApiClientForChronoSheets.CSJobSeriesReportItem, root.JavascriptApiClientForChronoSheets.CSJobTotalsReportItem, root.JavascriptApiClientForChronoSheets.CSProjectSeriesReportItem, root.JavascriptApiClientForChronoSheets.CSProjectTotalsReportItem, root.JavascriptApiClientForChronoSheets.CSTaskSeriesReportItem, root.JavascriptApiClientForChronoSheets.CSTaskTotalsReportItem);
   }
 }(this, function(ApiClient, CSClientSeriesReportItem, CSClientTotalsReportItem, CSJobSeriesReportItem, CSJobTotalsReportItem, CSProjectSeriesReportItem, CSProjectTotalsReportItem, CSTaskSeriesReportItem, CSTaskTotalsReportItem) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSCombinedReportsData model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSCombinedReportsData
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

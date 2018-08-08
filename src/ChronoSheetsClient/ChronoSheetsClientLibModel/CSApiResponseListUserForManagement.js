@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSUserForManagement'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseListUserForManagement = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSUserForManagement);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseListUserForManagement = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSUserForManagement);
   }
 }(this, function(ApiClient, CSUserForManagement) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseListUserForManagement model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserForManagement
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

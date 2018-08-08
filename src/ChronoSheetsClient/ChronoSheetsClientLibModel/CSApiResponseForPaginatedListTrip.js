@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSTrip'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseForPaginatedListTrip = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSTrip);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListTrip = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSTrip);
   }
 }(this, function(ApiClient, CSTrip) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseForPaginatedListTrip model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTrip
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

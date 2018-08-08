@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSUpdateJobCodeRequest();
+    instance = new JavascriptApiClientForChronoSheets.CSUpdateJobCodeRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,49 +52,49 @@
   describe('CSUpdateJobCodeRequest', function() {
     it('should create an instance of CSUpdateJobCodeRequest', function() {
       // uncomment below and update the code to test CSUpdateJobCodeRequest
-      //var instane = new ChronoSheetsApi.CSUpdateJobCodeRequest();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSUpdateJobCodeRequest);
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateJobCodeRequest();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSUpdateJobCodeRequest);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new ChronoSheetsApi.CSUpdateJobCodeRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateJobCodeRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property code (base name: "Code")', function() {
       // uncomment below and update the code to test the property code
-      //var instane = new ChronoSheetsApi.CSUpdateJobCodeRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateJobCodeRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property projectId (base name: "ProjectId")', function() {
       // uncomment below and update the code to test the property projectId
-      //var instane = new ChronoSheetsApi.CSUpdateJobCodeRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateJobCodeRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property clientId (base name: "ClientId")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instane = new ChronoSheetsApi.CSUpdateJobCodeRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateJobCodeRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property linkedTaskIds (base name: "LinkedTaskIds")', function() {
       // uncomment below and update the code to test the property linkedTaskIds
-      //var instane = new ChronoSheetsApi.CSUpdateJobCodeRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateJobCodeRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property linkedOrgGroupIds (base name: "LinkedOrgGroupIds")', function() {
       // uncomment below and update the code to test the property linkedOrgGroupIds
-      //var instane = new ChronoSheetsApi.CSUpdateJobCodeRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateJobCodeRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property isDeleted (base name: "IsDeleted")', function() {
       // uncomment below and update the code to test the property isDeleted
-      //var instane = new ChronoSheetsApi.CSUpdateJobCodeRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateJobCodeRequest();
       //expect(instance).to.be();
     });
 

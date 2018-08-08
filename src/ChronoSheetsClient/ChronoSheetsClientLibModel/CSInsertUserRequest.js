@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSInsertUserRequest = factory(root.ChronoSheetsApi.ApiClient);
+    root.JavascriptApiClientForChronoSheets.CSInsertUserRequest = factory(root.JavascriptApiClientForChronoSheets.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSInsertUserRequest model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertUserRequest
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

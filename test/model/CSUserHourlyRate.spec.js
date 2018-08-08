@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSUserHourlyRate();
+    instance = new JavascriptApiClientForChronoSheets.CSUserHourlyRate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,55 +52,55 @@
   describe('CSUserHourlyRate', function() {
     it('should create an instance of CSUserHourlyRate', function() {
       // uncomment below and update the code to test CSUserHourlyRate
-      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSUserHourlyRate);
+      //var instane = new JavascriptApiClientForChronoSheets.CSUserHourlyRate();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSUserHourlyRate);
     });
 
     it('should have the property rateId (base name: "RateId")', function() {
       // uncomment below and update the code to test the property rateId
-      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property isCurrent (base name: "IsCurrent")', function() {
       // uncomment below and update the code to test the property isCurrent
-      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property hourlyRate (base name: "HourlyRate")', function() {
       // uncomment below and update the code to test the property hourlyRate
-      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property hourlyOvertimeRate (base name: "HourlyOvertimeRate")', function() {
       // uncomment below and update the code to test the property hourlyOvertimeRate
-      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property startDateTime (base name: "StartDateTime")', function() {
       // uncomment below and update the code to test the property startDateTime
-      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property endDateTime (base name: "EndDateTime")', function() {
       // uncomment below and update the code to test the property endDateTime
-      //var instane = new ChronoSheetsApi.CSUserHourlyRate();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUserHourlyRate();
       //expect(instance).to.be();
     });
 

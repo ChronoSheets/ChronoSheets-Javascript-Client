@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSCombinedReportsData();
+    instance = new JavascriptApiClientForChronoSheets.CSCombinedReportsData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,55 +52,55 @@
   describe('CSCombinedReportsData', function() {
     it('should create an instance of CSCombinedReportsData', function() {
       // uncomment below and update the code to test CSCombinedReportsData
-      //var instane = new ChronoSheetsApi.CSCombinedReportsData();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSCombinedReportsData);
+      //var instane = new JavascriptApiClientForChronoSheets.CSCombinedReportsData();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSCombinedReportsData);
     });
 
     it('should have the property seriesJobCodes (base name: "SeriesJobCodes")', function() {
       // uncomment below and update the code to test the property seriesJobCodes
-      //var instane = new ChronoSheetsApi.CSCombinedReportsData();
+      //var instane = new JavascriptApiClientForChronoSheets.CSCombinedReportsData();
       //expect(instance).to.be();
     });
 
     it('should have the property seriesTasks (base name: "SeriesTasks")', function() {
       // uncomment below and update the code to test the property seriesTasks
-      //var instane = new ChronoSheetsApi.CSCombinedReportsData();
+      //var instane = new JavascriptApiClientForChronoSheets.CSCombinedReportsData();
       //expect(instance).to.be();
     });
 
     it('should have the property seriesClients (base name: "SeriesClients")', function() {
       // uncomment below and update the code to test the property seriesClients
-      //var instane = new ChronoSheetsApi.CSCombinedReportsData();
+      //var instane = new JavascriptApiClientForChronoSheets.CSCombinedReportsData();
       //expect(instance).to.be();
     });
 
     it('should have the property seriesProjects (base name: "SeriesProjects")', function() {
       // uncomment below and update the code to test the property seriesProjects
-      //var instane = new ChronoSheetsApi.CSCombinedReportsData();
+      //var instane = new JavascriptApiClientForChronoSheets.CSCombinedReportsData();
       //expect(instance).to.be();
     });
 
     it('should have the property totalsJobCodes (base name: "TotalsJobCodes")', function() {
       // uncomment below and update the code to test the property totalsJobCodes
-      //var instane = new ChronoSheetsApi.CSCombinedReportsData();
+      //var instane = new JavascriptApiClientForChronoSheets.CSCombinedReportsData();
       //expect(instance).to.be();
     });
 
     it('should have the property totalsTasks (base name: "TotalsTasks")', function() {
       // uncomment below and update the code to test the property totalsTasks
-      //var instane = new ChronoSheetsApi.CSCombinedReportsData();
+      //var instane = new JavascriptApiClientForChronoSheets.CSCombinedReportsData();
       //expect(instance).to.be();
     });
 
     it('should have the property totalsClients (base name: "TotalsClients")', function() {
       // uncomment below and update the code to test the property totalsClients
-      //var instane = new ChronoSheetsApi.CSCombinedReportsData();
+      //var instane = new JavascriptApiClientForChronoSheets.CSCombinedReportsData();
       //expect(instance).to.be();
     });
 
     it('should have the property totalsProjects (base name: "TotalsProjects")', function() {
       // uncomment below and update the code to test the property totalsProjects
-      //var instane = new ChronoSheetsApi.CSCombinedReportsData();
+      //var instane = new JavascriptApiClientForChronoSheets.CSCombinedReportsData();
       //expect(instance).to.be();
     });
 

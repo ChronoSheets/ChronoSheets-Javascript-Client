@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSTimesheetTask();
+    instance = new JavascriptApiClientForChronoSheets.CSTimesheetTask();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,37 +52,37 @@
   describe('CSTimesheetTask', function() {
     it('should create an instance of CSTimesheetTask', function() {
       // uncomment below and update the code to test CSTimesheetTask
-      //var instane = new ChronoSheetsApi.CSTimesheetTask();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSTimesheetTask);
+      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheetTask();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSTimesheetTask);
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new ChronoSheetsApi.CSTimesheetTask();
+      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheetTask();
       //expect(instance).to.be();
     });
 
     it('should have the property taskName (base name: "TaskName")', function() {
       // uncomment below and update the code to test the property taskName
-      //var instane = new ChronoSheetsApi.CSTimesheetTask();
+      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheetTask();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new ChronoSheetsApi.CSTimesheetTask();
+      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheetTask();
       //expect(instance).to.be();
     });
 
     it('should have the property isDeleted (base name: "IsDeleted")', function() {
       // uncomment below and update the code to test the property isDeleted
-      //var instane = new ChronoSheetsApi.CSTimesheetTask();
+      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheetTask();
       //expect(instance).to.be();
     });
 
     it('should have the property tripEnabled (base name: "TripEnabled")', function() {
       // uncomment below and update the code to test the property tripEnabled
-      //var instane = new ChronoSheetsApi.CSTimesheetTask();
+      //var instane = new JavascriptApiClientForChronoSheets.CSTimesheetTask();
       //expect(instance).to.be();
     });
 

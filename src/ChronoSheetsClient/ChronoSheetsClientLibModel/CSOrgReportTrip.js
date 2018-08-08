@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSTripCoordinate'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSOrgReportTrip = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSTripCoordinate);
+    root.JavascriptApiClientForChronoSheets.CSOrgReportTrip = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSTripCoordinate);
   }
 }(this, function(ApiClient, CSTripCoordinate) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSOrgReportTrip model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrgReportTrip
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

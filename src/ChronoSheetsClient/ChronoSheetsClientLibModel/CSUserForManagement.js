@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSOrganisation'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSUserForManagement = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSOrganisation);
+    root.JavascriptApiClientForChronoSheets.CSUserForManagement = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSOrganisation);
   }
 }(this, function(ApiClient, CSOrganisation) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSUserForManagement model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSUserForManagement
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

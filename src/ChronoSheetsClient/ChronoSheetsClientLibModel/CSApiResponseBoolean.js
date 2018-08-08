@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseBoolean = factory(root.ChronoSheetsApi.ApiClient);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseBoolean = factory(root.JavascriptApiClientForChronoSheets.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseBoolean model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

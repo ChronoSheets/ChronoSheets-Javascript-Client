@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSOrganisation
+# JavascriptApiClientForChronoSheets.CSOrganisation
 
 ## Properties
 Name | Type | Description | Notes

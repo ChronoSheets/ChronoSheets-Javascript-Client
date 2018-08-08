@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSInsertUserHourlyRateRequest();
+    instance = new JavascriptApiClientForChronoSheets.CSInsertUserHourlyRateRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,31 +52,31 @@
   describe('CSInsertUserHourlyRateRequest', function() {
     it('should create an instance of CSInsertUserHourlyRateRequest', function() {
       // uncomment below and update the code to test CSInsertUserHourlyRateRequest
-      //var instane = new ChronoSheetsApi.CSInsertUserHourlyRateRequest();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSInsertUserHourlyRateRequest);
+      //var instane = new JavascriptApiClientForChronoSheets.CSInsertUserHourlyRateRequest();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSInsertUserHourlyRateRequest);
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new ChronoSheetsApi.CSInsertUserHourlyRateRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSInsertUserHourlyRateRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property hourlyRate (base name: "HourlyRate")', function() {
       // uncomment below and update the code to test the property hourlyRate
-      //var instane = new ChronoSheetsApi.CSInsertUserHourlyRateRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSInsertUserHourlyRateRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property hourlyOvertimeRate (base name: "HourlyOvertimeRate")', function() {
       // uncomment below and update the code to test the property hourlyOvertimeRate
-      //var instane = new ChronoSheetsApi.CSInsertUserHourlyRateRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSInsertUserHourlyRateRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property currentDate (base name: "CurrentDate")', function() {
       // uncomment below and update the code to test the property currentDate
-      //var instane = new ChronoSheetsApi.CSInsertUserHourlyRateRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSInsertUserHourlyRateRequest();
       //expect(instance).to.be();
     });
 

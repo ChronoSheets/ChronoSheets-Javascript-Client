@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSUserJobFavourite = factory(root.ChronoSheetsApi.ApiClient);
+    root.JavascriptApiClientForChronoSheets.CSUserJobFavourite = factory(root.JavascriptApiClientForChronoSheets.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSUserJobFavourite model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSUserJobFavourite
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseListInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseListTimesheet'), require('../ChronoSheetsClientLibModel/CSBatchUpdateTimesheetRequest'), require('../ChronoSheetsClientLibModel/CSTimesheet'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.TimesheetsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseListInt32, root.ChronoSheetsApi.CSApiResponseListTimesheet, root.ChronoSheetsApi.CSBatchUpdateTimesheetRequest, root.ChronoSheetsApi.CSTimesheet);
+    root.JavascriptApiClientForChronoSheets.TimesheetsApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseBoolean, root.JavascriptApiClientForChronoSheets.CSApiResponseInt32, root.JavascriptApiClientForChronoSheets.CSApiResponseListInt32, root.JavascriptApiClientForChronoSheets.CSApiResponseListTimesheet, root.JavascriptApiClientForChronoSheets.CSBatchUpdateTimesheetRequest, root.JavascriptApiClientForChronoSheets.CSTimesheet);
   }
 }(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseInt32, CSApiResponseListInt32, CSApiResponseListTimesheet, CSBatchUpdateTimesheetRequest, CSTimesheet) {
   'use strict';
@@ -33,7 +33,7 @@
   /**
    * Timesheets service.
    * @module ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetsApi
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

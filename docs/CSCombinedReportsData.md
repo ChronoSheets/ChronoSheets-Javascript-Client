@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSCombinedReportsData
+# JavascriptApiClientForChronoSheets.CSCombinedReportsData
 
 ## Properties
 Name | Type | Description | Notes

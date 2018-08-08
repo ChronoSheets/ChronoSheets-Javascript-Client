@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSUsualHoursDay'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSSetUsualHoursRequest = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSUsualHoursDay);
+    root.JavascriptApiClientForChronoSheets.CSSetUsualHoursRequest = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSUsualHoursDay);
   }
 }(this, function(ApiClient, CSUsualHoursDay) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSSetUsualHoursRequest model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSSetUsualHoursRequest
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

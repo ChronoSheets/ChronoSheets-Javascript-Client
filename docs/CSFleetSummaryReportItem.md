@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSFleetSummaryReportItem
+# JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem
 
 ## Properties
 Name | Type | Description | Notes

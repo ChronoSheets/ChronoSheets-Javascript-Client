@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseListUserHourlyRate'), require('../ChronoSheetsClientLibModel/CSInsertUserHourlyRateRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.UserPayRatesApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseListUserHourlyRate, root.ChronoSheetsApi.CSInsertUserHourlyRateRequest);
+    root.JavascriptApiClientForChronoSheets.UserPayRatesApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseInt32, root.JavascriptApiClientForChronoSheets.CSApiResponseListUserHourlyRate, root.JavascriptApiClientForChronoSheets.CSInsertUserHourlyRateRequest);
   }
 }(this, function(ApiClient, CSApiResponseInt32, CSApiResponseListUserHourlyRate, CSInsertUserHourlyRateRequest) {
   'use strict';
@@ -33,7 +33,7 @@
   /**
    * UserPayRates service.
    * @module ChronoSheetsClient/ChronoSheetsClientLibApi/UserPayRatesApi
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

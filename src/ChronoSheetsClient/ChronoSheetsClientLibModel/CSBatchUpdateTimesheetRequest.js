@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSTimesheet'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSBatchUpdateTimesheetRequest = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSTimesheet);
+    root.JavascriptApiClientForChronoSheets.CSBatchUpdateTimesheetRequest = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSTimesheet);
   }
 }(this, function(ApiClient, CSTimesheet) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSBatchUpdateTimesheetRequest model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSBatchUpdateTimesheetRequest
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

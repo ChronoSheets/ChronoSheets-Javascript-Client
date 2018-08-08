@@ -1,4 +1,4 @@
-# ChronoSheetsApi.OrganisationApi
+# JavascriptApiClientForChronoSheets.OrganisationApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -16,9 +16,9 @@ Get your organisation.    Requires &#39;OrganisationAdmin&#39; permission.
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
 
-var apiInstance = new ChronoSheetsApi.OrganisationApi();
+var apiInstance = new JavascriptApiClientForChronoSheets.OrganisationApi();
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -60,11 +60,11 @@ Update an organisation.    Requires &#39;OrganisationAdmin&#39; permission.
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
 
-var apiInstance = new ChronoSheetsApi.OrganisationApi();
+var apiInstance = new JavascriptApiClientForChronoSheets.OrganisationApi();
 
-var request = new ChronoSheetsApi.CSUpdateOrganisationRequest(); // CSUpdateOrganisationRequest | An Update Organsation Request object containing updated fields.  Make sure to specify the Organsation Id in the request object so that ChronoSheets knows which Organsation to update
+var request = new JavascriptApiClientForChronoSheets.CSUpdateOrganisationRequest(); // CSUpdateOrganisationRequest | An Update Organsation Request object containing updated fields.  Make sure to specify the Organsation Id in the request object so that ChronoSheets knows which Organsation to update
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

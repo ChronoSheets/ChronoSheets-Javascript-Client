@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSApiResponseProject();
+    instance = new JavascriptApiClientForChronoSheets.CSApiResponseProject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('CSApiResponseProject', function() {
     it('should create an instance of CSApiResponseProject', function() {
       // uncomment below and update the code to test CSApiResponseProject
-      //var instane = new ChronoSheetsApi.CSApiResponseProject();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseProject);
+      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseProject();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSApiResponseProject);
     });
 
     it('should have the property data (base name: "Data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new ChronoSheetsApi.CSApiResponseProject();
+      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseProject();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "Status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new ChronoSheetsApi.CSApiResponseProject();
+      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseProject();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "Message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new ChronoSheetsApi.CSApiResponseProject();
+      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseProject();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSUserProfile
+# JavascriptApiClientForChronoSheets.CSUserProfile
 
 ## Properties
 Name | Type | Description | Notes

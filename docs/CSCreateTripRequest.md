@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSCreateTripRequest
+# JavascriptApiClientForChronoSheets.CSCreateTripRequest
 
 ## Properties
 Name | Type | Description | Notes

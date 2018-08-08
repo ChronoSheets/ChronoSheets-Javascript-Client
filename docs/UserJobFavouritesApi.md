@@ -1,4 +1,4 @@
-# ChronoSheetsApi.UserJobFavouritesApi
+# JavascriptApiClientForChronoSheets.UserJobFavouritesApi
 
 All URIs are relative to *https://www.chronosheets.com*
 
@@ -17,11 +17,11 @@ Create a job favourite.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
 
-var apiInstance = new ChronoSheetsApi.UserJobFavouritesApi();
+var apiInstance = new JavascriptApiClientForChronoSheets.UserJobFavouritesApi();
 
-var request = new ChronoSheetsApi.CSInsertUserJobFavouriteRequest(); // CSInsertUserJobFavouriteRequest | An Insert UserJobFavourite Request object containing values for the new UserJobFavourite to create
+var request = new JavascriptApiClientForChronoSheets.CSInsertUserJobFavouriteRequest(); // CSInsertUserJobFavouriteRequest | An Insert UserJobFavourite Request object containing values for the new UserJobFavourite to create
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -64,9 +64,9 @@ Delete a job favourite.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
 
-var apiInstance = new ChronoSheetsApi.UserJobFavouritesApi();
+var apiInstance = new JavascriptApiClientForChronoSheets.UserJobFavouritesApi();
 
 var jobId = 56; // Number | The ID of the Job for the Job Favourite you want to delete.
 
@@ -111,9 +111,9 @@ Get your job favourites.    Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
 ```javascript
-var ChronoSheetsApi = require('chrono_sheets_api');
+var JavascriptApiClientForChronoSheets = require('Javascript API Client for ChronoSheets');
 
-var apiInstance = new ChronoSheetsApi.UserJobFavouritesApi();
+var apiInstance = new JavascriptApiClientForChronoSheets.UserJobFavouritesApi();
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 

@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseTrip
+# JavascriptApiClientForChronoSheets.CSApiResponseTrip
 
 ## Properties
 Name | Type | Description | Notes

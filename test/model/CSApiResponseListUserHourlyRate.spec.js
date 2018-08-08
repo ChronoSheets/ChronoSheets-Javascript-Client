@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSApiResponseListUserHourlyRate();
+    instance = new JavascriptApiClientForChronoSheets.CSApiResponseListUserHourlyRate();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('CSApiResponseListUserHourlyRate', function() {
     it('should create an instance of CSApiResponseListUserHourlyRate', function() {
       // uncomment below and update the code to test CSApiResponseListUserHourlyRate
-      //var instane = new ChronoSheetsApi.CSApiResponseListUserHourlyRate();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseListUserHourlyRate);
+      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseListUserHourlyRate();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSApiResponseListUserHourlyRate);
     });
 
     it('should have the property data (base name: "Data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new ChronoSheetsApi.CSApiResponseListUserHourlyRate();
+      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseListUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "Status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new ChronoSheetsApi.CSApiResponseListUserHourlyRate();
+      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseListUserHourlyRate();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "Message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new ChronoSheetsApi.CSApiResponseListUserHourlyRate();
+      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseListUserHourlyRate();
       //expect(instance).to.be();
     });
 

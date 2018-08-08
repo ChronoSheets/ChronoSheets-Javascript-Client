@@ -25,14 +25,14 @@
   'use strict';
 
   /**
-   * div_stylefont_size_14pximportantfont_family_Open_Sanssans_serifimportantcolor_3b4151importantp____ChronoSheets_is_a_flexible_timesheet_solution_for_small_to_medium_businesses_it_is_free_for_small_teams_of_up_to_5_and_there_are_iOS_and_Android_apps_available___Use_the_ChronoSheets_API_to_create_your_own_custom_integrations___Before_starting_sign_up_for_a_ChronoSheets_account_at_a_target_BLANK_hrefhttptsheets_xyzsignuphttptsheets_xyzsignupa_pdivdiv_idcs_extra_infodiv.<br>
+   * Javascript API Client for ChronoSheets.<br>
    * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
    * <pre>
-   * var ChronoSheetsApi = require('ChronoSheetsClient/index'); // See note below*.
-   * var xxxSvc = new ChronoSheetsApi.XxxApi(); // Allocate the API class we're going to use.
-   * var yyyModel = new ChronoSheetsApi.Yyy(); // Construct a model instance.
+   * var JavascriptApiClientForChronoSheets = require('ChronoSheetsClient/index'); // See note below*.
+   * var xxxSvc = new JavascriptApiClientForChronoSheets.XxxApi(); // Allocate the API class we're going to use.
+   * var yyyModel = new JavascriptApiClientForChronoSheets.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -44,8 +44,8 @@
    * <p>
    * A non-AMD browser application (discouraged) might do something like this:
    * <pre>
-   * var xxxSvc = new ChronoSheetsApi.XxxApi(); // Allocate the API class we're going to use.
-   * var yyy = new ChronoSheetsApi.Yyy(); // Construct a model instance.
+   * var xxxSvc = new JavascriptApiClientForChronoSheets.XxxApi(); // Allocate the API class we're going to use.
+   * var yyy = new JavascriptApiClientForChronoSheets.Yyy(); // Construct a model instance.
    * yyyModel.someProperty = 'someValue';
    * ...
    * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -53,7 +53,7 @@
    * </pre>
    * </p>
    * @module ChronoSheetsClient/index
-   * @version v1
+   * @version 1.0.0
    */
   var exports = {
     /**

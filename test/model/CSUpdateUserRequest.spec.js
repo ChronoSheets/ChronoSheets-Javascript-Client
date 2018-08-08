@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSUpdateUserRequest();
+    instance = new JavascriptApiClientForChronoSheets.CSUpdateUserRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,55 +52,55 @@
   describe('CSUpdateUserRequest', function() {
     it('should create an instance of CSUpdateUserRequest', function() {
       // uncomment below and update the code to test CSUpdateUserRequest
-      //var instane = new ChronoSheetsApi.CSUpdateUserRequest();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSUpdateUserRequest);
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserRequest();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSUpdateUserRequest);
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new ChronoSheetsApi.CSUpdateUserRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property emailAddress (base name: "EmailAddress")', function() {
       // uncomment below and update the code to test the property emailAddress
-      //var instane = new ChronoSheetsApi.CSUpdateUserRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "FirstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instane = new ChronoSheetsApi.CSUpdateUserRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "LastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instane = new ChronoSheetsApi.CSUpdateUserRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property isSubscribedToNewsletter (base name: "IsSubscribedToNewsletter")', function() {
       // uncomment below and update the code to test the property isSubscribedToNewsletter
-      //var instane = new ChronoSheetsApi.CSUpdateUserRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property isAccountActive (base name: "IsAccountActive")', function() {
       // uncomment below and update the code to test the property isAccountActive
-      //var instane = new ChronoSheetsApi.CSUpdateUserRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property roles (base name: "Roles")', function() {
       // uncomment below and update the code to test the property roles
-      //var instane = new ChronoSheetsApi.CSUpdateUserRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property alertSettings (base name: "AlertSettings")', function() {
       // uncomment below and update the code to test the property alertSettings
-      //var instane = new ChronoSheetsApi.CSUpdateUserRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserRequest();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSSaveClientRequest
+# JavascriptApiClientForChronoSheets.CSSaveClientRequest
 
 ## Properties
 Name | Type | Description | Notes

@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseOrganisation'), require('../ChronoSheetsClientLibModel/CSApiResponseUpdateOrganisationResponse'), require('../ChronoSheetsClientLibModel/CSUpdateOrganisationRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.OrganisationApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseOrganisation, root.ChronoSheetsApi.CSApiResponseUpdateOrganisationResponse, root.ChronoSheetsApi.CSUpdateOrganisationRequest);
+    root.JavascriptApiClientForChronoSheets.OrganisationApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseOrganisation, root.JavascriptApiClientForChronoSheets.CSApiResponseUpdateOrganisationResponse, root.JavascriptApiClientForChronoSheets.CSUpdateOrganisationRequest);
   }
 }(this, function(ApiClient, CSApiResponseOrganisation, CSApiResponseUpdateOrganisationResponse, CSUpdateOrganisationRequest) {
   'use strict';
@@ -33,7 +33,7 @@
   /**
    * Organisation service.
    * @module ChronoSheetsClient/ChronoSheetsClientLibApi/OrganisationApi
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseInsertUserResponse'), require('../ChronoSheetsClientLibModel/CSApiResponseListUserForManagement'), require('../ChronoSheetsClientLibModel/CSApiResponseUpdateUserResponse'), require('../ChronoSheetsClientLibModel/CSApiResponseUserForManagement'), require('../ChronoSheetsClientLibModel/CSInsertUserRequest'), require('../ChronoSheetsClientLibModel/CSUpdateUserRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.UsersApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseInsertUserResponse, root.ChronoSheetsApi.CSApiResponseListUserForManagement, root.ChronoSheetsApi.CSApiResponseUpdateUserResponse, root.ChronoSheetsApi.CSApiResponseUserForManagement, root.ChronoSheetsApi.CSInsertUserRequest, root.ChronoSheetsApi.CSUpdateUserRequest);
+    root.JavascriptApiClientForChronoSheets.UsersApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseInsertUserResponse, root.JavascriptApiClientForChronoSheets.CSApiResponseListUserForManagement, root.JavascriptApiClientForChronoSheets.CSApiResponseUpdateUserResponse, root.JavascriptApiClientForChronoSheets.CSApiResponseUserForManagement, root.JavascriptApiClientForChronoSheets.CSInsertUserRequest, root.JavascriptApiClientForChronoSheets.CSUpdateUserRequest);
   }
 }(this, function(ApiClient, CSApiResponseInsertUserResponse, CSApiResponseListUserForManagement, CSApiResponseUpdateUserResponse, CSApiResponseUserForManagement, CSInsertUserRequest, CSUpdateUserRequest) {
   'use strict';
@@ -33,7 +33,7 @@
   /**
    * Users service.
    * @module ChronoSheetsClient/ChronoSheetsClientLibApi/UsersApi
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSJobSeriesReportItem'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseListJobSeriesReportItem = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSJobSeriesReportItem);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseListJobSeriesReportItem = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSJobSeriesReportItem);
   }
 }(this, function(ApiClient, CSJobSeriesReportItem) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseListJobSeriesReportItem model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

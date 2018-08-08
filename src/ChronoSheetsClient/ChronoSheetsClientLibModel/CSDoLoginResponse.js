@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSClientSideUser'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSDoLoginResponse = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSClientSideUser);
+    root.JavascriptApiClientForChronoSheets.CSDoLoginResponse = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSClientSideUser);
   }
 }(this, function(ApiClient, CSClientSideUser) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSDoLoginResponse model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSDoLoginResponse
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

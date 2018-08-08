@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSFleetSummaryReportItem();
+    instance = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,91 +52,91 @@
   describe('CSFleetSummaryReportItem', function() {
     it('should create an instance of CSFleetSummaryReportItem', function() {
       // uncomment below and update the code to test CSFleetSummaryReportItem
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSFleetSummaryReportItem);
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem);
     });
 
     it('should have the property totalDistanceMetersFiltered (base name: "TotalDistanceMetersFiltered")', function() {
       // uncomment below and update the code to test the property totalDistanceMetersFiltered
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property totalDistanceMeters (base name: "TotalDistanceMeters")', function() {
       // uncomment below and update the code to test the property totalDistanceMeters
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property totalRunningCostDollarsFiltered (base name: "TotalRunningCostDollarsFiltered")', function() {
       // uncomment below and update the code to test the property totalRunningCostDollarsFiltered
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property totalRunningCostDollars (base name: "TotalRunningCostDollars")', function() {
       // uncomment below and update the code to test the property totalRunningCostDollars
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property id (base name: "Id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "Name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property costPerKilometer (base name: "CostPerKilometer")', function() {
       // uncomment below and update the code to test the property costPerKilometer
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property make (base name: "Make")', function() {
       // uncomment below and update the code to test the property make
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property model (base name: "Model")', function() {
       // uncomment below and update the code to test the property model
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property year (base name: "Year")', function() {
       // uncomment below and update the code to test the property year
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property licencePlateNumber (base name: "LicencePlateNumber")', function() {
       // uncomment below and update the code to test the property licencePlateNumber
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property isDeleted (base name: "IsDeleted")', function() {
       // uncomment below and update the code to test the property isDeleted
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 
     it('should have the property permittedEmployees (base name: "PermittedEmployees")', function() {
       // uncomment below and update the code to test the property permittedEmployees
-      //var instane = new ChronoSheetsApi.CSFleetSummaryReportItem();
+      //var instane = new JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem();
       //expect(instance).to.be();
     });
 

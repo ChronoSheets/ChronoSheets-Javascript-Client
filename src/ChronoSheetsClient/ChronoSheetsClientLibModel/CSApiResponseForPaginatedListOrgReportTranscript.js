@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSOrgReportTranscript'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTranscript = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSOrgReportTranscript);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListOrgReportTranscript = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSOrgReportTranscript);
   }
 }(this, function(ApiClient, CSOrgReportTranscript) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseForPaginatedListOrgReportTranscript model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTranscript
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

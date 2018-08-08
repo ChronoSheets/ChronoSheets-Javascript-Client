@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSAggregateJobTask
+# JavascriptApiClientForChronoSheets.CSAggregateJobTask
 
 ## Properties
 Name | Type | Description | Notes

@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSFleetVehicle'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseListFleetVehicle = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSFleetVehicle);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseListFleetVehicle = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSFleetVehicle);
   }
 }(this, function(ApiClient, CSFleetVehicle) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseListFleetVehicle model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetVehicle
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

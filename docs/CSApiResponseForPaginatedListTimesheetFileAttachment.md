@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseForPaginatedListTimesheetFileAttachment
+# JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListTimesheetFileAttachment
 
 ## Properties
 Name | Type | Description | Notes

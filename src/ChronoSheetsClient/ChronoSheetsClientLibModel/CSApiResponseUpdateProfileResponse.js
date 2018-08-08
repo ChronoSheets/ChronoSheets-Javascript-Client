@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSUpdateProfileResponse'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseUpdateProfileResponse = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSUpdateProfileResponse);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseUpdateProfileResponse = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSUpdateProfileResponse);
   }
 }(this, function(ApiClient, CSUpdateProfileResponse) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseUpdateProfileResponse model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseUpdateProfileResponse
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

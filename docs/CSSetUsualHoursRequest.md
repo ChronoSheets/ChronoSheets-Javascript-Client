@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSSetUsualHoursRequest
+# JavascriptApiClientForChronoSheets.CSSetUsualHoursRequest
 
 ## Properties
 Name | Type | Description | Notes

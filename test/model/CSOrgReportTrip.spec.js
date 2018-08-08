@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSOrgReportTrip();
+    instance = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,145 +52,145 @@
   describe('CSOrgReportTrip', function() {
     it('should create an instance of CSOrgReportTrip', function() {
       // uncomment below and update the code to test CSOrgReportTrip
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSOrgReportTrip);
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSOrgReportTrip);
     });
 
     it('should have the property username (base name: "Username")', function() {
       // uncomment below and update the code to test the property username
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property emailAddress (base name: "EmailAddress")', function() {
       // uncomment below and update the code to test the property emailAddress
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property firstName (base name: "FirstName")', function() {
       // uncomment below and update the code to test the property firstName
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property lastName (base name: "LastName")', function() {
       // uncomment below and update the code to test the property lastName
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property tripId (base name: "TripId")', function() {
       // uncomment below and update the code to test the property tripId
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property timesheetId (base name: "TimesheetId")', function() {
       // uncomment below and update the code to test the property timesheetId
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property vehicleId (base name: "VehicleId")', function() {
       // uncomment below and update the code to test the property vehicleId
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property orgId (base name: "OrgId")', function() {
       // uncomment below and update the code to test the property orgId
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property mobilePlatform (base name: "MobilePlatform")', function() {
       // uncomment below and update the code to test the property mobilePlatform
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property startDate (base name: "StartDate")', function() {
       // uncomment below and update the code to test the property startDate
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property endDate (base name: "EndDate")', function() {
       // uncomment below and update the code to test the property endDate
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property vehicleName (base name: "VehicleName")', function() {
       // uncomment below and update the code to test the property vehicleName
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property vehicleMake (base name: "VehicleMake")', function() {
       // uncomment below and update the code to test the property vehicleMake
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property vehicleModel (base name: "VehicleModel")', function() {
       // uncomment below and update the code to test the property vehicleModel
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property vehicleYear (base name: "VehicleYear")', function() {
       // uncomment below and update the code to test the property vehicleYear
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property costPerKilometer (base name: "CostPerKilometer")', function() {
       // uncomment below and update the code to test the property costPerKilometer
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property tripTotalCost (base name: "TripTotalCost")', function() {
       // uncomment below and update the code to test the property tripTotalCost
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property totalTripDistanceMeters (base name: "TotalTripDistanceMeters")', function() {
       // uncomment below and update the code to test the property totalTripDistanceMeters
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property startAddress (base name: "StartAddress")', function() {
       // uncomment below and update the code to test the property startAddress
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property endAddress (base name: "EndAddress")', function() {
       // uncomment below and update the code to test the property endAddress
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property pathCoordinates (base name: "PathCoordinates")', function() {
       // uncomment below and update the code to test the property pathCoordinates
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 
     it('should have the property cacheExpiryDate (base name: "CacheExpiryDate")', function() {
       // uncomment below and update the code to test the property cacheExpiryDate
-      //var instane = new ChronoSheetsApi.CSOrgReportTrip();
+      //var instane = new JavascriptApiClientForChronoSheets.CSOrgReportTrip();
       //expect(instance).to.be();
     });
 

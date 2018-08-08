@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSInsertUserJobFavouriteRequest
+# JavascriptApiClientForChronoSheets.CSInsertUserJobFavouriteRequest
 
 ## Properties
 Name | Type | Description | Notes

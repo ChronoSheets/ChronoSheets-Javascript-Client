@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSOrgReportTimesheetFileAttachment'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSOrgReportTimesheetFileAttachment);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSOrgReportTimesheetFileAttachment);
   }
 }(this, function(ApiClient, CSOrgReportTimesheetFileAttachment) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

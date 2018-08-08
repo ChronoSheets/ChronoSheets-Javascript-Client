@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSTrip'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseTrip = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSTrip);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseTrip = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSTrip);
   }
 }(this, function(ApiClient, CSTrip) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseTrip model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

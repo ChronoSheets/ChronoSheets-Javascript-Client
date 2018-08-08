@@ -1,7 +1,7 @@
 {
-  "name": "chrono_sheets_api",
-  "version": "v1",
-  "description": "div_stylefont_size_14pximportantfont_family_Open_Sanssans_serifimportantcolor_3b4151importantp____ChronoSheets_is_a_flexible_timesheet_solution_for_small_to_medium_businesses_it_is_free_for_small_teams_of_up_to_5_and_there_are_iOS_and_Android_apps_available___Use_the_ChronoSheets_API_to_create_your_own_custom_integrations___Before_starting_sign_up_for_a_ChronoSheets_account_at_a_target_BLANK_hrefhttptsheets_xyzsignuphttptsheets_xyzsignupa_pdivdiv_idcs_extra_infodiv",
+  "name": "Javascript API Client for ChronoSheets",
+  "version": "1.0.0",
+  "description": "Javascript API Client for ChronoSheets",
   "license": "Unlicense",
   "main": "src/ChronoSheetsClient/index.js",
   "scripts": {

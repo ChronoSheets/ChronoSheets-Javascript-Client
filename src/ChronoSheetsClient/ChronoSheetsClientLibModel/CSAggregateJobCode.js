@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSAggregateJobTask'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSAggregateJobCode = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSAggregateJobTask);
+    root.JavascriptApiClientForChronoSheets.CSAggregateJobCode = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSAggregateJobTask);
   }
 }(this, function(ApiClient, CSAggregateJobTask) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSAggregateJobCode model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSAggregateJobCode
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

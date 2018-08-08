@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSOrgReportTrip
+# JavascriptApiClientForChronoSheets.CSOrgReportTrip
 
 ## Properties
 Name | Type | Description | Notes

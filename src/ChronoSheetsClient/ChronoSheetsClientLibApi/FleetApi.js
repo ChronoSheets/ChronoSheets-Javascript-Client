@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseFleetVehicle'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseListFleetVehicle'), require('../ChronoSheetsClientLibModel/CSInsertVehicleRequest'), require('../ChronoSheetsClientLibModel/CSSaveVehicleRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.FleetApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseFleetVehicle, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseListFleetVehicle, root.ChronoSheetsApi.CSInsertVehicleRequest, root.ChronoSheetsApi.CSSaveVehicleRequest);
+    root.JavascriptApiClientForChronoSheets.FleetApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseBoolean, root.JavascriptApiClientForChronoSheets.CSApiResponseFleetVehicle, root.JavascriptApiClientForChronoSheets.CSApiResponseInt32, root.JavascriptApiClientForChronoSheets.CSApiResponseListFleetVehicle, root.JavascriptApiClientForChronoSheets.CSInsertVehicleRequest, root.JavascriptApiClientForChronoSheets.CSSaveVehicleRequest);
   }
 }(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseFleetVehicle, CSApiResponseInt32, CSApiResponseListFleetVehicle, CSInsertVehicleRequest, CSSaveVehicleRequest) {
   'use strict';
@@ -33,7 +33,7 @@
   /**
    * Fleet service.
    * @module ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

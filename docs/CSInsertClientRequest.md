@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSInsertClientRequest
+# JavascriptApiClientForChronoSheets.CSInsertClientRequest
 
 ## Properties
 Name | Type | Description | Notes

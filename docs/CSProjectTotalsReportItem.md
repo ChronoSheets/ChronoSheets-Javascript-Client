@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSProjectTotalsReportItem
+# JavascriptApiClientForChronoSheets.CSProjectTotalsReportItem
 
 ## Properties
 Name | Type | Description | Notes

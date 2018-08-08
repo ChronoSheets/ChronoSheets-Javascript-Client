@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSUpdateUserResponse();
+    instance = new JavascriptApiClientForChronoSheets.CSUpdateUserResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('CSUpdateUserResponse', function() {
     it('should create an instance of CSUpdateUserResponse', function() {
       // uncomment below and update the code to test CSUpdateUserResponse
-      //var instane = new ChronoSheetsApi.CSUpdateUserResponse();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSUpdateUserResponse);
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserResponse();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSUpdateUserResponse);
     });
 
     it('should have the property organisationId (base name: "OrganisationId")', function() {
       // uncomment below and update the code to test the property organisationId
-      //var instane = new ChronoSheetsApi.CSUpdateUserResponse();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property userId (base name: "UserId")', function() {
       // uncomment below and update the code to test the property userId
-      //var instane = new ChronoSheetsApi.CSUpdateUserResponse();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property validationErrors (base name: "ValidationErrors")', function() {
       // uncomment below and update the code to test the property validationErrors
-      //var instane = new ChronoSheetsApi.CSUpdateUserResponse();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateUserResponse();
       //expect(instance).to.be();
     });
 

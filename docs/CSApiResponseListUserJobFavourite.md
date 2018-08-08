@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseListUserJobFavourite
+# JavascriptApiClientForChronoSheets.CSApiResponseListUserJobFavourite
 
 ## Properties
 Name | Type | Description | Notes

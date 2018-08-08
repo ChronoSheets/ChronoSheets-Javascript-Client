@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSUserHourlyRate'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseListUserHourlyRate = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSUserHourlyRate);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseListUserHourlyRate = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSUserHourlyRate);
   }
 }(this, function(ApiClient, CSUserHourlyRate) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseListUserHourlyRate model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListUserHourlyRate
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSUpdateOrganisationResponse();
+    instance = new JavascriptApiClientForChronoSheets.CSUpdateOrganisationResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,13 +52,13 @@
   describe('CSUpdateOrganisationResponse', function() {
     it('should create an instance of CSUpdateOrganisationResponse', function() {
       // uncomment below and update the code to test CSUpdateOrganisationResponse
-      //var instane = new ChronoSheetsApi.CSUpdateOrganisationResponse();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSUpdateOrganisationResponse);
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateOrganisationResponse();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSUpdateOrganisationResponse);
     });
 
     it('should have the property validationErrors (base name: "ValidationErrors")', function() {
       // uncomment below and update the code to test the property validationErrors
-      //var instane = new ChronoSheetsApi.CSUpdateOrganisationResponse();
+      //var instane = new JavascriptApiClientForChronoSheets.CSUpdateOrganisationResponse();
       //expect(instance).to.be();
     });
 

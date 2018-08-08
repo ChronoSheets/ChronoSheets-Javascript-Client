@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTranscript'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseListFleetSummaryReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseListJobSeriesReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem'), require('../ChronoSheetsClientLibModel/CSApiResponseTrip'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.ReportsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseCombinedReportsData, root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment, root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTranscript, root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTrip, root.ChronoSheetsApi.CSApiResponseForPaginatedListRawReportItem, root.ChronoSheetsApi.CSApiResponseListFleetSummaryReportItem, root.ChronoSheetsApi.CSApiResponseListJobSeriesReportItem, root.ChronoSheetsApi.CSApiResponseListProjectCostingReportItem, root.ChronoSheetsApi.CSApiResponseTrip);
+    root.JavascriptApiClientForChronoSheets.ReportsApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseCombinedReportsData, root.JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment, root.JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListOrgReportTranscript, root.JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListOrgReportTrip, root.JavascriptApiClientForChronoSheets.CSApiResponseForPaginatedListRawReportItem, root.JavascriptApiClientForChronoSheets.CSApiResponseListFleetSummaryReportItem, root.JavascriptApiClientForChronoSheets.CSApiResponseListJobSeriesReportItem, root.JavascriptApiClientForChronoSheets.CSApiResponseListProjectCostingReportItem, root.JavascriptApiClientForChronoSheets.CSApiResponseTrip);
   }
 }(this, function(ApiClient, CSApiResponseCombinedReportsData, CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment, CSApiResponseForPaginatedListOrgReportTranscript, CSApiResponseForPaginatedListOrgReportTrip, CSApiResponseForPaginatedListRawReportItem, CSApiResponseListFleetSummaryReportItem, CSApiResponseListJobSeriesReportItem, CSApiResponseListProjectCostingReportItem, CSApiResponseTrip) {
   'use strict';
@@ -33,7 +33,7 @@
   /**
    * Reports service.
    * @module ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

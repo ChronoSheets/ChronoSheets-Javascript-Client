@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSInsertProjectRequest();
+    instance = new JavascriptApiClientForChronoSheets.CSInsertProjectRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,37 +52,37 @@
   describe('CSInsertProjectRequest', function() {
     it('should create an instance of CSInsertProjectRequest', function() {
       // uncomment below and update the code to test CSInsertProjectRequest
-      //var instane = new ChronoSheetsApi.CSInsertProjectRequest();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSInsertProjectRequest);
+      //var instane = new JavascriptApiClientForChronoSheets.CSInsertProjectRequest();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSInsertProjectRequest);
     });
 
     it('should have the property clientId (base name: "ClientId")', function() {
       // uncomment below and update the code to test the property clientId
-      //var instane = new ChronoSheetsApi.CSInsertProjectRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSInsertProjectRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property projectName (base name: "ProjectName")', function() {
       // uncomment below and update the code to test the property projectName
-      //var instane = new ChronoSheetsApi.CSInsertProjectRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSInsertProjectRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property costEstimation (base name: "CostEstimation")', function() {
       // uncomment below and update the code to test the property costEstimation
-      //var instane = new ChronoSheetsApi.CSInsertProjectRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSInsertProjectRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property startDate (base name: "StartDate")', function() {
       // uncomment below and update the code to test the property startDate
-      //var instane = new ChronoSheetsApi.CSInsertProjectRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSInsertProjectRequest();
       //expect(instance).to.be();
     });
 
     it('should have the property endDate (base name: "EndDate")', function() {
       // uncomment below and update the code to test the property endDate
-      //var instane = new ChronoSheetsApi.CSInsertProjectRequest();
+      //var instane = new JavascriptApiClientForChronoSheets.CSInsertProjectRequest();
       //expect(instance).to.be();
     });
 

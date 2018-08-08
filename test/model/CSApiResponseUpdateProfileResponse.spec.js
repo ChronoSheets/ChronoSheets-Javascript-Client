@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.ChronoSheetsApi);
+    factory(root.expect, root.JavascriptApiClientForChronoSheets);
   }
-}(this, function(expect, ChronoSheetsApi) {
+}(this, function(expect, JavascriptApiClientForChronoSheets) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.CSApiResponseUpdateProfileResponse();
+    instance = new JavascriptApiClientForChronoSheets.CSApiResponseUpdateProfileResponse();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,25 +52,25 @@
   describe('CSApiResponseUpdateProfileResponse', function() {
     it('should create an instance of CSApiResponseUpdateProfileResponse', function() {
       // uncomment below and update the code to test CSApiResponseUpdateProfileResponse
-      //var instane = new ChronoSheetsApi.CSApiResponseUpdateProfileResponse();
-      //expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseUpdateProfileResponse);
+      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseUpdateProfileResponse();
+      //expect(instance).to.be.a(JavascriptApiClientForChronoSheets.CSApiResponseUpdateProfileResponse);
     });
 
     it('should have the property data (base name: "Data")', function() {
       // uncomment below and update the code to test the property data
-      //var instane = new ChronoSheetsApi.CSApiResponseUpdateProfileResponse();
+      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseUpdateProfileResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "Status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new ChronoSheetsApi.CSApiResponseUpdateProfileResponse();
+      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseUpdateProfileResponse();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "Message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new ChronoSheetsApi.CSApiResponseUpdateProfileResponse();
+      //var instane = new JavascriptApiClientForChronoSheets.CSApiResponseUpdateProfileResponse();
       //expect(instance).to.be();
     });
 

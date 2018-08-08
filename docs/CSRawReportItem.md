@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSRawReportItem
+# JavascriptApiClientForChronoSheets.CSRawReportItem
 
 ## Properties
 Name | Type | Description | Notes

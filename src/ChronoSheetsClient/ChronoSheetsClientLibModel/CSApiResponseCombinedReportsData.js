@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSCombinedReportsData'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseCombinedReportsData = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSCombinedReportsData);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseCombinedReportsData = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSCombinedReportsData);
   }
 }(this, function(ApiClient, CSCombinedReportsData) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseCombinedReportsData model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

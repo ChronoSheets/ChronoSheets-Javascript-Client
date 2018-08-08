@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSFleetSummaryReportItem'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSApiResponseListFleetSummaryReportItem = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSFleetSummaryReportItem);
+    root.JavascriptApiClientForChronoSheets.CSApiResponseListFleetSummaryReportItem = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSFleetSummaryReportItem);
   }
 }(this, function(ApiClient, CSFleetSummaryReportItem) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSApiResponseListFleetSummaryReportItem model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetSummaryReportItem
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

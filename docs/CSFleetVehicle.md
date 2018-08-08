@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSFleetVehicle
+# JavascriptApiClientForChronoSheets.CSFleetVehicle
 
 ## Properties
 Name | Type | Description | Notes

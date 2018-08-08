@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSSetOrganisationGroupUsersRequest
+# JavascriptApiClientForChronoSheets.CSSetOrganisationGroupUsersRequest
 
 ## Properties
 Name | Type | Description | Notes

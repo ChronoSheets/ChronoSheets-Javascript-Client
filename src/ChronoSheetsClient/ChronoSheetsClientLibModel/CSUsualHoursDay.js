@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('./CSTimeSlot'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.CSUsualHoursDay = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSTimeSlot);
+    root.JavascriptApiClientForChronoSheets.CSUsualHoursDay = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSTimeSlot);
   }
 }(this, function(ApiClient, CSTimeSlot) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The CSUsualHoursDay model module.
    * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSUsualHoursDay
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

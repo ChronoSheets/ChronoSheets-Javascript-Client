@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseInt32'), require('../ChronoSheetsClientLibModel/CSApiResponseJobCode'), require('../ChronoSheetsClientLibModel/CSApiResponseListJobCode'), require('../ChronoSheetsClientLibModel/CSInsertJobCodeRequest'), require('../ChronoSheetsClientLibModel/CSUpdateJobCodeRequest'));
   } else {
     // Browser globals (root is window)
-    if (!root.ChronoSheetsApi) {
-      root.ChronoSheetsApi = {};
+    if (!root.JavascriptApiClientForChronoSheets) {
+      root.JavascriptApiClientForChronoSheets = {};
     }
-    root.ChronoSheetsApi.JobCodesApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseInt32, root.ChronoSheetsApi.CSApiResponseJobCode, root.ChronoSheetsApi.CSApiResponseListJobCode, root.ChronoSheetsApi.CSInsertJobCodeRequest, root.ChronoSheetsApi.CSUpdateJobCodeRequest);
+    root.JavascriptApiClientForChronoSheets.JobCodesApi = factory(root.JavascriptApiClientForChronoSheets.ApiClient, root.JavascriptApiClientForChronoSheets.CSApiResponseBoolean, root.JavascriptApiClientForChronoSheets.CSApiResponseInt32, root.JavascriptApiClientForChronoSheets.CSApiResponseJobCode, root.JavascriptApiClientForChronoSheets.CSApiResponseListJobCode, root.JavascriptApiClientForChronoSheets.CSInsertJobCodeRequest, root.JavascriptApiClientForChronoSheets.CSUpdateJobCodeRequest);
   }
 }(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseInt32, CSApiResponseJobCode, CSApiResponseListJobCode, CSInsertJobCodeRequest, CSUpdateJobCodeRequest) {
   'use strict';
@@ -33,7 +33,7 @@
   /**
    * JobCodes service.
    * @module ChronoSheetsClient/ChronoSheetsClientLibApi/JobCodesApi
-   * @version v1
+   * @version 1.0.0
    */
 
   /**

@@ -1,4 +1,4 @@
-# ChronoSheetsApi.CSApiResponseListJobSeriesReportItem
+# JavascriptApiClientForChronoSheets.CSApiResponseListJobSeriesReportItem
 
 ## Properties
 Name | Type | Description | Notes
