@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTimesheetFileAttachment'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTimesheetFileAttachment'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTimesheetFileAttachment'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseBoolean'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTimesheetFileAttachment'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.FileAttachmentsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseForPaginatedListTimesheetFileAttachment);
+    root.ChronoSheetsApi.FileAttachmentsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseBoolean, root.ChronoSheetsApi.CSApiResponseForPaginatedListTimesheetFileAttachment);
   }
-}(this, function(ApiClient, CSApiResponseForPaginatedListTimesheetFileAttachment) {
+}(this, function(ApiClient, CSApiResponseBoolean, CSApiResponseForPaginatedListTimesheetFileAttachment) {
   'use strict';
 
   /**
@@ -46,6 +46,60 @@
   var exports = function(apiClient) {
     this.apiClient = apiClient || ApiClient.instance;
 
+
+    /**
+     * Callback function to receive the result of the fileAttachmentsDeleteTimesheetFileAttachment operation.
+     * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/FileAttachmentsApi~fileAttachmentsDeleteTimesheetFileAttachmentCallback
+     * @param {String} error Error message, if any.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Delete a particular timesheet file attachment
+     * @param {Number} fileAttachmentId The Id of the file attachment to delete
+     * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/FileAttachmentsApi~fileAttachmentsDeleteTimesheetFileAttachmentCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseBoolean}
+     */
+    this.fileAttachmentsDeleteTimesheetFileAttachment = function(fileAttachmentId, xChronosheetsAuth, callback) {
+      var postBody = null;
+
+      // verify the required parameter 'fileAttachmentId' is set
+      if (fileAttachmentId === undefined || fileAttachmentId === null) {
+        throw new Error("Missing the required parameter 'fileAttachmentId' when calling fileAttachmentsDeleteTimesheetFileAttachment");
+      }
+
+      // verify the required parameter 'xChronosheetsAuth' is set
+      if (xChronosheetsAuth === undefined || xChronosheetsAuth === null) {
+        throw new Error("Missing the required parameter 'xChronosheetsAuth' when calling fileAttachmentsDeleteTimesheetFileAttachment");
+      }
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+        'FileAttachmentId': fileAttachmentId,
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+        'x-chronosheets-auth': xChronosheetsAuth
+      };
+      var formParams = {
+      };
+
+      var authNames = [];
+      var contentTypes = [];
+      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
+      var returnType = CSApiResponseBoolean;
+
+      return this.apiClient.callApi(
+        '/api/FileAttachments/DeleteTimesheetFileAttachment', 'DELETE',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
 
     /**
      * Callback function to receive the result of the fileAttachmentsGetMyFileAttachments operation.

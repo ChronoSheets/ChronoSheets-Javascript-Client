@@ -123,6 +123,7 @@ Class | Method | HTTP request | Description
 *ChronoSheetsApi.ClientsApi* | [**clientsGetClient**](docs/ClientsApi.md#clientsGetClient) | **GET** /api/Clients/GetClient | Get a particular client.    Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
 *ChronoSheetsApi.ClientsApi* | [**clientsGetClients**](docs/ClientsApi.md#clientsGetClients) | **GET** /api/Clients/GetClients | Get a collection of clients that are under your organisation.    Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
 *ChronoSheetsApi.ClientsApi* | [**clientsUpdateClient**](docs/ClientsApi.md#clientsUpdateClient) | **PUT** /api/Clients/UpdateClient | Update a client.    Requires the &#39;ManageClientsAndProjects&#39; permission.
+*ChronoSheetsApi.FileAttachmentsApi* | [**fileAttachmentsDeleteTimesheetFileAttachment**](docs/FileAttachmentsApi.md#fileAttachmentsDeleteTimesheetFileAttachment) | **DELETE** /api/FileAttachments/DeleteTimesheetFileAttachment | Delete a particular timesheet file attachment
 *ChronoSheetsApi.FileAttachmentsApi* | [**fileAttachmentsGetMyFileAttachments**](docs/FileAttachmentsApi.md#fileAttachmentsGetMyFileAttachments) | **GET** /api/FileAttachments/GetMyFileAttachments | Get my file attachments.  Get files you&#39;ve attached to timesheets.
 *ChronoSheetsApi.FleetApi* | [**fleetCreateVehicle**](docs/FleetApi.md#fleetCreateVehicle) | **POST** /api/Fleet/CreateVehicle | Create a vehicle.    Requires the &#39;ManageFleet&#39; permission.
 *ChronoSheetsApi.FleetApi* | [**fleetGetVehicleById**](docs/FleetApi.md#fleetGetVehicleById) | **GET** /api/Fleet/GetVehicleById | Get a particular vehicle.  Does not require any special permission.
@@ -265,6 +266,7 @@ Class | Method | HTTP request | Description
  - [ChronoSheetsApi.CSOrgReportTrip](docs/CSOrgReportTrip.md)
  - [ChronoSheetsApi.CSOrganisation](docs/CSOrganisation.md)
  - [ChronoSheetsApi.CSOrganisationGroup](docs/CSOrganisationGroup.md)
+ - [ChronoSheetsApi.CSOrganisationPricingPlan](docs/CSOrganisationPricingPlan.md)
  - [ChronoSheetsApi.CSProject](docs/CSProject.md)
  - [ChronoSheetsApi.CSProjectCostingReportItem](docs/CSProjectCostingReportItem.md)
  - [ChronoSheetsApi.CSProjectSeriesReportItem](docs/CSProjectSeriesReportItem.md)

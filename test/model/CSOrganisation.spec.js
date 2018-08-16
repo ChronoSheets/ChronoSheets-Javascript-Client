@@ -128,20 +128,26 @@
       //expect(instance).to.be();
     });
 
-    it('should have the property subscriptionPlanId (base name: "SubscriptionPlanId")', function() {
-      // uncomment below and update the code to test the property subscriptionPlanId
-      //var instane = new ChronoSheetsApi.CSOrganisation();
-      //expect(instance).to.be();
-    });
-
     it('should have the property signupToken (base name: "SignupToken")', function() {
       // uncomment below and update the code to test the property signupToken
       //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });
 
-    it('should have the property numberSeatsAvailable (base name: "NumberSeatsAvailable")', function() {
-      // uncomment below and update the code to test the property numberSeatsAvailable
+    it('should have the property subscriptionCycleStart (base name: "SubscriptionCycleStart")', function() {
+      // uncomment below and update the code to test the property subscriptionCycleStart
+      //var instane = new ChronoSheetsApi.CSOrganisation();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property subscriptionCycleEnd (base name: "SubscriptionCycleEnd")', function() {
+      // uncomment below and update the code to test the property subscriptionCycleEnd
+      //var instane = new ChronoSheetsApi.CSOrganisation();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property pricingPlans (base name: "PricingPlans")', function() {
+      // uncomment below and update the code to test the property pricingPlans
       //var instane = new ChronoSheetsApi.CSOrganisation();
       //expect(instance).to.be();
     });

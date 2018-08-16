@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.FileAttachmentsApi();
+    instance = new ChronoSheetsApi.CSOrganisationPricingPlan();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,27 +49,25 @@
       object[property] = value;
   }
 
-  describe('FileAttachmentsApi', function() {
-    describe('fileAttachmentsDeleteTimesheetFileAttachment', function() {
-      it('should call fileAttachmentsDeleteTimesheetFileAttachment successfully', function(done) {
-        //uncomment below and update the code to test fileAttachmentsDeleteTimesheetFileAttachment
-        //instance.fileAttachmentsDeleteTimesheetFileAttachment(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('CSOrganisationPricingPlan', function() {
+    it('should create an instance of CSOrganisationPricingPlan', function() {
+      // uncomment below and update the code to test CSOrganisationPricingPlan
+      //var instane = new ChronoSheetsApi.CSOrganisationPricingPlan();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSOrganisationPricingPlan);
     });
-    describe('fileAttachmentsGetMyFileAttachments', function() {
-      it('should call fileAttachmentsGetMyFileAttachments successfully', function(done) {
-        //uncomment below and update the code to test fileAttachmentsGetMyFileAttachments
-        //instance.fileAttachmentsGetMyFileAttachments(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property planId (base name: "PlanId")', function() {
+      // uncomment below and update the code to test the property planId
+      //var instane = new ChronoSheetsApi.CSOrganisationPricingPlan();
+      //expect(instance).to.be();
     });
+
+    it('should have the property quantity (base name: "Quantity")', function() {
+      // uncomment below and update the code to test the property quantity
+      //var instane = new ChronoSheetsApi.CSOrganisationPricingPlan();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

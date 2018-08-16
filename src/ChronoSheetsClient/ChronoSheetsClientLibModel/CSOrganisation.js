@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrganisationPricingPlan'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./CSOrganisationPricingPlan'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.CSOrganisation = factory(root.ChronoSheetsApi.ApiClient);
+    root.ChronoSheetsApi.CSOrganisation = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSOrganisationPricingPlan);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, CSOrganisationPricingPlan) {
   'use strict';
 
 
@@ -46,6 +46,7 @@
    */
   var exports = function() {
     var _this = this;
+
 
 
 
@@ -111,14 +112,17 @@
       if (data.hasOwnProperty('SubscriptionCustomerId')) {
         obj['SubscriptionCustomerId'] = ApiClient.convertToType(data['SubscriptionCustomerId'], 'String');
       }
-      if (data.hasOwnProperty('SubscriptionPlanId')) {
-        obj['SubscriptionPlanId'] = ApiClient.convertToType(data['SubscriptionPlanId'], 'String');
-      }
       if (data.hasOwnProperty('SignupToken')) {
         obj['SignupToken'] = ApiClient.convertToType(data['SignupToken'], 'String');
       }
-      if (data.hasOwnProperty('NumberSeatsAvailable')) {
-        obj['NumberSeatsAvailable'] = ApiClient.convertToType(data['NumberSeatsAvailable'], 'Number');
+      if (data.hasOwnProperty('SubscriptionCycleStart')) {
+        obj['SubscriptionCycleStart'] = ApiClient.convertToType(data['SubscriptionCycleStart'], 'Date');
+      }
+      if (data.hasOwnProperty('SubscriptionCycleEnd')) {
+        obj['SubscriptionCycleEnd'] = ApiClient.convertToType(data['SubscriptionCycleEnd'], 'Date');
+      }
+      if (data.hasOwnProperty('PricingPlans')) {
+        obj['PricingPlans'] = ApiClient.convertToType(data['PricingPlans'], [CSOrganisationPricingPlan]);
       }
     }
     return obj;
@@ -173,17 +177,21 @@
    */
   exports.prototype['SubscriptionCustomerId'] = undefined;
   /**
-   * @member {String} SubscriptionPlanId
-   */
-  exports.prototype['SubscriptionPlanId'] = undefined;
-  /**
    * @member {String} SignupToken
    */
   exports.prototype['SignupToken'] = undefined;
   /**
-   * @member {Number} NumberSeatsAvailable
+   * @member {Date} SubscriptionCycleStart
    */
-  exports.prototype['NumberSeatsAvailable'] = undefined;
+  exports.prototype['SubscriptionCycleStart'] = undefined;
+  /**
+   * @member {Date} SubscriptionCycleEnd
+   */
+  exports.prototype['SubscriptionCycleEnd'] = undefined;
+  /**
+   * @member {Array.<module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrganisationPricingPlan>} PricingPlans
+   */
+  exports.prototype['PricingPlans'] = undefined;
 
 
 

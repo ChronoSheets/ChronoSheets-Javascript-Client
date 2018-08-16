@@ -70,6 +70,7 @@
 
 
 
+
   };
 
   /**
@@ -151,6 +152,9 @@
       }
       if (data.hasOwnProperty('StorageAllocationBytes')) {
         obj['StorageAllocationBytes'] = ApiClient.convertToType(data['StorageAllocationBytes'], 'Number');
+      }
+      if (data.hasOwnProperty('AudioDurationSeconds')) {
+        obj['AudioDurationSeconds'] = ApiClient.convertToType(data['AudioDurationSeconds'], 'Number');
       }
     }
     return obj;
@@ -248,6 +252,10 @@
    * @member {Number} StorageAllocationBytes
    */
   exports.prototype['StorageAllocationBytes'] = undefined;
+  /**
+   * @member {Number} AudioDurationSeconds
+   */
+  exports.prototype['AudioDurationSeconds'] = undefined;
 
 
   /**

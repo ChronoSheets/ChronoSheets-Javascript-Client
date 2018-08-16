@@ -272,6 +272,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property audioDurationSeconds (base name: "AudioDurationSeconds")', function() {
+      // uncomment below and update the code to test the property audioDurationSeconds
+      //var instane = new ChronoSheetsApi.CSOrgReportTranscript();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));
