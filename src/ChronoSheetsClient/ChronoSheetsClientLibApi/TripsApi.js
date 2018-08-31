@@ -166,14 +166,16 @@
      * Get my trips.  Get the GPS trips you&#39;ve recorded and submitted.    Requires the &#39;ViewMyTrips&#39; permission.
      * @param {Date} startDate The Start date of the date range.  Trips after this date will be obtained.
      * @param {Date} endDate The End date of the date range.  Trips before this date will be obtained.
-     * @param {Number} skip Skip this many Trips
-     * @param {Number} take Take this many Trips
-     * @param {Number} vehicleId Filter by a particular Vehicle (get trips made with a particular vehicle), specified by VehicleId
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.skip Skip this many Trips
+     * @param {Number} opts.take Take this many Trips
+     * @param {Number} opts.vehicleId Filter by a particular Vehicle (get trips made with a particular vehicle), specified by VehicleId
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TripsApi~tripsGetMyTripsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTrip}
      */
-    this.tripsGetMyTrips = function(startDate, endDate, skip, take, vehicleId, xChronosheetsAuth, callback) {
+    this.tripsGetMyTrips = function(startDate, endDate, xChronosheetsAuth, opts, callback) {
+      opts = opts || {};
       var postBody = null;
 
       // verify the required parameter 'startDate' is set
@@ -184,21 +186,6 @@
       // verify the required parameter 'endDate' is set
       if (endDate === undefined || endDate === null) {
         throw new Error("Missing the required parameter 'endDate' when calling tripsGetMyTrips");
-      }
-
-      // verify the required parameter 'skip' is set
-      if (skip === undefined || skip === null) {
-        throw new Error("Missing the required parameter 'skip' when calling tripsGetMyTrips");
-      }
-
-      // verify the required parameter 'take' is set
-      if (take === undefined || take === null) {
-        throw new Error("Missing the required parameter 'take' when calling tripsGetMyTrips");
-      }
-
-      // verify the required parameter 'vehicleId' is set
-      if (vehicleId === undefined || vehicleId === null) {
-        throw new Error("Missing the required parameter 'vehicleId' when calling tripsGetMyTrips");
       }
 
       // verify the required parameter 'xChronosheetsAuth' is set
@@ -212,9 +199,9 @@
       var queryParams = {
         'StartDate': startDate,
         'EndDate': endDate,
-        'Skip': skip,
-        'Take': take,
-        'VehicleId': vehicleId,
+        'Skip': opts['skip'],
+        'Take': opts['take'],
+        'VehicleId': opts['vehicleId'],
       };
       var collectionQueryParams = {
       };

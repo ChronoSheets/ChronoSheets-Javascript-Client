@@ -18,7 +18,7 @@ Method | HTTP request | Description
 
 <a name="reportsGetAllChartsDataAdmin"></a>
 # **reportsGetAllChartsDataAdmin**
-> CSApiResponseCombinedReportsData reportsGetAllChartsDataAdmin(startDate, endDate, userIds, xChronosheetsAuth)
+> CSApiResponseCombinedReportsData reportsGetAllChartsDataAdmin(startDate, endDate, xChronosheetsAuth, opts)
 
 Get Consolidated Admin Reports Data (Jobs, Tasks, Clients and Projects).  These are the organisation wide reports, with data from potentially all employees.    Requires the &#39;ReportAdmin&#39; permission.
 
@@ -32,10 +32,11 @@ var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date 
 
 var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The end date for the date range.  Report data in the response is before this date
 
-var userIds = "userIds_example"; // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
-
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
+var opts = { 
+  'userIds': "userIds_example" // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -44,7 +45,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.reportsGetAllChartsDataAdmin(startDate, endDate, userIds, xChronosheetsAuth, callback);
+apiInstance.reportsGetAllChartsDataAdmin(startDate, endDate, xChronosheetsAuth, opts, callback);
 ```
 
 ### Parameters
@@ -53,8 +54,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **startDate** | **Date**| The start date for the date range.  Report data in the response is after this date | 
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
- **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | [optional] 
 
 ### Return type
 
@@ -121,7 +122,7 @@ No authorization required
 
 <a name="reportsGetFleetSummaryAdmin"></a>
 # **reportsGetFleetSummaryAdmin**
-> CSApiResponseListFleetSummaryReportItem reportsGetFleetSummaryAdmin(startDate, endDate, userIds, xChronosheetsAuth)
+> CSApiResponseListFleetSummaryReportItem reportsGetFleetSummaryAdmin(startDate, endDate, xChronosheetsAuth, opts)
 
 Gets a summary report, which includes total distance travelled and total running costs, for vehicles within your organisation  Requires the &#39;ReportAdmin&#39; permission.
 
@@ -135,10 +136,11 @@ var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date 
 
 var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The end date for the date range.  Report data in the response is before this date
 
-var userIds = "userIds_example"; // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
-
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
+var opts = { 
+  'userIds': "userIds_example" // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -147,7 +149,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.reportsGetFleetSummaryAdmin(startDate, endDate, userIds, xChronosheetsAuth, callback);
+apiInstance.reportsGetFleetSummaryAdmin(startDate, endDate, xChronosheetsAuth, opts, callback);
 ```
 
 ### Parameters
@@ -156,8 +158,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **startDate** | **Date**| The start date for the date range.  Report data in the response is after this date | 
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
- **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | [optional] 
 
 ### Return type
 
@@ -221,7 +223,7 @@ No authorization required
 
 <a name="reportsGetOrganisationTimesheetFileAttachments"></a>
 # **reportsGetOrganisationTimesheetFileAttachments**
-> CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment reportsGetOrganisationTimesheetFileAttachments(startDate, endDate, skip, take, userIds, xChronosheetsAuth)
+> CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment reportsGetOrganisationTimesheetFileAttachments(startDate, endDate, xChronosheetsAuth, opts)
 
 Reports on Organisation timesheet file attachments (files uploaded and attached to timesheet records)  Requires the &#39;ReportAdmin&#39; permission.
 
@@ -235,14 +237,13 @@ var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date 
 
 var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The end date for the date range.  Report data in the response is before this date
 
-var skip = 56; // Number | Skip this many items
-
-var take = 56; // Number | Take this many items
-
-var userIds = "userIds_example"; // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
-
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
+var opts = { 
+  'skip': 56, // Number | Skip this many items
+  'take': 56, // Number | Take this many items
+  'userIds': "userIds_example" // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -251,7 +252,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.reportsGetOrganisationTimesheetFileAttachments(startDate, endDate, skip, take, userIds, xChronosheetsAuth, callback);
+apiInstance.reportsGetOrganisationTimesheetFileAttachments(startDate, endDate, xChronosheetsAuth, opts, callback);
 ```
 
 ### Parameters
@@ -260,10 +261,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **startDate** | **Date**| The start date for the date range.  Report data in the response is after this date | 
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
- **skip** | **Number**| Skip this many items | 
- **take** | **Number**| Take this many items | 
- **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **skip** | **Number**| Skip this many items | [optional] 
+ **take** | **Number**| Take this many items | [optional] 
+ **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | [optional] 
 
 ### Return type
 
@@ -280,7 +281,7 @@ No authorization required
 
 <a name="reportsGetOrganisationTranscripts"></a>
 # **reportsGetOrganisationTranscripts**
-> CSApiResponseForPaginatedListOrgReportTranscript reportsGetOrganisationTranscripts(startDate, endDate, skip, take, userIds, keywords, xChronosheetsAuth)
+> CSApiResponseForPaginatedListOrgReportTranscript reportsGetOrganisationTranscripts(startDate, endDate, xChronosheetsAuth, opts)
 
 Reports on Organisation transcripts (When an audio file is attached, it will be automatically transcribed, these are the transcriptions)    Requires the &#39;ReportAdmin&#39; permission.
 
@@ -294,16 +295,14 @@ var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date 
 
 var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The end date for the date range.  Report data in the response is before this date
 
-var skip = 56; // Number | Skip this many items
-
-var take = 56; // Number | Take this many items
-
-var userIds = "userIds_example"; // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
-
-var keywords = "keywords_example"; // String | Search the transcripts by keyword(s)
-
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
+var opts = { 
+  'skip': 56, // Number | Skip this many items
+  'take': 56, // Number | Take this many items
+  'userIds': "userIds_example", // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+  'keywords': "keywords_example" // String | Search the transcripts by keyword(s)
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -312,7 +311,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.reportsGetOrganisationTranscripts(startDate, endDate, skip, take, userIds, keywords, xChronosheetsAuth, callback);
+apiInstance.reportsGetOrganisationTranscripts(startDate, endDate, xChronosheetsAuth, opts, callback);
 ```
 
 ### Parameters
@@ -321,11 +320,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **startDate** | **Date**| The start date for the date range.  Report data in the response is after this date | 
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
- **skip** | **Number**| Skip this many items | 
- **take** | **Number**| Take this many items | 
- **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
- **keywords** | **String**| Search the transcripts by keyword(s) | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **skip** | **Number**| Skip this many items | [optional] 
+ **take** | **Number**| Take this many items | [optional] 
+ **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | [optional] 
+ **keywords** | **String**| Search the transcripts by keyword(s) | [optional] 
 
 ### Return type
 
@@ -342,7 +341,7 @@ No authorization required
 
 <a name="reportsGetOrganisationTrips"></a>
 # **reportsGetOrganisationTrips**
-> CSApiResponseForPaginatedListOrgReportTrip reportsGetOrganisationTrips(startDate, endDate, skip, take, userIds, xChronosheetsAuth)
+> CSApiResponseForPaginatedListOrgReportTrip reportsGetOrganisationTrips(startDate, endDate, xChronosheetsAuth, opts)
 
 Reports on Organisation trips (GPS tracking from whole organisation).    Requires the &#39;ReportAdmin&#39; permission.
 
@@ -356,14 +355,13 @@ var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date 
 
 var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The end date for the date range.  Report data in the response is before this date
 
-var skip = 56; // Number | Skip this many items
-
-var take = 56; // Number | Take this many items
-
-var userIds = "userIds_example"; // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
-
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
+var opts = { 
+  'skip': 56, // Number | Skip this many items
+  'take': 56, // Number | Take this many items
+  'userIds': "userIds_example" // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -372,7 +370,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.reportsGetOrganisationTrips(startDate, endDate, skip, take, userIds, xChronosheetsAuth, callback);
+apiInstance.reportsGetOrganisationTrips(startDate, endDate, xChronosheetsAuth, opts, callback);
 ```
 
 ### Parameters
@@ -381,10 +379,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **startDate** | **Date**| The start date for the date range.  Report data in the response is after this date | 
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
- **skip** | **Number**| Skip this many items | 
- **take** | **Number**| Take this many items | 
- **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **skip** | **Number**| Skip this many items | [optional] 
+ **take** | **Number**| Take this many items | [optional] 
+ **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | [optional] 
 
 ### Return type
 
@@ -401,7 +399,7 @@ No authorization required
 
 <a name="reportsGetRawDataAdmin"></a>
 # **reportsGetRawDataAdmin**
-> CSApiResponseForPaginatedListRawReportItem reportsGetRawDataAdmin(startDate, endDate, userIds, sort, order, skip, take, xChronosheetsAuth)
+> CSApiResponseForPaginatedListRawReportItem reportsGetRawDataAdmin(startDate, endDate, xChronosheetsAuth, opts)
 
 Get Timesheets Raw Data.  This data details each timesheet record.  These are the organisation wide timesheet records, with data from potentially all employees.    Requires the &#39;ReportAdmin&#39; permission.
 
@@ -415,18 +413,15 @@ var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date 
 
 var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The end date for the date range.  Report data in the response is before this date
 
-var userIds = "userIds_example"; // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
-
-var sort = "sort_example"; // String | Decide which column to sort on
-
-var order = "order_example"; // String | Decide which direction to sort the column
-
-var skip = 56; // Number | Skip this many rows
-
-var take = 56; // Number | Take this many rows
-
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
+var opts = { 
+  'userIds': "userIds_example", // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+  'sort': "sort_example", // String | Decide which column to sort on
+  'order': "order_example", // String | Decide which direction to sort the column
+  'skip': 56, // Number | Skip this many rows
+  'take': 56 // Number | Take this many rows
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -435,7 +430,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.reportsGetRawDataAdmin(startDate, endDate, userIds, sort, order, skip, take, xChronosheetsAuth, callback);
+apiInstance.reportsGetRawDataAdmin(startDate, endDate, xChronosheetsAuth, opts, callback);
 ```
 
 ### Parameters
@@ -444,12 +439,12 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **startDate** | **Date**| The start date for the date range.  Report data in the response is after this date | 
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
- **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
- **sort** | **String**| Decide which column to sort on | 
- **order** | **String**| Decide which direction to sort the column | 
- **skip** | **Number**| Skip this many rows | 
- **take** | **Number**| Take this many rows | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | [optional] 
+ **sort** | **String**| Decide which column to sort on | [optional] 
+ **order** | **String**| Decide which direction to sort the column | [optional] 
+ **skip** | **Number**| Skip this many rows | [optional] 
+ **take** | **Number**| Take this many rows | [optional] 
 
 ### Return type
 
@@ -466,7 +461,7 @@ No authorization required
 
 <a name="reportsProjectCostingsAdmin"></a>
 # **reportsProjectCostingsAdmin**
-> CSApiResponseListProjectCostingReportItem reportsProjectCostingsAdmin(startDate, endDate, userIds, xChronosheetsAuth)
+> CSApiResponseListProjectCostingReportItem reportsProjectCostingsAdmin(startDate, endDate, xChronosheetsAuth, opts)
 
 Gets project cost estimations VS actual cost for date range and users.    Requires the &#39;ReportAdmin&#39; permission.
 
@@ -480,10 +475,11 @@ var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The start date 
 
 var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The end date for the date range.  Report data in the response is before this date
 
-var userIds = "userIds_example"; // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
-
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
+var opts = { 
+  'userIds': "userIds_example" // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -492,7 +488,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.reportsProjectCostingsAdmin(startDate, endDate, userIds, xChronosheetsAuth, callback);
+apiInstance.reportsProjectCostingsAdmin(startDate, endDate, xChronosheetsAuth, opts, callback);
 ```
 
 ### Parameters
@@ -501,8 +497,8 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **startDate** | **Date**| The start date for the date range.  Report data in the response is after this date | 
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
- **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | [optional] 
 
 ### Return type
 

@@ -57,7 +57,7 @@ No authorization required
 
 <a name="fileAttachmentsGetMyFileAttachments"></a>
 # **fileAttachmentsGetMyFileAttachments**
-> CSApiResponseForPaginatedListTimesheetFileAttachment fileAttachmentsGetMyFileAttachments(startDate, endDate, skip, take, xChronosheetsAuth)
+> CSApiResponseForPaginatedListTimesheetFileAttachment fileAttachmentsGetMyFileAttachments(startDate, endDate, xChronosheetsAuth, opts)
 
 Get my file attachments.  Get files you&#39;ve attached to timesheets.
 
@@ -71,12 +71,12 @@ var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The Start date 
 
 var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The End date of the date range.  File attachments before this date will be obtained.
 
-var skip = 56; // Number | Skip this many File attachments
-
-var take = 56; // Number | Take this many File attachments
-
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
+var opts = { 
+  'skip': 56, // Number | Skip this many File attachments
+  'take': 56 // Number | Take this many File attachments
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -85,7 +85,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.fileAttachmentsGetMyFileAttachments(startDate, endDate, skip, take, xChronosheetsAuth, callback);
+apiInstance.fileAttachmentsGetMyFileAttachments(startDate, endDate, xChronosheetsAuth, opts, callback);
 ```
 
 ### Parameters
@@ -94,9 +94,9 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **startDate** | **Date**| The Start date of the date range.  File attachments after this date will be obtained. | 
  **endDate** | **Date**| The End date of the date range.  File attachments before this date will be obtained. | 
- **skip** | **Number**| Skip this many File attachments | 
- **take** | **Number**| Take this many File attachments | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **skip** | **Number**| Skip this many File attachments | [optional] 
+ **take** | **Number**| Take this many File attachments | [optional] 
 
 ### Return type
 

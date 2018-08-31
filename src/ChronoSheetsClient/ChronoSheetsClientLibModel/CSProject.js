@@ -54,6 +54,7 @@
 
 
 
+
   };
 
   /**
@@ -81,6 +82,9 @@
       }
       if (data.hasOwnProperty('CostEstimation')) {
         obj['CostEstimation'] = ApiClient.convertToType(data['CostEstimation'], 'Number');
+      }
+      if (data.hasOwnProperty('CostActual')) {
+        obj['CostActual'] = ApiClient.convertToType(data['CostActual'], 'Number');
       }
       if (data.hasOwnProperty('StartDate')) {
         obj['StartDate'] = ApiClient.convertToType(data['StartDate'], 'Date');
@@ -112,6 +116,10 @@
    * @member {Number} CostEstimation
    */
   exports.prototype['CostEstimation'] = undefined;
+  /**
+   * @member {Number} CostActual
+   */
+  exports.prototype['CostActual'] = undefined;
   /**
    * @member {Date} StartDate
    */

@@ -59,14 +59,16 @@
      * Get my file transcripts.  Get audio to text transcripts that you&#39;ve created.
      * @param {Date} startDate The Start date of the date range.  Transcripts after this date will be obtained.
      * @param {Date} endDate The End date of the date range.  Transcripts before this date will be obtained.
-     * @param {Number} skip Skip this many transcripts
-     * @param {Number} take Take this many transcripts
-     * @param {String} keyword Search the text content of the transcript keywords
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.skip Skip this many transcripts
+     * @param {Number} opts.take Take this many transcripts
+     * @param {String} opts.keyword Search the text content of the transcript keywords
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TranscriptsApi~transcriptsGetMyTranscriptsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTranscript}
      */
-    this.transcriptsGetMyTranscripts = function(startDate, endDate, skip, take, keyword, xChronosheetsAuth, callback) {
+    this.transcriptsGetMyTranscripts = function(startDate, endDate, xChronosheetsAuth, opts, callback) {
+      opts = opts || {};
       var postBody = null;
 
       // verify the required parameter 'startDate' is set
@@ -77,21 +79,6 @@
       // verify the required parameter 'endDate' is set
       if (endDate === undefined || endDate === null) {
         throw new Error("Missing the required parameter 'endDate' when calling transcriptsGetMyTranscripts");
-      }
-
-      // verify the required parameter 'skip' is set
-      if (skip === undefined || skip === null) {
-        throw new Error("Missing the required parameter 'skip' when calling transcriptsGetMyTranscripts");
-      }
-
-      // verify the required parameter 'take' is set
-      if (take === undefined || take === null) {
-        throw new Error("Missing the required parameter 'take' when calling transcriptsGetMyTranscripts");
-      }
-
-      // verify the required parameter 'keyword' is set
-      if (keyword === undefined || keyword === null) {
-        throw new Error("Missing the required parameter 'keyword' when calling transcriptsGetMyTranscripts");
       }
 
       // verify the required parameter 'xChronosheetsAuth' is set
@@ -105,9 +92,9 @@
       var queryParams = {
         'StartDate': startDate,
         'EndDate': endDate,
-        'Skip': skip,
-        'Take': take,
-        'Keyword': keyword,
+        'Skip': opts['skip'],
+        'Take': opts['take'],
+        'Keyword': opts['keyword'],
       };
       var collectionQueryParams = {
       };

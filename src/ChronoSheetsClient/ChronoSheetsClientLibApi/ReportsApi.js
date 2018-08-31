@@ -59,12 +59,14 @@
      * Get Consolidated Admin Reports Data (Jobs, Tasks, Clients and Projects).  These are the organisation wide reports, with data from potentially all employees.    Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
-     * @param {String} userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetAllChartsDataAdminCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData}
      */
-    this.reportsGetAllChartsDataAdmin = function(startDate, endDate, userIds, xChronosheetsAuth, callback) {
+    this.reportsGetAllChartsDataAdmin = function(startDate, endDate, xChronosheetsAuth, opts, callback) {
+      opts = opts || {};
       var postBody = null;
 
       // verify the required parameter 'startDate' is set
@@ -75,11 +77,6 @@
       // verify the required parameter 'endDate' is set
       if (endDate === undefined || endDate === null) {
         throw new Error("Missing the required parameter 'endDate' when calling reportsGetAllChartsDataAdmin");
-      }
-
-      // verify the required parameter 'userIds' is set
-      if (userIds === undefined || userIds === null) {
-        throw new Error("Missing the required parameter 'userIds' when calling reportsGetAllChartsDataAdmin");
       }
 
       // verify the required parameter 'xChronosheetsAuth' is set
@@ -93,7 +90,7 @@
       var queryParams = {
         'StartDate': startDate,
         'EndDate': endDate,
-        'UserIds': userIds,
+        'UserIds': opts['userIds'],
       };
       var collectionQueryParams = {
       };
@@ -188,12 +185,14 @@
      * Gets a summary report, which includes total distance travelled and total running costs, for vehicles within your organisation  Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
-     * @param {String} userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetFleetSummaryAdminCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetSummaryReportItem}
      */
-    this.reportsGetFleetSummaryAdmin = function(startDate, endDate, userIds, xChronosheetsAuth, callback) {
+    this.reportsGetFleetSummaryAdmin = function(startDate, endDate, xChronosheetsAuth, opts, callback) {
+      opts = opts || {};
       var postBody = null;
 
       // verify the required parameter 'startDate' is set
@@ -204,11 +203,6 @@
       // verify the required parameter 'endDate' is set
       if (endDate === undefined || endDate === null) {
         throw new Error("Missing the required parameter 'endDate' when calling reportsGetFleetSummaryAdmin");
-      }
-
-      // verify the required parameter 'userIds' is set
-      if (userIds === undefined || userIds === null) {
-        throw new Error("Missing the required parameter 'userIds' when calling reportsGetFleetSummaryAdmin");
       }
 
       // verify the required parameter 'xChronosheetsAuth' is set
@@ -222,7 +216,7 @@
       var queryParams = {
         'StartDate': startDate,
         'EndDate': endDate,
-        'UserIds': userIds,
+        'UserIds': opts['userIds'],
       };
       var collectionQueryParams = {
       };
@@ -310,14 +304,16 @@
      * Reports on Organisation timesheet file attachments (files uploaded and attached to timesheet records)  Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
-     * @param {Number} skip Skip this many items
-     * @param {Number} take Take this many items
-     * @param {String} userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.skip Skip this many items
+     * @param {Number} opts.take Take this many items
+     * @param {String} opts.userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrganisationTimesheetFileAttachmentsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTimesheetFileAttachment}
      */
-    this.reportsGetOrganisationTimesheetFileAttachments = function(startDate, endDate, skip, take, userIds, xChronosheetsAuth, callback) {
+    this.reportsGetOrganisationTimesheetFileAttachments = function(startDate, endDate, xChronosheetsAuth, opts, callback) {
+      opts = opts || {};
       var postBody = null;
 
       // verify the required parameter 'startDate' is set
@@ -328,21 +324,6 @@
       // verify the required parameter 'endDate' is set
       if (endDate === undefined || endDate === null) {
         throw new Error("Missing the required parameter 'endDate' when calling reportsGetOrganisationTimesheetFileAttachments");
-      }
-
-      // verify the required parameter 'skip' is set
-      if (skip === undefined || skip === null) {
-        throw new Error("Missing the required parameter 'skip' when calling reportsGetOrganisationTimesheetFileAttachments");
-      }
-
-      // verify the required parameter 'take' is set
-      if (take === undefined || take === null) {
-        throw new Error("Missing the required parameter 'take' when calling reportsGetOrganisationTimesheetFileAttachments");
-      }
-
-      // verify the required parameter 'userIds' is set
-      if (userIds === undefined || userIds === null) {
-        throw new Error("Missing the required parameter 'userIds' when calling reportsGetOrganisationTimesheetFileAttachments");
       }
 
       // verify the required parameter 'xChronosheetsAuth' is set
@@ -356,9 +337,9 @@
       var queryParams = {
         'StartDate': startDate,
         'EndDate': endDate,
-        'Skip': skip,
-        'Take': take,
-        'UserIds': userIds,
+        'Skip': opts['skip'],
+        'Take': opts['take'],
+        'UserIds': opts['userIds'],
       };
       var collectionQueryParams = {
       };
@@ -392,15 +373,17 @@
      * Reports on Organisation transcripts (When an audio file is attached, it will be automatically transcribed, these are the transcriptions)    Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
-     * @param {Number} skip Skip this many items
-     * @param {Number} take Take this many items
-     * @param {String} userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
-     * @param {String} keywords Search the transcripts by keyword(s)
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.skip Skip this many items
+     * @param {Number} opts.take Take this many items
+     * @param {String} opts.userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+     * @param {String} opts.keywords Search the transcripts by keyword(s)
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrganisationTranscriptsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTranscript}
      */
-    this.reportsGetOrganisationTranscripts = function(startDate, endDate, skip, take, userIds, keywords, xChronosheetsAuth, callback) {
+    this.reportsGetOrganisationTranscripts = function(startDate, endDate, xChronosheetsAuth, opts, callback) {
+      opts = opts || {};
       var postBody = null;
 
       // verify the required parameter 'startDate' is set
@@ -411,26 +394,6 @@
       // verify the required parameter 'endDate' is set
       if (endDate === undefined || endDate === null) {
         throw new Error("Missing the required parameter 'endDate' when calling reportsGetOrganisationTranscripts");
-      }
-
-      // verify the required parameter 'skip' is set
-      if (skip === undefined || skip === null) {
-        throw new Error("Missing the required parameter 'skip' when calling reportsGetOrganisationTranscripts");
-      }
-
-      // verify the required parameter 'take' is set
-      if (take === undefined || take === null) {
-        throw new Error("Missing the required parameter 'take' when calling reportsGetOrganisationTranscripts");
-      }
-
-      // verify the required parameter 'userIds' is set
-      if (userIds === undefined || userIds === null) {
-        throw new Error("Missing the required parameter 'userIds' when calling reportsGetOrganisationTranscripts");
-      }
-
-      // verify the required parameter 'keywords' is set
-      if (keywords === undefined || keywords === null) {
-        throw new Error("Missing the required parameter 'keywords' when calling reportsGetOrganisationTranscripts");
       }
 
       // verify the required parameter 'xChronosheetsAuth' is set
@@ -444,10 +407,10 @@
       var queryParams = {
         'StartDate': startDate,
         'EndDate': endDate,
-        'Skip': skip,
-        'Take': take,
-        'UserIds': userIds,
-        'Keywords': keywords,
+        'Skip': opts['skip'],
+        'Take': opts['take'],
+        'UserIds': opts['userIds'],
+        'Keywords': opts['keywords'],
       };
       var collectionQueryParams = {
       };
@@ -481,14 +444,16 @@
      * Reports on Organisation trips (GPS tracking from whole organisation).    Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
-     * @param {Number} skip Skip this many items
-     * @param {Number} take Take this many items
-     * @param {String} userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.skip Skip this many items
+     * @param {Number} opts.take Take this many items
+     * @param {String} opts.userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetOrganisationTripsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTrip}
      */
-    this.reportsGetOrganisationTrips = function(startDate, endDate, skip, take, userIds, xChronosheetsAuth, callback) {
+    this.reportsGetOrganisationTrips = function(startDate, endDate, xChronosheetsAuth, opts, callback) {
+      opts = opts || {};
       var postBody = null;
 
       // verify the required parameter 'startDate' is set
@@ -499,21 +464,6 @@
       // verify the required parameter 'endDate' is set
       if (endDate === undefined || endDate === null) {
         throw new Error("Missing the required parameter 'endDate' when calling reportsGetOrganisationTrips");
-      }
-
-      // verify the required parameter 'skip' is set
-      if (skip === undefined || skip === null) {
-        throw new Error("Missing the required parameter 'skip' when calling reportsGetOrganisationTrips");
-      }
-
-      // verify the required parameter 'take' is set
-      if (take === undefined || take === null) {
-        throw new Error("Missing the required parameter 'take' when calling reportsGetOrganisationTrips");
-      }
-
-      // verify the required parameter 'userIds' is set
-      if (userIds === undefined || userIds === null) {
-        throw new Error("Missing the required parameter 'userIds' when calling reportsGetOrganisationTrips");
       }
 
       // verify the required parameter 'xChronosheetsAuth' is set
@@ -527,9 +477,9 @@
       var queryParams = {
         'StartDate': startDate,
         'EndDate': endDate,
-        'Skip': skip,
-        'Take': take,
-        'UserIds': userIds,
+        'Skip': opts['skip'],
+        'Take': opts['take'],
+        'UserIds': opts['userIds'],
       };
       var collectionQueryParams = {
       };
@@ -563,16 +513,18 @@
      * Get Timesheets Raw Data.  This data details each timesheet record.  These are the organisation wide timesheet records, with data from potentially all employees.    Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
-     * @param {String} userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/String} sort Decide which column to sort on
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/String} order Decide which direction to sort the column
-     * @param {Number} skip Skip this many rows
-     * @param {Number} take Take this many rows
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/String} opts.sort Decide which column to sort on
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/String} opts.order Decide which direction to sort the column
+     * @param {Number} opts.skip Skip this many rows
+     * @param {Number} opts.take Take this many rows
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetRawDataAdminCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem}
      */
-    this.reportsGetRawDataAdmin = function(startDate, endDate, userIds, sort, order, skip, take, xChronosheetsAuth, callback) {
+    this.reportsGetRawDataAdmin = function(startDate, endDate, xChronosheetsAuth, opts, callback) {
+      opts = opts || {};
       var postBody = null;
 
       // verify the required parameter 'startDate' is set
@@ -583,31 +535,6 @@
       // verify the required parameter 'endDate' is set
       if (endDate === undefined || endDate === null) {
         throw new Error("Missing the required parameter 'endDate' when calling reportsGetRawDataAdmin");
-      }
-
-      // verify the required parameter 'userIds' is set
-      if (userIds === undefined || userIds === null) {
-        throw new Error("Missing the required parameter 'userIds' when calling reportsGetRawDataAdmin");
-      }
-
-      // verify the required parameter 'sort' is set
-      if (sort === undefined || sort === null) {
-        throw new Error("Missing the required parameter 'sort' when calling reportsGetRawDataAdmin");
-      }
-
-      // verify the required parameter 'order' is set
-      if (order === undefined || order === null) {
-        throw new Error("Missing the required parameter 'order' when calling reportsGetRawDataAdmin");
-      }
-
-      // verify the required parameter 'skip' is set
-      if (skip === undefined || skip === null) {
-        throw new Error("Missing the required parameter 'skip' when calling reportsGetRawDataAdmin");
-      }
-
-      // verify the required parameter 'take' is set
-      if (take === undefined || take === null) {
-        throw new Error("Missing the required parameter 'take' when calling reportsGetRawDataAdmin");
       }
 
       // verify the required parameter 'xChronosheetsAuth' is set
@@ -621,11 +548,11 @@
       var queryParams = {
         'StartDate': startDate,
         'EndDate': endDate,
-        'UserIds': userIds,
-        'Sort': sort,
-        'Order': order,
-        'Skip': skip,
-        'Take': take,
+        'UserIds': opts['userIds'],
+        'Sort': opts['sort'],
+        'Order': opts['order'],
+        'Skip': opts['skip'],
+        'Take': opts['take'],
       };
       var collectionQueryParams = {
       };
@@ -659,12 +586,14 @@
      * Gets project cost estimations VS actual cost for date range and users.    Requires the &#39;ReportAdmin&#39; permission.
      * @param {Date} startDate The start date for the date range.  Report data in the response is after this date
      * @param {Date} endDate The end date for the date range.  Report data in the response is before this date
-     * @param {String} userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {Object} opts Optional parameters
+     * @param {String} opts.userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsProjectCostingsAdminCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListProjectCostingReportItem}
      */
-    this.reportsProjectCostingsAdmin = function(startDate, endDate, userIds, xChronosheetsAuth, callback) {
+    this.reportsProjectCostingsAdmin = function(startDate, endDate, xChronosheetsAuth, opts, callback) {
+      opts = opts || {};
       var postBody = null;
 
       // verify the required parameter 'startDate' is set
@@ -675,11 +604,6 @@
       // verify the required parameter 'endDate' is set
       if (endDate === undefined || endDate === null) {
         throw new Error("Missing the required parameter 'endDate' when calling reportsProjectCostingsAdmin");
-      }
-
-      // verify the required parameter 'userIds' is set
-      if (userIds === undefined || userIds === null) {
-        throw new Error("Missing the required parameter 'userIds' when calling reportsProjectCostingsAdmin");
       }
 
       // verify the required parameter 'xChronosheetsAuth' is set
@@ -693,7 +617,7 @@
       var queryParams = {
         'StartDate': startDate,
         'EndDate': endDate,
-        'UserIds': userIds,
+        'UserIds': opts['userIds'],
       };
       var collectionQueryParams = {
       };

@@ -86,6 +86,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property costActual (base name: "CostActual")', function() {
+      // uncomment below and update the code to test the property costActual
+      //var instane = new ChronoSheetsApi.CSProject();
+      //expect(instance).to.be();
+    });
+
     it('should have the property startDate (base name: "StartDate")', function() {
       // uncomment below and update the code to test the property startDate
       //var instane = new ChronoSheetsApi.CSProject();

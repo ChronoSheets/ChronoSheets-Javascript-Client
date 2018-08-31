@@ -164,18 +164,15 @@
 
     /**
      * Get a collection of vehicles that are under your organisation.    Does not require any special permission.
-     * @param {Boolean} includeDeleted Whether or not to include deleted vehicles
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {Object} opts Optional parameters
+     * @param {Boolean} opts.includeDeleted Whether or not to include deleted vehicles
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/FleetApi~fleetGetVehiclesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListFleetVehicle}
      */
-    this.fleetGetVehicles = function(includeDeleted, xChronosheetsAuth, callback) {
+    this.fleetGetVehicles = function(xChronosheetsAuth, opts, callback) {
+      opts = opts || {};
       var postBody = null;
-
-      // verify the required parameter 'includeDeleted' is set
-      if (includeDeleted === undefined || includeDeleted === null) {
-        throw new Error("Missing the required parameter 'includeDeleted' when calling fleetGetVehicles");
-      }
 
       // verify the required parameter 'xChronosheetsAuth' is set
       if (xChronosheetsAuth === undefined || xChronosheetsAuth === null) {
@@ -186,7 +183,7 @@
       var pathParams = {
       };
       var queryParams = {
-        'IncludeDeleted': includeDeleted,
+        'IncludeDeleted': opts['includeDeleted'],
       };
       var collectionQueryParams = {
       };

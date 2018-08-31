@@ -113,13 +113,15 @@
      * Get my file attachments.  Get files you&#39;ve attached to timesheets.
      * @param {Date} startDate The Start date of the date range.  File attachments after this date will be obtained.
      * @param {Date} endDate The End date of the date range.  File attachments before this date will be obtained.
-     * @param {Number} skip Skip this many File attachments
-     * @param {Number} take Take this many File attachments
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {Object} opts Optional parameters
+     * @param {Number} opts.skip Skip this many File attachments
+     * @param {Number} opts.take Take this many File attachments
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/FileAttachmentsApi~fileAttachmentsGetMyFileAttachmentsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListTimesheetFileAttachment}
      */
-    this.fileAttachmentsGetMyFileAttachments = function(startDate, endDate, skip, take, xChronosheetsAuth, callback) {
+    this.fileAttachmentsGetMyFileAttachments = function(startDate, endDate, xChronosheetsAuth, opts, callback) {
+      opts = opts || {};
       var postBody = null;
 
       // verify the required parameter 'startDate' is set
@@ -130,16 +132,6 @@
       // verify the required parameter 'endDate' is set
       if (endDate === undefined || endDate === null) {
         throw new Error("Missing the required parameter 'endDate' when calling fileAttachmentsGetMyFileAttachments");
-      }
-
-      // verify the required parameter 'skip' is set
-      if (skip === undefined || skip === null) {
-        throw new Error("Missing the required parameter 'skip' when calling fileAttachmentsGetMyFileAttachments");
-      }
-
-      // verify the required parameter 'take' is set
-      if (take === undefined || take === null) {
-        throw new Error("Missing the required parameter 'take' when calling fileAttachmentsGetMyFileAttachments");
       }
 
       // verify the required parameter 'xChronosheetsAuth' is set
@@ -153,8 +145,8 @@
       var queryParams = {
         'StartDate': startDate,
         'EndDate': endDate,
-        'Skip': skip,
-        'Take': take,
+        'Skip': opts['skip'],
+        'Take': opts['take'],
       };
       var collectionQueryParams = {
       };

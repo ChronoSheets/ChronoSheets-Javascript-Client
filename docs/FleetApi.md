@@ -106,7 +106,7 @@ No authorization required
 
 <a name="fleetGetVehicles"></a>
 # **fleetGetVehicles**
-> CSApiResponseListFleetVehicle fleetGetVehicles(includeDeleted, xChronosheetsAuth)
+> CSApiResponseListFleetVehicle fleetGetVehicles(xChronosheetsAuth, opts)
 
 Get a collection of vehicles that are under your organisation.    Does not require any special permission.
 
@@ -116,10 +116,11 @@ var ChronoSheetsApi = require('ChronoSheetsAPI');
 
 var apiInstance = new ChronoSheetsApi.FleetApi();
 
-var includeDeleted = true; // Boolean | Whether or not to include deleted vehicles
-
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
+var opts = { 
+  'includeDeleted': true // Boolean | Whether or not to include deleted vehicles
+};
 
 var callback = function(error, data, response) {
   if (error) {
@@ -128,15 +129,15 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.fleetGetVehicles(includeDeleted, xChronosheetsAuth, callback);
+apiInstance.fleetGetVehicles(xChronosheetsAuth, opts, callback);
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **includeDeleted** | **Boolean**| Whether or not to include deleted vehicles | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **includeDeleted** | **Boolean**| Whether or not to include deleted vehicles | [optional] 
 
 ### Return type
 
