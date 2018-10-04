@@ -20,7 +20,7 @@ var ChronoSheetsApi = require('ChronoSheetsAPI');
 
 var apiInstance = new ChronoSheetsApi.OrganisationGroupUsersApi();
 
-var orgGroupId = 56; // Number | An OrganisatioGroup Id
+var orgGroupId = 56; // Number | An OrganisationGroup Id
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -39,7 +39,7 @@ apiInstance.organisationGroupUsersGetOrganisationGroupUsers(orgGroupId, xChronos
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **orgGroupId** | **Number**| An OrganisatioGroup Id | 
+ **orgGroupId** | **Number**| An OrganisationGroup Id | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type
@@ -67,7 +67,7 @@ var ChronoSheetsApi = require('ChronoSheetsAPI');
 
 var apiInstance = new ChronoSheetsApi.OrganisationGroupUsersApi();
 
-var request = new ChronoSheetsApi.CSSetOrganisationGroupUsersRequest(); // CSSetOrganisationGroupUsersRequest | A request object specifying which users belong to an organisation group.  Make sure to specify the OrganisationGroup Id in the request object so that ChronoSheets knows which OrganisationGroup to update
+var request = new ChronoSheetsApi.CSSetOrganisationGroupUsersRequest(); // CSSetOrganisationGroupUsersRequest | A request object specifying which users belong to an organisation group.  Make sure to specify the OrganisationGroup Id in the request object so that ChronoSheets knows which OrganisationGroup to update. CsvUserIds is a comma separated list of User Ids, e.g. 1,2,3,4
 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
@@ -86,7 +86,7 @@ apiInstance.organisationGroupUsersUpdateOrganisationGroupUsers(request, xChronos
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSSetOrganisationGroupUsersRequest**](CSSetOrganisationGroupUsersRequest.md)| A request object specifying which users belong to an organisation group.  Make sure to specify the OrganisationGroup Id in the request object so that ChronoSheets knows which OrganisationGroup to update | 
+ **request** | [**CSSetOrganisationGroupUsersRequest**](CSSetOrganisationGroupUsersRequest.md)| A request object specifying which users belong to an organisation group.  Make sure to specify the OrganisationGroup Id in the request object so that ChronoSheets knows which OrganisationGroup to update. CsvUserIds is a comma separated list of User Ids, e.g. 1,2,3,4 | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
 
 ### Return type

@@ -57,7 +57,7 @@
 
     /**
      * Create a project.    Requires the &#39;ManageClientsAndProjects&#39; permission.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertProjectRequest} request An Insert Project Request object containing values for the new Project to create
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSInsertProjectRequest} request An Insert Project Request object containing values for the new Project to create.  Make sure to specify a correct Client Id - this will be used to attach the new project under that client.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ProjectsApi~projectsCreateProjectCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseInt32}

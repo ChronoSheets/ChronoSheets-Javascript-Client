@@ -225,7 +225,7 @@
 
     /**
      * Batch update timesheets.    Requires the &#39;SubmitTimesheets&#39; permission.
-     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSBatchUpdateTimesheetRequest} request A BatchUpdateTimesheet Request object containing values for the new Timesheets to create
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSBatchUpdateTimesheetRequest} request A BatchUpdateTimesheet Request object containing values for the new Timesheets to create or update.  If the timesheet Id is specified, then an update will be performed, else the timesheet record will be created.
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetsApi~timesheetsUpdateTimesheetsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseListInt32}

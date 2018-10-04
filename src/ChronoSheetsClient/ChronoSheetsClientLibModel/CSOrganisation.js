@@ -63,6 +63,7 @@
 
 
 
+
   };
 
   /**
@@ -114,6 +115,9 @@
       }
       if (data.hasOwnProperty('SignupToken')) {
         obj['SignupToken'] = ApiClient.convertToType(data['SignupToken'], 'String');
+      }
+      if (data.hasOwnProperty('IsActive')) {
+        obj['IsActive'] = ApiClient.convertToType(data['IsActive'], 'Boolean');
       }
       if (data.hasOwnProperty('SubscriptionCycleStart')) {
         obj['SubscriptionCycleStart'] = ApiClient.convertToType(data['SubscriptionCycleStart'], 'Date');
@@ -180,6 +184,10 @@
    * @member {String} SignupToken
    */
   exports.prototype['SignupToken'] = undefined;
+  /**
+   * @member {Boolean} IsActive
+   */
+  exports.prototype['IsActive'] = undefined;
   /**
    * @member {Date} SubscriptionCycleStart
    */

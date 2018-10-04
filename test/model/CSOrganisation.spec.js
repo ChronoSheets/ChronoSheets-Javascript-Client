@@ -134,6 +134,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property isActive (base name: "IsActive")', function() {
+      // uncomment below and update the code to test the property isActive
+      //var instane = new ChronoSheetsApi.CSOrganisation();
+      //expect(instance).to.be();
+    });
+
     it('should have the property subscriptionCycleStart (base name: "SubscriptionCycleStart")', function() {
       // uncomment below and update the code to test the property subscriptionCycleStart
       //var instane = new ChronoSheetsApi.CSOrganisation();
