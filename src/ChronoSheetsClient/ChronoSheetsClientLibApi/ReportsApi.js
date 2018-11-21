@@ -62,6 +62,7 @@
      * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
      * @param {Object} opts Optional parameters
      * @param {String} opts.userIds A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/String} opts.forceOnlyThisChart A flag to indicate which report data you require.  Choose a particular set of data, or if you want all data use the &#39;NotForced&#39; option.
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/ReportsApi~reportsGetAllChartsDataAdminCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseCombinedReportsData}
      */
@@ -91,6 +92,7 @@
         'StartDate': startDate,
         'EndDate': endDate,
         'UserIds': opts['userIds'],
+        'ForceOnlyThisChart': opts['forceOnlyThisChart'],
       };
       var collectionQueryParams = {
       };

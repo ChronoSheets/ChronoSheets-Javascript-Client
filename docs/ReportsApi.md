@@ -35,7 +35,8 @@ var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The end date for 
 var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
 
 var opts = { 
-  'userIds': "userIds_example" // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+  'userIds': "userIds_example", // String | A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string.
+  'forceOnlyThisChart': "forceOnlyThisChart_example" // String | A flag to indicate which report data you require.  Choose a particular set of data, or if you want all data use the 'NotForced' option.
 };
 
 var callback = function(error, data, response) {
@@ -56,6 +57,7 @@ Name | Type | Description  | Notes
  **endDate** | **Date**| The end date for the date range.  Report data in the response is before this date | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
  **userIds** | **String**| A comma-separated list of user Ids, if you want to filter the report data to particular users.  If you want all, send a blank string. | [optional] 
+ **forceOnlyThisChart** | **String**| A flag to indicate which report data you require.  Choose a particular set of data, or if you want all data use the &#39;NotForced&#39; option. | [optional] 
 
 ### Return type
 

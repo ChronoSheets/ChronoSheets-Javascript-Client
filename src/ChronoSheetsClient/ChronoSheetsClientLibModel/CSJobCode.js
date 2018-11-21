@@ -97,34 +97,42 @@
   }
 
   /**
+   * The ID of the job code (not the code itself)
    * @member {Number} Id
    */
   exports.prototype['Id'] = undefined;
   /**
+   * The job code itself
    * @member {String} Code
    */
   exports.prototype['Code'] = undefined;
   /**
+   * The name of the client
    * @member {String} Client
    */
   exports.prototype['Client'] = undefined;
   /**
+   * The ID of the client
    * @member {Number} ClientId
    */
   exports.prototype['ClientId'] = undefined;
   /**
+   * The name of the project
    * @member {String} Project
    */
   exports.prototype['Project'] = undefined;
   /**
+   * The ID of the project
    * @member {Number} ProjectId
    */
   exports.prototype['ProjectId'] = undefined;
   /**
+   * Your organisation ID
    * @member {Number} OrganisationId
    */
   exports.prototype['OrganisationId'] = undefined;
   /**
+   * A flag indicating whether or not the job code has been marked as deleted
    * @member {Boolean} IsDeleted
    */
   exports.prototype['IsDeleted'] = undefined;

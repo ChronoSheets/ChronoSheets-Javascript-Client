@@ -77,14 +77,17 @@
   }
 
   /**
+   * The Id of the task
    * @member {Number} Id
    */
   exports.prototype['Id'] = undefined;
   /**
+   * The label of the task
    * @member {String} Label
    */
   exports.prototype['Label'] = undefined;
   /**
+   * A flag indicating that this task has been marked as deleted
    * @member {Boolean} IsDeleted
    */
   exports.prototype['IsDeleted'] = undefined;

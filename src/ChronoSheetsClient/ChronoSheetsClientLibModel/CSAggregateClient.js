@@ -125,62 +125,77 @@
   }
 
   /**
+   * A list of projects that are under this client
    * @member {Array.<module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSAggregateProject>} ClientProjects
    */
   exports.prototype['ClientProjects'] = undefined;
   /**
+   * The ID of the client
    * @member {Number} Id
    */
   exports.prototype['Id'] = undefined;
   /**
+   * The ID of your organisation
    * @member {Number} OrganisationId
    */
   exports.prototype['OrganisationId'] = undefined;
   /**
+   * The name of the client
    * @member {String} ClientName
    */
   exports.prototype['ClientName'] = undefined;
   /**
+   * The address line 1 of the client
    * @member {String} ClientAddressLine1
    */
   exports.prototype['ClientAddressLine1'] = undefined;
   /**
+   * The address line 2 of the client
    * @member {String} ClientAddressLine2
    */
   exports.prototype['ClientAddressLine2'] = undefined;
   /**
+   * The address suburb of the client
    * @member {String} ClientSuburb
    */
   exports.prototype['ClientSuburb'] = undefined;
   /**
+   * The address state of the client
    * @member {String} ClientState
    */
   exports.prototype['ClientState'] = undefined;
   /**
+   * The postcode of the client
    * @member {String} ClientPostCode
    */
   exports.prototype['ClientPostCode'] = undefined;
   /**
+   * The contact person working under the client
    * @member {String} PersonOfContact
    */
   exports.prototype['PersonOfContact'] = undefined;
   /**
+   * The phone number of the client
    * @member {String} ClientPhoneNumber
    */
   exports.prototype['ClientPhoneNumber'] = undefined;
   /**
+   * The mobile phone number of the client
    * @member {String} ClientMobileNumber
    */
   exports.prototype['ClientMobileNumber'] = undefined;
   /**
+   * The email address of the client
    * @member {String} ClientEmailAddress
    */
   exports.prototype['ClientEmailAddress'] = undefined;
   /**
+   * The website URL of the client
    * @member {String} ClientWebURL
    */
   exports.prototype['ClientWebURL'] = undefined;
   /**
+   * The number of projects under the client
    * @member {Number} ProjectCount
    */
   exports.prototype['ProjectCount'] = undefined;

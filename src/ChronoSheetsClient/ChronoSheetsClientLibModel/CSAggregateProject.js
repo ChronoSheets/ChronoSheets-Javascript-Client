@@ -93,30 +93,37 @@
   }
 
   /**
+   * The ID of the project
    * @member {Number} Id
    */
   exports.prototype['Id'] = undefined;
   /**
+   * The ID of the client that this project is assigned to
    * @member {Number} ClientId
    */
   exports.prototype['ClientId'] = undefined;
   /**
+   * The ID of your organisation
    * @member {Number} OrganisationId
    */
   exports.prototype['OrganisationId'] = undefined;
   /**
+   * The name of the project (can be viewed in PROJECT TIMELINES)
    * @member {String} ProjectName
    */
   exports.prototype['ProjectName'] = undefined;
   /**
+   * The estimated cost of the project (can be viewed in PROJECT TIMELINES)
    * @member {Number} CostEstimation
    */
   exports.prototype['CostEstimation'] = undefined;
   /**
+   * The start date of the project (can be viewed in PROJECT TIMELINES)
    * @member {Date} StartDate
    */
   exports.prototype['StartDate'] = undefined;
   /**
+   * The end date of the project (can be viewed in PROJECT TIMELINES)
    * @member {Date} EndDate
    */
   exports.prototype['EndDate'] = undefined;
