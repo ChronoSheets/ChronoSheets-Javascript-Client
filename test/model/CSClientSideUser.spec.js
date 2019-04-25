@@ -122,6 +122,12 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property isPrimaryAccount (base name: "IsPrimaryAccount")', function() {
+      // uncomment below and update the code to test the property isPrimaryAccount
+      //var instane = new ChronoSheetsApi.CSClientSideUser();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

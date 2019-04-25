@@ -17,8 +17,40 @@ Name | Type | Description | Notes
 **subscriptionCustomerId** | **String** |  | [optional] 
 **signupToken** | **String** |  | [optional] 
 **isActive** | **Boolean** |  | [optional] 
+**stripeCouponCode** | **String** |  | [optional] 
+**subscriptionSource** | **String** |  | [optional] 
+**signUpSource** | **String** |  | [optional] 
+**mobileSignUpCode** | **String** |  | [optional] 
 **subscriptionCycleStart** | **Date** |  | [optional] 
 **subscriptionCycleEnd** | **Date** |  | [optional] 
 **pricingPlans** | [**[CSOrganisationPricingPlan]**](CSOrganisationPricingPlan.md) |  | [optional] 
+
+
+<a name="SubscriptionSourceEnum"></a>
+## Enum: SubscriptionSourceEnum
+
+
+* `None` (value: `"None"`)
+
+* `Stripe` (value: `"Stripe"`)
+
+* `AppleInApp` (value: `"AppleInApp"`)
+
+* `GoogleInApp` (value: `"GoogleInApp"`)
+
+
+
+
+<a name="SignUpSourceEnum"></a>
+## Enum: SignUpSourceEnum
+
+
+* `Desktop` (value: `"Desktop"`)
+
+* `MobileiOS` (value: `"MobileiOS"`)
+
+* `MobileAndroid` (value: `"MobileAndroid"`)
+
+
 
 

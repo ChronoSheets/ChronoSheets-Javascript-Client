@@ -58,6 +58,7 @@
 
 
 
+
   };
 
   /**
@@ -103,6 +104,9 @@
       }
       if (data.hasOwnProperty('Organisation')) {
         obj['Organisation'] = CSOrganisation.constructFromObject(data['Organisation']);
+      }
+      if (data.hasOwnProperty('IsPrimaryAccount')) {
+        obj['IsPrimaryAccount'] = ApiClient.convertToType(data['IsPrimaryAccount'], 'Boolean');
       }
     }
     return obj;
@@ -152,6 +156,10 @@
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrganisation} Organisation
    */
   exports.prototype['Organisation'] = undefined;
+  /**
+   * @member {Boolean} IsPrimaryAccount
+   */
+  exports.prototype['IsPrimaryAccount'] = undefined;
 
 
 

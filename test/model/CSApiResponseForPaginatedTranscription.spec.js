@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new ChronoSheetsApi.TranscriptsApi();
+    instance = new ChronoSheetsApi.CSApiResponseForPaginatedTranscription();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,27 +49,37 @@
       object[property] = value;
   }
 
-  describe('TranscriptsApi', function() {
-    describe('transcriptsGetMyTranscript', function() {
-      it('should call transcriptsGetMyTranscript successfully', function(done) {
-        //uncomment below and update the code to test transcriptsGetMyTranscript
-        //instance.transcriptsGetMyTranscript(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('CSApiResponseForPaginatedTranscription', function() {
+    it('should create an instance of CSApiResponseForPaginatedTranscription', function() {
+      // uncomment below and update the code to test CSApiResponseForPaginatedTranscription
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedTranscription();
+      //expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseForPaginatedTranscription);
     });
-    describe('transcriptsGetMyTranscripts', function() {
-      it('should call transcriptsGetMyTranscripts successfully', function(done) {
-        //uncomment below and update the code to test transcriptsGetMyTranscripts
-        //instance.transcriptsGetMyTranscripts(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+
+    it('should have the property totalSetCount (base name: "TotalSetCount")', function() {
+      // uncomment below and update the code to test the property totalSetCount
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedTranscription();
+      //expect(instance).to.be();
     });
+
+    it('should have the property data (base name: "Data")', function() {
+      // uncomment below and update the code to test the property data
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedTranscription();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property status (base name: "Status")', function() {
+      // uncomment below and update the code to test the property status
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedTranscription();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property message (base name: "Message")', function() {
+      // uncomment below and update the code to test the property message
+      //var instane = new ChronoSheetsApi.CSApiResponseForPaginatedTranscription();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));

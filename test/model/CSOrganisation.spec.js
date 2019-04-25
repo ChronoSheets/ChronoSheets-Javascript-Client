@@ -140,6 +140,30 @@
       //expect(instance).to.be();
     });
 
+    it('should have the property stripeCouponCode (base name: "StripeCouponCode")', function() {
+      // uncomment below and update the code to test the property stripeCouponCode
+      //var instane = new ChronoSheetsApi.CSOrganisation();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property subscriptionSource (base name: "SubscriptionSource")', function() {
+      // uncomment below and update the code to test the property subscriptionSource
+      //var instane = new ChronoSheetsApi.CSOrganisation();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property signUpSource (base name: "SignUpSource")', function() {
+      // uncomment below and update the code to test the property signUpSource
+      //var instane = new ChronoSheetsApi.CSOrganisation();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property mobileSignUpCode (base name: "MobileSignUpCode")', function() {
+      // uncomment below and update the code to test the property mobileSignUpCode
+      //var instane = new ChronoSheetsApi.CSOrganisation();
+      //expect(instance).to.be();
+    });
+
     it('should have the property subscriptionCycleStart (base name: "SubscriptionCycleStart")', function() {
       // uncomment below and update the code to test the property subscriptionCycleStart
       //var instane = new ChronoSheetsApi.CSOrganisation();

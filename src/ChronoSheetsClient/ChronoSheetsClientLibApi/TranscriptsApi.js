@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTranscript'], factory);
+    define(['ChronoSheetsClient/ApiClient', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTranscript', 'ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedTranscription'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTranscript'));
+    module.exports = factory(require('../ApiClient'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedListOrgReportTranscript'), require('../ChronoSheetsClientLibModel/CSApiResponseForPaginatedTranscription'));
   } else {
     // Browser globals (root is window)
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.TranscriptsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTranscript);
+    root.ChronoSheetsApi.TranscriptsApi = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSApiResponseForPaginatedListOrgReportTranscript, root.ChronoSheetsApi.CSApiResponseForPaginatedTranscription);
   }
-}(this, function(ApiClient, CSApiResponseForPaginatedListOrgReportTranscript) {
+}(this, function(ApiClient, CSApiResponseForPaginatedListOrgReportTranscript, CSApiResponseForPaginatedTranscription) {
   'use strict';
 
   /**
@@ -46,6 +46,60 @@
   var exports = function(apiClient) {
     this.apiClient = apiClient || ApiClient.instance;
 
+
+    /**
+     * Callback function to receive the result of the transcriptsGetMyTranscript operation.
+     * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/TranscriptsApi~transcriptsGetMyTranscriptCallback
+     * @param {String} error Error message, if any.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedTranscription} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Get an audio to text transcript for a particular audio file attachment
+     * @param {Number} fileAttachmentId The ID of the file attachment that has a transcript.  It should be an audio file attachment.
+     * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TranscriptsApi~transcriptsGetMyTranscriptCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedTranscription}
+     */
+    this.transcriptsGetMyTranscript = function(fileAttachmentId, xChronosheetsAuth, callback) {
+      var postBody = null;
+
+      // verify the required parameter 'fileAttachmentId' is set
+      if (fileAttachmentId === undefined || fileAttachmentId === null) {
+        throw new Error("Missing the required parameter 'fileAttachmentId' when calling transcriptsGetMyTranscript");
+      }
+
+      // verify the required parameter 'xChronosheetsAuth' is set
+      if (xChronosheetsAuth === undefined || xChronosheetsAuth === null) {
+        throw new Error("Missing the required parameter 'xChronosheetsAuth' when calling transcriptsGetMyTranscript");
+      }
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+        'FileAttachmentId': fileAttachmentId,
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+        'x-chronosheets-auth': xChronosheetsAuth
+      };
+      var formParams = {
+      };
+
+      var authNames = [];
+      var contentTypes = [];
+      var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
+      var returnType = CSApiResponseForPaginatedTranscription;
+
+      return this.apiClient.callApi(
+        '/api/Transcripts/GetMyTranscript', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
 
     /**
      * Callback function to receive the result of the transcriptsGetMyTranscripts operation.

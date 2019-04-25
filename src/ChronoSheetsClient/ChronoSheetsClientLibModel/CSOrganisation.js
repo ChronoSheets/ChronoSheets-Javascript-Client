@@ -64,6 +64,10 @@
 
 
 
+
+
+
+
   };
 
   /**
@@ -118,6 +122,18 @@
       }
       if (data.hasOwnProperty('IsActive')) {
         obj['IsActive'] = ApiClient.convertToType(data['IsActive'], 'Boolean');
+      }
+      if (data.hasOwnProperty('StripeCouponCode')) {
+        obj['StripeCouponCode'] = ApiClient.convertToType(data['StripeCouponCode'], 'String');
+      }
+      if (data.hasOwnProperty('SubscriptionSource')) {
+        obj['SubscriptionSource'] = ApiClient.convertToType(data['SubscriptionSource'], 'String');
+      }
+      if (data.hasOwnProperty('SignUpSource')) {
+        obj['SignUpSource'] = ApiClient.convertToType(data['SignUpSource'], 'String');
+      }
+      if (data.hasOwnProperty('MobileSignUpCode')) {
+        obj['MobileSignUpCode'] = ApiClient.convertToType(data['MobileSignUpCode'], 'String');
       }
       if (data.hasOwnProperty('SubscriptionCycleStart')) {
         obj['SubscriptionCycleStart'] = ApiClient.convertToType(data['SubscriptionCycleStart'], 'Date');
@@ -189,6 +205,22 @@
    */
   exports.prototype['IsActive'] = undefined;
   /**
+   * @member {String} StripeCouponCode
+   */
+  exports.prototype['StripeCouponCode'] = undefined;
+  /**
+   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrganisation.SubscriptionSourceEnum} SubscriptionSource
+   */
+  exports.prototype['SubscriptionSource'] = undefined;
+  /**
+   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSOrganisation.SignUpSourceEnum} SignUpSource
+   */
+  exports.prototype['SignUpSource'] = undefined;
+  /**
+   * @member {String} MobileSignUpCode
+   */
+  exports.prototype['MobileSignUpCode'] = undefined;
+  /**
    * @member {Date} SubscriptionCycleStart
    */
   exports.prototype['SubscriptionCycleStart'] = undefined;
@@ -201,6 +233,55 @@
    */
   exports.prototype['PricingPlans'] = undefined;
 
+
+  /**
+   * Allowed values for the <code>SubscriptionSource</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.SubscriptionSourceEnum = {
+    /**
+     * value: "None"
+     * @const
+     */
+    "None": "None",
+    /**
+     * value: "Stripe"
+     * @const
+     */
+    "Stripe": "Stripe",
+    /**
+     * value: "AppleInApp"
+     * @const
+     */
+    "AppleInApp": "AppleInApp",
+    /**
+     * value: "GoogleInApp"
+     * @const
+     */
+    "GoogleInApp": "GoogleInApp"  };
+
+  /**
+   * Allowed values for the <code>SignUpSource</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.SignUpSourceEnum = {
+    /**
+     * value: "Desktop"
+     * @const
+     */
+    "Desktop": "Desktop",
+    /**
+     * value: "MobileiOS"
+     * @const
+     */
+    "MobileiOS": "MobileiOS",
+    /**
+     * value: "MobileAndroid"
+     * @const
+     */
+    "MobileAndroid": "MobileAndroid"  };
 
 
   return exports;
