@@ -4,19 +4,19 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**tasksCreateTask**](TasksApi.md#tasksCreateTask) | **POST** /api/Tasks/CreateTask | Create a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
-[**tasksDeleteTask**](TasksApi.md#tasksDeleteTask) | **DELETE** /api/Tasks/DeleteTask | Delete a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
-[**tasksGetTaskById**](TasksApi.md#tasksGetTaskById) | **GET** /api/Tasks/GetTaskById | Get a particular task by Id.   Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
-[**tasksGetTasks**](TasksApi.md#tasksGetTasks) | **GET** /api/Tasks/GetTasks | Get tasks in your organisation.   Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
-[**tasksGetTasksForJob**](TasksApi.md#tasksGetTasksForJob) | **GET** /api/Tasks/GetTasksForJob | Get a collection of tasks for a particular Job, specified by JobId.    Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
-[**tasksUpdateTask**](TasksApi.md#tasksUpdateTask) | **PUT** /api/Tasks/UpdateTask | Update a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
+[**tasksCreateTask**](TasksApi.md#tasksCreateTask) | **POST** /api/Tasks/CreateTask | Create a task.    Requires the 'ManageJobsAndTask' permission.
+[**tasksDeleteTask**](TasksApi.md#tasksDeleteTask) | **DELETE** /api/Tasks/DeleteTask | Delete a task.    Requires the 'ManageJobsAndTask' permission.
+[**tasksGetTaskById**](TasksApi.md#tasksGetTaskById) | **GET** /api/Tasks/GetTaskById | Get a particular task by Id.   Requires the 'SubmitTimesheets' or 'ManageJobsAndTask' permissions.
+[**tasksGetTasks**](TasksApi.md#tasksGetTasks) | **GET** /api/Tasks/GetTasks | Get tasks in your organisation.   Requires the 'SubmitTimesheets' or 'ManageJobsAndTask' permissions.
+[**tasksGetTasksForJob**](TasksApi.md#tasksGetTasksForJob) | **GET** /api/Tasks/GetTasksForJob | Get a collection of tasks for a particular Job, specified by JobId.    Requires the 'SubmitTimesheets' or 'ManageJobsAndTask' permissions.
+[**tasksUpdateTask**](TasksApi.md#tasksUpdateTask) | **PUT** /api/Tasks/UpdateTask | Update a task.    Requires the 'ManageJobsAndTask' permission.
 
 
 <a name="tasksCreateTask"></a>
 # **tasksCreateTask**
 > CSApiResponseInt32 tasksCreateTask(request, xChronosheetsAuth)
 
-Create a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
+Create a task.    Requires the 'ManageJobsAndTask' permission.
 
 ### Example
 ```javascript
@@ -63,7 +63,7 @@ No authorization required
 # **tasksDeleteTask**
 > CSApiResponseBoolean tasksDeleteTask(taskId, xChronosheetsAuth)
 
-Delete a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
+Delete a task.    Requires the 'ManageJobsAndTask' permission.
 
 ### Example
 ```javascript
@@ -110,7 +110,7 @@ No authorization required
 # **tasksGetTaskById**
 > CSApiResponseTimesheetTask tasksGetTaskById(taskId, xChronosheetsAuth)
 
-Get a particular task by Id.   Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
+Get a particular task by Id.   Requires the 'SubmitTimesheets' or 'ManageJobsAndTask' permissions.
 
 ### Example
 ```javascript
@@ -157,7 +157,7 @@ No authorization required
 # **tasksGetTasks**
 > CSApiResponseListTimesheetTask tasksGetTasks(xChronosheetsAuth)
 
-Get tasks in your organisation.   Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
+Get tasks in your organisation.   Requires the 'SubmitTimesheets' or 'ManageJobsAndTask' permissions.
 
 ### Example
 ```javascript
@@ -201,7 +201,7 @@ No authorization required
 # **tasksGetTasksForJob**
 > CSApiResponseListTimesheetTask tasksGetTasksForJob(jobId, xChronosheetsAuth)
 
-Get a collection of tasks for a particular Job, specified by JobId.    Requires the &#39;SubmitTimesheets&#39; or &#39;ManageJobsAndTask&#39; permissions.
+Get a collection of tasks for a particular Job, specified by JobId.    Requires the 'SubmitTimesheets' or 'ManageJobsAndTask' permissions.
 
 ### Example
 ```javascript
@@ -248,7 +248,7 @@ No authorization required
 # **tasksUpdateTask**
 > CSApiResponseBoolean tasksUpdateTask(request, xChronosheetsAuth)
 
-Update a task.    Requires the &#39;ManageJobsAndTask&#39; permission.
+Update a task.    Requires the 'ManageJobsAndTask' permission.
 
 ### Example
 ```javascript

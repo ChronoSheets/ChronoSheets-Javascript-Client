@@ -13,17 +13,17 @@ Name | Type | Description | Notes
 ## Enum: StatusEnum
 
 
-* `Succeeded` (value: `"Succeeded"`)
+* `succeeded` (value: `"Succeeded"`)
 
-* `FatalException` (value: `"FatalException"`)
+* `fatalException` (value: `"FatalException"`)
 
-* `GeneralError` (value: `"GeneralError"`)
+* `generalError` (value: `"GeneralError"`)
 
-* `ValidationError` (value: `"ValidationError"`)
+* `validationError` (value: `"ValidationError"`)
 
-* `UnAuthorized` (value: `"UnAuthorized"`)
+* `unAuthorized` (value: `"UnAuthorized"`)
 
-* `SessionExpired` (value: `"SessionExpired"`)
+* `sessionExpired` (value: `"SessionExpired"`)
 
 
 

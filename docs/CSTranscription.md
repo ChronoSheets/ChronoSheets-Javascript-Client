@@ -16,13 +16,13 @@ Name | Type | Description | Notes
 ## Enum: StatusEnum
 
 
-* `Saved` (value: `"Saved"`)
+* `saved` (value: `"Saved"`)
 
-* `Processing` (value: `"Processing"`)
+* `processing` (value: `"Processing"`)
 
-* `Completed` (value: `"Completed"`)
+* `completed` (value: `"Completed"`)
 
-* `FailedWithError` (value: `"FailedWithError"`)
+* `failedWithError` (value: `"FailedWithError"`)
 
 
 
@@ -31,15 +31,15 @@ Name | Type | Description | Notes
 ## Enum: MediaTypeEnum
 
 
-* `Other` (value: `"Other"`)
+* `other` (value: `"Other"`)
 
-* `Mp3` (value: `"Mp3"`)
+* `mp3` (value: `"Mp3"`)
 
-* `Mp4` (value: `"Mp4"`)
+* `mp4` (value: `"Mp4"`)
 
-* `Wav` (value: `"Wav"`)
+* `wav` (value: `"Wav"`)
 
-* `Flac` (value: `"Flac"`)
+* `flac` (value: `"Flac"`)
 
 
 

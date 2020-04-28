@@ -4,15 +4,16 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fileAttachmentsDeleteTimesheetFileAttachment**](FileAttachmentsApi.md#fileAttachmentsDeleteTimesheetFileAttachment) | **DELETE** /api/FileAttachments/DeleteTimesheetFileAttachment | Delete a particular timesheet file attachment
-[**fileAttachmentsGetMyFileAttachments**](FileAttachmentsApi.md#fileAttachmentsGetMyFileAttachments) | **GET** /api/FileAttachments/GetMyFileAttachments | Get my file attachments.  Get files you&#39;ve attached to timesheets.
+[**fileAttachmentsDeleteTimesheetFileAttachment**](FileAttachmentsApi.md#fileAttachmentsDeleteTimesheetFileAttachment) | **DELETE** /api/FileAttachments/DeleteTimesheetFileAttachment | Delete a particular timesheet file attachment  Requires the 'SubmitTimesheets' permission.
+[**fileAttachmentsGetFileAttachmentById**](FileAttachmentsApi.md#fileAttachmentsGetFileAttachmentById) | **GET** /api/FileAttachments/GetFileAttachmentById | Get a particular file attachment by ID.  User must own the file attachment for access.
+[**fileAttachmentsGetMyFileAttachments**](FileAttachmentsApi.md#fileAttachmentsGetMyFileAttachments) | **GET** /api/FileAttachments/GetMyFileAttachments | Get my file attachments.  Get files you've attached to timesheets.
 
 
 <a name="fileAttachmentsDeleteTimesheetFileAttachment"></a>
 # **fileAttachmentsDeleteTimesheetFileAttachment**
 > CSApiResponseBoolean fileAttachmentsDeleteTimesheetFileAttachment(fileAttachmentId, xChronosheetsAuth)
 
-Delete a particular timesheet file attachment
+Delete a particular timesheet file attachment  Requires the 'SubmitTimesheets' permission.
 
 ### Example
 ```javascript
@@ -55,11 +56,58 @@ No authorization required
  - **Content-Type**: Not defined
  - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
+<a name="fileAttachmentsGetFileAttachmentById"></a>
+# **fileAttachmentsGetFileAttachmentById**
+> CSApiResponseTimesheetFileAttachment fileAttachmentsGetFileAttachmentById(fileAttachmentId, xChronosheetsAuth)
+
+Get a particular file attachment by ID.  User must own the file attachment for access.
+
+### Example
+```javascript
+var ChronoSheetsApi = require('ChronoSheetsAPI');
+
+var apiInstance = new ChronoSheetsApi.FileAttachmentsApi();
+
+var fileAttachmentId = 56; // Number | The ID of the file attachment
+
+var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.fileAttachmentsGetFileAttachmentById(fileAttachmentId, xChronosheetsAuth, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fileAttachmentId** | **Number**| The ID of the file attachment | 
+ **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+
+### Return type
+
+[**CSApiResponseTimesheetFileAttachment**](CSApiResponseTimesheetFileAttachment.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+
 <a name="fileAttachmentsGetMyFileAttachments"></a>
 # **fileAttachmentsGetMyFileAttachments**
 > CSApiResponseForPaginatedListTimesheetFileAttachment fileAttachmentsGetMyFileAttachments(startDate, endDate, xChronosheetsAuth, opts)
 
-Get my file attachments.  Get files you&#39;ve attached to timesheets.
+Get my file attachments.  Get files you've attached to timesheets.
 
 ### Example
 ```javascript

@@ -4,16 +4,16 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**userJobFavouritesCreateJobFavourite**](UserJobFavouritesApi.md#userJobFavouritesCreateJobFavourite) | **POST** /api/UserJobFavourites/CreateJobFavourite | Create a job favourite.    Requires the &#39;SubmitTimesheets&#39; permission.
-[**userJobFavouritesDeleteJobFavourite**](UserJobFavouritesApi.md#userJobFavouritesDeleteJobFavourite) | **DELETE** /api/UserJobFavourites/DeleteJobFavourite | Delete a job favourite.    Requires the &#39;SubmitTimesheets&#39; permission.
-[**userJobFavouritesGetJobFavourites**](UserJobFavouritesApi.md#userJobFavouritesGetJobFavourites) | **GET** /api/UserJobFavourites/GetJobFavourites | Get your job favourites.    Requires the &#39;SubmitTimesheets&#39; permission.
+[**userJobFavouritesCreateJobFavourite**](UserJobFavouritesApi.md#userJobFavouritesCreateJobFavourite) | **POST** /api/UserJobFavourites/CreateJobFavourite | Create a job favourite.    Requires the 'SubmitTimesheets' permission.
+[**userJobFavouritesDeleteJobFavourite**](UserJobFavouritesApi.md#userJobFavouritesDeleteJobFavourite) | **DELETE** /api/UserJobFavourites/DeleteJobFavourite | Delete a job favourite.    Requires the 'SubmitTimesheets' permission.
+[**userJobFavouritesGetJobFavourites**](UserJobFavouritesApi.md#userJobFavouritesGetJobFavourites) | **GET** /api/UserJobFavourites/GetJobFavourites | Get your job favourites.    Requires the 'SubmitTimesheets' permission.
 
 
 <a name="userJobFavouritesCreateJobFavourite"></a>
 # **userJobFavouritesCreateJobFavourite**
 > CSApiResponseInt32 userJobFavouritesCreateJobFavourite(request, xChronosheetsAuth)
 
-Create a job favourite.    Requires the &#39;SubmitTimesheets&#39; permission.
+Create a job favourite.    Requires the 'SubmitTimesheets' permission.
 
 ### Example
 ```javascript
@@ -60,7 +60,7 @@ No authorization required
 # **userJobFavouritesDeleteJobFavourite**
 > CSApiResponseBoolean userJobFavouritesDeleteJobFavourite(jobId, xChronosheetsAuth)
 
-Delete a job favourite.    Requires the &#39;SubmitTimesheets&#39; permission.
+Delete a job favourite.    Requires the 'SubmitTimesheets' permission.
 
 ### Example
 ```javascript
@@ -107,7 +107,7 @@ No authorization required
 # **userJobFavouritesGetJobFavourites**
 > CSApiResponseListUserJobFavourite userJobFavouritesGetJobFavourites(xChronosheetsAuth)
 
-Get your job favourites.    Requires the &#39;SubmitTimesheets&#39; permission.
+Get your job favourites.    Requires the 'SubmitTimesheets' permission.
 
 ### Example
 ```javascript

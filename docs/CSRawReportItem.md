@@ -19,5 +19,7 @@ Name | Type | Description | Notes
 **payOvertimeAmount** | **Number** |  | [optional] 
 **tripCost** | **Number** |  | [optional] 
 **tripDistanceMeters** | **Number** |  | [optional] 
+**spanSecondsNormalTime** | **Number** |  | [optional] 
+**spanSecondsOvertime** | **Number** |  | [optional] 
 
 

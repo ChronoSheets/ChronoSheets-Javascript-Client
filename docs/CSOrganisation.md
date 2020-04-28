@@ -30,13 +30,13 @@ Name | Type | Description | Notes
 ## Enum: SubscriptionSourceEnum
 
 
-* `None` (value: `"None"`)
+* `none` (value: `"None"`)
 
-* `Stripe` (value: `"Stripe"`)
+* `stripe` (value: `"Stripe"`)
 
-* `AppleInApp` (value: `"AppleInApp"`)
+* `appleInApp` (value: `"AppleInApp"`)
 
-* `GoogleInApp` (value: `"GoogleInApp"`)
+* `googleInApp` (value: `"GoogleInApp"`)
 
 
 
@@ -45,11 +45,11 @@ Name | Type | Description | Notes
 ## Enum: SignUpSourceEnum
 
 
-* `Desktop` (value: `"Desktop"`)
+* `desktop` (value: `"Desktop"`)
 
-* `MobileiOS` (value: `"MobileiOS"`)
+* `mobileiOS` (value: `"MobileiOS"`)
 
-* `MobileAndroid` (value: `"MobileAndroid"`)
+* `mobileAndroid` (value: `"MobileAndroid"`)
 
 
 

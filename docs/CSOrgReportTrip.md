@@ -32,11 +32,11 @@ Name | Type | Description | Notes
 ## Enum: MobilePlatformEnum
 
 
-* `Unknown` (value: `"Unknown"`)
+* `unknown` (value: `"Unknown"`)
 
 * `iOS` (value: `"iOS"`)
 
-* `Android` (value: `"Android"`)
+* `android` (value: `"Android"`)
 
 
 

@@ -12,19 +12,19 @@ Name | Type | Description | Notes
 ## Enum: DayTypeEnum
 
 
-* `Monday` (value: `"Monday"`)
+* `monday` (value: `"Monday"`)
 
-* `Tuesday` (value: `"Tuesday"`)
+* `tuesday` (value: `"Tuesday"`)
 
-* `Wednesday` (value: `"Wednesday"`)
+* `wednesday` (value: `"Wednesday"`)
 
-* `Thursday` (value: `"Thursday"`)
+* `thursday` (value: `"Thursday"`)
 
-* `Friday` (value: `"Friday"`)
+* `friday` (value: `"Friday"`)
 
-* `Saturday` (value: `"Saturday"`)
+* `saturday` (value: `"Saturday"`)
 
-* `Sunday` (value: `"Sunday"`)
+* `sunday` (value: `"Sunday"`)
 
 
 

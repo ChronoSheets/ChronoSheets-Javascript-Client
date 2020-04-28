@@ -33,11 +33,11 @@ Name | Type | Description | Notes
 ## Enum: MobilePlatformEnum
 
 
-* `Unknown` (value: `"Unknown"`)
+* `unknown` (value: `"Unknown"`)
 
 * `iOS` (value: `"iOS"`)
 
-* `Android` (value: `"Android"`)
+* `android` (value: `"Android"`)
 
 
 
@@ -46,23 +46,23 @@ Name | Type | Description | Notes
 ## Enum: AttachmentTypeEnum
 
 
-* `Image` (value: `"Image"`)
+* `image` (value: `"Image"`)
 
-* `WordDoc` (value: `"WordDoc"`)
+* `wordDoc` (value: `"WordDoc"`)
 
-* `Pdf` (value: `"Pdf"`)
+* `pdf` (value: `"Pdf"`)
 
-* `MSSpreadSheet` (value: `"MSSpreadSheet"`)
+* `mSSpreadSheet` (value: `"MSSpreadSheet"`)
 
-* `MSPowerPoint` (value: `"MSPowerPoint"`)
+* `mSPowerPoint` (value: `"MSPowerPoint"`)
 
-* `RichTextFormat` (value: `"RichTextFormat"`)
+* `richTextFormat` (value: `"RichTextFormat"`)
 
-* `ZipFile` (value: `"ZipFile"`)
+* `zipFile` (value: `"ZipFile"`)
 
-* `Other` (value: `"Other"`)
+* `other` (value: `"Other"`)
 
-* `Audio` (value: `"Audio"`)
+* `audio` (value: `"Audio"`)
 
 
 

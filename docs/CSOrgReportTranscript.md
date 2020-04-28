@@ -46,15 +46,15 @@ Name | Type | Description | Notes
 ## Enum: MediaTypeEnum
 
 
-* `Other` (value: `"Other"`)
+* `other` (value: `"Other"`)
 
-* `Mp3` (value: `"Mp3"`)
+* `mp3` (value: `"Mp3"`)
 
-* `Mp4` (value: `"Mp4"`)
+* `mp4` (value: `"Mp4"`)
 
-* `Wav` (value: `"Wav"`)
+* `wav` (value: `"Wav"`)
 
-* `Flac` (value: `"Flac"`)
+* `flac` (value: `"Flac"`)
 
 
 
@@ -63,13 +63,13 @@ Name | Type | Description | Notes
 ## Enum: TranscriptionStatusEnum
 
 
-* `Saved` (value: `"Saved"`)
+* `saved` (value: `"Saved"`)
 
-* `Processing` (value: `"Processing"`)
+* `processing` (value: `"Processing"`)
 
-* `Completed` (value: `"Completed"`)
+* `completed` (value: `"Completed"`)
 
-* `FailedWithError` (value: `"FailedWithError"`)
+* `failedWithError` (value: `"FailedWithError"`)
 
 
 
@@ -78,11 +78,11 @@ Name | Type | Description | Notes
 ## Enum: MobilePlatformEnum
 
 
-* `Unknown` (value: `"Unknown"`)
+* `unknown` (value: `"Unknown"`)
 
 * `iOS` (value: `"iOS"`)
 
-* `Android` (value: `"Android"`)
+* `android` (value: `"Android"`)
 
 
 
@@ -91,23 +91,23 @@ Name | Type | Description | Notes
 ## Enum: AttachmentTypeEnum
 
 
-* `Image` (value: `"Image"`)
+* `image` (value: `"Image"`)
 
-* `WordDoc` (value: `"WordDoc"`)
+* `wordDoc` (value: `"WordDoc"`)
 
-* `Pdf` (value: `"Pdf"`)
+* `pdf` (value: `"Pdf"`)
 
-* `MSSpreadSheet` (value: `"MSSpreadSheet"`)
+* `mSSpreadSheet` (value: `"MSSpreadSheet"`)
 
-* `MSPowerPoint` (value: `"MSPowerPoint"`)
+* `mSPowerPoint` (value: `"MSPowerPoint"`)
 
-* `RichTextFormat` (value: `"RichTextFormat"`)
+* `richTextFormat` (value: `"RichTextFormat"`)
 
-* `ZipFile` (value: `"ZipFile"`)
+* `zipFile` (value: `"ZipFile"`)
 
-* `Other` (value: `"Other"`)
+* `other` (value: `"Other"`)
 
-* `Audio` (value: `"Audio"`)
+* `audio` (value: `"Audio"`)
 
 
 

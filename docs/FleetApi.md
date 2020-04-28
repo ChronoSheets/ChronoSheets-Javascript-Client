@@ -4,17 +4,18 @@ All URIs are relative to *https://www.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fleetCreateVehicle**](FleetApi.md#fleetCreateVehicle) | **POST** /api/Fleet/CreateVehicle | Create a vehicle.    Requires the &#39;ManageFleet&#39; permission.
+[**fleetCreateVehicle**](FleetApi.md#fleetCreateVehicle) | **POST** /api/Fleet/CreateVehicle | Create a vehicle.    Requires the 'ManageFleet' permission.
+[**fleetDeleteVehicle**](FleetApi.md#fleetDeleteVehicle) | **DELETE** /api/Fleet/DeleteVehicle | Delete a vehicle from the fleet.  Requires the 'ManageFleet' permission.
 [**fleetGetVehicleById**](FleetApi.md#fleetGetVehicleById) | **GET** /api/Fleet/GetVehicleById | Get a particular vehicle.  Does not require any special permission.
 [**fleetGetVehicles**](FleetApi.md#fleetGetVehicles) | **GET** /api/Fleet/GetVehicles | Get a collection of vehicles that are under your organisation.    Does not require any special permission.
-[**fleetUpdateVehicle**](FleetApi.md#fleetUpdateVehicle) | **PUT** /api/Fleet/UpdateVehicle | Update a vehicle.    Requires the &#39;ManageFleet&#39; permission.
+[**fleetUpdateVehicle**](FleetApi.md#fleetUpdateVehicle) | **PUT** /api/Fleet/UpdateVehicle | Update a vehicle.    Requires the 'ManageFleet' permission.
 
 
 <a name="fleetCreateVehicle"></a>
 # **fleetCreateVehicle**
 > CSApiResponseInt32 fleetCreateVehicle(request, xChronosheetsAuth)
 
-Create a vehicle.    Requires the &#39;ManageFleet&#39; permission.
+Create a vehicle.    Requires the 'ManageFleet' permission.
 
 ### Example
 ```javascript
@@ -55,6 +56,53 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
+ - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+
+<a name="fleetDeleteVehicle"></a>
+# **fleetDeleteVehicle**
+> CSApiResponseBoolean fleetDeleteVehicle(vehicleId, xChronosheetsAuth)
+
+Delete a vehicle from the fleet.  Requires the 'ManageFleet' permission.
+
+### Example
+```javascript
+var ChronoSheetsApi = require('ChronoSheetsAPI');
+
+var apiInstance = new ChronoSheetsApi.FleetApi();
+
+var vehicleId = 56; // Number | The unique ID of the vehicle you wish to delete
+
+var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.fleetDeleteVehicle(vehicleId, xChronosheetsAuth, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **vehicleId** | **Number**| The unique ID of the vehicle you wish to delete | 
+ **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+
+### Return type
+
+[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
  - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
 <a name="fleetGetVehicleById"></a>
@@ -156,7 +204,7 @@ No authorization required
 # **fleetUpdateVehicle**
 > CSApiResponseBoolean fleetUpdateVehicle(request, xChronosheetsAuth)
 
-Update a vehicle.    Requires the &#39;ManageFleet&#39; permission.
+Update a vehicle.    Requires the 'ManageFleet' permission.
 
 ### Example
 ```javascript
