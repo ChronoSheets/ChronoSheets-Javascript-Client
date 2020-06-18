@@ -38,6 +38,7 @@
 
   /**
    * Constructs a new <code>CSApiResponseForPaginatedListRawReportItem</code>.
+   * A paginated API repsonse
    * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem
    * @class
    */
@@ -67,21 +68,25 @@
   }
 
   /**
+   * The count of total records that are being paginated
    * @member {Number} totalSetCount
    */
   exports.prototype.totalSetCount = undefined;
 
   /**
+   * The main Data of the response
    * @member {Array.<module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSRawReportItem>} data
    */
   exports.prototype.data = undefined;
 
   /**
+   * The API response status. Indicates if the request was successful, failed or was unauthorised.
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedListRawReportItem.StatusEnum} status
    */
   exports.prototype.status = undefined;
 
   /**
+   * A message to accompany the response status.  If the Status is failed, this message will hint why it failed and what you need to do.
    * @member {String} message
    */
   exports.prototype.message = undefined;

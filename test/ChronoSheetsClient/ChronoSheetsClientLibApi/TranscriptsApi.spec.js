@@ -48,9 +48,7 @@
               return;
             }
             // TODO: update response assertions
-            expect(data).to.be.a(ChronoSheetsApi.CSApiResponseForPaginatedTranscription);
-            expect(data.totalSetCount).to.be.a('number');
-            expect(data.totalSetCount).to.be(0);
+            expect(data).to.be.a(ChronoSheetsApi.CSApiResponseTranscription);
             expect(data.data).to.be.a(ChronoSheetsApi.CSTranscription);
                   expect(data.data.id).to.be.a('number');
               expect(data.data.id).to.be(0);

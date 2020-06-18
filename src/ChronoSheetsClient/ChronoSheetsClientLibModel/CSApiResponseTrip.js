@@ -38,6 +38,7 @@
 
   /**
    * Constructs a new <code>CSApiResponseTrip</code>.
+   * A standard API response
    * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip
    * @class
    */
@@ -65,16 +66,19 @@
   }
 
   /**
+   * The main Data of the response
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTrip} data
    */
   exports.prototype.data = undefined;
 
   /**
+   * The API response status. Indicates if the request was successful, failed or was unauthorised.
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTrip.StatusEnum} status
    */
   exports.prototype.status = undefined;
 
   /**
+   * A message to accompany the response status.  If the Status is failed, this message will hint why it failed and what you need to do.
    * @member {String} message
    */
   exports.prototype.message = undefined;

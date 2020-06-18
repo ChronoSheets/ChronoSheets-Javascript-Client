@@ -30,14 +30,14 @@
   var instance;
 
   describe('ChronoSheetsClient', function() {
-    describe('CSApiResponseForPaginatedTranscription', function() {
+    describe('CSApiResponseForPaginatedListExtendedGeofence', function() {
       beforeEach(function() {
-        instance = new ChronoSheetsApi.CSApiResponseForPaginatedTranscription();
+        instance = new ChronoSheetsApi.CSApiResponseForPaginatedListExtendedGeofence();
       });
 
-      it('should create an instance of CSApiResponseForPaginatedTranscription', function() {
-        // TODO: update the code to test CSApiResponseForPaginatedTranscription
-        expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseForPaginatedTranscription);
+      it('should create an instance of CSApiResponseForPaginatedListExtendedGeofence', function() {
+        // TODO: update the code to test CSApiResponseForPaginatedListExtendedGeofence
+        expect(instance).to.be.a(ChronoSheetsApi.CSApiResponseForPaginatedListExtendedGeofence);
       });
 
       it('should have the property totalSetCount (base name: "TotalSetCount")', function() {

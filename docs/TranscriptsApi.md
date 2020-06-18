@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 <a name="transcriptsGetMyTranscript"></a>
 # **transcriptsGetMyTranscript**
-> CSApiResponseForPaginatedTranscription transcriptsGetMyTranscript(fileAttachmentId, xChronosheetsAuth)
+> CSApiResponseTranscription transcriptsGetMyTranscript(fileAttachmentId, xChronosheetsAuth)
 
 Get an audio to text transcript for a particular audio file attachment
 
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseForPaginatedTranscription**](CSApiResponseForPaginatedTranscription.md)
+[**CSApiResponseTranscription**](CSApiResponseTranscription.md)
 
 ### Authorization
 

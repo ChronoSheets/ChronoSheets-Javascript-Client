@@ -25,37 +25,36 @@
     if (!root.ChronoSheetsApi) {
       root.ChronoSheetsApi = {};
     }
-    root.ChronoSheetsApi.CSApiResponseForPaginatedTranscription = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSTranscription);
+    root.ChronoSheetsApi.CSApiResponseTranscription = factory(root.ChronoSheetsApi.ApiClient, root.ChronoSheetsApi.CSTranscription);
   }
 }(this, function(ApiClient, CSTranscription) {
   'use strict';
 
   /**
-   * The CSApiResponseForPaginatedTranscription model module.
-   * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedTranscription
+   * The CSApiResponseTranscription model module.
+   * @module ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTranscription
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>CSApiResponseForPaginatedTranscription</code>.
-   * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedTranscription
+   * Constructs a new <code>CSApiResponseTranscription</code>.
+   * A standard API response
+   * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTranscription
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>CSApiResponseForPaginatedTranscription</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>CSApiResponseTranscription</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedTranscription} obj Optional instance to populate.
-   * @return {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedTranscription} The populated <code>CSApiResponseForPaginatedTranscription</code> instance.
+   * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTranscription} obj Optional instance to populate.
+   * @return {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTranscription} The populated <code>CSApiResponseTranscription</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('TotalSetCount'))
-        obj.totalSetCount = ApiClient.convertToType(data['TotalSetCount'], 'Number');
       if (data.hasOwnProperty('Data'))
         obj.data = CSTranscription.constructFromObject(data['Data']);
       if (data.hasOwnProperty('Status'))
@@ -67,21 +66,19 @@
   }
 
   /**
-   * @member {Number} totalSetCount
-   */
-  exports.prototype.totalSetCount = undefined;
-
-  /**
+   * The main Data of the response
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSTranscription} data
    */
   exports.prototype.data = undefined;
 
   /**
-   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseForPaginatedTranscription.StatusEnum} status
+   * The API response status. Indicates if the request was successful, failed or was unauthorised.
+   * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseTranscription.StatusEnum} status
    */
   exports.prototype.status = undefined;
 
   /**
+   * A message to accompany the response status.  If the Status is failed, this message will hint why it failed and what you need to do.
    * @member {String} message
    */
   exports.prototype.message = undefined;

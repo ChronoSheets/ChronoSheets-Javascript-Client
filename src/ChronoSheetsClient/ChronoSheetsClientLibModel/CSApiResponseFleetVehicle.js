@@ -38,6 +38,7 @@
 
   /**
    * Constructs a new <code>CSApiResponseFleetVehicle</code>.
+   * A standard API response
    * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseFleetVehicle
    * @class
    */
@@ -65,16 +66,19 @@
   }
 
   /**
+   * The main Data of the response
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSFleetVehicle} data
    */
   exports.prototype.data = undefined;
 
   /**
+   * The API response status. Indicates if the request was successful, failed or was unauthorised.
    * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CSApiResponseFleetVehicle.StatusEnum} status
    */
   exports.prototype.status = undefined;
 
   /**
+   * A message to accompany the response status.  If the Status is failed, this message will hint why it failed and what you need to do.
    * @member {String} message
    */
   exports.prototype.message = undefined;
