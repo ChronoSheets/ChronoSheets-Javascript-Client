@@ -1,13 +1,13 @@
 # ChronoSheetsApi.ProjectsApi
 
-All URIs are relative to *https://www.chronosheets.com*
+All URIs are relative to *https://api.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**projectsCreateProject**](ProjectsApi.md#projectsCreateProject) | **POST** /api/Projects/CreateProject | Create a project.    Requires the 'ManageClientsAndProjects' permission.
-[**projectsGetProjectById**](ProjectsApi.md#projectsGetProjectById) | **GET** /api/Projects/GetProjectById | Get a project by its Id.    Requires the 'ManageClientsAndProjects' or 'ManageJobsAndTask' permissions.
-[**projectsGetProjectsForClient**](ProjectsApi.md#projectsGetProjectsForClient) | **GET** /api/Projects/GetProjectsForClient | Get projects for a particular client.    Requires the 'ManageClientsAndProjects' or 'ManageJobsAndTask' permissions.
-[**projectsUpdateProject**](ProjectsApi.md#projectsUpdateProject) | **PUT** /api/Projects/UpdateProject | Update a project.    Requires the 'ManageClientsAndProjects' permission.
+[**projectsCreateProject**](ProjectsApi.md#projectsCreateProject) | **POST** /Projects/CreateProject | Create a project.    Requires the 'ManageClientsAndProjects' permission.
+[**projectsGetProjectById**](ProjectsApi.md#projectsGetProjectById) | **GET** /Projects/GetProjectById | Get a project by its Id.    Requires the 'ManageClientsAndProjects' or 'ManageJobsAndTask' permissions.
+[**projectsGetProjectsForClient**](ProjectsApi.md#projectsGetProjectsForClient) | **GET** /Projects/GetProjectsForClient | Get projects for a particular client.    Requires the 'ManageClientsAndProjects' or 'ManageJobsAndTask' permissions.
+[**projectsUpdateProject**](ProjectsApi.md#projectsUpdateProject) | **PUT** /Projects/UpdateProject | Update a project.    Requires the 'ManageClientsAndProjects' permission.
 
 
 <a name="projectsCreateProject"></a>

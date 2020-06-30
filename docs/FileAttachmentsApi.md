@@ -1,12 +1,12 @@
 # ChronoSheetsApi.FileAttachmentsApi
 
-All URIs are relative to *https://www.chronosheets.com*
+All URIs are relative to *https://api.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fileAttachmentsDeleteTimesheetFileAttachment**](FileAttachmentsApi.md#fileAttachmentsDeleteTimesheetFileAttachment) | **DELETE** /api/FileAttachments/DeleteTimesheetFileAttachment | Delete a particular timesheet file attachment  Requires the 'SubmitTimesheets' permission.
-[**fileAttachmentsGetFileAttachmentById**](FileAttachmentsApi.md#fileAttachmentsGetFileAttachmentById) | **GET** /api/FileAttachments/GetFileAttachmentById | Get a particular file attachment by ID.  User must own the file attachment for access.
-[**fileAttachmentsGetMyFileAttachments**](FileAttachmentsApi.md#fileAttachmentsGetMyFileAttachments) | **GET** /api/FileAttachments/GetMyFileAttachments | Get my file attachments.  Get files you've attached to timesheets.
+[**fileAttachmentsDeleteTimesheetFileAttachment**](FileAttachmentsApi.md#fileAttachmentsDeleteTimesheetFileAttachment) | **DELETE** /FileAttachments/DeleteTimesheetFileAttachment | Delete a particular timesheet file attachment  Requires the 'SubmitTimesheets' permission.
+[**fileAttachmentsGetFileAttachmentById**](FileAttachmentsApi.md#fileAttachmentsGetFileAttachmentById) | **GET** /FileAttachments/GetFileAttachmentById | Get a particular file attachment by ID.  User must own the file attachment for access.
+[**fileAttachmentsGetMyFileAttachments**](FileAttachmentsApi.md#fileAttachmentsGetMyFileAttachments) | **GET** /FileAttachments/GetMyFileAttachments | Get my file attachments.  Get files you've attached to timesheets.
 
 
 <a name="fileAttachmentsDeleteTimesheetFileAttachment"></a>

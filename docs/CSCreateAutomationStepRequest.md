@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **automationActionType** | **String** |  | [optional] 
 **latitude** | **Number** |  | [optional] 
 **longitude** | **Number** |  | [optional] 
+**clientTime** | **Date** |  | [optional] 
 
 
 <a name="AutomationActionTypeEnum"></a>
