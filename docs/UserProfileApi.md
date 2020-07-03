@@ -7,44 +7,43 @@ Method | HTTP request | Description
 [**userProfileDoLogin**](UserProfileApi.md#userProfileDoLogin) | **PUT** /UserProfile/DoLogin | Login to your ChronoSheets account and obtain an Auth Token which you can use for other ChronoSheets API methods.    Does not require any special permissions.
 [**userProfileDoLogout**](UserProfileApi.md#userProfileDoLogout) | **DELETE** /UserProfile/DoLogout | Logout of your ChronoSheets account.  This method ends and deletes your active session.    Does not require any special permissions.
 [**userProfileGetMyProfile**](UserProfileApi.md#userProfileGetMyProfile) | **GET** /UserProfile/GetMyProfile | Get your own profile.  Use this method to obtain detailed information about your ChronoSheets user profile.    Does not require any special permissions.
-[**userProfileKeepSessionAlive**](UserProfileApi.md#userProfileKeepSessionAlive) | **GET** /UserProfile/KeepSessionAlive | Keep a session alive.  Use this method to keep a session active.  You could use this to 'ping' ChronoSheets every 'x' minutes to make sure your Auth Token will keep working.    Does not require any special permissions.
+[**userProfileKeepSessionAlive**](UserProfileApi.md#userProfileKeepSessionAlive) | **GET** /UserProfile/KeepSessionAlive | Keep a session alive.  Use this method to keep a session active.  You could use this to &#39;ping&#39; ChronoSheets every &#39;x&#39; minutes to make sure your Auth Token will keep working.    Does not require any special permissions.
 [**userProfileUpdateMyProfile**](UserProfileApi.md#userProfileUpdateMyProfile) | **PUT** /UserProfile/UpdateMyProfile | Update your own profile.  Use this method to update your profile information or update/change your password.    Does not require any special permissions.
 
 
-<a name="userProfileDoLogin"></a>
-# **userProfileDoLogin**
-> CSApiResponseDoLoginResponse userProfileDoLogin(request)
+
+## userProfileDoLogin
+
+> ApiResponseDoLoginResponse userProfileDoLogin(request)
 
 Login to your ChronoSheets account and obtain an Auth Token which you can use for other ChronoSheets API methods.    Does not require any special permissions.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.UserProfileApi();
-
-var request = new ChronoSheetsApi.CSDoLoginRequest(); // CSDoLoginRequest | A request object containing your username/email and password.
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.UserProfileApi();
+let request = new ChronoSheetsApi.DoLoginRequest(); // DoLoginRequest | A request object containing your username/email and password.
+apiInstance.userProfileDoLogin(request, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.userProfileDoLogin(request, callback);
+});
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSDoLoginRequest**](CSDoLoginRequest.md)| A request object containing your username/email and password. | 
+ **request** | [**DoLoginRequest**](DoLoginRequest.md)| A request object containing your username/email and password. | 
 
 ### Return type
 
-[**CSApiResponseDoLoginResponse**](CSApiResponseDoLoginResponse.md)
+[**ApiResponseDoLoginResponse**](ApiResponseDoLoginResponse.md)
 
 ### Authorization
 
@@ -52,35 +51,34 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="userProfileDoLogout"></a>
-# **userProfileDoLogout**
-> CSApiResponseBoolean userProfileDoLogout(xChronosheetsAuth)
+
+## userProfileDoLogout
+
+> ApiResponseBoolean userProfileDoLogout(xChronosheetsAuth)
 
 Logout of your ChronoSheets account.  This method ends and deletes your active session.    Does not require any special permissions.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.UserProfileApi();
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.UserProfileApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.userProfileDoLogout(xChronosheetsAuth, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.userProfileDoLogout(xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -88,7 +86,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
+[**ApiResponseBoolean**](ApiResponseBoolean.md)
 
 ### Authorization
 
@@ -96,35 +94,34 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="userProfileGetMyProfile"></a>
-# **userProfileGetMyProfile**
-> CSApiResponseUserProfile userProfileGetMyProfile(xChronosheetsAuth)
+
+## userProfileGetMyProfile
+
+> ApiResponseUserProfile userProfileGetMyProfile(xChronosheetsAuth)
 
 Get your own profile.  Use this method to obtain detailed information about your ChronoSheets user profile.    Does not require any special permissions.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.UserProfileApi();
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.UserProfileApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.userProfileGetMyProfile(xChronosheetsAuth, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.userProfileGetMyProfile(xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -132,7 +129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseUserProfile**](CSApiResponseUserProfile.md)
+[**ApiResponseUserProfile**](ApiResponseUserProfile.md)
 
 ### Authorization
 
@@ -140,35 +137,34 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="userProfileKeepSessionAlive"></a>
-# **userProfileKeepSessionAlive**
-> CSApiResponseBoolean userProfileKeepSessionAlive(xChronosheetsAuth)
 
-Keep a session alive.  Use this method to keep a session active.  You could use this to 'ping' ChronoSheets every 'x' minutes to make sure your Auth Token will keep working.    Does not require any special permissions.
+## userProfileKeepSessionAlive
+
+> ApiResponseBoolean userProfileKeepSessionAlive(xChronosheetsAuth)
+
+Keep a session alive.  Use this method to keep a session active.  You could use this to &#39;ping&#39; ChronoSheets every &#39;x&#39; minutes to make sure your Auth Token will keep working.    Does not require any special permissions.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.UserProfileApi();
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.UserProfileApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.userProfileKeepSessionAlive(xChronosheetsAuth, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.userProfileKeepSessionAlive(xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -176,7 +172,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
+[**ApiResponseBoolean**](ApiResponseBoolean.md)
 
 ### Authorization
 
@@ -184,46 +180,44 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="userProfileUpdateMyProfile"></a>
-# **userProfileUpdateMyProfile**
-> CSApiResponseUpdateProfileResponse userProfileUpdateMyProfile(request, xChronosheetsAuth)
+
+## userProfileUpdateMyProfile
+
+> ApiResponseUpdateProfileResponse userProfileUpdateMyProfile(xChronosheetsAuth, request)
 
 Update your own profile.  Use this method to update your profile information or update/change your password.    Does not require any special permissions.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.UserProfileApi();
-
-var request = new ChronoSheetsApi.CSUpdateMyProfileRequest(); // CSUpdateMyProfileRequest | An Update MyProfile Request object containing updated fields.
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.UserProfileApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+let request = new ChronoSheetsApi.UpdateMyProfileRequest(); // UpdateMyProfileRequest | An Update MyProfile Request object containing updated fields.
+apiInstance.userProfileUpdateMyProfile(xChronosheetsAuth, request, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.userProfileUpdateMyProfile(request, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSUpdateMyProfileRequest**](CSUpdateMyProfileRequest.md)| An Update MyProfile Request object containing updated fields. | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **request** | [**UpdateMyProfileRequest**](UpdateMyProfileRequest.md)| An Update MyProfile Request object containing updated fields. | 
 
 ### Return type
 
-[**CSApiResponseUpdateProfileResponse**](CSApiResponseUpdateProfileResponse.md)
+[**ApiResponseUpdateProfileResponse**](ApiResponseUpdateProfileResponse.md)
 
 ### Authorization
 
@@ -231,6 +225,6 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 

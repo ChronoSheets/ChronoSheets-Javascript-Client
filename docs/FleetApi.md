@@ -4,50 +4,48 @@ All URIs are relative to *https://api.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fleetCreateVehicle**](FleetApi.md#fleetCreateVehicle) | **POST** /Fleet/CreateVehicle | Create a vehicle.    Requires the 'ManageFleet' permission.
-[**fleetDeleteVehicle**](FleetApi.md#fleetDeleteVehicle) | **DELETE** /Fleet/DeleteVehicle | Delete a vehicle from the fleet.  Requires the 'ManageFleet' permission.
+[**fleetCreateVehicle**](FleetApi.md#fleetCreateVehicle) | **POST** /Fleet/CreateVehicle | Create a vehicle.    Requires the &#39;ManageFleet&#39; permission.
+[**fleetDeleteVehicle**](FleetApi.md#fleetDeleteVehicle) | **DELETE** /Fleet/DeleteVehicle | Delete a vehicle from the fleet.  Requires the &#39;ManageFleet&#39; permission.
 [**fleetGetVehicleById**](FleetApi.md#fleetGetVehicleById) | **GET** /Fleet/GetVehicleById | Get a particular vehicle.  Does not require any special permission.
 [**fleetGetVehicles**](FleetApi.md#fleetGetVehicles) | **GET** /Fleet/GetVehicles | Get a collection of vehicles that are under your organisation.    Does not require any special permission.
-[**fleetUpdateVehicle**](FleetApi.md#fleetUpdateVehicle) | **PUT** /Fleet/UpdateVehicle | Update a vehicle.    Requires the 'ManageFleet' permission.
+[**fleetUpdateVehicle**](FleetApi.md#fleetUpdateVehicle) | **PUT** /Fleet/UpdateVehicle | Update a vehicle.    Requires the &#39;ManageFleet&#39; permission.
 
 
-<a name="fleetCreateVehicle"></a>
-# **fleetCreateVehicle**
-> CSApiResponseInt32 fleetCreateVehicle(request, xChronosheetsAuth)
 
-Create a vehicle.    Requires the 'ManageFleet' permission.
+## fleetCreateVehicle
+
+> ApiResponseInt32 fleetCreateVehicle(xChronosheetsAuth, request)
+
+Create a vehicle.    Requires the &#39;ManageFleet&#39; permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.FleetApi();
-
-var request = new ChronoSheetsApi.CSInsertVehicleRequest(); // CSInsertVehicleRequest | An Insert Vehicle Request object containing values for the new Vehicle to create
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.FleetApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+let request = new ChronoSheetsApi.InsertVehicleRequest(); // InsertVehicleRequest | An Insert Vehicle Request object containing values for the new Vehicle to create
+apiInstance.fleetCreateVehicle(xChronosheetsAuth, request, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.fleetCreateVehicle(request, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSInsertVehicleRequest**](CSInsertVehicleRequest.md)| An Insert Vehicle Request object containing values for the new Vehicle to create | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **request** | [**InsertVehicleRequest**](InsertVehicleRequest.md)| An Insert Vehicle Request object containing values for the new Vehicle to create | 
 
 ### Return type
 
-[**CSApiResponseInt32**](CSApiResponseInt32.md)
+[**ApiResponseInt32**](ApiResponseInt32.md)
 
 ### Authorization
 
@@ -55,37 +53,35 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="fleetDeleteVehicle"></a>
-# **fleetDeleteVehicle**
-> CSApiResponseBoolean fleetDeleteVehicle(vehicleId, xChronosheetsAuth)
 
-Delete a vehicle from the fleet.  Requires the 'ManageFleet' permission.
+## fleetDeleteVehicle
+
+> ApiResponseBoolean fleetDeleteVehicle(vehicleId, xChronosheetsAuth)
+
+Delete a vehicle from the fleet.  Requires the &#39;ManageFleet&#39; permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.FleetApi();
-
-var vehicleId = 56; // Number | The unique ID of the vehicle you wish to delete
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.FleetApi();
+let vehicleId = 56; // Number | The unique ID of the vehicle you wish to delete
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.fleetDeleteVehicle(vehicleId, xChronosheetsAuth, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.fleetDeleteVehicle(vehicleId, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -94,7 +90,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
+[**ApiResponseBoolean**](ApiResponseBoolean.md)
 
 ### Authorization
 
@@ -102,37 +98,35 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="fleetGetVehicleById"></a>
-# **fleetGetVehicleById**
-> CSApiResponseFleetVehicle fleetGetVehicleById(vehicleId, xChronosheetsAuth)
+
+## fleetGetVehicleById
+
+> ApiResponseFleetVehicle fleetGetVehicleById(vehicleId, xChronosheetsAuth)
 
 Get a particular vehicle.  Does not require any special permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.FleetApi();
-
-var vehicleId = 56; // Number | The ID of the Vehicle you want to get
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.FleetApi();
+let vehicleId = 56; // Number | The ID of the Vehicle you want to get
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.fleetGetVehicleById(vehicleId, xChronosheetsAuth, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.fleetGetVehicleById(vehicleId, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -141,7 +135,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseFleetVehicle**](CSApiResponseFleetVehicle.md)
+[**ApiResponseFleetVehicle**](ApiResponseFleetVehicle.md)
 
 ### Authorization
 
@@ -149,38 +143,37 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="fleetGetVehicles"></a>
-# **fleetGetVehicles**
-> CSApiResponseListFleetVehicle fleetGetVehicles(xChronosheetsAuth, opts)
+
+## fleetGetVehicles
+
+> ApiResponseListFleetVehicle fleetGetVehicles(xChronosheetsAuth, opts)
 
 Get a collection of vehicles that are under your organisation.    Does not require any special permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.FleetApi();
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-var opts = { 
+let apiInstance = new ChronoSheetsApi.FleetApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+let opts = {
   'includeDeleted': true // Boolean | Whether or not to include deleted vehicles
 };
-
-var callback = function(error, data, response) {
+apiInstance.fleetGetVehicles(xChronosheetsAuth, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.fleetGetVehicles(xChronosheetsAuth, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -189,7 +182,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseListFleetVehicle**](CSApiResponseListFleetVehicle.md)
+[**ApiResponseListFleetVehicle**](ApiResponseListFleetVehicle.md)
 
 ### Authorization
 
@@ -197,46 +190,44 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="fleetUpdateVehicle"></a>
-# **fleetUpdateVehicle**
-> CSApiResponseBoolean fleetUpdateVehicle(request, xChronosheetsAuth)
 
-Update a vehicle.    Requires the 'ManageFleet' permission.
+## fleetUpdateVehicle
+
+> ApiResponseBoolean fleetUpdateVehicle(xChronosheetsAuth, request)
+
+Update a vehicle.    Requires the &#39;ManageFleet&#39; permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.FleetApi();
-
-var request = new ChronoSheetsApi.CSSaveVehicleRequest(); // CSSaveVehicleRequest | A Save Vehicle Request object containing updated fields.  Make sure to specify the Vehicle Id in the request object so that ChronoSheets knows which Vehicle to update
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.FleetApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+let request = new ChronoSheetsApi.SaveVehicleRequest(); // SaveVehicleRequest | A Save Vehicle Request object containing updated fields.  Make sure to specify the Vehicle Id in the request object so that ChronoSheets knows which Vehicle to update
+apiInstance.fleetUpdateVehicle(xChronosheetsAuth, request, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.fleetUpdateVehicle(request, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSSaveVehicleRequest**](CSSaveVehicleRequest.md)| A Save Vehicle Request object containing updated fields.  Make sure to specify the Vehicle Id in the request object so that ChronoSheets knows which Vehicle to update | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **request** | [**SaveVehicleRequest**](SaveVehicleRequest.md)| A Save Vehicle Request object containing updated fields.  Make sure to specify the Vehicle Id in the request object so that ChronoSheets knows which Vehicle to update | 
 
 ### Return type
 
-[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
+[**ApiResponseBoolean**](ApiResponseBoolean.md)
 
 ### Authorization
 
@@ -244,6 +235,6 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 

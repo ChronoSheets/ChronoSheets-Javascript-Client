@@ -4,39 +4,37 @@ All URIs are relative to *https://api.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**fileAttachmentsDeleteTimesheetFileAttachment**](FileAttachmentsApi.md#fileAttachmentsDeleteTimesheetFileAttachment) | **DELETE** /FileAttachments/DeleteTimesheetFileAttachment | Delete a particular timesheet file attachment  Requires the 'SubmitTimesheets' permission.
+[**fileAttachmentsDeleteTimesheetFileAttachment**](FileAttachmentsApi.md#fileAttachmentsDeleteTimesheetFileAttachment) | **DELETE** /FileAttachments/DeleteTimesheetFileAttachment | Delete a particular timesheet file attachment  Requires the &#39;SubmitTimesheets&#39; permission.
 [**fileAttachmentsGetFileAttachmentById**](FileAttachmentsApi.md#fileAttachmentsGetFileAttachmentById) | **GET** /FileAttachments/GetFileAttachmentById | Get a particular file attachment by ID.  User must own the file attachment for access.
-[**fileAttachmentsGetMyFileAttachments**](FileAttachmentsApi.md#fileAttachmentsGetMyFileAttachments) | **GET** /FileAttachments/GetMyFileAttachments | Get my file attachments.  Get files you've attached to timesheets.
+[**fileAttachmentsGetMyFileAttachments**](FileAttachmentsApi.md#fileAttachmentsGetMyFileAttachments) | **GET** /FileAttachments/GetMyFileAttachments | Get my file attachments.  Get files you&#39;ve attached to timesheets.
 
 
-<a name="fileAttachmentsDeleteTimesheetFileAttachment"></a>
-# **fileAttachmentsDeleteTimesheetFileAttachment**
-> CSApiResponseBoolean fileAttachmentsDeleteTimesheetFileAttachment(fileAttachmentId, xChronosheetsAuth)
 
-Delete a particular timesheet file attachment  Requires the 'SubmitTimesheets' permission.
+## fileAttachmentsDeleteTimesheetFileAttachment
+
+> ApiResponseBoolean fileAttachmentsDeleteTimesheetFileAttachment(fileAttachmentId, xChronosheetsAuth)
+
+Delete a particular timesheet file attachment  Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.FileAttachmentsApi();
-
-var fileAttachmentId = 56; // Number | The Id of the file attachment to delete
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.FileAttachmentsApi();
+let fileAttachmentId = 56; // Number | The Id of the file attachment to delete
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.fileAttachmentsDeleteTimesheetFileAttachment(fileAttachmentId, xChronosheetsAuth, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.fileAttachmentsDeleteTimesheetFileAttachment(fileAttachmentId, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -45,7 +43,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
+[**ApiResponseBoolean**](ApiResponseBoolean.md)
 
 ### Authorization
 
@@ -53,37 +51,35 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="fileAttachmentsGetFileAttachmentById"></a>
-# **fileAttachmentsGetFileAttachmentById**
-> CSApiResponseTimesheetFileAttachment fileAttachmentsGetFileAttachmentById(fileAttachmentId, xChronosheetsAuth)
+
+## fileAttachmentsGetFileAttachmentById
+
+> ApiResponseTimesheetFileAttachment fileAttachmentsGetFileAttachmentById(fileAttachmentId, xChronosheetsAuth)
 
 Get a particular file attachment by ID.  User must own the file attachment for access.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.FileAttachmentsApi();
-
-var fileAttachmentId = 56; // Number | The ID of the file attachment
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.FileAttachmentsApi();
+let fileAttachmentId = 56; // Number | The ID of the file attachment
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.fileAttachmentsGetFileAttachmentById(fileAttachmentId, xChronosheetsAuth, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.fileAttachmentsGetFileAttachmentById(fileAttachmentId, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -92,7 +88,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseTimesheetFileAttachment**](CSApiResponseTimesheetFileAttachment.md)
+[**ApiResponseTimesheetFileAttachment**](ApiResponseTimesheetFileAttachment.md)
 
 ### Authorization
 
@@ -100,43 +96,40 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="fileAttachmentsGetMyFileAttachments"></a>
-# **fileAttachmentsGetMyFileAttachments**
-> CSApiResponseForPaginatedListTimesheetFileAttachment fileAttachmentsGetMyFileAttachments(startDate, endDate, xChronosheetsAuth, opts)
 
-Get my file attachments.  Get files you've attached to timesheets.
+## fileAttachmentsGetMyFileAttachments
+
+> ApiResponseForPaginatedListTimesheetFileAttachment fileAttachmentsGetMyFileAttachments(startDate, endDate, xChronosheetsAuth, opts)
+
+Get my file attachments.  Get files you&#39;ve attached to timesheets.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.FileAttachmentsApi();
-
-var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The Start date of the date range.  File attachments after this date will be obtained.
-
-var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The End date of the date range.  File attachments before this date will be obtained.
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-var opts = { 
+let apiInstance = new ChronoSheetsApi.FileAttachmentsApi();
+let startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The Start date of the date range.  File attachments after this date will be obtained.
+let endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The End date of the date range.  File attachments before this date will be obtained.
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+let opts = {
   'skip': 56, // Number | Skip this many File attachments
   'take': 56 // Number | Take this many File attachments
 };
-
-var callback = function(error, data, response) {
+apiInstance.fileAttachmentsGetMyFileAttachments(startDate, endDate, xChronosheetsAuth, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.fileAttachmentsGetMyFileAttachments(startDate, endDate, xChronosheetsAuth, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -148,7 +141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseForPaginatedListTimesheetFileAttachment**](CSApiResponseForPaginatedListTimesheetFileAttachment.md)
+[**ApiResponseForPaginatedListTimesheetFileAttachment**](ApiResponseForPaginatedListTimesheetFileAttachment.md)
 
 ### Authorization
 
@@ -156,6 +149,6 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 

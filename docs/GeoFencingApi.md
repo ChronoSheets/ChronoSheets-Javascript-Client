@@ -4,50 +4,48 @@ All URIs are relative to *https://api.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**geoFencingCreateGeofence**](GeoFencingApi.md#geoFencingCreateGeofence) | **POST** /GeoFencing/CreateGeofence | Create a geofencing with rules to be used for clock on/off automation.  Requires the 'ManageGeofencing' permission.
-[**geoFencingDeleteGeofence**](GeoFencingApi.md#geoFencingDeleteGeofence) | **DELETE** /GeoFencing/DeleteGeofence | Deletes a geofence.  Requires the 'ManageGeofencing' permission.
-[**geoFencingGetGeofenceById**](GeoFencingApi.md#geoFencingGetGeofenceById) | **GET** /GeoFencing/GetGeofenceById | Get a geofence by ID  Requires the 'SubmitTimesheets' permission.
-[**geoFencingGetGeofences**](GeoFencingApi.md#geoFencingGetGeofences) | **GET** /GeoFencing/GetGeofences | Get geofences belonging to your organisation  Requires the 'SubmitTimesheets' permission.
-[**geoFencingUpdateGeofence**](GeoFencingApi.md#geoFencingUpdateGeofence) | **PUT** /GeoFencing/UpdateGeofence | Updates a geofencing with rules to be used for clock on/off automation.  Requires the 'ManageGeofencing' permission.
+[**geoFencingCreateGeofence**](GeoFencingApi.md#geoFencingCreateGeofence) | **POST** /GeoFencing/CreateGeofence | Create a geofencing with rules to be used for clock on/off automation.  Requires the &#39;ManageGeofencing&#39; permission.
+[**geoFencingDeleteGeofence**](GeoFencingApi.md#geoFencingDeleteGeofence) | **DELETE** /GeoFencing/DeleteGeofence | Deletes a geofence.  Requires the &#39;ManageGeofencing&#39; permission.
+[**geoFencingGetGeofenceById**](GeoFencingApi.md#geoFencingGetGeofenceById) | **GET** /GeoFencing/GetGeofenceById | Get a geofence by ID  Requires the &#39;SubmitTimesheets&#39; permission.
+[**geoFencingGetGeofences**](GeoFencingApi.md#geoFencingGetGeofences) | **GET** /GeoFencing/GetGeofences | Get geofences belonging to your organisation  Requires the &#39;SubmitTimesheets&#39; permission.
+[**geoFencingUpdateGeofence**](GeoFencingApi.md#geoFencingUpdateGeofence) | **PUT** /GeoFencing/UpdateGeofence | Updates a geofencing with rules to be used for clock on/off automation.  Requires the &#39;ManageGeofencing&#39; permission.
 
 
-<a name="geoFencingCreateGeofence"></a>
-# **geoFencingCreateGeofence**
-> CSApiResponseInt32 geoFencingCreateGeofence(request, xChronosheetsAuth)
 
-Create a geofencing with rules to be used for clock on/off automation.  Requires the 'ManageGeofencing' permission.
+## geoFencingCreateGeofence
+
+> ApiResponseInt32 geoFencingCreateGeofence(xChronosheetsAuth, request)
+
+Create a geofencing with rules to be used for clock on/off automation.  Requires the &#39;ManageGeofencing&#39; permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.GeoFencingApi();
-
-var request = new ChronoSheetsApi.CSCreateGeoFenceRequest(); // CSCreateGeoFenceRequest | 
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.GeoFencingApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+let request = new ChronoSheetsApi.CreateGeoFenceRequest(); // CreateGeoFenceRequest | 
+apiInstance.geoFencingCreateGeofence(xChronosheetsAuth, request, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.geoFencingCreateGeofence(request, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSCreateGeoFenceRequest**](CSCreateGeoFenceRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **request** | [**CreateGeoFenceRequest**](CreateGeoFenceRequest.md)|  | 
 
 ### Return type
 
-[**CSApiResponseInt32**](CSApiResponseInt32.md)
+[**ApiResponseInt32**](ApiResponseInt32.md)
 
 ### Authorization
 
@@ -55,37 +53,35 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="geoFencingDeleteGeofence"></a>
-# **geoFencingDeleteGeofence**
-> CSApiResponseGeofence geoFencingDeleteGeofence(geofenceId, xChronosheetsAuth)
 
-Deletes a geofence.  Requires the 'ManageGeofencing' permission.
+## geoFencingDeleteGeofence
+
+> ApiResponseGeofence geoFencingDeleteGeofence(geofenceId, xChronosheetsAuth)
+
+Deletes a geofence.  Requires the &#39;ManageGeofencing&#39; permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.GeoFencingApi();
-
-var geofenceId = 56; // Number | Specify the geofence you want to delete with the geofence ID.
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.GeoFencingApi();
+let geofenceId = 56; // Number | Specify the geofence you want to delete with the geofence ID.
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.geoFencingDeleteGeofence(geofenceId, xChronosheetsAuth, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.geoFencingDeleteGeofence(geofenceId, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -94,7 +90,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseGeofence**](CSApiResponseGeofence.md)
+[**ApiResponseGeofence**](ApiResponseGeofence.md)
 
 ### Authorization
 
@@ -102,37 +98,35 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="geoFencingGetGeofenceById"></a>
-# **geoFencingGetGeofenceById**
-> CSApiResponseGeofence geoFencingGetGeofenceById(geofenceId, xChronosheetsAuth)
 
-Get a geofence by ID  Requires the 'SubmitTimesheets' permission.
+## geoFencingGetGeofenceById
+
+> ApiResponseGeofence geoFencingGetGeofenceById(geofenceId, xChronosheetsAuth)
+
+Get a geofence by ID  Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.GeoFencingApi();
-
-var geofenceId = 56; // Number | The ID of the geofence you want to obtain
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.GeoFencingApi();
+let geofenceId = 56; // Number | The ID of the geofence you want to obtain
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.geoFencingGetGeofenceById(geofenceId, xChronosheetsAuth, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.geoFencingGetGeofenceById(geofenceId, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -141,7 +135,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseGeofence**](CSApiResponseGeofence.md)
+[**ApiResponseGeofence**](ApiResponseGeofence.md)
 
 ### Authorization
 
@@ -149,39 +143,38 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="geoFencingGetGeofences"></a>
-# **geoFencingGetGeofences**
-> CSApiResponseForPaginatedListExtendedGeofence geoFencingGetGeofences(xChronosheetsAuth, opts)
 
-Get geofences belonging to your organisation  Requires the 'SubmitTimesheets' permission.
+## geoFencingGetGeofences
+
+> ApiResponseForPaginatedListExtendedGeofence geoFencingGetGeofences(xChronosheetsAuth, opts)
+
+Get geofences belonging to your organisation  Requires the &#39;SubmitTimesheets&#39; permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.GeoFencingApi();
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-var opts = { 
+let apiInstance = new ChronoSheetsApi.GeoFencingApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+let opts = {
   'skip': 56, // Number | Number of records to skip
   'take': 56 // Number | Number of records to take
 };
-
-var callback = function(error, data, response) {
+apiInstance.geoFencingGetGeofences(xChronosheetsAuth, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.geoFencingGetGeofences(xChronosheetsAuth, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -191,7 +184,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseForPaginatedListExtendedGeofence**](CSApiResponseForPaginatedListExtendedGeofence.md)
+[**ApiResponseForPaginatedListExtendedGeofence**](ApiResponseForPaginatedListExtendedGeofence.md)
 
 ### Authorization
 
@@ -199,46 +192,44 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="geoFencingUpdateGeofence"></a>
-# **geoFencingUpdateGeofence**
-> CSApiResponseInt32 geoFencingUpdateGeofence(request, xChronosheetsAuth)
 
-Updates a geofencing with rules to be used for clock on/off automation.  Requires the 'ManageGeofencing' permission.
+## geoFencingUpdateGeofence
+
+> ApiResponseInt32 geoFencingUpdateGeofence(xChronosheetsAuth, request)
+
+Updates a geofencing with rules to be used for clock on/off automation.  Requires the &#39;ManageGeofencing&#39; permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.GeoFencingApi();
-
-var request = new ChronoSheetsApi.CSUpdateGeoFenceRequest(); // CSUpdateGeoFenceRequest | 
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.GeoFencingApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+let request = new ChronoSheetsApi.UpdateGeoFenceRequest(); // UpdateGeoFenceRequest | 
+apiInstance.geoFencingUpdateGeofence(xChronosheetsAuth, request, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.geoFencingUpdateGeofence(request, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSUpdateGeoFenceRequest**](CSUpdateGeoFenceRequest.md)|  | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **request** | [**UpdateGeoFenceRequest**](UpdateGeoFenceRequest.md)|  | 
 
 ### Return type
 
-[**CSApiResponseInt32**](CSApiResponseInt32.md)
+[**ApiResponseInt32**](ApiResponseInt32.md)
 
 ### Authorization
 
@@ -246,6 +237,6 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 

@@ -4,49 +4,47 @@ All URIs are relative to *https://api.chronosheets.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**clientsCreateClient**](ClientsApi.md#clientsCreateClient) | **POST** /Clients/CreateClient | Create a client.    Requires the 'ManageClientsAndProjects' permission.
-[**clientsGetClient**](ClientsApi.md#clientsGetClient) | **GET** /Clients/GetClient | Get a particular client.    Requires the 'ManageClientsAndProjects' or 'ManageJobsAndTask' permissions.
-[**clientsGetClients**](ClientsApi.md#clientsGetClients) | **GET** /Clients/GetClients | Get a collection of clients that are under your organisation.    Requires the 'ManageClientsAndProjects' or 'ManageJobsAndTask' permissions.
-[**clientsUpdateClient**](ClientsApi.md#clientsUpdateClient) | **PUT** /Clients/UpdateClient | Update a client.    Requires the 'ManageClientsAndProjects' permission.
+[**clientsCreateClient**](ClientsApi.md#clientsCreateClient) | **POST** /Clients/CreateClient | Create a client.    Requires the &#39;ManageClientsAndProjects&#39; permission.
+[**clientsGetClient**](ClientsApi.md#clientsGetClient) | **GET** /Clients/GetClient | Get a particular client.    Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
+[**clientsGetClients**](ClientsApi.md#clientsGetClients) | **GET** /Clients/GetClients | Get a collection of clients that are under your organisation.    Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
+[**clientsUpdateClient**](ClientsApi.md#clientsUpdateClient) | **PUT** /Clients/UpdateClient | Update a client.    Requires the &#39;ManageClientsAndProjects&#39; permission.
 
 
-<a name="clientsCreateClient"></a>
-# **clientsCreateClient**
-> CSApiResponseInt32 clientsCreateClient(request, xChronosheetsAuth)
 
-Create a client.    Requires the 'ManageClientsAndProjects' permission.
+## clientsCreateClient
+
+> ApiResponseInt32 clientsCreateClient(xChronosheetsAuth, request)
+
+Create a client.    Requires the &#39;ManageClientsAndProjects&#39; permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.ClientsApi();
-
-var request = new ChronoSheetsApi.CSInsertClientRequest(); // CSInsertClientRequest | An Insert Client Request object containing values for the new Client to create
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.ClientsApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+let request = new ChronoSheetsApi.InsertClientRequest(); // InsertClientRequest | An Insert Client Request object containing values for the new Client to create
+apiInstance.clientsCreateClient(xChronosheetsAuth, request, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.clientsCreateClient(request, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSInsertClientRequest**](CSInsertClientRequest.md)| An Insert Client Request object containing values for the new Client to create | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **request** | [**InsertClientRequest**](InsertClientRequest.md)| An Insert Client Request object containing values for the new Client to create | 
 
 ### Return type
 
-[**CSApiResponseInt32**](CSApiResponseInt32.md)
+[**ApiResponseInt32**](ApiResponseInt32.md)
 
 ### Authorization
 
@@ -54,37 +52,35 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="clientsGetClient"></a>
-# **clientsGetClient**
-> CSApiResponseClient clientsGetClient(clientId, xChronosheetsAuth)
 
-Get a particular client.    Requires the 'ManageClientsAndProjects' or 'ManageJobsAndTask' permissions.
+## clientsGetClient
+
+> ApiResponseClient clientsGetClient(clientId, xChronosheetsAuth)
+
+Get a particular client.    Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.ClientsApi();
-
-var clientId = 56; // Number | The ID of the Client you want to get
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.ClientsApi();
+let clientId = 56; // Number | The ID of the Client you want to get
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.clientsGetClient(clientId, xChronosheetsAuth, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.clientsGetClient(clientId, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -93,7 +89,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseClient**](CSApiResponseClient.md)
+[**ApiResponseClient**](ApiResponseClient.md)
 
 ### Authorization
 
@@ -101,35 +97,34 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="clientsGetClients"></a>
-# **clientsGetClients**
-> CSApiResponseListClient clientsGetClients(xChronosheetsAuth)
 
-Get a collection of clients that are under your organisation.    Requires the 'ManageClientsAndProjects' or 'ManageJobsAndTask' permissions.
+## clientsGetClients
+
+> ApiResponseListClient clientsGetClients(xChronosheetsAuth)
+
+Get a collection of clients that are under your organisation.    Requires the &#39;ManageClientsAndProjects&#39; or &#39;ManageJobsAndTask&#39; permissions.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.ClientsApi();
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.ClientsApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.clientsGetClients(xChronosheetsAuth, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.clientsGetClients(xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -137,7 +132,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseListClient**](CSApiResponseListClient.md)
+[**ApiResponseListClient**](ApiResponseListClient.md)
 
 ### Authorization
 
@@ -145,46 +140,44 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="clientsUpdateClient"></a>
-# **clientsUpdateClient**
-> CSApiResponseBoolean clientsUpdateClient(request, xChronosheetsAuth)
 
-Update a client.    Requires the 'ManageClientsAndProjects' permission.
+## clientsUpdateClient
+
+> ApiResponseBoolean clientsUpdateClient(xChronosheetsAuth, request)
+
+Update a client.    Requires the &#39;ManageClientsAndProjects&#39; permission.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.ClientsApi();
-
-var request = new ChronoSheetsApi.CSSaveClientRequest(); // CSSaveClientRequest | A Save Client Request object containing updated fields.  Make sure to specify the Client Id in the request object so that ChronoSheets knows which Client to update
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.ClientsApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+let request = new ChronoSheetsApi.SaveClientRequest(); // SaveClientRequest | A Save Client Request object containing updated fields.  Make sure to specify the Client Id in the request object so that ChronoSheets knows which Client to update
+apiInstance.clientsUpdateClient(xChronosheetsAuth, request, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.clientsUpdateClient(request, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
 
+
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**CSSaveClientRequest**](CSSaveClientRequest.md)| A Save Client Request object containing updated fields.  Make sure to specify the Client Id in the request object so that ChronoSheets knows which Client to update | 
  **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+ **request** | [**SaveClientRequest**](SaveClientRequest.md)| A Save Client Request object containing updated fields.  Make sure to specify the Client Id in the request object so that ChronoSheets knows which Client to update | 
 
 ### Return type
 
-[**CSApiResponseBoolean**](CSApiResponseBoolean.md)
+[**ApiResponseBoolean**](ApiResponseBoolean.md)
 
 ### Authorization
 
@@ -192,6 +185,6 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded, multipart/form-data
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 

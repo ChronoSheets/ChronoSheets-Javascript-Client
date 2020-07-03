@@ -5,37 +5,35 @@ All URIs are relative to *https://api.chronosheets.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**transcriptsGetMyTranscript**](TranscriptsApi.md#transcriptsGetMyTranscript) | **GET** /Transcripts/GetMyTranscript | Get an audio to text transcript for a particular audio file attachment
-[**transcriptsGetMyTranscripts**](TranscriptsApi.md#transcriptsGetMyTranscripts) | **GET** /Transcripts/GetMyTranscripts | Get my file transcripts.  Get audio to text transcripts that you've created.
+[**transcriptsGetMyTranscripts**](TranscriptsApi.md#transcriptsGetMyTranscripts) | **GET** /Transcripts/GetMyTranscripts | Get my file transcripts.  Get audio to text transcripts that you&#39;ve created.
 
 
-<a name="transcriptsGetMyTranscript"></a>
-# **transcriptsGetMyTranscript**
-> CSApiResponseTranscription transcriptsGetMyTranscript(fileAttachmentId, xChronosheetsAuth)
+
+## transcriptsGetMyTranscript
+
+> ApiResponseTranscription transcriptsGetMyTranscript(fileAttachmentId, xChronosheetsAuth)
 
 Get an audio to text transcript for a particular audio file attachment
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.TranscriptsApi();
-
-var fileAttachmentId = 56; // Number | The ID of the file attachment that has a transcript.  It should be an audio file attachment.
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-
-var callback = function(error, data, response) {
+let apiInstance = new ChronoSheetsApi.TranscriptsApi();
+let fileAttachmentId = 56; // Number | The ID of the file attachment that has a transcript.  It should be an audio file attachment.
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.transcriptsGetMyTranscript(fileAttachmentId, xChronosheetsAuth, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.transcriptsGetMyTranscript(fileAttachmentId, xChronosheetsAuth, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -44,7 +42,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseTranscription**](CSApiResponseTranscription.md)
+[**ApiResponseTranscription**](ApiResponseTranscription.md)
 
 ### Authorization
 
@@ -52,44 +50,41 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
-<a name="transcriptsGetMyTranscripts"></a>
-# **transcriptsGetMyTranscripts**
-> CSApiResponseForPaginatedListOrgReportTranscript transcriptsGetMyTranscripts(startDate, endDate, xChronosheetsAuth, opts)
 
-Get my file transcripts.  Get audio to text transcripts that you've created.
+## transcriptsGetMyTranscripts
+
+> ApiResponseForPaginatedListOrgReportTranscript transcriptsGetMyTranscripts(startDate, endDate, xChronosheetsAuth, opts)
+
+Get my file transcripts.  Get audio to text transcripts that you&#39;ve created.
 
 ### Example
+
 ```javascript
-var ChronoSheetsApi = require('ChronoSheetsAPI');
+import ChronoSheetsApi from 'ChronoSheetsAPI';
 
-var apiInstance = new ChronoSheetsApi.TranscriptsApi();
-
-var startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The Start date of the date range.  Transcripts after this date will be obtained.
-
-var endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The End date of the date range.  Transcripts before this date will be obtained.
-
-var xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
-
-var opts = { 
+let apiInstance = new ChronoSheetsApi.TranscriptsApi();
+let startDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The Start date of the date range.  Transcripts after this date will be obtained.
+let endDate = new Date("2013-10-20T19:20:30+01:00"); // Date | The End date of the date range.  Transcripts before this date will be obtained.
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+let opts = {
   'skip': 56, // Number | Skip this many transcripts
   'take': 56, // Number | Take this many transcripts
   'keyword': "keyword_example" // String | Search the text content of the transcript keywords
 };
-
-var callback = function(error, data, response) {
+apiInstance.transcriptsGetMyTranscripts(startDate, endDate, xChronosheetsAuth, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
     console.log('API called successfully. Returned data: ' + data);
   }
-};
-apiInstance.transcriptsGetMyTranscripts(startDate, endDate, xChronosheetsAuth, opts, callback);
+});
 ```
 
 ### Parameters
+
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -102,7 +97,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**CSApiResponseForPaginatedListOrgReportTranscript**](CSApiResponseForPaginatedListOrgReportTranscript.md)
+[**ApiResponseForPaginatedListOrgReportTranscript**](ApiResponseForPaginatedListOrgReportTranscript.md)
 
 ### Authorization
 
@@ -110,6 +105,6 @@ No authorization required
 
 ### HTTP request headers
 
- - **Content-Type**: Not defined
- - **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
 
