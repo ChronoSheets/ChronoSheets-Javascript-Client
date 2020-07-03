@@ -56,7 +56,7 @@ No authorization required
 
 ## timesheetAutomationGetTimesheetAutomationAuditTrail
 
-> ApiResponseForPaginatedListTimesheetAutomationWithOrgAndGeofence timesheetAutomationGetTimesheetAutomationAuditTrail(geofenceId, userId, sort, order, xChronosheetsAuth, opts)
+> ApiResponseForPaginatedListTimesheetAutomationWithOrgAndGeofence timesheetAutomationGetTimesheetAutomationAuditTrail(geofenceId, nfcId, userId, sort, order, xChronosheetsAuth, opts)
 
 Retrieve the timesheet automation / alerts for geofences activities or NFC tap on/off.  Requires the &#39;ManageGeofencing&#39; permission.
 
@@ -67,6 +67,7 @@ import ChronoSheetsApi from 'ChronoSheetsAPI';
 
 let apiInstance = new ChronoSheetsApi.TimesheetAutomationApi();
 let geofenceId = 56; // Number | The ID of the Geofence
+let nfcId = 56; // Number | 
 let userId = 56; // Number | 
 let sort = "sort_example"; // String | 
 let order = "order_example"; // String | 
@@ -75,7 +76,7 @@ let opts = {
   'skip': 56, // Number | Skip this many records
   'take': 56 // Number | Take this many records
 };
-apiInstance.timesheetAutomationGetTimesheetAutomationAuditTrail(geofenceId, userId, sort, order, xChronosheetsAuth, opts, (error, data, response) => {
+apiInstance.timesheetAutomationGetTimesheetAutomationAuditTrail(geofenceId, nfcId, userId, sort, order, xChronosheetsAuth, opts, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -90,6 +91,7 @@ apiInstance.timesheetAutomationGetTimesheetAutomationAuditTrail(geofenceId, user
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **geofenceId** | **Number**| The ID of the Geofence | 
+ **nfcId** | **Number**|  | 
  **userId** | **Number**|  | 
  **sort** | **String**|  | 
  **order** | **String**|  | 

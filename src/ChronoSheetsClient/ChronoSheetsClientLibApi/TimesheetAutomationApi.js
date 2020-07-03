@@ -94,6 +94,7 @@ export default class TimesheetAutomationApi {
     /**
      * Retrieve the timesheet automation / alerts for geofences activities or NFC tap on/off.  Requires the 'ManageGeofencing' permission.
      * @param {Number} geofenceId The ID of the Geofence
+     * @param {Number} nfcId 
      * @param {Number} userId 
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/String} sort 
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/String} order 
@@ -104,12 +105,16 @@ export default class TimesheetAutomationApi {
      * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/TimesheetAutomationApi~timesheetAutomationGetTimesheetAutomationAuditTrailCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/ApiResponseForPaginatedListTimesheetAutomationWithOrgAndGeofence}
      */
-    timesheetAutomationGetTimesheetAutomationAuditTrail(geofenceId, userId, sort, order, xChronosheetsAuth, opts, callback) {
+    timesheetAutomationGetTimesheetAutomationAuditTrail(geofenceId, nfcId, userId, sort, order, xChronosheetsAuth, opts, callback) {
       opts = opts || {};
       let postBody = null;
       // verify the required parameter 'geofenceId' is set
       if (geofenceId === undefined || geofenceId === null) {
         throw new Error("Missing the required parameter 'geofenceId' when calling timesheetAutomationGetTimesheetAutomationAuditTrail");
+      }
+      // verify the required parameter 'nfcId' is set
+      if (nfcId === undefined || nfcId === null) {
+        throw new Error("Missing the required parameter 'nfcId' when calling timesheetAutomationGetTimesheetAutomationAuditTrail");
       }
       // verify the required parameter 'userId' is set
       if (userId === undefined || userId === null) {
@@ -132,6 +137,7 @@ export default class TimesheetAutomationApi {
       };
       let queryParams = {
         'GeofenceId': geofenceId,
+        'NfcId': nfcId,
         'UserId': userId,
         'Sort': sort,
         'Order': order,
