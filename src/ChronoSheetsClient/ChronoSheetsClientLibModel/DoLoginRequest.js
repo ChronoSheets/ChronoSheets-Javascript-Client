@@ -54,6 +54,9 @@ class DoLoginRequest {
             if (data.hasOwnProperty('Password')) {
                 obj['Password'] = ApiClient.convertToType(data['Password'], 'String');
             }
+            if (data.hasOwnProperty('RememberMe')) {
+                obj['RememberMe'] = ApiClient.convertToType(data['RememberMe'], 'Boolean');
+            }
         }
         return obj;
     }
@@ -72,6 +75,12 @@ DoLoginRequest.prototype['UsernameOrEmail'] = undefined;
  * @member {String} Password
  */
 DoLoginRequest.prototype['Password'] = undefined;
+
+/**
+ * Increase session expiry beyond default of 1 hour
+ * @member {Boolean} RememberMe
+ */
+DoLoginRequest.prototype['RememberMe'] = undefined;
 
 
 
