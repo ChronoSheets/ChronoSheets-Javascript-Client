@@ -13,6 +13,7 @@
 
 
 import ApiClient from "../ApiClient";
+import ApiResponseForPaginatedListBasicGeofence from '../ChronoSheetsClientLibModel/ApiResponseForPaginatedListBasicGeofence';
 import ApiResponseForPaginatedListExtendedGeofence from '../ChronoSheetsClientLibModel/ApiResponseForPaginatedListExtendedGeofence';
 import ApiResponseGeofence from '../ChronoSheetsClientLibModel/ApiResponseGeofence';
 import ApiResponseInt32 from '../ChronoSheetsClientLibModel/ApiResponseInt32';
@@ -224,6 +225,48 @@ export default class GeoFencingApi {
       let returnType = ApiResponseForPaginatedListExtendedGeofence;
       return this.apiClient.callApi(
         '/GeoFencing/GetGeofences', 'GET',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, null, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the geoFencingGetGeofencesBasicInfo operation.
+     * @callback module:ChronoSheetsClient/ChronoSheetsClientLibApi/GeoFencingApi~geoFencingGetGeofencesBasicInfoCallback
+     * @param {String} error Error message, if any.
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibModel/ApiResponseForPaginatedListBasicGeofence} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Gets a list of all geofences in your organisation, including just the name and ID.
+     * @param {String} xChronosheetsAuth The ChronoSheets Auth Token
+     * @param {module:ChronoSheetsClient/ChronoSheetsClientLibApi/GeoFencingApi~geoFencingGetGeofencesBasicInfoCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:ChronoSheetsClient/ChronoSheetsClientLibModel/ApiResponseForPaginatedListBasicGeofence}
+     */
+    geoFencingGetGeofencesBasicInfo(xChronosheetsAuth, callback) {
+      let postBody = null;
+      // verify the required parameter 'xChronosheetsAuth' is set
+      if (xChronosheetsAuth === undefined || xChronosheetsAuth === null) {
+        throw new Error("Missing the required parameter 'xChronosheetsAuth' when calling geoFencingGetGeofencesBasicInfo");
+      }
+
+      let pathParams = {
+      };
+      let queryParams = {
+      };
+      let headerParams = {
+        'x-chronosheets-auth': xChronosheetsAuth
+      };
+      let formParams = {
+      };
+
+      let authNames = [];
+      let contentTypes = [];
+      let accepts = ['application/json', 'text/json', 'application/xml', 'text/xml', 'multipart/form-data'];
+      let returnType = ApiResponseForPaginatedListBasicGeofence;
+      return this.apiClient.callApi(
+        '/GeoFencing/GetGeofencesBasicInfo', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );

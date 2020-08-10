@@ -8,6 +8,7 @@ Method | HTTP request | Description
 [**geoFencingDeleteGeofence**](GeoFencingApi.md#geoFencingDeleteGeofence) | **DELETE** /GeoFencing/DeleteGeofence | Deletes a geofence.  Requires the &#39;ManageGeofencing&#39; permission.
 [**geoFencingGetGeofenceById**](GeoFencingApi.md#geoFencingGetGeofenceById) | **GET** /GeoFencing/GetGeofenceById | Get a geofence by ID  Requires the &#39;SubmitTimesheets&#39; permission.
 [**geoFencingGetGeofences**](GeoFencingApi.md#geoFencingGetGeofences) | **GET** /GeoFencing/GetGeofences | Get geofences belonging to your organisation  Requires the &#39;SubmitTimesheets&#39; permission.
+[**geoFencingGetGeofencesBasicInfo**](GeoFencingApi.md#geoFencingGetGeofencesBasicInfo) | **GET** /GeoFencing/GetGeofencesBasicInfo | Gets a list of all geofences in your organisation, including just the name and ID.
 [**geoFencingUpdateGeofence**](GeoFencingApi.md#geoFencingUpdateGeofence) | **PUT** /GeoFencing/UpdateGeofence | Updates a geofencing with rules to be used for clock on/off automation.  Requires the &#39;ManageGeofencing&#39; permission.
 
 
@@ -185,6 +186,49 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ApiResponseForPaginatedListExtendedGeofence**](ApiResponseForPaginatedListExtendedGeofence.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: application/json, text/json, application/xml, text/xml, multipart/form-data
+
+
+## geoFencingGetGeofencesBasicInfo
+
+> ApiResponseForPaginatedListBasicGeofence geoFencingGetGeofencesBasicInfo(xChronosheetsAuth)
+
+Gets a list of all geofences in your organisation, including just the name and ID.
+
+### Example
+
+```javascript
+import ChronoSheetsApi from 'ChronoSheetsAPI';
+
+let apiInstance = new ChronoSheetsApi.GeoFencingApi();
+let xChronosheetsAuth = "xChronosheetsAuth_example"; // String | The ChronoSheets Auth Token
+apiInstance.geoFencingGetGeofencesBasicInfo(xChronosheetsAuth, (error, data, response) => {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+});
+```
+
+### Parameters
+
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **xChronosheetsAuth** | **String**| The ChronoSheets Auth Token | 
+
+### Return type
+
+[**ApiResponseForPaginatedListBasicGeofence**](ApiResponseForPaginatedListBasicGeofence.md)
 
 ### Authorization
 

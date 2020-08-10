@@ -22,6 +22,7 @@ import ApiResponseClient from './ChronoSheetsClientLibModel/ApiResponseClient';
 import ApiResponseCombinedReportsData from './ChronoSheetsClientLibModel/ApiResponseCombinedReportsData';
 import ApiResponseDoLoginResponse from './ChronoSheetsClientLibModel/ApiResponseDoLoginResponse';
 import ApiResponseFleetVehicle from './ChronoSheetsClientLibModel/ApiResponseFleetVehicle';
+import ApiResponseForPaginatedListBasicGeofence from './ChronoSheetsClientLibModel/ApiResponseForPaginatedListBasicGeofence';
 import ApiResponseForPaginatedListExtendedGeofence from './ChronoSheetsClientLibModel/ApiResponseForPaginatedListExtendedGeofence';
 import ApiResponseForPaginatedListOrgReportTimesheetFileAttachment from './ChronoSheetsClientLibModel/ApiResponseForPaginatedListOrgReportTimesheetFileAttachment';
 import ApiResponseForPaginatedListOrgReportTranscript from './ChronoSheetsClientLibModel/ApiResponseForPaginatedListOrgReportTranscript';
@@ -64,6 +65,7 @@ import ApiResponseUpdateUserResponse from './ChronoSheetsClientLibModel/ApiRespo
 import ApiResponseUserForManagement from './ChronoSheetsClientLibModel/ApiResponseUserForManagement';
 import ApiResponseUserProfile from './ChronoSheetsClientLibModel/ApiResponseUserProfile';
 import BasicCoordinate from './ChronoSheetsClientLibModel/BasicCoordinate';
+import BasicGeofence from './ChronoSheetsClientLibModel/BasicGeofence';
 import BatchUpdateTimesheetRequest from './ChronoSheetsClientLibModel/BatchUpdateTimesheetRequest';
 import Client from './ChronoSheetsClientLibModel/Client';
 import ClientSeriesReportItem from './ChronoSheetsClientLibModel/ClientSeriesReportItem';
@@ -248,6 +250,12 @@ export {
      * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/ApiResponseFleetVehicle}
      */
     ApiResponseFleetVehicle,
+
+    /**
+     * The ApiResponseForPaginatedListBasicGeofence model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/ApiResponseForPaginatedListBasicGeofence}
+     */
+    ApiResponseForPaginatedListBasicGeofence,
 
     /**
      * The ApiResponseForPaginatedListExtendedGeofence model constructor.
@@ -500,6 +508,12 @@ export {
      * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/BasicCoordinate}
      */
     BasicCoordinate,
+
+    /**
+     * The BasicGeofence model constructor.
+     * @property {module:ChronoSheetsClient/ChronoSheetsClientLibModel/BasicGeofence}
+     */
+    BasicGeofence,
 
     /**
      * The BatchUpdateTimesheetRequest model constructor.

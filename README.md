@@ -140,6 +140,7 @@ Class | Method | HTTP request | Description
 *ChronoSheetsApi.GeoFencingApi* | [**geoFencingDeleteGeofence**](docs/GeoFencingApi.md#geoFencingDeleteGeofence) | **DELETE** /GeoFencing/DeleteGeofence | Deletes a geofence.  Requires the &#39;ManageGeofencing&#39; permission.
 *ChronoSheetsApi.GeoFencingApi* | [**geoFencingGetGeofenceById**](docs/GeoFencingApi.md#geoFencingGetGeofenceById) | **GET** /GeoFencing/GetGeofenceById | Get a geofence by ID  Requires the &#39;SubmitTimesheets&#39; permission.
 *ChronoSheetsApi.GeoFencingApi* | [**geoFencingGetGeofences**](docs/GeoFencingApi.md#geoFencingGetGeofences) | **GET** /GeoFencing/GetGeofences | Get geofences belonging to your organisation  Requires the &#39;SubmitTimesheets&#39; permission.
+*ChronoSheetsApi.GeoFencingApi* | [**geoFencingGetGeofencesBasicInfo**](docs/GeoFencingApi.md#geoFencingGetGeofencesBasicInfo) | **GET** /GeoFencing/GetGeofencesBasicInfo | Gets a list of all geofences in your organisation, including just the name and ID.
 *ChronoSheetsApi.GeoFencingApi* | [**geoFencingUpdateGeofence**](docs/GeoFencingApi.md#geoFencingUpdateGeofence) | **PUT** /GeoFencing/UpdateGeofence | Updates a geofencing with rules to be used for clock on/off automation.  Requires the &#39;ManageGeofencing&#39; permission.
 *ChronoSheetsApi.JobCodesApi* | [**jobCodesCreateJobCode**](docs/JobCodesApi.md#jobCodesCreateJobCode) | **POST** /JobCodes/CreateJobCode | Create a job code.    Requires the &#39;ManageJobsAndTask&#39; permission.
 *ChronoSheetsApi.JobCodesApi* | [**jobCodesDeleteJobCode**](docs/JobCodesApi.md#jobCodesDeleteJobCode) | **DELETE** /JobCodes/DeleteJobCode | Delete a job code.    Requires the &#39;ManageJobsAndTask&#39; permission.
@@ -217,6 +218,7 @@ Class | Method | HTTP request | Description
  - [ChronoSheetsApi.ApiResponseCombinedReportsData](docs/ApiResponseCombinedReportsData.md)
  - [ChronoSheetsApi.ApiResponseDoLoginResponse](docs/ApiResponseDoLoginResponse.md)
  - [ChronoSheetsApi.ApiResponseFleetVehicle](docs/ApiResponseFleetVehicle.md)
+ - [ChronoSheetsApi.ApiResponseForPaginatedListBasicGeofence](docs/ApiResponseForPaginatedListBasicGeofence.md)
  - [ChronoSheetsApi.ApiResponseForPaginatedListExtendedGeofence](docs/ApiResponseForPaginatedListExtendedGeofence.md)
  - [ChronoSheetsApi.ApiResponseForPaginatedListOrgReportTimesheetFileAttachment](docs/ApiResponseForPaginatedListOrgReportTimesheetFileAttachment.md)
  - [ChronoSheetsApi.ApiResponseForPaginatedListOrgReportTranscript](docs/ApiResponseForPaginatedListOrgReportTranscript.md)
@@ -259,6 +261,7 @@ Class | Method | HTTP request | Description
  - [ChronoSheetsApi.ApiResponseUserForManagement](docs/ApiResponseUserForManagement.md)
  - [ChronoSheetsApi.ApiResponseUserProfile](docs/ApiResponseUserProfile.md)
  - [ChronoSheetsApi.BasicCoordinate](docs/BasicCoordinate.md)
+ - [ChronoSheetsApi.BasicGeofence](docs/BasicGeofence.md)
  - [ChronoSheetsApi.BatchUpdateTimesheetRequest](docs/BatchUpdateTimesheetRequest.md)
  - [ChronoSheetsApi.Client](docs/Client.md)
  - [ChronoSheetsApi.ClientSeriesReportItem](docs/ClientSeriesReportItem.md)
