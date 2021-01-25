@@ -117,51 +117,61 @@ FleetSummaryReportItem.prototype['TotalRunningCostDollarsFiltered'] = undefined;
 FleetSummaryReportItem.prototype['TotalRunningCostDollars'] = undefined;
 
 /**
+ * The ID of the vehicle
  * @member {Number} Id
  */
 FleetSummaryReportItem.prototype['Id'] = undefined;
 
 /**
+ * The ID of the organisation managing the vehicle
  * @member {Number} OrganisationId
  */
 FleetSummaryReportItem.prototype['OrganisationId'] = undefined;
 
 /**
+ * A name given to the vehicle
  * @member {String} Name
  */
 FleetSummaryReportItem.prototype['Name'] = undefined;
 
 /**
+ * The cost, in dollars, of running the vehicle over one kilometer
  * @member {Number} CostPerKilometer
  */
 FleetSummaryReportItem.prototype['CostPerKilometer'] = undefined;
 
 /**
+ * The make of the vehicle
  * @member {String} Make
  */
 FleetSummaryReportItem.prototype['Make'] = undefined;
 
 /**
+ * The model of the vehicle
  * @member {String} Model
  */
 FleetSummaryReportItem.prototype['Model'] = undefined;
 
 /**
+ * The year the vehicle was manufactured
  * @member {String} Year
  */
 FleetSummaryReportItem.prototype['Year'] = undefined;
 
 /**
+ * The licence plate number of the vehicle
  * @member {String} LicencePlateNumber
  */
 FleetSummaryReportItem.prototype['LicencePlateNumber'] = undefined;
 
 /**
+ * Whether or not the vehicle is deleted
  * @member {Boolean} IsDeleted
  */
 FleetSummaryReportItem.prototype['IsDeleted'] = undefined;
 
 /**
+ * An array of employee IDs that are permitted to use the vehicle
  * @member {Array.<Number>} PermittedEmployees
  */
 FleetSummaryReportItem.prototype['PermittedEmployees'] = undefined;

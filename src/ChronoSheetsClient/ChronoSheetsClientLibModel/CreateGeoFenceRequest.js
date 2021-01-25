@@ -120,7 +120,7 @@ CreateGeoFenceRequest.prototype['TriggerTaskId'] = undefined;
 CreateGeoFenceRequest.prototype['SendAlertToOrgGroupId'] = undefined;
 
 /**
- * Define when you want the alerts to be setn
+ * Define when you want the alerts to be sent
  * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/CreateGeoFenceRequest.AlertSettingsEnum} AlertSettings
  */
 CreateGeoFenceRequest.prototype['AlertSettings'] = undefined;

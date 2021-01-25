@@ -22,6 +22,7 @@ import BasicCoordinate from './BasicCoordinate';
 class ExtendedGeofence {
     /**
      * Constructs a new <code>ExtendedGeofence</code>.
+     * An extended geofence record
      * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/ExtendedGeofence
      */
     constructor() { 
@@ -125,116 +126,139 @@ class ExtendedGeofence {
 }
 
 /**
+ * The Job code used when the employee enters/exits the geofence
  * @member {String} JobCode
  */
 ExtendedGeofence.prototype['JobCode'] = undefined;
 
 /**
+ * The name of the task used when the employee enters/exits the geofence
  * @member {String} TaskName
  */
 ExtendedGeofence.prototype['TaskName'] = undefined;
 
 /**
+ * The name of the employee who created the geofence
  * @member {String} CreatedBy
  */
 ExtendedGeofence.prototype['CreatedBy'] = undefined;
 
 /**
+ * The name of the employee who last updated the geofence
  * @member {String} UpdatedBy
  */
 ExtendedGeofence.prototype['UpdatedBy'] = undefined;
 
 /**
+ * The name of the organisation group who will be notified when the geofence is triggered
  * @member {String} AlertOrganisation
  */
 ExtendedGeofence.prototype['AlertOrganisation'] = undefined;
 
 /**
+ * The ID of the geofence
  * @member {Number} GeoFencingId
  */
 ExtendedGeofence.prototype['GeoFencingId'] = undefined;
 
 /**
+ * The ID of the organisation owning the geofence record
  * @member {Number} OrgId
  */
 ExtendedGeofence.prototype['OrgId'] = undefined;
 
 /**
+ * The ID of the user/employee who created the geofence
  * @member {Number} CreatedByUserId
  */
 ExtendedGeofence.prototype['CreatedByUserId'] = undefined;
 
 /**
+ * The ID of the user/employee who last updated the geofence
  * @member {Number} LastUpdatedByUserId
  */
 ExtendedGeofence.prototype['LastUpdatedByUserId'] = undefined;
 
 /**
+ * A descriptive name of the geofence
  * @member {String} Name
  */
 ExtendedGeofence.prototype['Name'] = undefined;
 
 /**
+ * The name of the approx. location of the geofence
  * @member {String} LocationName
  */
 ExtendedGeofence.prototype['LocationName'] = undefined;
 
 /**
+ * A list of co-ordinates specifying the geofence
  * @member {Array.<module:ChronoSheetsClient/ChronoSheetsClientLibModel/BasicCoordinate>} Coordinates
  */
 ExtendedGeofence.prototype['Coordinates'] = undefined;
 
 /**
+ * The date and time the geofence was created.  Time is in UTC.
  * @member {Date} CreatedAt
  */
 ExtendedGeofence.prototype['CreatedAt'] = undefined;
 
 /**
+ * The date and time the geofence was updated last.  Time is in UTC.
  * @member {Date} UpdatedAt
  */
 ExtendedGeofence.prototype['UpdatedAt'] = undefined;
 
 /**
+ * The ID of the job code used when the employee enters/exits the geofence
  * @member {Number} TriggerJobCodeId
  */
 ExtendedGeofence.prototype['TriggerJobCodeId'] = undefined;
 
 /**
+ * The ID of the task used when the employee enters/exits the geofence
  * @member {Number} TriggerTaskId
  */
 ExtendedGeofence.prototype['TriggerTaskId'] = undefined;
 
 /**
+ * The settings for triggering actions
  * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/ExtendedGeofence.TriggerSettingsEnum} TriggerSettings
  */
 ExtendedGeofence.prototype['TriggerSettings'] = undefined;
 
 /**
+ * The organisation group that will be notified when the geofence is triggered
  * @member {Number} AlertToOrgGroupId
  */
 ExtendedGeofence.prototype['AlertToOrgGroupId'] = undefined;
 
 /**
+ * The settings for trigger alerts
  * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/ExtendedGeofence.AlertSettingsEnum} AlertSettings
  */
 ExtendedGeofence.prototype['AlertSettings'] = undefined;
 
 /**
+ * The hour start time. E.g. 13 would be 1pm.  Time is in 24hr format.
  * @member {Number} StartTimeHour
  */
 ExtendedGeofence.prototype['StartTimeHour'] = undefined;
 
 /**
+ * The minute start time.  E.g. 46 would be the 46th minute of the hour.
  * @member {Number} StartTimeMinute
  */
 ExtendedGeofence.prototype['StartTimeMinute'] = undefined;
 
 /**
+ * The hour end time. E.g. 21 would be 9pm.  Time is in 24hr format.
  * @member {Number} EndTimeHour
  */
 ExtendedGeofence.prototype['EndTimeHour'] = undefined;
 
 /**
+ * The minute end time.  E.g. 13 would be the 13th minute of the hour.
  * @member {Number} EndTimeMinute
  */
 ExtendedGeofence.prototype['EndTimeMinute'] = undefined;

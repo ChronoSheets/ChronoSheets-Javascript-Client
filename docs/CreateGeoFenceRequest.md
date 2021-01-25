@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **triggerJobCodeId** | **Number** | The job code to be used when the person enters/leaves the geofence | [optional] 
 **triggerTaskId** | **Number** | The task to be used when the person enters/leaves the geofence | [optional] 
 **sendAlertToOrgGroupId** | **Number** | Send an alert to a user, specified by their user ID | [optional] 
-**alertSettings** | **String** | Define when you want the alerts to be setn | [optional] 
+**alertSettings** | **String** | Define when you want the alerts to be sent | [optional] 
 **triggerSettings** | **String** | Define how to you want to trigger the timesheet automation | [optional] 
 **startTimeHour** | **Number** | The start hour in which this geofence should apply.  After this time, the geofence will be active. | [optional] 
 **startTimeMinute** | **Number** | The start minute in which this geofence should apply.  After this time, the geofence will be active. | [optional] 

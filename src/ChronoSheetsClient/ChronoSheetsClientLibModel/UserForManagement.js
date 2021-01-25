@@ -100,51 +100,61 @@ class UserForManagement {
 UserForManagement.prototype['IsAccountActive'] = undefined;
 
 /**
+ * The ID of the user
  * @member {Number} Id
  */
 UserForManagement.prototype['Id'] = undefined;
 
 /**
+ * The ID of the organisation
  * @member {Number} OrganisationId
  */
 UserForManagement.prototype['OrganisationId'] = undefined;
 
 /**
+ * The username of the user
  * @member {String} UserName
  */
 UserForManagement.prototype['UserName'] = undefined;
 
 /**
+ * The first name of the user
  * @member {String} FirstName
  */
 UserForManagement.prototype['FirstName'] = undefined;
 
 /**
+ * The last name of the user
  * @member {String} LastName
  */
 UserForManagement.prototype['LastName'] = undefined;
 
 /**
+ * The email address of the user
  * @member {String} EmailAddress
  */
 UserForManagement.prototype['EmailAddress'] = undefined;
 
 /**
+ * A BIT field designating which Roles/Permissions the employee will have when they sign in.  See the {timesheets.types.Enums.UserRoles} Enum for more details
  * @member {Number} Roles
  */
 UserForManagement.prototype['Roles'] = undefined;
 
 /**
+ * A BIT field designating which Alerts the employee will receive.  See the {timesheets.types.Enums.AlertSettings} Enum for more details
  * @member {Number} AlertSettings
  */
 UserForManagement.prototype['AlertSettings'] = undefined;
 
 /**
+ * Whether or not the setup wizard is required
  * @member {Boolean} SetupWizardRequired
  */
 UserForManagement.prototype['SetupWizardRequired'] = undefined;
 
 /**
+ * Whether or not the user is subscribed to the user
  * @member {Boolean} IsSubscribedToNewsletter
  */
 UserForManagement.prototype['IsSubscribedToNewsletter'] = undefined;
@@ -155,6 +165,7 @@ UserForManagement.prototype['IsSubscribedToNewsletter'] = undefined;
 UserForManagement.prototype['Organisation'] = undefined;
 
 /**
+ * Whether or not this account is the organisation's primary account.
  * @member {Boolean} IsPrimaryAccount
  */
 UserForManagement.prototype['IsPrimaryAccount'] = undefined;

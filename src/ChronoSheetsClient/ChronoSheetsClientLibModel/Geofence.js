@@ -22,6 +22,7 @@ import BasicCoordinate from './BasicCoordinate';
 class Geofence {
     /**
      * Constructs a new <code>Geofence</code>.
+     * A geofence
      * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/Geofence
      */
     constructor() { 
@@ -110,91 +111,109 @@ class Geofence {
 }
 
 /**
+ * The ID of the geofence
  * @member {Number} GeoFencingId
  */
 Geofence.prototype['GeoFencingId'] = undefined;
 
 /**
+ * The ID of the organisation owning the geofence record
  * @member {Number} OrgId
  */
 Geofence.prototype['OrgId'] = undefined;
 
 /**
+ * The ID of the user/employee who created the geofence
  * @member {Number} CreatedByUserId
  */
 Geofence.prototype['CreatedByUserId'] = undefined;
 
 /**
+ * The ID of the user/employee who last updated the geofence
  * @member {Number} LastUpdatedByUserId
  */
 Geofence.prototype['LastUpdatedByUserId'] = undefined;
 
 /**
+ * A descriptive name of the geofence
  * @member {String} Name
  */
 Geofence.prototype['Name'] = undefined;
 
 /**
+ * The name of the approx. location of the geofence
  * @member {String} LocationName
  */
 Geofence.prototype['LocationName'] = undefined;
 
 /**
+ * A list of co-ordinates specifying the geofence
  * @member {Array.<module:ChronoSheetsClient/ChronoSheetsClientLibModel/BasicCoordinate>} Coordinates
  */
 Geofence.prototype['Coordinates'] = undefined;
 
 /**
+ * The date and time the geofence was created.  Time is in UTC.
  * @member {Date} CreatedAt
  */
 Geofence.prototype['CreatedAt'] = undefined;
 
 /**
+ * The date and time the geofence was updated last.  Time is in UTC.
  * @member {Date} UpdatedAt
  */
 Geofence.prototype['UpdatedAt'] = undefined;
 
 /**
+ * The ID of the job code used when the employee enters/exits the geofence
  * @member {Number} TriggerJobCodeId
  */
 Geofence.prototype['TriggerJobCodeId'] = undefined;
 
 /**
+ * The ID of the task used when the employee enters/exits the geofence
  * @member {Number} TriggerTaskId
  */
 Geofence.prototype['TriggerTaskId'] = undefined;
 
 /**
+ * The settings for triggering actions
  * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/Geofence.TriggerSettingsEnum} TriggerSettings
  */
 Geofence.prototype['TriggerSettings'] = undefined;
 
 /**
+ * The organisation group that will be notified when the geofence is triggered
  * @member {Number} AlertToOrgGroupId
  */
 Geofence.prototype['AlertToOrgGroupId'] = undefined;
 
 /**
+ * The settings for trigger alerts
  * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/Geofence.AlertSettingsEnum} AlertSettings
  */
 Geofence.prototype['AlertSettings'] = undefined;
 
 /**
+ * The hour start time. E.g. 13 would be 1pm.  Time is in 24hr format.
  * @member {Number} StartTimeHour
  */
 Geofence.prototype['StartTimeHour'] = undefined;
 
 /**
+ * The minute start time.  E.g. 46 would be the 46th minute of the hour.
  * @member {Number} StartTimeMinute
  */
 Geofence.prototype['StartTimeMinute'] = undefined;
 
 /**
+ * The hour end time. E.g. 21 would be 9pm.  Time is in 24hr format.
  * @member {Number} EndTimeHour
  */
 Geofence.prototype['EndTimeHour'] = undefined;
 
 /**
+ * The minute end time.  E.g. 13 would be the 13th minute of the hour.
  * @member {Number} EndTimeMinute
  */
 Geofence.prototype['EndTimeMinute'] = undefined;

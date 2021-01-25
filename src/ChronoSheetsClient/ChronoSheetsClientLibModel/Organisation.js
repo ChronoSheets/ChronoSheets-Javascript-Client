@@ -22,6 +22,7 @@ import OrganisationPricingPlan from './OrganisationPricingPlan';
 class Organisation {
     /**
      * Constructs a new <code>Organisation</code>.
+     * An organisation in ChronoSheets
      * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/Organisation
      */
     constructor() { 
@@ -119,106 +120,127 @@ class Organisation {
 }
 
 /**
+ * The ID of the organisation
  * @member {Number} Id
  */
 Organisation.prototype['Id'] = undefined;
 
 /**
+ * The name of the organisation
  * @member {String} Name
  */
 Organisation.prototype['Name'] = undefined;
 
 /**
+ * Address line 1 of the organisation
  * @member {String} AddressLine01
  */
 Organisation.prototype['AddressLine01'] = undefined;
 
 /**
+ * Address line 2 of the organisation
  * @member {String} AddressLine02
  */
 Organisation.prototype['AddressLine02'] = undefined;
 
 /**
+ * The suburb where the organisation is located
  * @member {String} Suburb
  */
 Organisation.prototype['Suburb'] = undefined;
 
 /**
+ * The state where the organisation is located
  * @member {String} State
  */
 Organisation.prototype['State'] = undefined;
 
 /**
+ * The postcode of the organisation
  * @member {String} Postcode
  */
 Organisation.prototype['Postcode'] = undefined;
 
 /**
+ * The country of the organisation
  * @member {String} Country
  */
 Organisation.prototype['Country'] = undefined;
 
 /**
+ * The primary phone contact number of the organisation
  * @member {String} Phone
  */
 Organisation.prototype['Phone'] = undefined;
 
 /**
+ * The primary email address of the organisation
  * @member {String} EmailAddress
  */
 Organisation.prototype['EmailAddress'] = undefined;
 
 /**
+ * The timezone of the organisation
  * @member {String} Timezone
  */
 Organisation.prototype['Timezone'] = undefined;
 
 /**
+ * The customer ID of the payments subscription
  * @member {String} SubscriptionCustomerId
  */
 Organisation.prototype['SubscriptionCustomerId'] = undefined;
 
 /**
+ * The sign up token
  * @member {String} SignupToken
  */
 Organisation.prototype['SignupToken'] = undefined;
 
 /**
+ * Whether or not the organisation is active
  * @member {Boolean} IsActive
  */
 Organisation.prototype['IsActive'] = undefined;
 
 /**
+ * The payments coupon code
  * @member {String} StripeCouponCode
  */
 Organisation.prototype['StripeCouponCode'] = undefined;
 
 /**
+ * The source of the subscription
  * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/Organisation.SubscriptionSourceEnum} SubscriptionSource
  */
 Organisation.prototype['SubscriptionSource'] = undefined;
 
 /**
+ * The source where the organisation signed up
  * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/Organisation.SignUpSourceEnum} SignUpSource
  */
 Organisation.prototype['SignUpSource'] = undefined;
 
 /**
+ * A temporary mobile sign up code
  * @member {String} MobileSignUpCode
  */
 Organisation.prototype['MobileSignUpCode'] = undefined;
 
 /**
+ * The start date and time of the organisations subscription
  * @member {Date} SubscriptionCycleStart
  */
 Organisation.prototype['SubscriptionCycleStart'] = undefined;
 
 /**
+ * The end date and time of the organisations subscription
  * @member {Date} SubscriptionCycleEnd
  */
 Organisation.prototype['SubscriptionCycleEnd'] = undefined;
 
 /**
+ * The organisation's pricing plans
  * @member {Array.<module:ChronoSheetsClient/ChronoSheetsClientLibModel/OrganisationPricingPlan>} PricingPlans
  */
 Organisation.prototype['PricingPlans'] = undefined;

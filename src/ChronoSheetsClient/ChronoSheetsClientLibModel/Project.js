@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class Project {
     /**
      * Constructs a new <code>Project</code>.
+     * A project in ChronoSheets
      * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/Project
      */
     constructor() { 
@@ -79,41 +80,49 @@ class Project {
 }
 
 /**
+ * The ID of the project
  * @member {Number} Id
  */
 Project.prototype['Id'] = undefined;
 
 /**
+ * The ID of the client for which the project is being undertaken for
  * @member {Number} ClientId
  */
 Project.prototype['ClientId'] = undefined;
 
 /**
+ * The ID of the organisation that is completing the project
  * @member {Number} OrganisationId
  */
 Project.prototype['OrganisationId'] = undefined;
 
 /**
+ * A descriptive name of the project
  * @member {String} ProjectName
  */
 Project.prototype['ProjectName'] = undefined;
 
 /**
+ * The project's estimated cost
  * @member {Number} CostEstimation
  */
 Project.prototype['CostEstimation'] = undefined;
 
 /**
+ * The project's actual cost
  * @member {Number} CostActual
  */
 Project.prototype['CostActual'] = undefined;
 
 /**
+ * The start date and time of the project
  * @member {Date} StartDate
  */
 Project.prototype['StartDate'] = undefined;
 
 /**
+ * The end date and time of the project
  * @member {Date} EndDate
  */
 Project.prototype['EndDate'] = undefined;

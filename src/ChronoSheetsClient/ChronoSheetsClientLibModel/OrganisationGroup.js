@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class OrganisationGroup {
     /**
      * Constructs a new <code>OrganisationGroup</code>.
+     * An organisation group.  Organisation groups are used throughout ChronoSheets to assign many groups to one alert, action or restriction.  E.g. you can assign an organisation group to receive geofence alerts, or you could restrict access to vehicles to users within an organisation group.
      * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/OrganisationGroup
      */
     constructor() { 
@@ -67,21 +68,25 @@ class OrganisationGroup {
 }
 
 /**
+ * The ID of the organisation group
  * @member {Number} Id
  */
 OrganisationGroup.prototype['Id'] = undefined;
 
 /**
+ * The ID of the organisation
  * @member {Number} OrganisationId
  */
 OrganisationGroup.prototype['OrganisationId'] = undefined;
 
 /**
+ * The descriptive name of the organisation group
  * @member {String} OrganisationGroupName
  */
 OrganisationGroup.prototype['OrganisationGroupName'] = undefined;
 
 /**
+ * Whether or not the organisation group is deleted
  * @member {Boolean} IsDeleted
  */
 OrganisationGroup.prototype['IsDeleted'] = undefined;

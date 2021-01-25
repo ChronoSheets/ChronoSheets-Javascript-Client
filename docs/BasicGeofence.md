@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**geoFencingId** | **Number** |  | [optional] 
-**name** | **String** |  | [optional] 
+**geoFencingId** | **Number** | The ID of the geofence | [optional] 
+**name** | **String** | The descriptive name of the geofence | [optional] 
 
 

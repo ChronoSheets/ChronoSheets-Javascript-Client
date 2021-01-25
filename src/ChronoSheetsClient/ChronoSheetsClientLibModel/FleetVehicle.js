@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class FleetVehicle {
     /**
      * Constructs a new <code>FleetVehicle</code>.
+     * A vehicle within the fleet
      * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/FleetVehicle
      */
     constructor() { 
@@ -85,51 +86,61 @@ class FleetVehicle {
 }
 
 /**
+ * The ID of the vehicle
  * @member {Number} Id
  */
 FleetVehicle.prototype['Id'] = undefined;
 
 /**
+ * The ID of the organisation managing the vehicle
  * @member {Number} OrganisationId
  */
 FleetVehicle.prototype['OrganisationId'] = undefined;
 
 /**
+ * A name given to the vehicle
  * @member {String} Name
  */
 FleetVehicle.prototype['Name'] = undefined;
 
 /**
+ * The cost, in dollars, of running the vehicle over one kilometer
  * @member {Number} CostPerKilometer
  */
 FleetVehicle.prototype['CostPerKilometer'] = undefined;
 
 /**
+ * The make of the vehicle
  * @member {String} Make
  */
 FleetVehicle.prototype['Make'] = undefined;
 
 /**
+ * The model of the vehicle
  * @member {String} Model
  */
 FleetVehicle.prototype['Model'] = undefined;
 
 /**
+ * The year the vehicle was manufactured
  * @member {String} Year
  */
 FleetVehicle.prototype['Year'] = undefined;
 
 /**
+ * The licence plate number of the vehicle
  * @member {String} LicencePlateNumber
  */
 FleetVehicle.prototype['LicencePlateNumber'] = undefined;
 
 /**
+ * Whether or not the vehicle is deleted
  * @member {Boolean} IsDeleted
  */
 FleetVehicle.prototype['IsDeleted'] = undefined;
 
 /**
+ * An array of employee IDs that are permitted to use the vehicle
  * @member {Array.<Number>} PermittedEmployees
  */
 FleetVehicle.prototype['PermittedEmployees'] = undefined;

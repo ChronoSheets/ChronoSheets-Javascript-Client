@@ -21,6 +21,7 @@ import ApiClient from '../ApiClient';
 class BasicGeofence {
     /**
      * Constructs a new <code>BasicGeofence</code>.
+     * A basic geofence
      * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/BasicGeofence
      */
     constructor() { 
@@ -61,11 +62,13 @@ class BasicGeofence {
 }
 
 /**
+ * The ID of the geofence
  * @member {Number} GeoFencingId
  */
 BasicGeofence.prototype['GeoFencingId'] = undefined;
 
 /**
+ * The descriptive name of the geofence
  * @member {String} Name
  */
 BasicGeofence.prototype['Name'] = undefined;

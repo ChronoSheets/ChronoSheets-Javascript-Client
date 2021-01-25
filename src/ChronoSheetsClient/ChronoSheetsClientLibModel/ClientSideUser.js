@@ -22,6 +22,7 @@ import Organisation from './Organisation';
 class ClientSideUser {
     /**
      * Constructs a new <code>ClientSideUser</code>.
+     * A user within ChronoSheets
      * @alias module:ChronoSheetsClient/ChronoSheetsClientLibModel/ClientSideUser
      */
     constructor() { 
@@ -92,51 +93,61 @@ class ClientSideUser {
 }
 
 /**
+ * The ID of the user
  * @member {Number} Id
  */
 ClientSideUser.prototype['Id'] = undefined;
 
 /**
+ * The ID of the organisation
  * @member {Number} OrganisationId
  */
 ClientSideUser.prototype['OrganisationId'] = undefined;
 
 /**
+ * The username of the user
  * @member {String} UserName
  */
 ClientSideUser.prototype['UserName'] = undefined;
 
 /**
+ * The first name of the user
  * @member {String} FirstName
  */
 ClientSideUser.prototype['FirstName'] = undefined;
 
 /**
+ * The last name of the user
  * @member {String} LastName
  */
 ClientSideUser.prototype['LastName'] = undefined;
 
 /**
+ * The email address of the user
  * @member {String} EmailAddress
  */
 ClientSideUser.prototype['EmailAddress'] = undefined;
 
 /**
+ * A BIT field designating which Roles/Permissions the employee will have when they sign in.  See the {timesheets.types.Enums.UserRoles} Enum for more details
  * @member {Number} Roles
  */
 ClientSideUser.prototype['Roles'] = undefined;
 
 /**
+ * A BIT field designating which Alerts the employee will receive.  See the {timesheets.types.Enums.AlertSettings} Enum for more details
  * @member {Number} AlertSettings
  */
 ClientSideUser.prototype['AlertSettings'] = undefined;
 
 /**
+ * Whether or not the setup wizard is required
  * @member {Boolean} SetupWizardRequired
  */
 ClientSideUser.prototype['SetupWizardRequired'] = undefined;
 
 /**
+ * Whether or not the user is subscribed to the user
  * @member {Boolean} IsSubscribedToNewsletter
  */
 ClientSideUser.prototype['IsSubscribedToNewsletter'] = undefined;
@@ -147,6 +158,7 @@ ClientSideUser.prototype['IsSubscribedToNewsletter'] = undefined;
 ClientSideUser.prototype['Organisation'] = undefined;
 
 /**
+ * Whether or not this account is the organisation's primary account.
  * @member {Boolean} IsPrimaryAccount
  */
 ClientSideUser.prototype['IsPrimaryAccount'] = undefined;

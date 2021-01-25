@@ -159,121 +159,145 @@ OrgReportTimesheetFileAttachment.prototype['FirstName'] = undefined;
 OrgReportTimesheetFileAttachment.prototype['LastName'] = undefined;
 
 /**
+ * The ID of the timesheet this attachment is attached to.
  * @member {Number} TimesheetId
  */
 OrgReportTimesheetFileAttachment.prototype['TimesheetId'] = undefined;
 
 /**
+ * The limited use signed URL for the document (if it's not an image).  This URL is unique and will eventually expire.  If the attachment is an image, then this won't be set.
  * @member {String} DocumentS3SignedUrl
  */
 OrgReportTimesheetFileAttachment.prototype['DocumentS3SignedUrl'] = undefined;
 
 /**
+ * The limited use signed URL for the large version of the image.  This URL is unique and will eventually expire.  Only set when the attachment is actually an image.
  * @member {String} ImageLargeS3SignedUrl
  */
 OrgReportTimesheetFileAttachment.prototype['ImageLargeS3SignedUrl'] = undefined;
 
 /**
+ * The limited use signed URL for the medium version of the image.  This URL is unique and will eventually expire.  Only set when the attachment is actually an image.
  * @member {String} ImageMediumS3SignedUrl
  */
 OrgReportTimesheetFileAttachment.prototype['ImageMediumS3SignedUrl'] = undefined;
 
 /**
+ * The limited use signed URL for the small version of the image.  This URL is unique and will eventually expire.  Only set when the attachment is actually an image.
  * @member {String} ImageSmallS3SignedUrl
  */
 OrgReportTimesheetFileAttachment.prototype['ImageSmallS3SignedUrl'] = undefined;
 
 /**
+ * The start date and time of the timesheet that this attachment is attached to
  * @member {Date} TimesheetStart
  */
 OrgReportTimesheetFileAttachment.prototype['TimesheetStart'] = undefined;
 
 /**
+ * The end date and time of the timesheet that this attachment is attached to
  * @member {Date} TimesheetEnd
  */
 OrgReportTimesheetFileAttachment.prototype['TimesheetEnd'] = undefined;
 
 /**
+ * The ID of the file attachment
  * @member {Number} FileAttachmentId
  */
 OrgReportTimesheetFileAttachment.prototype['FileAttachmentId'] = undefined;
 
 /**
+ * The ID of the user who attached the file
  * @member {Number} UserId
  */
 OrgReportTimesheetFileAttachment.prototype['UserId'] = undefined;
 
 /**
+ * The ID of the organisation that owns the file and employs the employee
  * @member {Number} OrgId
  */
 OrgReportTimesheetFileAttachment.prototype['OrgId'] = undefined;
 
 /**
+ * The mobile platform that was used to attach the file
  * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/OrgReportTimesheetFileAttachment.MobilePlatformEnum} MobilePlatform
  */
 OrgReportTimesheetFileAttachment.prototype['MobilePlatform'] = undefined;
 
 /**
+ * The type of file attachment
  * @member {module:ChronoSheetsClient/ChronoSheetsClientLibModel/OrgReportTimesheetFileAttachment.AttachmentTypeEnum} AttachmentType
  */
 OrgReportTimesheetFileAttachment.prototype['AttachmentType'] = undefined;
 
 /**
+ * Any notes regarding the file attachment
  * @member {String} Notes
  */
 OrgReportTimesheetFileAttachment.prototype['Notes'] = undefined;
 
 /**
+ * The path to the file attachment as hosted by ChronoSheets storage, if it's not an image.  If the attachment is an image then this won't be set.
  * @member {String} NonImageFilePath
  */
 OrgReportTimesheetFileAttachment.prototype['NonImageFilePath'] = undefined;
 
 /**
+ * The path to the file attachment as hosted by ChronoSheets storage, only set if it's an image.  This is regarding the large version of the image.
  * @member {String} ImageLargeFilePath
  */
 OrgReportTimesheetFileAttachment.prototype['ImageLargeFilePath'] = undefined;
 
 /**
+ * The path to the file attachment as hosted by ChronoSheets storage, only set if it's an image.  This is regarding the medium version of the image.
  * @member {String} ImageMediumFilePath
  */
 OrgReportTimesheetFileAttachment.prototype['ImageMediumFilePath'] = undefined;
 
 /**
+ * The path to the file attachment as hosted by ChronoSheets storage, only set if it's an image.  This is regarding the small version of the image.
  * @member {String} ImageSmallFilePath
  */
 OrgReportTimesheetFileAttachment.prototype['ImageSmallFilePath'] = undefined;
 
 /**
+ * The original file name of the attachment
  * @member {String} OriginalFileName
  */
 OrgReportTimesheetFileAttachment.prototype['OriginalFileName'] = undefined;
 
 /**
+ * Meta-data indicating the latitude of the file attachment.  If the attachment is an image, this data originates from the meta data inside the image file.
  * @member {Number} Latitude
  */
 OrgReportTimesheetFileAttachment.prototype['Latitude'] = undefined;
 
 /**
+ * Meta-data indicating the longitude of the file attachment.  If the attachment is an image, this data originates from the meta data inside the image file.
  * @member {Number} Longitude
  */
 OrgReportTimesheetFileAttachment.prototype['Longitude'] = undefined;
 
 /**
+ * The date and time the attachment was uploaded.  Time is in UTC.
  * @member {Date} DateUploaded
  */
 OrgReportTimesheetFileAttachment.prototype['DateUploaded'] = undefined;
 
 /**
+ * The original date and time the image was captured, if it was an image.  This data originates from the meta data inside the image file.
  * @member {Date} DateImageCaptured
  */
 OrgReportTimesheetFileAttachment.prototype['DateImageCaptured'] = undefined;
 
 /**
+ * The number of bytes allocated for storing the file attachment.
  * @member {Number} StorageAllocationBytes
  */
 OrgReportTimesheetFileAttachment.prototype['StorageAllocationBytes'] = undefined;
 
 /**
+ * If the attachment was an audio file, this field indicates the duration of the audio file in seconds.  This data originates from the meta data inside the audio file.
  * @member {Number} AudioDurationSeconds
  */
 OrgReportTimesheetFileAttachment.prototype['AudioDurationSeconds'] = undefined;
